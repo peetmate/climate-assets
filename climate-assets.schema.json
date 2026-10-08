@@ -1,0 +1,160 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://cgiar-climate-data-hub/climate-assets.schema.json",
+  "title": "CGIAR Climate Data Hub — Climate Asset entry",
+  "description": "Schema for a single 'new & notable' climate data asset, tool, atlas, model, publication or method, as surfaced in the CDH assets newsfeed/dashboard.",
+  "type": "object",
+  "required": ["id", "title", "type", "url", "themes", "collection"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Stable kebab-case slug, unique across the catalogue. Used as the anchor/permalink and as the key for comments and ratings."
+    },
+    "title": {
+      "type": "string",
+      "description": "Human-readable name of the asset."
+    },
+    "type": {
+      "type": "string",
+      "enum": ["dataset", "atlas-hub", "tool-software", "model", "publication", "media", "contact"],
+      "description": "The kind of resource. dataset = downloadable data; atlas-hub = interactive portal/platform; tool-software = code, library, app; model = ML/foundation/emulator model; publication = paper/report/preprint; media = slides/video/blog; contact = a person/lead worth knowing."
+    },
+    "url": {
+      "type": "string",
+      "description": "Primary link. May be empty string if none yet (set access to 'unknown' and note it)."
+    },
+    "themes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Adaptation",
+          "Production & yields",
+          "Emissions & mitigation",
+          "Climate projections & reanalysis",
+          "Weather & forecasting",
+          "Hazards & impacts",
+          "Population & exposure",
+          "Socio-economic & gender",
+          "Land, soil & ecosystems",
+          "Crop & land management",
+          "Cross-cutting / AI & methods"
+        ]
+      },
+      "minItems": 1,
+      "maxItems": 2,
+      "description": "TOPIC facet: the subject the asset is about. 1-2 per entry, primary (best-fit) first. Not a format or approach label — those live in 'type' and 'tags'."
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+      "description": "Free-form lowercase-kebab keywords for search and cross-cutting facets (approach, region, technique, commodity), e.g. 'ai', 'remote-sensing', 'earth-engine', 'downscaling', 'africa', 'livestock', 'open-data'."
+    },
+    "source": {
+      "type": "string",
+      "description": "Publisher or hosting organisation (e.g. 'Nature Scientific Data', 'GitHub — openlandmap', 'WFP', 'World Bank')."
+    },
+    "description": {
+      "type": "string",
+      "description": "1–2 factual sentences: what it is and why it is useful for climate/agriculture data work."
+    },
+    "region": {
+      "type": "string",
+      "description": "Geographic focus, e.g. 'Global', 'Africa', 'Vietnam'. Empty if not applicable/unclear."
+    },
+    "spatial_resolution": {
+      "type": "string",
+      "description": "For datasets: native grid/resolution if stated (e.g. '~250 m', '0.1 deg'). Empty otherwise."
+    },
+    "temporal_coverage": {
+      "type": "string",
+      "description": "For datasets: time span / cadence if stated (e.g. '1961–1990 normals', 'daily 1979–present'). Empty otherwise."
+    },
+    "access": {
+      "type": "string",
+      "enum": ["open", "login", "paywall", "request", "unknown"],
+      "description": "How obtainable the resource is. open = freely accessible; login = needs an account/SSO; paywall = subscription/purchase; request = available on request; unknown = not yet confirmed."
+    },
+    "collection": {
+      "type": "string",
+      "enum": ["assets", "methods"],
+      "description": "Which source list the entry came from: 'assets' (datasets/atlases doc) or 'methods' (methods doc)."
+    },
+    "section": {
+      "type": "string",
+      "description": "Original heading it was filed under in the source doc (free text; kept for provenance)."
+    },
+    "shared_by": {
+      "type": "string",
+      "description": "Person/team who suggested it, where known."
+    },
+    "notes": {
+      "type": "string",
+      "description": "Free-text: caveats, cross-listing, alt access routes, contacts, credentials, TBCs."
+    },
+    "date_added": {
+      "type": "string",
+      "description": "ISO date the item was added to the feed (drives 'newest first' in newsfeed view). 'TBC' where unknown."
+    },
+    "date": {
+      "type": "string",
+      "description": "Publication/release date of the asset itself (YYYY or YYYY-MM-DD), used for 'newest first' sorting in the feed. Distinct from date_added (when it entered the Hub feed). Empty if unknown."
+    },
+    "image": {
+      "type": "string",
+      "description": "URL of a preview/thumbnail image (typically the asset's og:image). Empty if none; the UI falls back to a themed banner."
+    },
+    "links": {
+      "type": "array",
+      "description": "Additional key resources beyond the primary url, e.g. data mirror, paper, code, demo.",
+      "items": {
+        "type": "object",
+        "required": ["label", "url"],
+        "properties": {
+          "label": { "type": "string" },
+          "url": { "type": "string" }
+        }
+      }
+    },
+    "organisations": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Institutions/organisations behind the asset (authors' affiliations, hosting body, developer)."
+    },
+    "licence": {
+      "type": "string",
+      "description": "Content/data licence, normalised (e.g. 'CC-BY-4.0','CC0-1.0','MIT','proprietary'). Empty if not determined."
+    },
+    "data_availability": {
+      "type": "string",
+      "description": "For publications especially: whether underlying data/code is available, e.g. 'Open data', 'Open (with code)', 'Code only', 'On request', 'No associated data'."
+    },
+    "reusable": {
+      "type": "boolean",
+      "description": "True when the data is openly available under a permissive/attribution licence (CC0, CC-BY, CC-BY-SA, MIT, BSD, Apache, GPL/LGPL/AGPL, ODbL, Etalab-2.0, OGL, public domain) and could therefore be reused/ingested in the Hub. NC, ND, proprietary, unknown or mixed-source terms are false. Copyleft is true but carries share-alike obligations (AGPL extends them to network use) - record those in notes."
+    },
+    "ongoing": {
+      "type": "boolean",
+      "description": "True for living/continuously-updated resources (portals, dashboards, live datasets, recurring reports) rather than a one-off dated publication. Drives the 'Ongoing / continuous' filter bucket and badge."
+    },
+    "lead_contact": {
+      "type": "object",
+      "description": "Lead/corresponding author or maintainer. All sub-fields optional; empty where unknown. Emails only if publicly published (e.g. corresponding-author email).",
+      "properties": {
+        "name": { "type": "string" },
+        "affiliation": { "type": "string" },
+        "email": { "type": "string" }
+      }
+    },
+    "rating": {
+      "type": ["object", "null"],
+      "description": "OPTIONAL aggregate rating, populated by the backend once ratings are live. Not part of the static seed data.",
+      "properties": {
+        "average": { "type": "number", "minimum": 0, "maximum": 5 },
+        "count": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+name: "Report an error / suggest a correction"
+description: "Flag something wrong on an existing card — wrong author, licence, link, description, image, etc."
+title: "[Correction] "
+labels: ["data-correction"]
+body:
+  - type: input
+    id: asset
+    attributes:
+      label: Which asset? (title or id)
+      description: The card's id is shown in the Report link; paste the title if unsure.
+    validations:
+      required: true
+  - type: dropdown
+    id: field
+    attributes:
+      label: What's wrong?
+      options:
+        - lead author / contact
+        - organisation(s)
+        - licence / reuse
+        - data availability
+        - description
+        - title
+        - link is broken / wrong
+        - image
+        - duplicate of another card
+        - theme / type / tag
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Describe the problem
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: Correct value (with a source, please)
+      description: What should it say, and where can we verify it?

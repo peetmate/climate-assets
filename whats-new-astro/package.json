@@ -1,0 +1,15 @@
+{
+  "name": "climate-whats-new",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "description": "What's New in Climate Data — a radar of cutting-edge climate/agriculture data assets for the CGIAR Climate Data Hub. Standalone Astro tab.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^4.15.0"
+  }
+}

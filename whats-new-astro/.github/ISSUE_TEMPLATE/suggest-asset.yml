@@ -1,0 +1,51 @@
+name: "Suggest a new asset"
+description: "Suggest a dataset, atlas/portal, tool, model, publication or method for the What's New in Climate Data radar."
+title: "[New asset] "
+labels: ["new-asset"]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Resource URL
+      placeholder: "https://…"
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Name / title of the resource
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options: [dataset, atlas-hub (portal/dashboard), tool-software, model, publication, media, contact, not sure]
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What is it, and why is it notable?
+      description: One or two sentences — what it offers and why it's worth featuring.
+    validations:
+      required: true
+  - type: input
+    id: themes
+    attributes:
+      label: Theme(s)
+      description: "e.g. Adaptation; Hazards & impacts; Crop & land management"
+  - type: input
+    id: region
+    attributes:
+      label: Geographic focus
+      placeholder: "Global / Africa / …"
+  - type: input
+    id: access
+    attributes:
+      label: Access & licence (if known)
+      placeholder: "open / login / paywall / on request — and licence e.g. CC-BY-4.0"
+  - type: input
+    id: contact
+    attributes:
+      label: Your name / contact (optional)

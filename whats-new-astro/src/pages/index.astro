@@ -1,0 +1,366 @@
+---
+import data from '../data/climate-assets.json';
+import themevocab from '../data/themes.json';
+
+// Climate Action program theme colours (topic facet badges)
+const THEME_COLORS = {
+  "Adaptation": "#2e7d5b",
+  "Production & yields": "#8a6d1f",
+  "Emissions & mitigation": "#8a3b2e",
+  "Climate projections & reanalysis": "#1955A6",
+  "Weather & forecasting": "#2b7fa8",
+  "Hazards & impacts": "#b23b3b",
+  "Population & exposure": "#6a4b9c",
+  "Socio-economic & gender": "#a8478f",
+  "Land, soil & ecosystems": "#3d7a2e",
+  "Crop & land management": "#7a7320",
+  "Cross-cutting / AI & methods": "#455a64"
+};
+const count = data.assets.length;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>What's New in Climate Data — CGIAR Climate Action</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Noto+Serif:wght@600;700&display=swap" rel="stylesheet" />
+<style is:global>
+:root{
+ --green:#033529; --green-d:#02211A; --green-l:#065F4A; --teal:#17F1BD; --teal-l:#57FAD3;
+ --blue:#1955A6; --blue-l:#63A9FE;
+ --ink:#1D1D1D; --muted:#555554; --line:#E2E0DF; --bg:#f3f6f5; --card:#fff; --soft:#eef3f1;
+ --ok:#065F4A; --warn:#b7791f; --bad:#b23b3b; --info:#1955A6; --grey:#8E8C8C;
+ --serif:"Noto Serif","Times New Roman",Georgia,serif;
+ --sans:"Noto Sans",Arial,Helvetica,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.5}
+a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px}
+.hero{background:linear-gradient(115deg,var(--green) 0%,var(--green-d) 100%);color:#fff;padding:22px 0 22px;position:relative;overflow:hidden}
+.hero .bar{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.hero img.logo{height:46px;width:auto;display:block}
+.hero .kicker{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal-l);font-weight:700}
+.hero h1{font-family:var(--serif);font-weight:700;font-size:31px;margin:2px 0 6px;color:#fff}
+.hero p{margin:0;max-width:780px;color:#d7e5df;font-size:14.5px}
+.hero .edge{position:absolute;right:-40px;top:-40px;width:230px;height:230px;border-radius:50%;background:radial-gradient(circle,rgba(23,241,189,.16),transparent 70%)}
+.toolbar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.toolbar .row{display:flex;gap:12px;align-items:center;padding:11px 0;flex-wrap:wrap}
+.toggle{display:inline-flex;border:1px solid var(--line);border-radius:9px;overflow:hidden;background:var(--soft)}
+.toggle button{border:0;background:transparent;padding:8px 16px;font-weight:700;color:var(--muted);cursor:pointer;font-size:13.5px}
+.toggle button.on{background:var(--green);color:#fff}
+.search{flex:1;min-width:220px;position:relative}
+.search input{width:100%;padding:9px 12px 9px 34px;border:1px solid var(--line);border-radius:9px;font-size:14px;background:#fff}
+.search svg{position:absolute;left:10px;top:9px;color:var(--muted)}
+.count{color:var(--muted);font-size:13px;white-space:nowrap}
+.sort select{padding:8px 10px;border:1px solid var(--line);border-radius:9px;background:#fff;font-size:13.5px;color:var(--ink)}
+.btn-clear{border:1px solid var(--line);background:#fff;border-radius:9px;padding:8px 12px;cursor:pointer;color:var(--muted);font-size:13px}
+.btn-clear:hover{border-color:var(--green);color:var(--green)}
+.btn-suggest{border:0;background:var(--green);color:#fff;border-radius:9px;padding:8px 14px;cursor:pointer;font-size:13px;font-weight:700}
+.btn-suggest:hover{background:var(--green-l)}
+.report{margin-left:auto;font-size:11.5px;color:var(--muted);text-decoration:none;cursor:pointer}
+.report:hover{color:var(--bad);text-decoration:underline}
+.layout{display:grid;grid-template-columns:250px 1fr;gap:24px;padding:22px 0 60px}
+@media(max-width:820px){.layout{grid-template-columns:1fr}.facets{position:static}}
+.facets{align-self:start;position:sticky;top:64px}
+.facet{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:14px}
+.facet h4{font-family:var(--serif);margin:0 0 8px;font-size:15px;color:var(--green)}
+.facet .opt{display:flex;align-items:center;gap:8px;padding:3px 0;cursor:pointer;font-size:13.2px;color:var(--ink)}
+.thtop{gap:6px}
+.caret{cursor:pointer;color:var(--muted);font-size:10px;width:12px;flex:0 0 auto;transition:transform .12s;user-select:none;line-height:1}
+.caret.open{transform:rotate(90deg)}
+.thlab{display:flex;align-items:center;gap:8px;flex:1;cursor:pointer;min-width:0;margin:0}
+.subs{margin:1px 0 5px 20px;border-left:1px solid var(--line);padding-left:9px}
+.subopt{font-size:12.3px;color:var(--muted)}
+.subopt.active{color:var(--green);font-weight:700}
+.thlab span[title],.subopt span[title]{cursor:help;text-decoration:underline dotted transparent}
+.thlab span[title]:hover,.subopt span[title]:hover{text-decoration-color:var(--muted)}
+.facet .opt:hover{color:var(--green)} .facet .opt input{accent-color:var(--green)}
+.facet .opt .c{margin-left:auto;color:var(--muted);font-size:12px;background:var(--soft);border-radius:20px;padding:0 8px}
+.facet .opt.active{font-weight:700}
+.dot{width:9px;height:9px;border-radius:50%;flex:0 0 auto}
+#results.feed{display:flex;flex-direction:column;gap:16px}
+#results.dashboard{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:box-shadow .15s,border-color .15s;display:flex;flex-direction:column}
+.card:hover{box-shadow:0 6px 22px rgba(3,53,41,.10);border-color:#c8d8d2}
+.feed .card{flex-direction:row}
+@media(max-width:640px){.feed .card{flex-direction:column}}
+.thumb{position:relative;flex:0 0 auto;background-size:cover;background-position:center;min-height:120px}
+.feed .thumb{width:220px} .dashboard .thumb{height:132px}
+@media(max-width:640px){.feed .thumb{width:100%;height:150px}}
+.thumb .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--serif);font-size:15px;text-align:center;padding:10px;opacity:.95}
+.thumb .tp{position:absolute;left:8px;top:8px;background:rgba(255,255,255,.92);color:var(--green);font-size:10.5px;font-weight:700;padding:2px 8px;border-radius:20px}
+.body{padding:14px 16px;display:flex;flex-direction:column;flex:1;min-width:0}
+.top{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin-bottom:6px}
+.badge{font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px;white-space:nowrap}
+.badge.theme{color:#fff}
+.badge.access{border:1px solid transparent}
+.acc-open{background:#e6f4ee;color:var(--ok);border-color:#bfe3cf}
+.acc-login{background:#fdf3e2;color:var(--warn);border-color:#f2ddb4}
+.acc-paywall{background:#fdeceb;color:var(--bad);border-color:#f4c9c6}
+.acc-request{background:#eaf1fb;color:var(--info);border-color:#c8dcf5}
+.acc-unknown{background:#eef1f0;color:var(--grey);border-color:#dde3e1}
+.badge.reuse{background:#e2f7f0;color:var(--green-l);border:1px solid #a9ead7}
+.badge.lic{background:#eef3f1;color:#3a566f;border:1px solid #d5e2df}
+.date{color:var(--muted);font-size:11.5px;font-weight:700;margin-left:auto}
+.date.ongoing{color:var(--green-l)}
+.card h3{font-family:var(--serif);font-size:17px;margin:2px 0 6px;line-height:1.24;color:var(--ink)}
+.dashboard .card h3{font-size:15.5px}
+.desc{color:#2f3a37;font-size:13.5px;margin:0 0 9px} .dashboard .desc{font-size:12.8px}
+.src{color:var(--muted);font-size:12px;margin-bottom:6px}
+.by{font-size:12px;margin-bottom:6px;color:#3c4a45} .by .who{font-weight:700;color:#26302c} .by a{font-weight:700}
+.orgs{font-size:11.5px;color:var(--muted);margin-bottom:8px}
+.avail{font-size:11.5px;color:#3c4a45;margin-bottom:8px} .avail b{color:#26302c}
+.tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px}
+.tag{font-size:11px;color:var(--muted);background:var(--soft);border:1px solid var(--line);border-radius:20px;padding:1px 8px;cursor:pointer}
+.tag:hover{border-color:var(--green);color:var(--green)}
+.links{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:11px}
+.lk{font-size:12px;font-weight:700;border:1px solid #c6d9f2;color:var(--blue);background:#f2f7ff;border-radius:8px;padding:4px 10px}
+.lk:hover{background:var(--blue);color:#fff;text-decoration:none}
+.lk.tbc{color:var(--muted);background:var(--soft);border-color:var(--line);cursor:default}
+.foot{display:flex;align-items:center;gap:14px;border-top:1px solid var(--line);padding-top:9px;margin-top:auto}
+.stars{display:inline-flex;gap:1px} .stars span{cursor:pointer;color:#cdd6d2;font-size:17px;line-height:1} .stars span.f{color:#f0a92b}
+.stub{font-size:12px;color:var(--muted);background:none;border:0;cursor:help;display:inline-flex;align-items:center;gap:4px}
+.review{color:var(--bad);font-size:11px;font-weight:700}
+.empty{text-align:center;color:var(--muted);padding:60px 0}
+.note{background:#fff;border:1px dashed #bcd8cd;border-radius:10px;padding:10px 14px;color:var(--muted);font-size:12.5px;margin-bottom:14px}
+footer.foot-brand{border-top:1px solid var(--line);padding:18px 0;color:var(--muted);font-size:12px}
+</style>
+</head>
+<body>
+<header class="hero">
+ <div class="edge"></div>
+ <div class="wrap">
+  <div class="bar"><img class="logo" src="brand/logo-white.svg" alt="CGIAR Climate Action" /></div>
+  <div class="kicker">Climate Data Hub &middot; Radar</div>
+  <h1>What&rsquo;s New in Climate Data</h1>
+  <p>Exciting, cutting-edge datasets, atlases, tools, models and methods shared across the network. Not necessarily hosted in the Hub &mdash; they&rsquo;re what&rsquo;s worth knowing about right now.</p>
+ </div>
+</header>
+
+<div class="toolbar"><div class="wrap row">
+ <div class="toggle">
+  <button id="v-feed" class="on" data-view="feed">&#9776;&nbsp; Feed</button>
+  <button id="v-dash" data-view="dashboard">&#9638;&nbsp; Dashboard</button>
+ </div>
+ <div class="search">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4-4"></path></svg>
+  <input id="q" type="search" placeholder="Search titles, descriptions, sources, tags&hellip;" />
+ </div>
+ <div class="sort"><select id="sort">
+  <option value="new">Sort: Newest</option>
+  <option value="old">Sort: Oldest</option>
+  <option value="az">Sort: A&ndash;Z</option>
+  <option value="theme">Sort: Theme</option>
+  <option value="type">Sort: Type</option>
+  <option value="access">Sort: Access</option>
+ </select></div>
+ <span class="count" id="count"></span>
+ <button class="btn-clear" id="clear">Clear</button>
+ <button class="btn-suggest" id="suggest" title="Suggest a new dataset, tool or resource">&#43; Suggest an asset</button>
+</div></div>
+
+<div class="wrap layout">
+ <aside class="facets">
+  <div class="facet"><h4>Year</h4><div id="f-year"></div></div>
+  <div class="facet"><h4>Theme</h4><div id="f-theme"></div></div>
+  <div class="facet"><h4>Type</h4><div id="f-type"></div></div>
+  <div class="facet"><h4>Access</h4><div id="f-access"></div></div>
+ </aside>
+ <main>
+  <div class="note">Standalone prototype for the Climate Data Hub team. Sorted newest-first on each asset&rsquo;s publication/release date; living resources (portals, dashboards, recurring feeds) show as <b>Ongoing</b> and sort to the top. Preview images are the asset&rsquo;s own or a rendered first page, else a themed banner. Ratings save locally (a shared rating backend to be wired by the web team); comments will attach to giscus keyed on each asset id.</div>
+  <div id="results" class="feed"></div>
+  <div id="empty" class="empty" style="display:none">No assets match those filters.</div>
+ </main>
+</div>
+
+<footer class="foot-brand"><div class="wrap">CGIAR Climate Action Program &middot; Climate Data Hub. Catalogue v{data.meta?.version || '0.1-draft'} &middot; {count} assets.</div></footer>
+
+<script type="application/json" id="catalogue" set:html={JSON.stringify(data)}></script>
+<script type="application/json" id="themecolors" set:html={JSON.stringify(THEME_COLORS)}></script>
+<script type="application/json" id="themevocab" set:html={JSON.stringify(themevocab)}></script>
+
+<script is:inline>
+const DATA = JSON.parse(document.getElementById("catalogue").textContent);
+const THEME_COLORS = JSON.parse(document.getElementById("themecolors").textContent);
+const THEMEVOCAB = JSON.parse(document.getElementById("themevocab").textContent);
+const SUBTHEME = {}; // id -> {parent, match_tags}
+THEMEVOCAB.themes.forEach(t=>t.subthemes.forEach(s=>{SUBTHEME[s.id]={parent:t.label,tags:s.match_tags||[]};}));
+const THEMEDEF = {}; THEMEVOCAB.themes.forEach(t=>{THEMEDEF[t.label]={def:t.definition,src:t.source};});
+const TYPE_LABEL = {"dataset":"Dataset","atlas-hub":"Atlas / Hub","tool-software":"Tool / Software","model":"Model","publication":"Publication","media":"Media","contact":"Contact"};
+const PRIMARY_LABEL = {"dataset":"Data","atlas-hub":"Open portal","tool-software":"Code / repo","model":"Model","publication":"Paper","media":"View","contact":"Contact"};
+const MONTHS=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const state={view:"feed",themes:new Set(),subthemes:new Set(),types:new Set(),access:new Set(),tags:new Set(),years:new Set()};
+function subMatch(e,sid){const s=SUBTHEME[sid];return s && e.themes.includes(s.parent) && (e.tags||[]).some(t=>s.tags.includes(t));}
+function buildThemeFacet(){
+ const el=document.getElementById("f-theme");el.innerHTML="";
+ const tc={};DATA.assets.forEach(e=>e.themes.forEach(t=>tc[t]=(tc[t]||0)+1));
+ THEMEVOCAB.themes.forEach(t=>{
+  const cnt=tc[t.label]||0;
+  const wrap=document.createElement("div");wrap.className="thgroup";
+  const caret = t.subthemes.length?`<span class="caret" data-exp="${t.id}">&#9656;</span>`:`<span class="caret" style="visibility:hidden">&#9656;</span>`;
+  const row=document.createElement("div");row.className="opt thtop";
+  row.innerHTML=`${caret}<label class="thlab"><input type="checkbox" data-theme="${t.label.replace(/"/g,'&quot;')}"> <span class="dot" style="background:${THEME_COLORS[t.label]||'#999'}"></span><span title="${(t.definition||'').replace(/"/g,'&quot;')} — Source: ${(t.source||'').replace(/"/g,'&quot;')}">${t.label}</span></label><span class="c">${cnt}</span>`;
+  wrap.appendChild(row);
+  const subwrap=document.createElement("div");subwrap.className="subs";subwrap.style.display="none";subwrap.dataset.for=t.id;
+  t.subthemes.forEach(s=>{
+   const sc=DATA.assets.filter(e=>subMatch(e,s.id)).length;
+   const sr=document.createElement("label");sr.className="opt subopt";
+   sr.innerHTML=`<input type="checkbox" data-sub="${s.id}"> <span title="${(s.definition||'').replace(/"/g,'&quot;')} — Source: ${(s.source||'').replace(/"/g,'&quot;')}">${s.label}</span><span class="c">${sc}</span>`;
+   sr.querySelector("input").addEventListener("change",ev=>{ev.target.checked?state.subthemes.add(s.id):state.subthemes.delete(s.id);sr.classList.toggle("active",ev.target.checked);render();});
+   subwrap.appendChild(sr);
+  });
+  wrap.appendChild(subwrap);
+  row.querySelector("input[data-theme]").addEventListener("change",ev=>{ev.target.checked?state.themes.add(t.label):state.themes.delete(t.label);row.classList.toggle("active",ev.target.checked);render();});
+  const car=row.querySelector(".caret[data-exp]");
+  if(car) car.addEventListener("click",()=>{const open=subwrap.style.display==="none";subwrap.style.display=open?"block":"none";car.classList.toggle("open",open);});
+  el.appendChild(wrap);
+ });
+}
+// Submissions: set repo to "org/repo" to route to GitHub Issues (uses the issue forms in
+// .github/ISSUE_TEMPLATE/). If repo is empty, falls back to email.
+const SUBMIT={ repo:"", email:"p.steward@cgiar.org" };
+const byId=Object.fromEntries(DATA.assets.map(e=>[e.id,e]));
+function issueURL(kind,e){
+ if(SUBMIT.repo){
+  const base=`https://github.com/${SUBMIT.repo}/issues/new`;
+  if(kind==="suggest") return `${base}?labels=new-asset&template=suggest-asset.yml`;
+  return `${base}?labels=data-correction&template=report-issue.yml&title=${encodeURIComponent("[Correction] "+e.title)}`;
+ }
+ if(kind==="suggest") return `mailto:${SUBMIT.email}?subject=${encodeURIComponent("[Climate Data Hub] Suggested new asset")}&body=${encodeURIComponent("Resource URL:\n\nWhat it is / why it's notable:\n\nSuggested type & themes:\n\nData access / licence (if known):\n\nYour name / contact:\n")}`;
+ return `mailto:${SUBMIT.email}?subject=${encodeURIComponent("[Climate Data Hub] Correction: "+e.title)}&body=${encodeURIComponent("Asset: "+e.title+"  (id: "+e.id+")\n"+e.url+"\n\nWhat is wrong / what to change:\n\nCorrect value (with a source, please):\n")}`;
+}
+
+function bucket(e){ return e.ongoing?"ongoing":((e.date||"").match(/^\d{4}/)?e.date.slice(0,4):"undated"); }
+function counts(field){const m={};DATA.assets.forEach(e=>{(field==="themes"?e.themes:[e[field]]).forEach(v=>{if(v)m[v]=(m[v]||0)+1;});});return m;}
+function buildFacet(elId,field,set){
+ const m=counts(field),keys=Object.keys(m).sort((a,b)=>m[b]-m[a]),el=document.getElementById(elId);el.innerHTML="";
+ keys.forEach(k=>{const lab=field==="type"?(TYPE_LABEL[k]||k):k;const row=document.createElement("label");row.className="opt";
+  const dot=field==="themes"?`<span class="dot" style="background:${THEME_COLORS[k]||'#999'}"></span>`:"";
+  row.innerHTML=`<input type="checkbox"> ${dot}<span>${lab}</span><span class="c">${m[k]}</span>`;
+  row.querySelector("input").addEventListener("change",e=>{e.target.checked?set.add(k):set.delete(k);row.classList.toggle("active",e.target.checked);render();});
+  el.appendChild(row);});
+}
+function buildYearFacet(){
+ const m={};DATA.assets.forEach(e=>{const b=bucket(e);m[b]=(m[b]||0)+1;});
+ const yrs=Object.keys(m).filter(k=>/^\d{4}$/.test(k)).sort().reverse();
+ const order=[];if(m.ongoing)order.push("ongoing");yrs.forEach(y=>order.push(y));if(m.undated)order.push("undated");
+ const label={ongoing:"Ongoing / continuous",undated:"Undated"};
+ const el=document.getElementById("f-year");el.innerHTML="";
+ order.forEach(k=>{const row=document.createElement("label");row.className="opt";
+  row.innerHTML=`<input type="checkbox"> <span>${label[k]||k}</span><span class="c">${m[k]}</span>`;
+  row.querySelector("input").addEventListener("change",ev=>{ev.target.checked?state.years.add(k):state.years.delete(k);row.classList.toggle("active",ev.target.checked);render();});
+  el.appendChild(row);});
+}
+function dnum(d){ if(!d)return -1; const m=d.match(/^(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?/); if(!m)return -1; return (+m[1])*10000+(+(m[2]||1))*100+(+(m[3]||1)); }
+function sortval(e){ return e.ongoing?99999999:dnum(e.date); }
+function dfmt(d){ if(!d)return ""; const m=d.match(/^(\d{4})(?:-(\d{2}))?/); if(!m)return d; return m[2]?MONTHS[(+m[2])-1]+" "+m[1]:m[1]; }
+function getRating(id){try{return +localStorage.getItem("rating:"+id)||0;}catch(e){return 0;}}
+function setRating(id,n){try{localStorage.setItem("rating:"+id,n);}catch(e){}render();}
+function esc(s){return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+function attr(s){return (s||"").replace(/"/g,"&quot;");}
+
+const NOSHOT=["nature.com","springer","sciencedirect","pnas.org","wiley.com","onlinelibrary.wiley","agupubs","rmets.","tandfonline","thelancet","unicef.org","researchgate.net","cambridge.org","sagepub","oup.com","cell.com","gatesopenresearch","academic.oup"];
+const canShot=u=>!!u && !NOSHOT.some(d=>u.toLowerCase().includes(d));
+const SHOT=u=>`https://image.thum.io/get/width/640/${u}`;
+function banner(e){
+ const c=THEME_COLORS[e.themes[0]]||"#0a4a3a";
+ const grad=`linear-gradient(135deg,${c} 0%,#02211A 120%)`;
+ const tp=`<span class="tp">${TYPE_LABEL[e.type]||e.type}</span>`;
+ const ph=`<div class="ph">${esc(e.themes[0])}</div>`;
+ let src="",fb="";
+ if(e.image){src=e.image; if(canShot(e.url))fb=SHOT(e.url);}
+ else if(canShot(e.url)){src=SHOT(e.url);}
+ const img=src?`<img src="${attr(src)}" alt="" loading="lazy" data-fb="${attr(fb)}" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block" onerror="if(this.dataset.fb){this.src=this.dataset.fb;this.dataset.fb='';}else{this.style.display='none';}">`:"";
+ return `<div class="thumb" style="background:${grad}">${ph}${img}${tp}</div>`;
+}
+function linksHTML(e){
+ let out=[];
+ if(e.url) out.push(`<a class="lk" href="${attr(e.url)}" target="_blank" rel="noopener">${PRIMARY_LABEL[e.type]||"Open"} &rarr;</a>`);
+ else out.push(`<span class="lk tbc">Link TBC</span>`);
+ (e.links||[]).forEach(l=>{ if(l.url) out.push(`<a class="lk" href="${attr(l.url)}" target="_blank" rel="noopener">${esc(l.label||"Link")}</a>`); });
+ const lcx=e.lead_contact||{}; if(lcx.email && !lcx.name) out.push(`<a class="lk" href="mailto:${attr(lcx.email)}">&#9993; Contact</a>`);
+ return out.join("");
+}
+function card(e){
+ const held=(e.notes||"").includes("NEEDS REVIEW");
+ const themeB=e.themes.map(t=>`<span class="badge theme" style="background:${THEME_COLORS[t]||'#455a64'}">${esc(t)}</span>`).join("");
+ const tags=(e.tags||[]).map(t=>`<span class="tag" data-tag="${attr(t)}">${esc(t)}</span>`).join("");
+ const r=getRating(e.id);
+ const stars=[1,2,3,4,5].map(n=>`<span class="${n<=r?'f':''}" data-star="${n}" data-id="${attr(e.id)}">&#9733;</span>`).join("");
+ const lc=e.lead_contact||{};
+ const srcLow=(e.source||"").trim().toLowerCase();
+ let by="";
+ if(lc.name){ const tail=lc.affiliation?" &mdash; "+esc(lc.affiliation):""; by=`<div class="by"><span class="who">&#128100; ${esc(lc.name)}</span>${tail}${lc.email?` &nbsp;<a href="mailto:${attr(lc.email)}" title="Email contact">&#9993; contact</a>`:""}</div>`; }
+ const shownAff=(lc.name&&lc.affiliation)?lc.affiliation.toLowerCase():"";
+ const orgList=(e.organisations||[]).filter(o=>o && o.toLowerCase()!==srcLow && o.toLowerCase()!==shownAff);
+ const orgs=orgList.length?`<div class="orgs">&#127970; ${orgList.map(esc).join(" &middot; ")}</div>`:"";
+ const avail=(e.data_availability && e.data_availability.toLowerCase()!=="no associated data")?`<div class="avail"><b>Data:</b> ${esc(e.data_availability)}</div>`:"";
+ const reuse=e.reusable?'<span class="badge reuse" title="Open data under a permissive licence — reusable in the Hub">&#9851; Reusable in Hub</span>':'';
+ const lic=(e.licence && !e.reusable)?`<span class="badge lic">${esc(e.licence)}</span>`:'';
+ const dstr=dfmt(e.date);
+ return `<article class="card">
+  ${banner(e)}
+  <div class="body">
+   <div class="top">${themeB}<span class="badge access acc-${e.access}">${e.access}</span>${reuse}${lic}
+     ${held?'<span class="review">NEEDS REVIEW</span>':''}${e.ongoing?'<span class="date ongoing">&#9679; Ongoing</span>':(dstr?`<span class="date">${dstr}</span>`:'')}</div>
+   <h3>${esc(e.title)}</h3>
+   <p class="desc">${esc(e.description)}</p>
+   ${e.source?`<div class="src">${esc(e.source)}${e.region?' &middot; '+esc(e.region):''}${e.spatial_resolution?' &middot; '+esc(e.spatial_resolution):''}</div>`:''}
+   ${by}${orgs}${avail}
+   <div class="tags">${tags}</div>
+   <div class="links">${linksHTML(e)}</div>
+   <div class="foot">
+     <span class="stars" title="Rate (saved locally)">${stars}</span>
+     <button class="stub" title="Comment threads will be powered by giscus, keyed on this asset id (${e.id})">&#128172; Comments</button>
+     <a class="report" href="#" data-report="${attr(e.id)}" title="Suggest a correction or report an error on this card">&#9873; Report</a>
+   </div>
+  </div>
+ </article>`;
+}
+function matches(e){
+ const q=document.getElementById("q").value.trim().toLowerCase();
+ if(q){const lc=e.lead_contact||{};const hay=(e.title+" "+e.description+" "+(e.source||"")+" "+e.themes.join(" ")+" "+(e.tags||[]).join(" ")+" "+(e.organisations||[]).join(" ")+" "+(lc.name||"")+" "+(e.licence||"")).toLowerCase();if(!hay.includes(q))return false;}
+ if(state.themes.size||state.subthemes.size){const okT=[...state.themes].some(t=>e.themes.includes(t));const okS=[...state.subthemes].some(sid=>subMatch(e,sid));if(!okT&&!okS)return false;}
+ if(state.types.size&&!state.types.has(e.type))return false;
+ if(state.access.size&&!state.access.has(e.access))return false;
+ if(state.tags.size&&!(e.tags||[]).some(t=>state.tags.has(t)))return false;
+ if(state.years.size&&!state.years.has(bucket(e)))return false;
+ return true;
+}
+function render(){
+ let list=DATA.assets.filter(matches);
+ const s=document.getElementById("sort").value;
+ const az=(a,b)=>a.title.localeCompare(b.title);
+ const cmp={new:(a,b)=>sortval(b)-sortval(a)||az(a,b),
+            old:(a,b)=>{const x=sortval(a),y=sortval(b);if(x<0&&y<0)return az(a,b);if(x<0)return 1;if(y<0)return -1;return x-y||az(a,b);},
+            az:az,theme:(a,b)=>a.themes[0].localeCompare(b.themes[0])||az(a,b),
+            type:(a,b)=>a.type.localeCompare(b.type)||az(a,b),access:(a,b)=>a.access.localeCompare(b.access)||az(a,b)};
+ list.sort(cmp[s]);
+ const R=document.getElementById("results");R.className=state.view;R.innerHTML=list.map(card).join("");
+ document.getElementById("empty").style.display=list.length?"none":"block";
+ document.getElementById("count").textContent=list.length+" of "+DATA.assets.length+" assets";
+}
+// events (delegated)
+document.getElementById("results").addEventListener("click",ev=>{
+ const rp=ev.target.closest("[data-report]"); if(rp){ev.preventDefault();const e=byId[rp.dataset.report];if(e)window.open(issueURL("report",e),"_blank","noopener");return;}
+ const st=ev.target.closest("[data-star]"); if(st){setRating(st.dataset.id,+st.dataset.star);return;}
+ const tg=ev.target.closest("[data-tag]"); if(tg){const t=tg.dataset.tag;state.tags.has(t)?state.tags.delete(t):state.tags.add(t);render();return;}
+});
+document.getElementById("suggest").addEventListener("click",()=>window.open(issueURL("suggest"),"_blank","noopener"));
+document.getElementById("q").addEventListener("input",render);
+document.getElementById("sort").addEventListener("change",render);
+document.getElementById("v-feed").addEventListener("click",()=>setView("feed"));
+document.getElementById("v-dash").addEventListener("click",()=>setView("dashboard"));
+document.getElementById("clear").addEventListener("click",clearAll);
+function setView(v){state.view=v;document.getElementById("v-feed").classList.toggle("on",v==="feed");document.getElementById("v-dash").classList.toggle("on",v==="dashboard");render();}
+function clearAll(){state.themes.clear();state.subthemes.clear();state.types.clear();state.access.clear();state.tags.clear();state.years.clear();document.getElementById("q").value="";
+ document.querySelectorAll(".facet input").forEach(i=>{i.checked=false;i.closest(".opt").classList.remove("active");});render();}
+buildYearFacet();buildThemeFacet();buildFacet("f-type","type",state.types);buildFacet("f-access","access",state.access);
+render();
+</script>
+</body>
+</html>

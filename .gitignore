@@ -1,0 +1,10 @@
+# Astro build artefacts
+node_modules/
+dist/
+.astro/
+
+# macOS
+.DS_Store
+
+# Local scratch
+*.tmp

@@ -1,0 +1,700 @@
+{
+  "meta": {
+    "title": "CGIAR Climate Data Hub — theme controlled vocabulary",
+    "version": "1.0",
+    "generated": "2026-07-24",
+    "note": "Three-tier taxonomy: Theme (domain) -> Sub-theme -> tags (free leaf). Definitions are faithful paraphrases of authoritative glossaries, each cited. Sub-themes carry match_tags so the hierarchy filters existing entries via their tags until per-entry sub-theme tagging is added.",
+    "primary_sources": [
+      "IPCC AR6 Glossaries (WGI/WGII/WGIII/SYR)",
+      "WMO / GCOS",
+      "UNDRR-ISC Hazard Information Profiles",
+      "FAO / FAOSTAT",
+      "IPCC SRCCL",
+      "IPBES Glossary",
+      "UN Women",
+      "UNFCCC",
+      "NASA GCMD (structure)"
+    ]
+  },
+  "themes": [
+    {
+      "id": "adaptation",
+      "label": "Adaptation",
+      "definition": "In human systems, the process of adjusting to actual or expected climate and its effects to moderate harm or exploit opportunities; in natural systems, adjustment to actual climate and its effects.",
+      "source": "IPCC AR6 WGII Annex II Glossary (adaptation)",
+      "url": "https://www.ipcc.ch/report/ar6/wg2/downloads/report/IPCC_AR6_WGII_Annex-II.pdf",
+      "subthemes": [
+        {
+          "id": "adaptation__adaptation-tracking-indicators",
+          "label": "Adaptation tracking & indicators",
+          "definition": "Metrics and monitoring used to measure progress on adaptive capacity, resilience and reduced vulnerability, including indicators developed for the Global Goal on Adaptation and Global Stocktake.",
+          "source": "UNFCCC Global Goal on Adaptation / UAE Framework for Global Climate Resilience",
+          "url": "https://unfccc.int/topics/adaptation-and-resilience/workstreams/gga",
+          "match_tags": [
+            "adaptation-tracking",
+            "global-stocktake",
+            "evidence-synthesis",
+            "systematic-review"
+          ]
+        },
+        {
+          "id": "adaptation__adaptation-practices",
+          "label": "Adaptation practices",
+          "definition": "Concrete on-the-ground actions, technologies and management changes implemented to reduce climate risk, such as changed practices, water management or resilient decision-making.",
+          "source": "IPCC AR6 WGII Annex II Glossary (adaptation)",
+          "url": "https://www.ipcc.ch/report/ar6/wg2/downloads/report/IPCC_AR6_WGII_Annex-II.pdf",
+          "match_tags": [
+            "adaptation",
+            "irrigation",
+            "decision-support"
+          ]
+        },
+        {
+          "id": "adaptation__adaptation-finance",
+          "label": "Adaptation finance",
+          "definition": "Financial resources and instruments directed at reducing vulnerability and maintaining or increasing the resilience of human and ecological systems to climate change impacts.",
+          "source": "UNFCCC Standing Committee on Finance (climate finance)",
+          "url": "https://unfccc.int/topics/introduction-to-climate-finance",
+          "match_tags": [
+            "climate-finance",
+            "finance"
+          ]
+        },
+        {
+          "id": "adaptation__vulnerability-assessment",
+          "label": "Vulnerability assessment",
+          "definition": "Analysis of the propensity to be adversely affected, including sensitivity to harm and lack of capacity to cope and adapt, used to target and prioritise adaptation.",
+          "source": "IPCC AR6 WGII Annex II Glossary (vulnerability)",
+          "url": "https://www.ipcc.ch/report/ar6/wg2/downloads/report/IPCC_AR6_WGII_Annex-II.pdf",
+          "match_tags": [
+            "adaptation-prioritisation",
+            "spatial-targeting",
+            "climate-risk",
+            "climate-homologues"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "production-yields",
+      "label": "Production & yields",
+      "definition": "Measures of agricultural output from crops and livestock, including harvested area, quantity produced and yield (output per unit area or per animal), compiled as nationally aggregated statistics for food, feed and fibre commodities.",
+      "source": "FAO / FAOSTAT Agricultural Production Statistics",
+      "url": "https://www.fao.org/faostat/en/#data/QCL",
+      "subthemes": [
+        {
+          "id": "production-yields__crop-production-yields",
+          "label": "Crop production & yields",
+          "definition": "Crop output expressed as production quantity (tonnes), area harvested (hectares) and yield (kilograms per hectare), the amount of a crop obtained per unit of land under cultivation.",
+          "source": "FAO / FAOSTAT Crops and livestock products",
+          "url": "https://www.fao.org/faostat/en/#data/QCL",
+          "match_tags": [
+            "production",
+            "crops",
+            "crop-yields",
+            "agriculture"
+          ]
+        },
+        {
+          "id": "production-yields__livestock",
+          "label": "Livestock",
+          "definition": "Output from animal production systems, including numbers of animals, slaughtering rates and primary products such as meat, milk and eggs, recorded per animal or per herd.",
+          "source": "FAO / FAOSTAT Production (livestock primary)",
+          "url": "https://www.fao.org/faostat/en/#data/QCL",
+          "match_tags": [
+            "livestock"
+          ]
+        },
+        {
+          "id": "production-yields__yield-forecasting",
+          "label": "Yield forecasting",
+          "definition": "Pre-harvest estimation of expected crop yields using crop simulation models and climate or remote-sensing inputs to anticipate output before statistics are collected. Analytical category rather than a formal glossary term.",
+          "source": "Project-defined (crop forecasting); DSSAT crop simulation model",
+          "url": "https://dssat.net/",
+          "match_tags": [
+            "yield-forecast",
+            "crop-model",
+            "crop-simulation",
+            "dssat"
+          ]
+        },
+        {
+          "id": "production-yields__agricultural-statistics",
+          "label": "Agricultural statistics",
+          "definition": "Standardised, nationally aggregated data on the food and agriculture sector, compiled from official country submissions, estimates and imputation to give consistent, comparable time series underpinning food security analysis.",
+          "source": "FAO / FAOSTAT methodology",
+          "url": "https://www.fao.org/faostat/en/#data",
+          "match_tags": [
+            "agricultural-statistics",
+            "faostat",
+            "food-security"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "emissions-mitigation",
+      "label": "Emissions & mitigation",
+      "definition": "Anthropogenic greenhouse-gas emissions to the atmosphere and the human interventions across energy, industry, agriculture, forestry and land use that reduce sources or enhance sinks to limit climate change.",
+      "source": "IPCC AR6 Synthesis Report Glossary (Annex I)",
+      "url": "https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_Annex-I.pdf",
+      "subthemes": [
+        {
+          "id": "emissions-mitigation__ghg-inventories-accounting",
+          "label": "GHG inventories & accounting",
+          "definition": "Systematic estimation and reporting of national greenhouse-gas emissions and removals by source and sink, following IPCC methodologies, underpinning UNFCCC reporting and the Global Stocktake.",
+          "source": "UNFCCC / 2006 IPCC Guidelines for National Greenhouse Gas Inventories",
+          "url": "https://unfccc.int/process-and-meetings/transparency-and-reporting/reporting-and-review-under-the-convention/greenhouse-gas-inventories-annex-i-parties/reporting-requirements",
+          "match_tags": [
+            "ghg",
+            "emissions",
+            "faostat",
+            "global-stocktake",
+            "climate-policy"
+          ]
+        },
+        {
+          "id": "emissions-mitigation__carbon-sequestration",
+          "label": "Carbon & sequestration",
+          "definition": "Capture and long-term storage of carbon in biological or geological pools, such as soils, vegetation or reservoirs, removing or preventing carbon dioxide from accumulating in the atmosphere.",
+          "source": "IPCC AR6 Synthesis Report Glossary (Annex I)",
+          "url": "https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_Annex-I.pdf",
+          "match_tags": [
+            "carbon"
+          ]
+        },
+        {
+          "id": "emissions-mitigation__methane",
+          "label": "Methane",
+          "definition": "A potent short-lived greenhouse gas (CH4) from fossil, agricultural and waste sources with a high near-term warming potential, making its reduction a priority mitigation lever.",
+          "source": "IPCC AR6 WGI Chapter 7",
+          "url": "https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_Chapter_07.pdf",
+          "match_tags": [
+            "methane"
+          ]
+        },
+        {
+          "id": "emissions-mitigation__land-based-mitigation-afolu",
+          "label": "Land-based mitigation (AFOLU)",
+          "definition": "Emission reductions and carbon removals in agriculture, forestry and other land use, including reducing deforestation, improving land and nutrient management, and enhancing terrestrial sinks.",
+          "source": "IPCC AR6 WGIII (Agriculture, Forestry and Other Land Uses)",
+          "url": "https://www.ipcc.ch/report/ar6/wg3/downloads/report/IPCC_AR6_WGIII_FullReport.pdf",
+          "match_tags": [
+            "deforestation",
+            "forests",
+            "fertilizer"
+          ]
+        },
+        {
+          "id": "emissions-mitigation__energy",
+          "label": "Energy",
+          "definition": "Mitigation through the energy system, shifting from fossil fuels to renewable and low-carbon sources and improving efficiency, addressing the largest source of global greenhouse-gas emissions.",
+          "source": "IPCC AR6 WGIII Summary for Policymakers",
+          "url": "https://www.ipcc.ch/report/ar6/wg3/downloads/report/IPCC_AR6_WGIII_SPM.pdf",
+          "match_tags": [
+            "energy",
+            "renewables"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "climate-projections-reanalysis",
+      "label": "Climate projections & reanalysis",
+      "definition": "Model-based, scenario-dependent simulations of plausible future climate, together with reanalyses that blend historical observations with a fixed model to reconstruct a consistent, gridded record of the recent climate system.",
+      "source": "IPCC AR6 WGI Glossary (Annex VII)",
+      "url": "https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_FGD_AnnexVII_Glossary.pdf",
+      "subthemes": [
+        {
+          "id": "climate-projections-reanalysis__reanalysis",
+          "label": "Reanalysis",
+          "definition": "A physically consistent, gridded reconstruction of past atmospheric, land and ocean conditions, made by assimilating historical observations into a fixed forecast model to give a complete record of the climate.",
+          "source": "Copernicus Climate Change Service (C3S) / ECMWF",
+          "url": "https://climate.copernicus.eu/climate-reanalysis",
+          "match_tags": [
+            "reanalysis",
+            "era5"
+          ]
+        },
+        {
+          "id": "climate-projections-reanalysis__gcm-cmip-projections",
+          "label": "GCM & CMIP projections",
+          "definition": "Projections of future climate from coupled general-circulation Earth-system models, coordinated internationally through the WCRP Coupled Model Intercomparison Project (CMIP) via common experiments and scenarios.",
+          "source": "WCRP Coupled Model Intercomparison Project (CMIP)",
+          "url": "https://wcrp-cmip.org/",
+          "match_tags": [
+            "cmip",
+            "cmip6",
+            "cmip7",
+            "climate-projections"
+          ]
+        },
+        {
+          "id": "climate-projections-reanalysis__downscaling-bias-correction",
+          "label": "Downscaling & bias-correction",
+          "definition": "Methods that refine coarse global-model output to finer scales, dynamically via regional models or statistically, and adjust systematic model biases against observations for local impact studies.",
+          "source": "IPCC AR6 WGI Glossary (Annex VII)",
+          "url": "https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_FGD_AnnexVII_Glossary.pdf",
+          "match_tags": [
+            "downscaling",
+            "bias-correction",
+            "high-resolution"
+          ]
+        },
+        {
+          "id": "climate-projections-reanalysis__emissions-scenarios-ssp-rcp",
+          "label": "Emissions scenarios (SSP/RCP)",
+          "definition": "Scenarios pairing Shared Socio-economic Pathways, alternative narratives of societal development, with concentration and radiative-forcing trajectories (RCPs), used to drive climate-model projections in AR6.",
+          "source": "IPCC AR6 WGI Glossary (Annex VII)",
+          "url": "https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_FGD_AnnexVII_Glossary.pdf",
+          "match_tags": [
+            "ssp",
+            "climate-scenarios"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weather-forecasting",
+      "label": "Weather & forecasting",
+      "definition": "The state of the atmosphere at a given place and time, its temperature, precipitation, wind, humidity and pressure, and the prediction of how it will evolve from minutes to seasons ahead using observations and numerical models.",
+      "source": "World Meteorological Organization (WMO)",
+      "url": "https://wmo.int/themes/weather",
+      "subthemes": [
+        {
+          "id": "weather-forecasting__seasonal-sub-seasonal-forecasting",
+          "label": "Seasonal & sub-seasonal forecasting",
+          "definition": "Probabilistic prediction of average conditions weeks to months ahead, exploiting slowly varying drivers such as ocean temperatures to anticipate departures from normal climate.",
+          "source": "World Meteorological Organization (WMO)",
+          "url": "https://wmo.int/themes/climate",
+          "match_tags": [
+            "seasonal-forecast",
+            "forecast"
+          ]
+        },
+        {
+          "id": "weather-forecasting__numerical-weather-prediction-nowcasting",
+          "label": "Numerical weather prediction & nowcasting",
+          "definition": "Numerical weather prediction solves the physical equations of the atmosphere to forecast coming days; nowcasting gives detailed very-short-range prediction from the present out to about six hours.",
+          "source": "World Meteorological Organization (WMO)",
+          "url": "https://wmo.int/media/magazine-article/nowcasting-guidelines-summary",
+          "match_tags": [
+            "weather-model",
+            "real-time"
+          ]
+        },
+        {
+          "id": "weather-forecasting__enso-climate-drivers",
+          "label": "ENSO & climate drivers",
+          "definition": "The El Nino-Southern Oscillation, a coupled ocean-atmosphere fluctuation in the tropical Pacific whose warm (El Nino) and cool (La Nina) phases are a leading driver of global seasonal climate variability.",
+          "source": "World Meteorological Organization (WMO)",
+          "url": "https://wmo.int/themes/el-nino-la-nina-phenomena",
+          "match_tags": [
+            "enso"
+          ]
+        },
+        {
+          "id": "weather-forecasting__early-warning-systems",
+          "label": "Early warning systems",
+          "definition": "Integrated systems that monitor hazards and issue timely, actionable warnings; multi-hazard versions address several hazards together to enable preparedness and reduce disaster losses.",
+          "source": "UNDRR / WMO (Multi-Hazard Early Warning Systems)",
+          "url": "https://www.undrr.org/terminology/early-warning-system",
+          "match_tags": [
+            "early-warning",
+            "servir"
+          ]
+        },
+        {
+          "id": "weather-forecasting__weather-observation-precipitation-estimation",
+          "label": "Weather observation & precipitation estimation",
+          "definition": "Observation and satellite-based estimation of weather variables such as rainfall and temperature, including gridded precipitation products used for monitoring and as forecast input.",
+          "source": "GCOS Essential Climate Variables (WMO)",
+          "url": "https://gcos.wmo.int/site/global-climate-observing-system-gcos/essential-climate-variables",
+          "match_tags": [
+            "precipitation",
+            "rainfall",
+            "temperature",
+            "chirps",
+            "imerg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hazards-impacts",
+      "label": "Hazards & impacts",
+      "definition": "Climate-related physical events or trends that may harm people, ecosystems or assets, together with their consequences (impacts) on lives, livelihoods, infrastructure and the environment when hazards meet exposure and vulnerability.",
+      "source": "IPCC AR6 WGII Annex II Glossary (hazard; impacts)",
+      "url": "https://www.ipcc.ch/report/ar6/wg2/downloads/report/IPCC_AR6_WGII_Annex-II.pdf",
+      "subthemes": [
+        {
+          "id": "hazards-impacts__drought",
+          "label": "Drought",
+          "definition": "A prolonged period of abnormally dry weather with precipitation well below normal over a wide area, causing meteorological, agricultural or hydrological water shortfalls.",
+          "source": "UNDRR-ISC Hazard Information Profile: Drought (MH0401)",
+          "url": "https://www.undrr.org/understanding-disaster-risk/terminology/hips/mh0401",
+          "match_tags": [
+            "drought"
+          ]
+        },
+        {
+          "id": "hazards-impacts__flood",
+          "label": "Flood",
+          "definition": "The overflow or accumulation of water submerging normally dry land, arising from rivers, intense rainfall, coastal storm surge, tides or sea-level rise.",
+          "source": "UNDRR-ISC Hazard Information Profiles (2021): Coastal Flooding (MH0601)",
+          "url": "https://www.undrr.org/understanding-disaster-risk/terminology/hips/mh0601",
+          "match_tags": [
+            "flood",
+            "hydrology"
+          ]
+        },
+        {
+          "id": "hazards-impacts__extreme-heat",
+          "label": "Extreme heat",
+          "definition": "An unusual, sustained spell of hot weather over a region lasting at least two or three consecutive days and nights, with temperatures above locally defined thresholds.",
+          "source": "UNDRR-ISC Hazard Information Profile: Heatwave (MH0501)",
+          "url": "https://www.undrr.org/understanding-disaster-risk/terminology/hips/mh0501",
+          "match_tags": [
+            "heat",
+            "temperature"
+          ]
+        },
+        {
+          "id": "hazards-impacts__storms-extreme-weather",
+          "label": "Storms & extreme weather",
+          "definition": "Violent atmospheric disturbances such as tropical cyclones, characterised by strong winds, heavy rain and storm surge, alongside other rare high-impact weather extremes.",
+          "source": "UNDRR-ISC Hazard Information Profile: Tropical Cyclone (MH0309)",
+          "url": "https://www.undrr.org/understanding-disaster-risk/terminology/hips/mh0309",
+          "match_tags": [
+            "extreme-weather",
+            "extreme-events",
+            "precipitation"
+          ]
+        },
+        {
+          "id": "hazards-impacts__wildfire",
+          "label": "Wildfire",
+          "definition": "An uncontrolled fire spreading through vegetation such as forests, grasslands or shrublands, often intensified by heat, drought and wind conditions.",
+          "source": "UNDRR-ISC Hazard Information Profiles (2025)",
+          "url": "https://www.preventionweb.net/drr-glossary/hips",
+          "match_tags": [
+            "wildfire"
+          ]
+        },
+        {
+          "id": "hazards-impacts__event-attribution",
+          "label": "Event attribution",
+          "definition": "The science of assessing whether and to what degree human-caused climate change altered the likelihood or intensity of a specific observed extreme weather or climate event.",
+          "source": "IPCC AR6 WGI Glossary (detection and attribution)",
+          "url": "https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_Glossary.pdf",
+          "match_tags": [
+            "attribution",
+            "event-attribution"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "population-exposure",
+      "label": "Population & exposure",
+      "definition": "The presence of people, livelihoods, species, ecosystems, environmental services, infrastructure and economic, social or cultural assets in places and settings that could be adversely affected by climate hazards.",
+      "source": "IPCC AR6 WGII Annex II Glossary (exposure)",
+      "url": "https://www.ipcc.ch/report/ar6/wg2/downloads/report/IPCC_AR6_WGII_Annex-II.pdf",
+      "subthemes": [
+        {
+          "id": "population-exposure__population-distribution",
+          "label": "Population distribution",
+          "definition": "The spatial arrangement, density and demographic composition of people across a territory, used to locate who is present where relative to hazards.",
+          "source": "IPCC AR6 WGII Annex II Glossary (exposure)",
+          "url": "https://www.ipcc.ch/report/ar6/wg2/downloads/report/IPCC_AR6_WGII_Annex-II.pdf",
+          "match_tags": [
+            "population",
+            "demographics"
+          ]
+        },
+        {
+          "id": "population-exposure__asset-infrastructure-exposure",
+          "label": "Asset & infrastructure exposure",
+          "definition": "The presence of physical assets, buildings, networks and economic infrastructure in hazard-prone locations, where they could sustain damage or disruption.",
+          "source": "IPCC AR6 WGII Annex II Glossary (exposure)",
+          "url": "https://www.ipcc.ch/report/ar6/wg2/downloads/report/IPCC_AR6_WGII_Annex-II.pdf",
+          "match_tags": [
+            "infrastructure",
+            "exposure",
+            "nighttime-lights"
+          ]
+        },
+        {
+          "id": "population-exposure__human-mobility-displacement",
+          "label": "Human mobility & displacement",
+          "definition": "Involuntary movement of people, individually or collectively, from their home or country, notably owing to conflict, unrest, or natural or human-made disasters including climate impacts.",
+          "source": "IPCC AR6 WGII Annex II Glossary (displacement)",
+          "url": "https://www.ipcc.ch/report/ar6/wg2/downloads/report/IPCC_AR6_WGII_Annex-II.pdf",
+          "match_tags": [
+            "conflict"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "socio-economic-gender",
+      "label": "Socio-economic & gender",
+      "definition": "Social and economic conditions, and gender relations, that shape people's differentiated exposure, vulnerability and adaptive capacity, including poverty, wealth, livelihoods, food security and equality between women and men.",
+      "source": "IPCC AR6 WGII Annex II Glossary (vulnerability; gender); UN Women",
+      "url": "https://www.ipcc.ch/report/ar6/wg2/downloads/report/IPCC_AR6_WGII_Annex-II.pdf",
+      "subthemes": [
+        {
+          "id": "socio-economic-gender__poverty-wealth",
+          "label": "Poverty & wealth",
+          "definition": "Material deprivation and inequality in resources, income or entitlements, spanning need, exclusion and limited assets, which condition people's capacity to cope with climate risk.",
+          "source": "IPCC AR6 WGII Chapter 8 / Annex II Glossary (poverty)",
+          "url": "https://www.ipcc.ch/report/ar6/wg2/downloads/report/IPCC_AR6_WGII_Annex-II.pdf",
+          "match_tags": [
+            "poverty",
+            "wealth",
+            "ppp",
+            "consumption",
+            "socioeconomic"
+          ]
+        },
+        {
+          "id": "socio-economic-gender__gender-equity",
+          "label": "Gender & equity",
+          "definition": "Equal rights, responsibilities, opportunities and treatment of people of all genders, and fairness in how climate risks, benefits and decision-making are distributed.",
+          "source": "UN Women (gender equality)",
+          "url": "https://www.unwomen.org/en/about-us/about-un-women",
+          "match_tags": [
+            "gender"
+          ]
+        },
+        {
+          "id": "socio-economic-gender__food-security",
+          "label": "Food security",
+          "definition": "A situation where all people, at all times, have physical, social and economic access to sufficient, safe and nutritious food, spanning availability, access, utilisation and stability.",
+          "source": "FAO (food security; four dimensions)",
+          "url": "https://www.fao.org/3/cc3017en/online/state-food-security-and-nutrition-2023/annexes11.html",
+          "match_tags": [
+            "food-security",
+            "hunger",
+            "famine",
+            "ipc",
+            "nutrition",
+            "diet",
+            "prices",
+            "markets"
+          ]
+        },
+        {
+          "id": "socio-economic-gender__livelihoods",
+          "label": "Livelihoods",
+          "definition": "The capabilities, assets and activities people use to make a living, whose resilience or disruption under climate stress shapes household wellbeing and adaptive capacity.",
+          "source": "IPCC AR6 WGII Annex II Glossary (livelihood)",
+          "url": "https://www.ipcc.ch/report/ar6/wg2/downloads/report/IPCC_AR6_WGII_Annex-II.pdf",
+          "match_tags": [
+            "labour",
+            "livestock",
+            "agriculture"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "land-soil-ecosystems",
+      "label": "Land, soil & ecosystems",
+      "definition": "The state and dynamics of terrestrial systems, including soils, forests, land cover and biodiversity, together with processes such as degradation that alter ecosystem functions and their benefits to people.",
+      "source": "IPBES Glossary; FAO Global Soil Partnership",
+      "url": "https://www.ipbes.net/glossary/land-degradation",
+      "subthemes": [
+        {
+          "id": "land-soil-ecosystems__soils",
+          "label": "Soils",
+          "definition": "The living surface layer of the Earth from which most food is produced, providing ecosystem services including water regulation, climate regulation, biodiversity habitat and carbon sequestration.",
+          "source": "FAO Global Soil Partnership / ITPS",
+          "url": "https://www.fao.org/global-soil-partnership/en",
+          "match_tags": [
+            "soils",
+            "carbon"
+          ]
+        },
+        {
+          "id": "land-soil-ecosystems__forests-deforestation",
+          "label": "Forests & deforestation",
+          "definition": "Forest is land with trees able to reach 5 m, over 0.5 ha and above 10% canopy cover, where trees are the predominant use; deforestation is its permanent conversion to other land uses.",
+          "source": "FAO Global Forest Resources Assessment, Terms and Definitions (FRA 2020)",
+          "url": "https://openknowledge.fao.org/server/api/core/bitstreams/531a9e1b-596d-4b07-b9fd-3103fb4d0e72/content",
+          "match_tags": [
+            "forests",
+            "deforestation"
+          ]
+        },
+        {
+          "id": "land-soil-ecosystems__land-cover-land-use",
+          "label": "Land cover & land use",
+          "definition": "Land cover is the observed biophysical cover of the Earth's surface; land use is the arrangements, activities and inputs people apply within a land-cover type to produce, change or maintain it.",
+          "source": "FAO Land Cover Classification System (LCCS)",
+          "url": "https://www.fao.org/4/y7220e/y7220e06.htm",
+          "match_tags": [
+            "land-cover"
+          ]
+        },
+        {
+          "id": "land-soil-ecosystems__biodiversity-ecosystems",
+          "label": "Biodiversity & ecosystems",
+          "definition": "The variability among living organisms across terrestrial, marine and other aquatic ecosystems and the ecological complexes of which they are part, spanning genetic, species and ecosystem levels.",
+          "source": "IPBES Glossary (biodiversity)",
+          "url": "https://www.ipbes.net/glossary-tag/biodiversity",
+          "match_tags": [
+            "biodiversity"
+          ]
+        },
+        {
+          "id": "land-soil-ecosystems__vegetation",
+          "label": "Vegetation",
+          "definition": "The plant cover of the land surface and its condition, commonly monitored from satellites using vegetation indices such as NDVI to track greenness, growth and phenology over time.",
+          "source": "NASA GCMD Earth Science keyword scheme (vegetation)",
+          "url": "https://www.earthdata.nasa.gov/data/tools/gcmd-keyword-viewer",
+          "match_tags": [
+            "vegetation",
+            "ndvi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "crop-land-management",
+      "label": "Crop & land management",
+      "definition": "The practices, activities and inputs people apply to crops and land to produce, change or maintain them, ranging from agronomic management of fields to broader stewardship that sustains long-term productive potential.",
+      "source": "IPCC Special Report on Climate Change and Land (SRCCL, 2019); FAO Sustainable Land Management",
+      "url": "https://www.ipcc.ch/srccl/",
+      "subthemes": [
+        {
+          "id": "crop-land-management__crop-type-mapping",
+          "label": "Crop type mapping",
+          "definition": "Identifying and classifying the crops grown across a landscape, typically from satellite imagery, to produce spatially explicit maps of what is cultivated where. Applied remote-sensing method rather than a glossary term.",
+          "source": "Project-defined; NASA GCMD Earth Science keyword scheme (land use/cover)",
+          "url": "https://www.earthdata.nasa.gov/data/tools/gcmd-keyword-viewer",
+          "match_tags": [
+            "crop-mapping",
+            "crop-type-mapping",
+            "sentinel-2",
+            "cv4a"
+          ]
+        },
+        {
+          "id": "crop-land-management__irrigation",
+          "label": "Irrigation",
+          "definition": "Artificial application of water to land to assist crop growth; area equipped for irrigation covers the physical infrastructure for full-control irrigation plus equipped lowlands and spate irrigation.",
+          "source": "FAO AQUASTAT (irrigation and drainage methodology)",
+          "url": "https://www.fao.org/aquastat/en/overview/methodology/irrig-drainage/index.html",
+          "match_tags": [
+            "irrigation",
+            "water"
+          ]
+        },
+        {
+          "id": "crop-land-management__sustainable-land-management",
+          "label": "Sustainable land management",
+          "definition": "Stewardship and use of land resources, including soils, water, animals and plants, to meet changing human needs while maintaining or enhancing their long-term productive potential and environmental functions.",
+          "source": "IPCC SRCCL (2019); FAO Sustainable Land Management",
+          "url": "https://www.ipcc.ch/srccl/",
+          "match_tags": [
+            "landscape-restoration",
+            "degradation",
+            "adaptation"
+          ]
+        },
+        {
+          "id": "crop-land-management__fertiliser-inputs",
+          "label": "Fertiliser & inputs",
+          "definition": "Mineral and organic nutrients and other inputs added to soils to support plant growth, reported by nutrient (nitrogen, phosphate, potash) in terms of agricultural use and application per unit area.",
+          "source": "FAO / FAOSTAT Fertilizers by Nutrient",
+          "url": "https://www.fao.org/faostat/en/#data/RFN",
+          "match_tags": [
+            "fertilizer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross-cutting-ai-methods",
+      "label": "Cross-cutting / AI & methods",
+      "definition": "Analytical methods, tools and models applied across the other themes, including machine learning and AI, remote sensing, and decision-support systems, together with the data standards that make outputs interoperable.",
+      "source": "Project-defined cross-cutting category; reference NASA GCMD keyword scheme",
+      "url": "https://www.earthdata.nasa.gov/data/tools/gcmd-keyword-viewer",
+      "subthemes": [
+        {
+          "id": "cross-cutting-ai-methods__ai-machine-learning",
+          "label": "AI & machine learning",
+          "definition": "Computational methods that learn patterns from data to classify, predict or infer, applied across climate and agricultural datasets. Cross-cutting analytical category rather than a formal glossary term.",
+          "source": "Project-defined (cross-cutting method)",
+          "url": "https://www.earthdata.nasa.gov/data/tools/gcmd-keyword-viewer",
+          "match_tags": [
+            "ai",
+            "machine-learning",
+            "self-supervised"
+          ]
+        },
+        {
+          "id": "cross-cutting-ai-methods__foundation-models",
+          "label": "Foundation models",
+          "definition": "Large models pre-trained on broad data and adapted to many downstream tasks, including large language models and geospatial foundation models. Emerging analytical category; no single authoritative glossary.",
+          "source": "Project-defined (cross-cutting method)",
+          "url": "https://www.earthdata.nasa.gov/data/tools/gcmd-keyword-viewer",
+          "match_tags": [
+            "foundation-model",
+            "llm"
+          ]
+        },
+        {
+          "id": "cross-cutting-ai-methods__remote-sensing-earth-observation",
+          "label": "Remote sensing / Earth observation",
+          "definition": "Acquiring information about the land surface from satellite or airborne sensors without physical contact, providing the imagery and gridded products used to monitor land, crops, vegetation and hazards.",
+          "source": "NASA GCMD Earth Science keyword scheme (platforms/instruments)",
+          "url": "https://www.earthdata.nasa.gov/data/tools/gcmd-keyword-viewer",
+          "match_tags": [
+            "remote-sensing",
+            "satellite",
+            "sentinel-2",
+            "landsat"
+          ]
+        },
+        {
+          "id": "cross-cutting-ai-methods__google-earth-engine",
+          "label": "Google Earth Engine",
+          "definition": "A cloud platform for planetary-scale geospatial analysis, pairing a multi-petabyte catalogue of satellite imagery and geospatial datasets with compute for analysing environmental data.",
+          "source": "Google Earth Engine (Gorelick et al. 2017, Remote Sensing of Environment)",
+          "url": "https://earthengine.google.com/",
+          "match_tags": [
+            "earth-engine"
+          ]
+        },
+        {
+          "id": "cross-cutting-ai-methods__decision-support-tools",
+          "label": "Decision-support tools",
+          "definition": "Interactive systems, dashboards and services that translate data and models into information for planning and decisions. Cross-cutting application category rather than a formal glossary term.",
+          "source": "Project-defined (cross-cutting application)",
+          "url": "https://www.earthdata.nasa.gov/data/tools/gcmd-keyword-viewer",
+          "match_tags": [
+            "decision-support",
+            "dashboard",
+            "api"
+          ]
+        },
+        {
+          "id": "cross-cutting-ai-methods__data-standards-methods",
+          "label": "Data standards & methods",
+          "definition": "Shared conventions, formats and metadata (e.g. netCDF, Parquet, open standards) plus documented analytical methods that make datasets discoverable, interoperable and reproducible across the hub.",
+          "source": "NASA GCMD keyword scheme (controlled vocabulary); project-defined",
+          "url": "https://www.earthdata.nasa.gov/data/tools/gcmd-keyword-viewer",
+          "match_tags": [
+            "methods",
+            "metadata",
+            "open-standard",
+            "netcdf",
+            "parquet"
+          ]
+        }
+      ]
+    }
+  ]
+}
