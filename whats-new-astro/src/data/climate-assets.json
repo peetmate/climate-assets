@@ -5,10 +5,10 @@
     "version": "0.1-draft",
     "generated": "2026-07-23",
     "source": "Collated from internal Alliance Slack docs (Assets and Methods lists)",
-    "entry_count": 155,
+    "entry_count": 156,
     "counts": {
       "by_collection": {
-        "assets": 133,
+        "assets": 134,
         "methods": 22
       },
       "by_type": {
@@ -17,11 +17,11 @@
         "media": 9,
         "model": 4,
         "publication": 44,
-        "tool-software": 26
+        "tool-software": 27
       },
       "by_access": {
         "login": 9,
-        "open": 121,
+        "open": 122,
         "paywall": 17,
         "request": 2,
         "unknown": 6
@@ -30,7 +30,7 @@
         "Adaptation": 14,
         "Climate projections & reanalysis": 20,
         "Crop & land management": 12,
-        "Cross-cutting / AI & methods": 4,
+        "Cross-cutting / AI & methods": 5,
         "Emissions & mitigation": 16,
         "Hazards & impacts": 26,
         "Land, soil & ecosystems": 23,
@@ -7285,6 +7285,70 @@
       "ongoing": true,
       "lead_contact": {
         "name": "J. Lang-Ritter",
+        "affiliation": "",
+        "email": ""
+      }
+    },
+    {
+      "id": "agwise-data-sourcing",
+      "title": "agwise-data — AgWise data-sourcing module",
+      "type": "tool-software",
+      "url": "https://github.com/byliz-ai/data_sourcing",
+      "themes": [
+        "Cross-cutting / AI & methods",
+        "Production & yields"
+      ],
+      "tags": [
+        "crop-model",
+        "dssat",
+        "apsim",
+        "remote-sensing",
+        "earth-engine",
+        "chirps",
+        "agera5",
+        "soilgrids",
+        "python",
+        "r",
+        "open-source"
+      ],
+      "source": "AgWise",
+      "description": "Python and R module that fetches, harmonises and caches analysis-ready climate, soil, terrain and remote-sensing inputs for a region and period from one call, returning data cubes, point tables or crop-model input files. Variables arrive under agreed names and units (PRCP in mm/day, CLAY in %), downloaded once into a shared cache and reused, with writers that emit DSSAT and APSIM inputs directly.",
+      "region": "Global",
+      "spatial_resolution": "Varies by source",
+      "temporal_coverage": "Varies by source; CHIRPS v3.0 staged for 1981-2025 on CGLabs",
+      "access": "open",
+      "collection": "assets",
+      "section": "Datasets",
+      "shared_by": "Pete Steward",
+      "notes": "Sources wired in: CHIRPS, AgERA5, SEAS5, SoilGrids, iSDA, Copernicus DEM, MODIS, ESA WorldCover and geoBoundaries. Built around CGLabs, where CHIRPS v3.0 is staged locally and needs no account; elsewhere it falls back to CHIRPS v2.0 via Earth Engine. Copernicus CDS and Earth Engine credentials are needed only for the sources that require them, and are kept in the user's own home rather than the shared space. Usable from Python, R or the CLI, and the README documents driving it through Claude Code in plain language. Hosted on a personal GitHub account rather than an organisation, so the URL may move if maintenance changes hands.",
+      "date_added": "2026-10-08",
+      "date": "2026",
+      "image": "https://opengraph.githubassets.com/1/byliz-ai/data_sourcing",
+      "links": [
+        {
+          "label": "Function reference",
+          "url": "https://github.com/byliz-ai/data_sourcing/blob/main/REFERENCE.md"
+        },
+        {
+          "label": "User guide",
+          "url": "https://github.com/byliz-ai/data_sourcing/blob/main/docs/user_guide.md"
+        },
+        {
+          "label": "Credentials setup",
+          "url": "https://github.com/byliz-ai/data_sourcing/blob/main/docs/credentials_setup.md"
+        },
+        {
+          "label": "Examples (Python + R)",
+          "url": "https://github.com/byliz-ai/data_sourcing/tree/main/examples"
+        }
+      ],
+      "organisations": [],
+      "licence": "MIT",
+      "data_availability": "Code only",
+      "reusable": true,
+      "ongoing": true,
+      "lead_contact": {
+        "name": "Lizeth Llanos",
         "affiliation": "",
         "email": ""
       }
