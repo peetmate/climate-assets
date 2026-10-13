@@ -4310,19 +4310,35 @@
       "collection": "assets",
       "section": "Hazard & Impacts",
       "shared_by": "",
-      "notes": "GDPCIR downscaled projections",
+      "notes": "Bias-corrected and downscaled with QDM and QPLAD so trends in temperature and precipitation extremes survive the adjustment, using ERA5 as the reference. On Microsoft Planetary Computer the product is split into THREE STAC collections by licence - cil-gdpcir-cc-by, cil-gdpcir-cc-by-sa and cil-gdpcir-cc0 - because each source CMIP6 modelling centre sets its own terms. All three are permissive, but the CC-BY-SA models impose share-alike on anything derived from them, so check which models a given analysis draws on before redistributing. The processing pipeline is open as ClimateImpactLab/downscaleCMIP6 under MIT; that is the code licence, not the data licence. Method published in Geoscientific Model Development (2024); the 2023 version was the preprint.",
       "date_added": "TBC",
       "tags": [
         "bias-correction",
         "cmip",
+        "cmip6",
         "downscaling",
+        "era5",
         "global",
         "high-resolution",
-        "precipitation"
+        "precipitation",
+        "stac"
       ],
       "image": "https://impactlab.org/wp-content/uploads/2023/01/nasa-whDrFMucHkc-unsplash-scaled.jpg",
       "date": "2023-01-16",
-      "links": [],
+      "links": [
+        {
+          "label": "Data (Planetary Computer, 3 collections by licence)",
+          "url": "https://planetarycomputer.microsoft.com/dataset/group/cil-gdpcir"
+        },
+        {
+          "label": "Paper (GMD 2024)",
+          "url": "https://doi.org/10.5194/gmd-17-191-2024"
+        },
+        {
+          "label": "Code · repo (downscaleCMIP6, MIT)",
+          "url": "https://github.com/ClimateImpactLab/downscaleCMIP6"
+        }
+      ],
       "organisations": [
         "Climate Impact Lab",
         "University of Chicago",
@@ -4334,7 +4350,7 @@
         "affiliation": "Climate Impact Lab",
         "email": ""
       },
-      "licence": "CC-BY-4.0",
+      "licence": "CC-BY-4.0 / CC-BY-SA-4.0 / CC0-1.0 (varies by source model)",
       "data_availability": "Open data",
       "reusable": true,
       "ongoing": false
