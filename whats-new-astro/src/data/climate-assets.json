@@ -5,10 +5,10 @@
     "version": "0.1-draft",
     "generated": "2026-07-23",
     "source": "Collated from internal Alliance Slack docs (Assets and Methods lists)",
-    "entry_count": 156,
+    "entry_count": 157,
     "counts": {
       "by_collection": {
-        "assets": 134,
+        "assets": 135,
         "methods": 22
       },
       "by_type": {
@@ -16,12 +16,12 @@
         "dataset": 28,
         "media": 9,
         "model": 4,
-        "publication": 44,
+        "publication": 45,
         "tool-software": 27
       },
       "by_access": {
         "login": 9,
-        "open": 122,
+        "open": 123,
         "paywall": 17,
         "request": 2,
         "unknown": 6
@@ -34,7 +34,7 @@
         "Emissions & mitigation": 16,
         "Hazards & impacts": 26,
         "Land, soil & ecosystems": 23,
-        "Population & exposure": 7,
+        "Population & exposure": 8,
         "Production & yields": 19,
         "Socio-economic & gender": 7,
         "Weather & forecasting": 7
@@ -7349,6 +7349,60 @@
       "ongoing": true,
       "lead_contact": {
         "name": "Lizeth Llanos",
+        "affiliation": "",
+        "email": ""
+      }
+    },
+    {
+      "id": "global-mobile-network-coverage-1km-1999-2030",
+      "title": "A global mobile network coverage raster product at 1km resolution, 1999-2030",
+      "type": "publication",
+      "url": "https://arxiv.org/abs/2609.11320",
+      "themes": [
+        "Population & exposure",
+        "Socio-economic & gender"
+      ],
+      "tags": [
+        "infrastructure",
+        "socioeconomic",
+        "connectivity",
+        "digital-divide",
+        "mobile-networks",
+        "machine-learning",
+        "deep-learning",
+        "global",
+        "open-data"
+      ],
+      "source": "arXiv (preprint)",
+      "description": "Preprint describing annual 1 km maps of the probability of 2G, 3G and 4G mobile coverage for 214 countries and territories from 1999 to 2030. Three independent models - a calibrated machine-learning model, a techno-economic simulator of network build-out and a spatial deep-learning model - are combined per country and technology in proportion to their measured accuracy, giving a best estimate with per-pixel 90% uncertainty bands; all four layers are released.",
+      "region": "Global (214 countries and territories)",
+      "spatial_resolution": "1 km",
+      "temporal_coverage": "Annual 1999-2030; tuned on operator-reported maps to 2020, 2021-2024 predicted from recent geospatial data, 2025-2030 extrapolated from demographic and infrastructure projections",
+      "access": "open",
+      "collection": "assets",
+      "section": "Population",
+      "shared_by": "Pete Steward",
+      "notes": "Models are grounded in population distribution, electrification and physical infrastructure data and tuned on 2,409 quality-screened operator-reported coverage maps; the machine-learning model reaches AUC 0.89-0.92 on countries held out during training. The dataset is a separate Zenodo deposit (33 files, roughly 154 GB) under the same CC-BY-4.0 terms as the preprint, so plan for the volume before pulling a region. Relevant here as a reach layer: it indicates where SMS- or app-delivered climate advisory services can actually land, and the later years are projections rather than observations.",
+      "date_added": "2026-10-13",
+      "date": "2026-09-10",
+      "image": "",
+      "links": [
+        {
+          "label": "Data (Zenodo)",
+          "url": "https://doi.org/10.5281/zenodo.21594337"
+        },
+        {
+          "label": "PDF",
+          "url": "https://arxiv.org/pdf/2609.11320v1"
+        }
+      ],
+      "organisations": [],
+      "licence": "CC-BY-4.0",
+      "data_availability": "Open data",
+      "reusable": true,
+      "ongoing": false,
+      "lead_contact": {
+        "name": "Till Koebe",
         "affiliation": "",
         "email": ""
       }
