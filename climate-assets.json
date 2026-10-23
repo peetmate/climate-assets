@@ -5,23 +5,23 @@
     "version": "0.1-draft",
     "generated": "2026-07-23",
     "source": "Collated from internal Alliance Slack docs (Assets and Methods lists)",
-    "entry_count": 157,
+    "entry_count": 159,
     "counts": {
       "by_collection": {
-        "assets": 135,
+        "assets": 137,
         "methods": 22
       },
       "by_type": {
         "atlas-hub": 44,
-        "dataset": 28,
-        "media": 9,
+        "dataset": 29,
+        "media": 10,
         "model": 4,
         "publication": 45,
         "tool-software": 27
       },
       "by_access": {
         "login": 9,
-        "open": 123,
+        "open": 125,
         "paywall": 17,
         "request": 2,
         "unknown": 6
@@ -33,7 +33,7 @@
         "Cross-cutting / AI & methods": 5,
         "Emissions & mitigation": 16,
         "Hazards & impacts": 26,
-        "Land, soil & ecosystems": 23,
+        "Land, soil & ecosystems": 25,
         "Population & exposure": 8,
         "Production & yields": 19,
         "Socio-economic & gender": 7,
@@ -7419,6 +7419,128 @@
       "ongoing": false,
       "lead_contact": {
         "name": "Till Koebe",
+        "affiliation": "",
+        "email": ""
+      }
+    },
+    {
+      "id": "forty-global-forest-typology-10m",
+      "title": "Forest Typology (ForTy) 2020 v1.0",
+      "type": "dataset",
+      "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_nature-trace_assets_forest_typology_forest_typology_2020_v1_0_collection",
+      "themes": [
+        "Land, soil & ecosystems",
+        "Crop & land management"
+      ],
+      "tags": [
+        "forests",
+        "deforestation",
+        "land-cover",
+        "agroforestry",
+        "tree-crops",
+        "eudr",
+        "remote-sensing",
+        "machine-learning",
+        "foundation-model",
+        "earth-engine",
+        "high-resolution",
+        "global"
+      ],
+      "source": "Google DeepMind (Nature Trace)",
+      "description": "Global 10 m map distinguishing six FAO-aligned forest and land classes - primary forest, naturally regenerating forest, planted forest, plantation forest, tree crops and agroforestry, and other land - rather than undifferentiated tree cover. Built with a custom deep-learning model over AlphaEarth Foundations satellite embeddings, trained on roughly 1.7 million labelled locations, and aligned with FAO and EU Deforestation Regulation definitions.",
+      "region": "Global (65S to 84N)",
+      "spatial_resolution": "10 m",
+      "temporal_coverage": "2020 baseline (v1.0); 2017-2025 time series in early release",
+      "access": "open",
+      "collection": "assets",
+      "section": "Datasets",
+      "shared_by": "Pete Steward",
+      "notes": "Bands are per-class values 0-250 rather than a single hard class, with Other Land derived as 250 minus the sum of the other five - so a pixel carries a mixture, not a label. Headline validation is 90% correct forest type and 95% forest versus non-forest, but accuracy is uneven: planted forest is the weakest class at F1 58.2%, which matters if you are separating plantations from naturally regenerating forest. The tree-crops-and-agroforestry class and the EUDR alignment are the parts most relevant to commodity and agroforestry work. A sibling asset, Natural Forests of the World 2020, is published alongside it. The DeepMind announcement post is catalogued separately and links back here; builds on the AlphaEarth Foundations model, also in this catalogue.",
+      "date_added": "2026-10-23",
+      "date": "2026-10-21",
+      "image": "",
+      "links": [
+        {
+          "label": "Paper (Scientific Data 2026)",
+          "url": "https://doi.org/10.1038/s41597-026-08299-5"
+        },
+        {
+          "label": "Preprint (EarthArXiv)",
+          "url": "https://doi.org/10.31223/X58R27"
+        },
+        {
+          "label": "Nature Trace publisher page",
+          "url": "https://developers.google.com/earth-engine/datasets/publisher/nature-trace"
+        }
+      ],
+      "organisations": [
+        "Google Research",
+        "World Resources Institute (WRI)",
+        "International Institute for Applied Systems Analysis (IIASA)"
+      ],
+      "licence": "CC-BY-4.0",
+      "data_availability": "Open data",
+      "reusable": true,
+      "ongoing": false,
+      "lead_contact": {
+        "name": "Maxim Neumann",
+        "affiliation": "",
+        "email": ""
+      }
+    },
+    {
+      "id": "beyond-tree-cover-mapping-the-worlds-forest-types",
+      "title": "Beyond tree cover: mapping the world's forest types",
+      "type": "media",
+      "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+      "themes": [
+        "Land, soil & ecosystems",
+        "Crop & land management"
+      ],
+      "tags": [
+        "forests",
+        "deforestation",
+        "land-cover",
+        "agroforestry",
+        "eudr",
+        "foundation-model",
+        "earth-engine",
+        "global"
+      ],
+      "source": "Google DeepMind",
+      "description": "Blog post introducing Forest Typology (ForTy), a global 10 m map that separates primary, naturally regenerating, planted and plantation forest from tree crops and agroforestry instead of treating all tree cover alike. Explains the motivation for FAO- and EUDR-aligned classes, the use of AlphaEarth Foundations embeddings, and the partnership behind it.",
+      "region": "Global",
+      "spatial_resolution": "",
+      "temporal_coverage": "",
+      "access": "open",
+      "collection": "assets",
+      "section": "Datasets",
+      "shared_by": "Pete Steward",
+      "notes": "Announcement piece for the ForTy dataset, which is catalogued separately with the resolution, licence and accuracy caveats. Partners named in the post are Google DeepMind, Google Research, WRI and IIASA.",
+      "date_added": "2026-10-23",
+      "date": "2026-10-22",
+      "image": "",
+      "links": [
+        {
+          "label": "Dataset (Earth Engine)",
+          "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_nature-trace_assets_forest_typology_forest_typology_2020_v1_0_collection"
+        },
+        {
+          "label": "Paper (Scientific Data 2026)",
+          "url": "https://doi.org/10.1038/s41597-026-08299-5"
+        }
+      ],
+      "organisations": [
+        "Google Research",
+        "World Resources Institute (WRI)",
+        "International Institute for Applied Systems Analysis (IIASA)"
+      ],
+      "licence": "",
+      "data_availability": "Open data",
+      "reusable": false,
+      "ongoing": false,
+      "lead_contact": {
+        "name": "",
         "affiliation": "",
         "email": ""
       }
