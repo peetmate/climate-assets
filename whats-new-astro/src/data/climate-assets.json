@@ -5,15 +5,15 @@
     "version": "0.1-draft",
     "generated": "2026-07-23",
     "source": "Collated from internal Alliance Slack docs (Assets and Methods lists)",
-    "entry_count": 159,
+    "entry_count": 160,
     "counts": {
       "by_collection": {
-        "assets": 137,
+        "assets": 138,
         "methods": 22
       },
       "by_type": {
         "atlas-hub": 44,
-        "dataset": 29,
+        "dataset": 30,
         "media": 10,
         "model": 4,
         "publication": 45,
@@ -21,7 +21,7 @@
       },
       "by_access": {
         "login": 9,
-        "open": 125,
+        "open": 126,
         "paywall": 17,
         "request": 2,
         "unknown": 6
@@ -33,7 +33,7 @@
         "Cross-cutting / AI & methods": 5,
         "Emissions & mitigation": 16,
         "Hazards & impacts": 26,
-        "Land, soil & ecosystems": 25,
+        "Land, soil & ecosystems": 26,
         "Population & exposure": 8,
         "Production & yields": 19,
         "Socio-economic & gender": 7,
@@ -7539,6 +7539,75 @@
       "data_availability": "Open data",
       "reusable": false,
       "ongoing": false,
+      "lead_contact": {
+        "name": "",
+        "affiliation": "",
+        "email": ""
+      }
+    },
+    {
+      "id": "forest-data-partnership-commodity-models",
+      "title": "Forest Data Partnership commodity probability models (Earth Engine)",
+      "type": "dataset",
+      "url": "https://developers.google.com/earth-engine/datasets/publisher/forestdatapartnership",
+      "themes": [
+        "Land, soil & ecosystems",
+        "Crop & land management"
+      ],
+      "tags": [
+        "deforestation",
+        "forests",
+        "cocoa",
+        "coffee",
+        "oil-palm",
+        "rubber",
+        "eudr",
+        "commodities",
+        "crop-mapping",
+        "earth-engine",
+        "remote-sensing",
+        "high-resolution",
+        "global"
+      ],
+      "source": "Forest Data Partnership",
+      "description": "Earth Engine collection of five open layers for commodity-driven deforestation monitoring: annual 10 m per-pixel probability of cocoa, coffee, oil palm and rubber (2026a release, 2018-2024), plus a 30 m Forest Persistence v0 score for 2020 indicating whether a pixel was undisturbed forest, built by a convergence-of-evidence approach. Produced by Google for the Forest Data Partnership, a WRI-hosted initiative uniting public and private partners around open geospatial data on forest-risk commodities.",
+      "region": "Global",
+      "spatial_resolution": "10 m (commodity probability); 30 m (forest persistence)",
+      "temporal_coverage": "Annual 2018-2024 (commodity models, 2026a); 2020 (Forest Persistence v0)",
+      "access": "open",
+      "collection": "assets",
+      "section": "Datasets",
+      "shared_by": "Pete Steward",
+      "notes": "The commodity layers are continuous probabilities from 0 to 1, not classifications - choosing a threshold is left to the user, and the Earth Engine pages give no accuracy or validation figures, pointing instead to the GitHub README for limitations. Licence was confirmed on the cocoa asset page (CC-BY-4.0, with the required attribution 'Produced by Google for the Forest Data Partnership'); the sibling assets are published the same way but are worth checking individually before redistribution. Cite as 'Forest Data Partnership. 2026. Community models 2026a.' The partnership also maintains Whisp, an MIT-licensed tool for assessing plots against EUDR deforestation criteria, which is the usual route for turning these layers into a compliance answer.",
+      "date_added": "2026-11-03",
+      "date": "2026",
+      "image": "",
+      "links": [
+        {
+          "label": "Whisp — EUDR plot assessment (MIT)",
+          "url": "https://github.com/forestdatapartnership/whisp"
+        },
+        {
+          "label": "Models · repo",
+          "url": "https://github.com/forestdatapartnership/models"
+        },
+        {
+          "label": "Forest Persistence v0 (Earth Engine)",
+          "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_forestdatapartnership_assets_community_forests_ForestPersistence_2020"
+        },
+        {
+          "label": "Initiative page (WRI)",
+          "url": "https://www.wri.org/initiatives/forest-data-partnership"
+        }
+      ],
+      "organisations": [
+        "Google",
+        "World Resources Institute (WRI)"
+      ],
+      "licence": "CC-BY-4.0",
+      "data_availability": "Open (with code)",
+      "reusable": true,
+      "ongoing": true,
       "lead_contact": {
         "name": "",
         "affiliation": "",
