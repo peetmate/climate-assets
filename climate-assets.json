@@ -5,10 +5,10 @@
     "version": "0.1-draft",
     "generated": "2026-07-23",
     "source": "Collated from internal Alliance Slack docs (Assets and Methods lists)",
-    "entry_count": 160,
+    "entry_count": 161,
     "counts": {
       "by_collection": {
-        "assets": 138,
+        "assets": 139,
         "methods": 22
       },
       "by_type": {
@@ -16,12 +16,12 @@
         "dataset": 30,
         "media": 10,
         "model": 4,
-        "publication": 45,
+        "publication": 46,
         "tool-software": 27
       },
       "by_access": {
         "login": 9,
-        "open": 126,
+        "open": 127,
         "paywall": 17,
         "request": 2,
         "unknown": 6
@@ -33,7 +33,7 @@
         "Cross-cutting / AI & methods": 5,
         "Emissions & mitigation": 16,
         "Hazards & impacts": 26,
-        "Land, soil & ecosystems": 26,
+        "Land, soil & ecosystems": 27,
         "Population & exposure": 8,
         "Production & yields": 19,
         "Socio-economic & gender": 7,
@@ -7610,6 +7610,54 @@
       "ongoing": true,
       "lead_contact": {
         "name": "",
+        "affiliation": "",
+        "email": ""
+      }
+    },
+    {
+      "id": "ocelot-planetary-scale-species-distribution-modeling",
+      "title": "OCELOT: Planetary-Scale Species Distribution Modeling with Satellite Foundation Embeddings",
+      "type": "publication",
+      "url": "https://arxiv.org/abs/2611.00284",
+      "themes": [
+        "Land, soil & ecosystems",
+        "Cross-cutting / AI & methods"
+      ],
+      "tags": [
+        "biodiversity",
+        "species-distribution",
+        "gbif",
+        "foundation-model",
+        "machine-learning",
+        "remote-sensing",
+        "global"
+      ],
+      "source": "arXiv (preprint)",
+      "description": "Preprint on scaling relative-occurrence species distribution models to 2 billion GBIF records across 100,000 taxa, using a multimodal implicit neural representation network that fuses spatial coordinates with satellite foundation embeddings. Spatiotemporal thinning and sub-linear cell sampling correct for observer bias and spatial redundancy, while an additive taxonomic readout shares representations across species, genus and family to improve predictions for rare taxa.",
+      "region": "Global",
+      "spatial_resolution": "",
+      "temporal_coverage": "",
+      "access": "open",
+      "collection": "assets",
+      "section": "To Organize",
+      "shared_by": "Pete Steward",
+      "notes": "Evaluated on geographic extrapolation rather than the usual interpolation benchmarks, using NDCG on spatial block holdouts up to 600 km - the regime that matters when a distribution model is used as a geographic prior for classifying camera-trap or acoustic-recorder data in places nobody has surveyed. Satellite embeddings improve extrapolation by 51% over coordinate-only models and beat classical bioclimatic rasters, without losing in-distribution accuracy. The abstract does not name which satellite embedding model is used, so the link to AlphaEarth Foundations (also in this catalogue) is unconfirmed. No code, trained model or dataset release is linked from the preprint, so this is a method to watch rather than something usable off the shelf.",
+      "date_added": "2026-11-09",
+      "date": "2026-10-30",
+      "image": "",
+      "links": [
+        {
+          "label": "PDF",
+          "url": "https://arxiv.org/pdf/2611.00284"
+        }
+      ],
+      "organisations": [],
+      "licence": "CC-BY-4.0",
+      "data_availability": "",
+      "reusable": true,
+      "ongoing": false,
+      "lead_contact": {
+        "name": "Bart van Merrienboer",
         "affiliation": "",
         "email": ""
       }
