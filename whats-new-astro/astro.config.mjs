@@ -1,10 +1,13 @@
 import { defineConfig } from 'astro/config';
 
-// Standalone static build. If the hub team mounts this under a sub-path
-// (e.g. GitHub Pages project site), set `site` and `base` accordingly, and
-// the relative asset paths (images/, brand/) will continue to resolve.
+// Standalone static build, deployed to GitHub Pages as a project site, so it
+// is served from a sub-path rather than the domain root. `base` makes Astro
+// prefix the hashed `_astro/` bundles; the literal `images/` and `brand/`
+// paths in index.astro are relative and resolve against the page URL, so they
+// pick up the sub-path on their own. Serving this anywhere else only needs
+// these two values changed.
 export default defineConfig({
-  // site: 'https://cgiar-climate-data-hub.github.io',
-  // base: '/whats-new',
+  site: 'https://peetmate.github.io',
+  base: '/climate-assets',
   output: 'static',
 });
