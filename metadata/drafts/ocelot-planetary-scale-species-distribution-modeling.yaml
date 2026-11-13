@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: ocelot-planetary-scale-species-distribution-modeling
+title: 'OCELOT: Planetary-Scale Species Distribution Modeling with Satellite Foundation Embeddings'
+description: Preprint on scaling relative-occurrence species distribution models to 2 billion GBIF records
+  across 100,000 taxa, using a multimodal implicit neural representation network that fuses spatial coordinates
+  with satellite foundation embeddings. Spatiotemporal thinning and sub-linear cell sampling correct for observer
+  bias and spatial redundancy, while an additive taxonomic readout shares representations across species, genus
+  and family to improve predictions for rare taxa.
+resource_type: document
+keywords:
+- biodiversity
+- species-distribution
+- gbif
+- foundation-model
+- machine-learning
+- remote-sensing
+- global
+cdh:
+  domain:
+  - land
+  - climate
+created: '2026-11-13'
+updated: '2026-11-13'
+data:
+- name: primary
+  locations:
+  - url: https://arxiv.org/pdf/2611.00284
+access: public
+doi: 10.48550/arXiv.2611.00284
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets
+version: '1'

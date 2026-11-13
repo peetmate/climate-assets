@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: agwise-data-sourcing
+title: agwise-data — AgWise data-sourcing module
+description: Python and R module that fetches, harmonises and caches analysis-ready climate, soil, terrain
+  and remote-sensing inputs for a region and period from one call, returning data cubes, point tables or crop-model
+  input files. Variables arrive under agreed names and units (PRCP in mm/day, CLAY in %), downloaded once into
+  a shared cache and reused, with writers that emit DSSAT and APSIM inputs directly.
+resource_type: software
+keywords:
+- crop-model
+- dssat
+- apsim
+- remote-sensing
+- earth-engine
+- chirps
+- agera5
+- soilgrids
+- python
+- r
+- open-source
+cdh:
+  domain:
+  - climate
+  - agricultural-production
+created: '2026-11-13'
+updated: '2026-11-13'
+data:
+- name: primary
+  locations:
+  - url: https://github.com/byliz-ai/data_sourcing/tree/ea81eb8349fc13936ffe3e5ad80192670ef6c102
+access: public
+license: MIT
+contact:
+- organization: Alliance Bioversity & CIAT — AgWise Data Sourcing contributors
+  roles:
+  - licensor
+  url: https://github.com/byliz-ai/data_sourcing/blob/main/LICENSE
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets
+version: ea81eb8349fc

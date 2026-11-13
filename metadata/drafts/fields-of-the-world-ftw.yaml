@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: fields-of-the-world-ftw
+title: Fields of The World (FTW)
+description: 'Open ecosystem for delineating agricultural field boundaries from satellite imagery: a benchmark
+  dataset of ~1.6 million labelled parcels across 70,000+ multi-date Sentinel-2 samples (24 countries at publication,
+  since extended), plus baseline and PRUE segmentation models, an inference API, a QGIS plugin and web apps
+  that run and polygonise predictions. The data-products strand — country-wide inferred field maps published
+  as GeoParquet or GeoJSON — is in development for Kenya, Vietnam, Laos and Colombia, with no full-country
+  release shipped yet.'
+resource_type: service
+keywords:
+- ai
+- machine-learning
+- remote-sensing
+- sentinel-2
+- field-boundaries
+- crop-mapping
+- benchmark
+- open-standard
+- parquet
+- global
+cdh:
+  domain:
+  - climate
+  - agricultural-production
+created: '2026-11-13'
+updated: '2026-11-13'
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

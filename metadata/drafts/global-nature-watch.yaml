@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: global-nature-watch
+title: Global Nature Watch
+description: An open, AI-powered platform with a chat-style interface that integrates 80+ peer-reviewed datasets
+  from Global Forest Watch and Land & Carbon Lab. Users ask plain-language questions to explore change across
+  forests, grasslands, wetlands, croplands, pastures and carbon fluxes via maps and statistics.
+resource_type: service
+keywords:
+- ai
+- carbon
+- forests
+- global
+- llm
+- remote-sensing
+cdh:
+  domain:
+  - land
+  - mitigation
+created: '2026-11-13'
+updated: '2026-11-13'
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

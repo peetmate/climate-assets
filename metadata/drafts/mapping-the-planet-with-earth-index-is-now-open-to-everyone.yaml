@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: mapping-the-planet-with-earth-index-is-now-open-to-everyone
+title: Mapping the Planet with Earth Index is Now Open to Everyone
+description: Blog post announcing that Earth Index, a tool that searches global satellite imagery by visual
+  similarity using Earth foundation models, is now openly available worldwide. Users select example features
+  (e.g. deforestation, mining, airstrips) and the system interactively finds similar patterns across the planet.
+resource_type: document
+keywords:
+- deforestation
+- foundation-model
+- global
+- remote-sensing
+- satellite
+cdh:
+  domain:
+  - land
+created: '2026-11-13'
+updated: '2026-11-13'
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets
+version: '1'

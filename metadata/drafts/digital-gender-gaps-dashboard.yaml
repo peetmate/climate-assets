@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: digital-gender-gaps-dashboard
+title: Digital Gender Gaps Dashboard
+description: An interactive dashboard providing estimates of gender gaps and gender-specific adoption of internet
+  use and mobile phone ownership, derived from Facebook Marketing API data combined with population and development
+  indicators. Estimates cover 215 countries at national level and 117 low- and middle-income countries at first
+  administrative level.
+resource_type: software
+keywords:
+- dashboard
+- gender
+- global
+- poverty
+cdh:
+  domain:
+  - socioeconomic
+created: '2026-11-13'
+updated: '2026-11-13'
+data:
+- name: primary
+  locations:
+  - url: https://digitalgendergaps.org/dashboard/
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

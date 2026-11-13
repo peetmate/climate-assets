@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: investment-trends-and-evaluation-gaps-in-rainwater-harvesting-in-sub-saharan-african-drylands
+title: Investment trends and evaluation gaps in rainwater harvesting in Sub-Saharan African drylands
+description: A systematic review of 34 government- and donor-funded rainwater harvesting projects implemented
+  across Sub-Saharan Africa up to November 2024, examining investment trends, evaluation gaps and factors linked
+  to sustained benefits. Identifies land tenure, post-construction maintenance and community-led design as
+  success factors.
+resource_type: document
+keywords:
+- africa
+- drought
+- food-security
+- hydrology
+cdh:
+  domain:
+  - adaptation
+  - socioeconomic
+created: '2026-11-13'
+updated: '2026-11-13'
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets
+version: '1'

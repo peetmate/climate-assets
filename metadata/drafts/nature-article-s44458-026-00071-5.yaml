@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: nature-article-s44458-026-00071-5
+title: Ways forward for global adaptation evidence synthesis building on the Global Adaptation Mapping Initiative
+description: Perspective/analysis in Communications Sustainability (Nature Portfolio) reflecting on lessons
+  from the Global Adaptation Mapping Initiative (GAMI) and recommending ways to improve global synthesis of
+  climate-adaptation evidence, including greater use of AI-assisted and machine-learning methods alongside
+  human coding. Informs IPCC assessment and the Global Stocktake.
+resource_type: document
+keywords:
+- adaptation-tracking
+- evidence-synthesis
+- global-stocktake
+- machine-learning
+- systematic-review
+cdh:
+  domain:
+  - adaptation
+  - climate
+created: '2026-11-13'
+updated: '2026-11-13'
+doi: 10.1038/s44458-026-00071-5
+access: public
+data:
+- name: primary
+  locations:
+  - url: https://www.nature.com/articles/s44458-026-00071-5
+license: CC-BY-4.0
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets
+version: '1'

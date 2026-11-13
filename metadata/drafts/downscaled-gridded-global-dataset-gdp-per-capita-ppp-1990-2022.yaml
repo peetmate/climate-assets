@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: downscaled-gridded-global-dataset-gdp-per-capita-ppp-1990-2022
+title: Downscaled gridded global dataset for gross domestic product (GDP) per capita PPP over 1990-2022
+description: Scientific Data descriptor of a gridded global GDP per capita (PPP) dataset downscaled to admin-2
+  level (43,501 units) using reported subnational data from 89 countries and machine-learning extrapolation.
+  Authored by Kummu, Kosonen and Masoumzadeh Sayyar (Aalto University); data on Zenodo.
+resource_type: dataset
+keywords:
+- downscaling
+- global
+- machine-learning
+- poverty
+cdh:
+  domain:
+  - socioeconomic
+created: '2026-11-13'
+updated: '2026-11-13'
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: what-climate-smart-agriculture-means-for-smallholder-farmers
+title: What climate-smart agriculture means for smallholder farmers
+description: A report analysing the exposure of smallholder farmers to climate hazards such as drought, flooding
+  and extreme heat across India, Ethiopia and Mexico, and identifying 33 climate adaptation and mitigation
+  measures. It examines feasibility of adoption and the implications for food security and emissions.
+resource_type: document
+keywords:
+- drought
+- flood
+- food-security
+- heat
+cdh:
+  domain:
+  - adaptation
+  - climate
+created: '2026-11-13'
+updated: '2026-11-13'
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets
+version: '1'

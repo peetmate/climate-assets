@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: loom-video-demo-291e886a
+title: DSSATLM-AgNeSy — proof-of-concept demo (video)
+description: Screen-recording demo of DSSATLM-AgNeSy, an MSU-CECO system that pairs large language models /
+  agents with the DSSAT crop-simulation model to make crop modelling accessible through natural-language interaction.
+keywords:
+- agents
+- ai
+- crop-simulation
+- demo
+- dssat
+- llm
+- machine-learning
+cdh:
+  domain:
+  - climate
+  - agricultural-production
+created: '2026-11-13'
+updated: '2026-11-13'
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

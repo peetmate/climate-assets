@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: climate-engine
+title: Climate Engine
+description: A no-code web application using Google Earth Engine to process, visualise, download and share
+  climate and remote sensing data on demand. Includes satellite observations (e.g. Landsat), climate reanalyses
+  (e.g. ERA5) and decision-ready drought and rangeland vegetation datasets.
+resource_type: software
+keywords:
+- drought
+- earth-engine
+- era5
+- global
+- reanalysis
+- remote-sensing
+cdh:
+  domain:
+  - climate
+created: '2026-11-13'
+updated: '2026-11-13'
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

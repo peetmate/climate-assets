@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: digital-earth-africa-aws-open-data
+title: Digital Earth Africa (Registry of Open Data on AWS)
+description: A collaboration collection on the Registry of Open Data on AWS providing free and open access
+  to DE Africa's decision-ready Earth observation products for the continent, including Landsat Collection
+  2, CHIRPS rainfall, fractional cover, waterbodies and water observations from space. Data are available under
+  a Creative Commons Attribution 4.0 licence.
+resource_type: service
+keywords:
+- africa
+- land-cover
+- precipitation
+- remote-sensing
+- satellite
+cdh:
+  domain:
+  - land
+created: '2026-11-13'
+updated: '2026-11-13'
+data:
+- name: primary
+  locations:
+  - url: https://registry.opendata.aws/collab/deafrica/
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

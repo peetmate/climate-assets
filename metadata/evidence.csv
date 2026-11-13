@@ -1,0 +1,396 @@
+card_id,purpose,url,http_status,page_title,checked_on
+harmonised-dataset-for-earth-system-foundation-models,Card target,https://arxiv.org/html/2607.03298v1,200,A harmonised dataset for Earth system foundation models,2026-11-13
+harmonised-dataset-for-earth-system-foundation-models,Dataset (Zenodo),https://doi.org/10.5281/zenodo.19047618,200,Data for WorldTensor: A Harmonized Dataset for Earth System Foundation Models | Zenodo,2026-11-13
+harmonised-dataset-for-earth-system-foundation-models,"Code (GitHub, MIT)",https://github.com/crp94/worldtensor-pipeline,200,GitHub - crp94/worldtensor-pipeline · GitHub,2026-11-13
+harmonised-dataset-for-earth-system-foundation-models,Cited in data availability statement,https://doi.org/10.5281/zenodo.19047618,200,Data for WorldTensor: A Harmonized Dataset for Earth System Foundation Models | Zenodo,2026-11-13
+harmonised-dataset-for-earth-system-foundation-models,Public enquiry route,https://info.arxiv.org/help/contact.html,,,
+aiccra-agdatahub-mali,Card target,https://mali.agdatahub.ilri.org,200,Agdatahub Mali,2026-11-13
+agmrv-knowledge-portal,Card target,https://www.agmrv.org/knowledge-portal/,200,"Knowledge Portal - AgMRV - Guidance, resources and tools",2026-11-13
+agmrv-knowledge-portal,Public enquiry route,https://www.agmrv.org/contact/,,,
+agra-climate-vulnerability-assessment-tool,Card target,https://agra-cva.onrender.com/hazard_change,200,Dash,2026-11-13
+aiccra-collection-cgspace,Card target,https://cgspace.cgiar.org/collections/54b8a647-be8e-416a-9117-864359b7593b,200,"AICCRA Data portal, Tools, Maps, Datasets and Models",2026-11-13
+acasa-atlas-of-climate-adaptation-in-south-asian-agriculture,Card target,https://acasa-bisa.org/#/viewer,200,Atlas of Climate Adaptation in South Asian Agriculture,2026-11-13
+climate-analytics-tools,Card target,https://climateanalytics.org/tools,200,Tools | Climate Analytics,2026-11-13
+climate-analytics-tools,Public enquiry route,https://climateanalytics.org/contact,,,
+climate-engine,Card target,https://app.climateengine.org/climateEngine,200,Loading Climate Engine,2026-11-13
+climate-impact-lab,Card target,https://impactlab.org/,200,Climate Impact Lab,2026-11-13
+climate-impact-lab,Public enquiry route,https://impactlab.org/about/contact/,,,
+climate-project-explorer,Card target,https://climateprojectexplorer.org/,200,Climate Fund Search - Climate Project Explorer,2026-11-13
+deadtrees-earth,Card target,https://deadtrees.earth/,200,deadtrees.earth | Open drone data on global tree mortality,2026-11-13
+destination-earth-data-hub,Card target,https://earthdatahub.destine.eu/,200,Earth Data Hub,2026-11-13
+destination-earth-data-hub,Public enquiry route,https://earthdatahub.destine.eu/contacts,,,
+destination-earth-vizlab,Card target,https://vizlab.destine.eu/,200,VizLab,2026-11-13
+digital-earth-africa-aws-open-data,Card target,https://registry.opendata.aws/collab/deafrica/,200,Registry of Open Data on AWS,2026-11-13
+digital-gender-gaps-dashboard,Card target,https://digitalgendergaps.org/dashboard/,200,Digital Gender Gaps,2026-11-13
+digital-gender-gaps-dashboard,Public enquiry route,https://digitalgendergaps.org/contact/,,,
+ecosystem-integrity-index,Card target,https://ecosystemintegrityindex.org/,200,Ecosystem Integrity Index (EII),2026-11-13
+ecosystem-integrity-index,"Code (GitHub, Apache-2.0)",https://github.com/landler-io/ecosystem-integrity-index,200,"GitHub - landler-io/ecosystem-integrity-index: EII: A comprehensive, globally applicable, and unified metric for ecosystem health · GitHub",2026-11-13
+ecosystem-integrity-index,Dataset (300 m),https://landler-io.github.io/ecosystem-integrity-index/data-assets/,200,Data & Assets - Ecosystem Integrity Index,2026-11-13
+fao-hand-in-hand-geospatial-platform,Card target,https://data.apps.fao.org/?lang=en,200,,2026-11-13
+food-systems-dashboard-fsci-indicators,Card target,https://www.foodsystemsdashboard.org/fsci-indicators,429,,2026-11-13
+global-nature-watch,Card target,https://www.globalnaturewatch.org/,200,,2026-11-13
+nature-positive-agrifood-systems-toolkit,Card target,https://agrifood-systems-toolkit.panda.org/,200,Nature-Positive Agrifood Systems Toolkit - 355 Tools,2026-11-13
+naturebase,Card target,https://www.naturebase.org/,200,Naturebase,2026-11-13
+un-spider-data-sources,Card target,https://www.un-spider.org/links-and-resources/data-sources,200,Data Sources | UN-SPIDER Knowledge Portal,2026-11-13
+un-spider-data-sources,Public enquiry route,https://www.un-spider.org/about/contact,,,
+unfccc-ghg-data-interface,Card target,https://data.unfccc.int/,200,UNFCCC Climate Data Hub,2026-11-13
+wfp-vam-humanitariandatacube-stac,Card target,https://data.earthobservation.vam.wfp.org/stac/,200,HumanitarianDataCube STAC,2026-11-13
+wfp-vam-humanitariandatacube-stac,Live STAC API,https://api.earthobservation.vam.wfp.org/stac/,,,2026-11-13
+what-climate-smart-agriculture-means-for-smallholder-farmers,Card target,https://www.mckinsey.com/industries/agriculture/our-insights/what-climate-smart-agriculture-means-for-smallholder-farmers,,,
+world-bank-climate-change-knowledge-portal,Card target,https://climateknowledgeportal.worldbank.org/,403,,2026-11-13
+world-bank-data360-climate-atlas,Card target,https://data360.worldbank.org/en/atlas/climate,200,"Exposure, Vulnerability, and Adaptation to Climate Hazards | Atlas of Global Development",2026-11-13
+wri-drivers-of-forest-loss-1km,Card target,https://developers.google.com/earth-engine/datasets/catalog/projects_landandcarbon_assets_wri_gdm_drivers_forest_loss_1km,404,,2026-11-13
+wri-drivers-of-forest-loss-1km,"Dataset deposit, licence, release and inventory",https://zenodo.org/api/records/19485190,,,2026-11-13
+wri-drivers-of-forest-loss-1km,Provider release and limitations,https://datasets.wri.org/datasets/dominant-drivers-of-tree-cover-loss-at-1km,,,
+adaptation-finance-power-bi-dashboard,Card target,https://app.powerbi.com/view?r=eyJrIjoiNzkyMGNjYjAtMzZhMi00OTRhLWFlNjEtYjRhMDQ5MWNlNGIzIiwidCI6IjJhNmMxMmFkLTQwNmEtNGYzMy1iNjg2LWY3OGZmNTgyMjIwOCIsImMiOjh9,200,Microsoft Power BI,2026-11-13
+climate-resilience-platform,Card target,https://climate-resilience-platform.org/,200,Climate Resilience Platform,2026-11-13
+global-adaptation-mapping-initiative,Card target,https://globaladaptation.github.io/,200,Global Adaptation Mapping Initiative,2026-11-13
+impacts-of-climate-change-on-global-agriculture-accounting-for-adaptation,Card target,https://www.nature.com/articles/s41586-025-09085-w,200,Impacts of climate change on global agriculture accounting for adaptation | Nature,2026-11-13
+impacts-of-climate-change-on-global-agriculture-accounting-for-adaptation,Replication data & code (Zenodo),https://doi.org/10.5281/zenodo.14511339,200,"Replication data and code for Hultgren et al. 2025 ""Climate Change Impacts on Global Agriculture Accounting for Adaptation"" | Zenodo",2026-11-13
+impacts-of-climate-change-on-global-agriculture-accounting-for-adaptation,Open version,https://pmc.ncbi.nlm.nih.gov/articles/PMC12176627/,403,,2026-11-13
+impacts-of-climate-change-on-global-agriculture-accounting-for-adaptation,Cited in data availability statement,https://zenodo.org/records/14511340,,,
+unfccc-adaptation-country-portal,Card target,https://unfccc.int/adaptation_country_portal,200,,2026-11-13
+annual-global-gridded-livestock-mapping-1961-2021,Card target,https://essd.copernicus.org/preprints/essd-2025-175/,200,,2026-11-13
+annual-global-gridded-livestock-mapping-1961-2021,Published (ESSD),https://essd.copernicus.org/articles/17/5543/2025/,200,ESSD - Annual global grided livestock mapping  from 1961 to 2021,2026-11-13
+eth-cocoa-suitability-map,Card target,https://arxiv.org/abs/2206.06119,200,[2206.06119] Satellite-based high-resolution maps of cocoa planted area for Côte d'Ivoire and Ghana,2026-11-13
+eth-cocoa-suitability-map,PDF (arXiv),https://arxiv.org/pdf/2206.06119,200,,2026-11-13
+eth-cocoa-suitability-map,Public enquiry route,https://info.arxiv.org/help/contact.html,,,
+cropgrids-global-crop-dataset,Card target,https://www.nature.com/articles/s41597-024-03247-7,200,CROPGRIDS: a global geo-referenced dataset of 173 crops | Scientific Data,2026-11-13
+cropgrids-global-crop-dataset,Related FAO release 2.0. Confirm original Figshare release before linking as equivalent.,https://github.com/CGIAR-Climate-Data-Hub/cdh-catalog/blob/main/records/cropgrids/cropgrids.yaml,,,
+cropgrids-global-crop-dataset,Provider metadata for linked release,https://api.figshare.com/v2/articles/22491997,,,
+dry-matter-productivity-v2-1km,Card target,https://land.copernicus.eu/en/products/vegetation/dry-matter-productivity-v2-0-1km,200,"Dry Matter Productivity 1999-2020 (raster 1 km), global, 10-daily – version 2 — Copernicus Land Monitoring Service",2026-11-13
+dry-matter-productivity-v2-1km,Matched dataset DOI,https://doi.org/10.2909/c8cf5bec-83e9-4e27-8c13-80f74a89bd0c,,,
+dry-matter-productivity-v2-1km,Provider metadata for linked release,https://api.datacite.org/dois/10.2909/c8cf5bec-83e9-4e27-8c13-80f74a89bd0c,,,
+global-livestock-dynamics,Card target,https://landcarbonlab.org/insights/global-livestock-dynamics/,200,New Data Maps Livestock Dynamics Worldwide,2026-11-13
+global-livestock-dynamics,Livestock maps (Zenodo),https://zenodo.org/records/20396303,200,,2026-11-13
+global-livestock-dynamics,Code (GitHub),https://github.com/wri/global-pasture-watch,200,"GitHub - wri/global-pasture-watch: Mapping the extent, management and condition of the world’s grasslands · GitHub",2026-11-13
+global-pasture-watch,Card target,https://landcarbonlab.org/about-global-pasture-watch/,200,About the Global Pasture Watch Research Consortium,2026-11-13
+global-pasture-watch,Earth Engine catalogue (publisher page),https://developers.google.com/earth-engine/datasets/publisher/global-pasture-watch,200,Global Pasture Watch  |  Earth Engine Data Catalog  |  Google for Developers,2026-11-13
+global-pasture-watch,Paper (Scientific Data 2024),https://doi.org/10.1038/s41597-024-04139-6,200,Annual 30-m maps of global grassland class and extent (2000–2022) based on spatiotemporal Machine Learning | Scientific Data,2026-11-13
+global-pasture-watch,Data (Zenodo v1),https://doi.org/10.5281/zenodo.13890401,200,Global Pasture Watch - Annual grassland class and extent maps at 30-m spatial resolution (2000—2022) | Zenodo,2026-11-13
+global-pasture-watch,Code · repo,https://github.com/wri/global-pasture-watch,200,"GitHub - wri/global-pasture-watch: Mapping the extent, management and condition of the world’s grasslands · GitHub",2026-11-13
+global-spatially-explicit-crop-water-consumption,Card target,https://www.nature.com/articles/s43016-025-01231-x,200,Global spatially explicit crop water consumption shows an overall increase of 9% for 46 agricultural crops from 2010 to 2020 | Nature Food,2026-11-13
+global-spatially-explicit-crop-water-consumption,Data & software (Zenodo),https://doi.org/10.5281/zenodo.13901563,200,Global spatially explicit crop water consumption shows an overall increase of 9% for 46 agricultural crops from 2010 to 2020:    Data and software | Zenodo,2026-11-13
+global-spatially-explicit-crop-water-consumption,Cited in data availability statement,https://doi.org/10.5281/zenodo.13901563,200,Global spatially explicit crop water consumption shows an overall increase of 9% for 46 agricultural crops from 2010 to 2020:    Data and software | Zenodo,2026-11-13
+harveststat-africa,Card target,https://www.nature.com/articles/s41597-025-05001-z,200,HarvestStat Africa – Harmonized Subnational Crop Statistics for Sub-Saharan Africa | Scientific Data,2026-11-13
+harveststat-africa,Matched dataset DOI,https://doi.org/10.5061/dryad.vq83bk42w,,,
+harveststat-africa,Provider metadata for linked release,https://datadryad.org/api/v2/datasets/doi%3A10.5061%2Fdryad.vq83bk42w,,,
+sample-earth,Card target,https://sampleearth.org/,200,Sample Earth,2026-11-13
+scientific-data-s41597-025-05257-5,Card target,https://www.nature.com/articles/s41597-025-05257-5,200,An Africa-wide agricultural production database to support policy and satellite-based measurement systems | Scientific Data,2026-11-13
+scientific-data-s41597-025-05257-5,Data (Zenodo),https://zenodo.org/records/14961637,200,"GROW-Africa (Groundtruthing Remote-sensing for Optimizing Yield in Africa) Database, v1.0 | Zenodo",2026-11-13
+scientific-data-s41597-025-05257-5,"Dataset deposit, licence, release and inventory",https://zenodo.org/api/records/14961637,200,,2026-11-13
+spatial-frameworks-for-robust-estimation-of-yield-gaps,Card target,https://www.nature.com/articles/s43016-021-00365-y,200,Spatial frameworks for robust estimation of yield gaps | Nature Food,2026-11-13
+spatial-frameworks-for-robust-estimation-of-yield-gaps,Global Yield Gap Atlas (data),https://www.yieldgap.org,200,Yield Potential and Yield Gap Atlas | Crop yield potential and yield gap analysis,2026-11-13
+spatial-frameworks-for-robust-estimation-of-yield-gaps,PDF (ResearchGate),https://www.researchgate.net/publication/354972750_Spatial_frameworks_for_robust_estimation_of_yield_gaps,403,,2026-11-13
+spatial-frameworks-for-robust-estimation-of-yield-gaps,Cited in data availability statement,https://agmip.org/data-and-tools-updated/,,,
+terra-i-plus,Card target,https://www.terra-iplus.org/,200,An eye on habitat change | Terra-i+,2026-11-13
+agroforestry-carbon-finance,Card target,https://songbaelee.github.io/agroforestry-carbon-finance/,200,Carbon Finance Learning Tool,2026-11-13
+cropland-ghg-emissions-removals-climate-action-food-systems,Card target,https://www.nature.com/articles/s41558-026-02558-4,200,Spatially explicit global assessment of cropland greenhouse gas emissions circa 2020 | Nature Climate Change,2026-11-13
+cropland-ghg-emissions-removals-climate-action-food-systems,Data & code (figshare),https://doi.org/10.6084/m9.figshare.29089973,202,,2026-11-13
+cropland-ghg-emissions-removals-climate-action-food-systems,Open version,https://www.researchsquare.com/article/rs-6622054/v1,200,Mapping greenhouse gas emissions from global cropland circa 2020 | Research Square,2026-11-13
+cropland-ghg-emissions-removals-climate-action-food-systems,Cited in data availability statement,https://doi.org/10.6084/m9.figshare.29089973.v3,,,
+erw-fpr-explorer,Card target,https://sandbox.maticarbon.com/tools/erw-fpr-explorer,200,ERW false-positive explorer,2026-11-13
+fao-ghg-drose-drained-organic-soils-emissions,Card target,https://developers.google.com/earth-engine/datasets/catalog/FAO_GHG_1_DROSE_A,200,Drained Organic Soils Emissions (Annual) 1.0  |  Earth Engine Data Catalog  |  Google for Developers,2026-11-13
+global-renewables-watch,Card target,https://github.com/microsoft/global-renewables-watch,200,GitHub - microsoft/global-renewables-watch · GitHub,2026-11-13
+global-renewables-watch,Dataset (GitHub release),https://github.com/microsoft/global-renewables-watch/releases/tag/v1.0,200,Release v1 dataset release · microsoft/global-renewables-watch · GitHub,2026-11-13
+global-renewables-watch,Repository metadata,https://api.github.com/repos/microsoft/global-renewables-watch,200,,2026-11-13
+global-renewables-watch,Repository revision,https://github.com/microsoft/global-renewables-watch/commit/963ef00c69bd4e6c1aeca89371a41c3bfd5484c8,,,
+global-renewables-watch,Tagged software release,https://github.com/microsoft/global-renewables-watch/releases/tag/v1.1,,,
+meta-wri-global-canopy-height-map,Card target,https://meta-forest-monitoring-okw37.projects.earthengine.app/view/canopyheight,200,canopyheight,2026-11-13
+meta-wri-global-canopy-height-map,Dataset (AWS Open Data),https://registry.opendata.aws/dataforgood-fb-forests/,200,High Resolution Canopy Height Maps by WRI and Meta - Registry of Open Data on AWS,2026-11-13
+openlandmap-soildb-global-30m-soil-datacube,Card target,https://world.soils.app/,200,Openlandmap Soil-DB,2026-11-13
+openlandmap-soildb-global-30m-soil-datacube,Dataset (Zenodo),https://doi.org/10.5281/zenodo.15608972,200,openlandmap/soildb: v0.0.2 | Zenodo,2026-11-13
+openlandmap-soildb-github,Card target,https://github.com/openlandmap/soildb,200,GitHub - openlandmap/soildb: Production of soil data predictions using scikit-map · GitHub,2026-11-13
+openlandmap-soildb-github,Dataset (Zenodo),https://doi.org/10.5281/zenodo.15608972,200,openlandmap/soildb: v0.0.2 | Zenodo,2026-11-13
+openlandmap-soildb-github,Repository metadata,https://api.github.com/repos/openlandmap/soildb,200,,2026-11-13
+openlandmap-soildb-github,Repository revision,https://github.com/openlandmap/soildb/commit/b1264a85b9cddca2640f5316f7c9cc2448d9b5fa,,,
+openlandmap-soildb-github,Tagged software release,https://github.com/openlandmap/soildb/releases/tag/v0.0.2,,,
+reducing-emissions-from-fertilizers-opportunities-and-challenges,Card target,https://doi.org/10.1016/bs.agron.2026.03.002,200,Redirecting,2026-11-13
+reducing-emissions-from-fertilizers-opportunities-and-challenges,Open version,https://cgspace.cgiar.org/items/30e4f155-c3ee-4986-a1bc-b7033768ef20,200,Reducing Emissions from Fertilizers: Opportunities and Challenges,2026-11-13
+climateaf-high-resolution-climate-africa,Card target,https://www.nature.com/articles/s41597-025-05575-8,200,A high-resolution database of historical and future climate for Africa developed with deep neural networks | Scientific Data,2026-11-13
+climateaf-high-resolution-climate-africa,Alt access,http://tinyurl.com/ClimateAF,200,ClimateAU shortcut - Andreas Hamann's website,2026-11-13
+climateaf-high-resolution-climate-africa,Data & code (Zenodo),https://zenodo.org/records/18559510,200,ClimateAF v1.1 software package and gridded climate data for Africa at 2.5 arcminute and 30 arcsecond resolution | Zenodo,2026-11-13
+buildforward-explorer,Card target,https://explore.buildforward.io/,200,Design Explorer — Degree Day,2026-11-13
+buildforward-precipitation-methodology,Card target,https://data.buildforward.io/docs/methodology_buildforward_precip.pdf,200,,2026-11-13
+burger-global-sub-daily-idf-data,Card target,https://zenodo.org/records/15473689,200,BURGER - A bottom-up regionalization approach for global sub-daily intensity-duration-frequency data | Zenodo,2026-11-13
+burger-global-sub-daily-idf-data,Paper (WRR),https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024WR039773,403,,2026-11-13
+burger-global-sub-daily-idf-data,"Dataset deposit, licence, release and inventory",https://zenodo.org/api/records/15473689,200,,2026-11-13
+chelsa-climatologies-high-resolution,Card target,https://www.chelsa-climate.org/,200,CHELSA,2026-11-13
+cra5-dataset-github,Card target,https://github.com/taohan10200/CRA5,200,"GitHub - taohan10200/CRA5: A large compression model for weather and climate data, which compresses a 400+ TB ERA5 dataset into a new 0.8 TB CRA5 dataset. · GitHub",2026-11-13
+cra5-compressed-reanalysis-atmospheric-dataset,Card target,https://www.nature.com/articles/s41597-026-07381-2,200,CRA5 a high-fidelity compressed reanalysis atmospheric dataset for weather and climate research | Scientific Data,2026-11-13
+cra5-compressed-reanalysis-atmospheric-dataset,Code (GitHub),https://github.com/taohan10200/CRA5,200,"GitHub - taohan10200/CRA5: A large compression model for weather and climate data, which compresses a 400+ TB ERA5 dataset into a new 0.8 TB CRA5 dataset. · GitHub",2026-11-13
+cra5-compressed-reanalysis-atmospheric-dataset,Dataset (Hugging Face),https://huggingface.co/datasets/taohan10200/CRA5-Dataset,200,taohan10200/CRA5-Dataset · Datasets at Hugging Face,2026-11-13
+cra5-compressed-reanalysis-atmospheric-dataset,Cited in data availability statement,https://huggingface.co/datasets/taohan10200/CRA5-Dataset,200,taohan10200/CRA5-Dataset · Datasets at Hugging Face,2026-11-13
+cra5-compressed-reanalysis-atmospheric-dataset,Cited in data availability statement,https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels,,,
+cra5-compressed-reanalysis-atmospheric-dataset,Cited in data availability statement,https://cds.climate.copernicus.eu/datasets/reanalysis-era5-pressure-levels,,,
+cra5-compressed-reanalysis-atmospheric-dataset,Article-specific copyright statement,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13443884/fullTextXML,,,
+fews-net-software-tool,Card target,https://earlywarning.usgs.gov/fews/software-tools/26/,200,Software Tool 26 page,2026-11-13
+fews-net-software-tool,Public enquiry route,https://earlywarning.usgs.gov/fews/contact/,,,
+global-gridded-heating-cooling-degree-days,Card target,https://www.nature.com/articles/s41893-025-01754-y,200,Global gridded dataset of heating and cooling degree days under climate change scenarios | Nature Sustainability,2026-11-13
+global-gridded-heating-cooling-degree-days,Dataset (Oxford ORA),https://ora.ox.ac.uk/objects/uuid:eab12a82-e38d-44bb-8398-3f60b524ee97,200,Global gridded dataset of heating and cooling degree days under climate change scenarios - ORA - Oxford University Research Archive,2026-11-13
+global-gridded-heating-cooling-degree-days,Cited in data availability statement,https://doi.org/10.5287/ora-w4qpqy522,,,
+mercury-multi-resolution-global-emulator-of-compound-climate-hazards,Card target,https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024MS004905,403,,2026-11-13
+mercury-multi-resolution-global-emulator-of-compound-climate-hazards,Code (GitHub),https://github.com/snath-xoc/Lifting,200,GitHub - snath-xoc/Lifting: Lifting scheme · GitHub,2026-11-13
+nature-climate-change-article-s41558-025-02372-4,Card target,https://www.nature.com/articles/s41558-025-02372-4,200,Extreme weather event attribution predicts climate policy support across the world | Nature Climate Change,2026-11-13
+nature-climate-change-article-s41558-025-02372-4,Open version,https://publications.aston.ac.uk/id/eprint/47916/1/Extreme_weather_event_attribution_predicts_climate_policy_support_across_the_world.pdf,200,,2026-11-13
+nature-climate-change-article-s41558-025-02372-4,Cited in data availability statement,https://doi.org/10.17605/OSF.IO/5C3QD,,,
+nature-climate-change-article-s41558-025-02372-4,Cited in data availability statement,https://doi.org/10.17605/OSF.IO/G23A7,,,
+nature-climate-change-article-s41558-025-02372-4,Article-specific copyright statement,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12237696/fullTextXML,,,
+xclim-climate-indicators,Card target,https://xclim.readthedocs.io/en/stable/indicators.html,200,Climate Indicators - xclim Official Documentation,2026-11-13
+defining-the-agricultural-wet-season-in-africa-using-soil-moisture-from-smap,Card target,https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025GL118236,403,,2026-11-13
+dynamical-org-catalog,Card target,https://dynamical.org/catalog/,200,dynamical.org - catalog,2026-11-13
+earthmover,Card target,https://www.earthmover.io/,200,Earthmover,2026-11-13
+el-nino-2026,Card target,https://elnino2026.com/,200,elnino2026.com,2026-11-13
+iwmi-enso-dashboard,Card target,https://enso.iwmi.org/dashboard,200,IWMI ENSO Outlook,2026-11-13
+cmip7-forcing-datasets,Card target,https://wcrp-cmip.org/cmip-phases/cmip7/cmip7-forcing-datasets/,403,,2026-11-13
+copernicus-era6-reanalysis-production-starts,Card target,https://climate.copernicus.eu/copernicus-climates-era6-reanalysis-production-starts,200,Copernicus Climate’s ERA6 reanalysis production starts | Copernicus,2026-11-13
+input4mips-cvs-documentation,Card target,https://input4mips-cvs.readthedocs.io/en/latest/,200,input4MIPs Controlled Vocabularies (CVs),2026-11-13
+input4mips-cvs-releases-github,Card target,https://github.com/PCMDI/input4MIPs_CVs/releases,200,Releases · PCMDI/input4MIPs_CVs · GitHub,2026-11-13
+input4mips-cvs-releases-github,Repository metadata,https://api.github.com/repos/PCMDI/input4MIPs_CVs,200,,2026-11-13
+input4mips-cvs-releases-github,Software citation,https://github.com/PCMDI/input4MIPs_CVs/blob/main/CITATION.cff,,,
+a-new-class-of-climate-hazard-metrics-ten-fold-increase-extreme-heat-europe,Card target,https://www.sciencedirect.com/science/article/pii/S221209472600006X,403,,2026-11-13
+global-gridded-multi-temporal-datasets-human-population-distribution-modelling,Card target,https://gatesopenresearch.org/articles/9-72,200,Global gridded multi-temporal datasets to... | Gates Open Research,2026-11-13
+global-gridded-multi-temporal-datasets-human-population-distribution-modelling,Cited in data availability statement,https://hub.worldpop.org/project/categories?id=14,,,
+global-gridded-multi-temporal-datasets-human-population-distribution-modelling,Cited in data availability statement,ftp://ftp.worldpop.org/GIS/Covariates/Global_2015_2030,,,
+global-gridded-multi-temporal-datasets-human-population-distribution-modelling,Public enquiry route,https://gatesopenresearch.org/contact,,,
+worldpop-hub-population-dataset-category,Card target,https://hub.worldpop.org/project/categories?id=21,200,WorldPop :: Future Population Projections,2026-11-13
+worldpop-hub-population-dataset-category,Public enquiry route,https://www.worldpop.org/contactus/,,,
+zenodo-record-14443334,Card target,https://zenodo.org/records/14443334,200,Geographic distribution of the global agricultural workforce every decade for the years 2000-2100 | Zenodo,2026-11-13
+zenodo-record-14443334,"Dataset deposit, licence, release and inventory",https://zenodo.org/api/records/14443334,200,,2026-11-13
+global-dataset-of-7-billion-individuals-with-socio-economic-characteristics,Card target,https://www.nature.com/articles/s41597-024-03864-2,200,A global dataset of 7 billion individuals with socio-economic characteristics | Scientific Data,2026-11-13
+spatially-explicit-harmonized-global-dataset-of-critical-infrastructure,Card target,https://www.nature.com/articles/s41597-022-01218-4,200,A spatially-explicit harmonized global dataset of critical infrastructure | Scientific Data,2026-11-13
+spatially-explicit-harmonized-global-dataset-of-critical-infrastructure,Matched dataset DOI,https://doi.org/10.5281/zenodo.4957647,,,
+spatially-explicit-harmonized-global-dataset-of-critical-infrastructure,Provider metadata for linked release,https://zenodo.org/api/records/4957647,,,
+downscaled-gridded-global-dataset-gdp-per-capita-ppp-1990-2022,Card target,https://www.nature.com/articles/s41597-025-04487-x,200,Downscaled gridded global dataset for gross domestic product (GDP) per capita PPP over 1990–2022 | Scientific Data,2026-11-13
+africa-agriculture-watch-aagwa,Card target,https://www.aagwa.org/,,,
+attribution-of-extreme-weather-and-climate-events-and-their-impacts,Card target,https://www.nationalacademies.org/read/28590/chapter/1,200,"Read ""Attribution of Extreme Weather and Climate Events and Their Impacts"" at NAP.edu",2026-11-13
+cadi-climate-driven-agricultural-decline-index,Card target,https://cadi.econai.org/ssp370_absolute.html,200,CADI – Map Explorer,2026-11-13
+childrens-climate-risk-report-2026,Card target,https://data.unicef.org/resources/childrens-climate-risk-report-2026/,403,,2026-11-13
+climate-change-drives-a-decline-in-global-grazing-systems,Card target,https://www.pnas.org/doi/10.1073/pnas.2534015123,403,,2026-11-13
+climate-change-drives-a-decline-in-global-grazing-systems,Open version,https://research.rug.nl/en/publications/climate-change-drives-a-decline-in-global-grazing-systems/,200,"Climate change drives a decline in global grazing systems
+      -  the University of Groningen research portal",2026-11-13
+climate-hazard-mortality-diagnosing-trends-and-outliers,Card target,https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025GL119218,403,,2026-11-13
+climate-shift-index,Card target,https://csi.climatecentral.org/climate-shift-index,200,Climate Shift Index Global Map | Today | Climate Central,2026-11-13
+crop-water-origins-and-hydroclimate-vulnerability-of-global-croplands,Card target,https://www.nature.com/articles/s41893-025-01662-1,200,Crop water origins and hydroclimate vulnerability of global croplands | Nature Sustainability,2026-11-13
+crop-water-origins-and-hydroclimate-vulnerability-of-global-croplands,Cited in data availability statement,https://glad.umd.edu/dataset/croplands,,,
+crop-water-origins-and-hydroclimate-vulnerability-of-global-croplands,Cited in data availability statement,https://sage.nelson.wisc.edu/data-and-models/datasets/crop-calendar-dataset/,,,
+crop-water-origins-and-hydroclimate-vulnerability-of-global-croplands,Cited in data availability statement,https://asdc.larc.nasa.gov/project/TES/TL2HDOLN_6,,,
+crop-water-origins-and-hydroclimate-vulnerability-of-global-croplands,Cited in data availability statement,https://disc.gsfc.nasa.gov/datasets?keywords=tropess%20%2B%20airs%20%2B%20reanalysis&page=1,,,
+crop-water-origins-and-hydroclimate-vulnerability-of-global-croplands,Cited in data availability statement,https://www.earthdata.nasa.gov/data/catalog?keyword=TROPESS%20AIRS-Aqua%20Reanalysis,,,
+crop-water-origins-and-hydroclimate-vulnerability-of-global-croplands,Cited in data availability statement,https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MCD43A4,,,
+crop-water-origins-and-hydroclimate-vulnerability-of-global-croplands,Cited in data availability statement,https://doi.org/10.6084/m9.figshare.6387494.v2,,,
+crop-water-origins-and-hydroclimate-vulnerability-of-global-croplands,Cited in data availability statement,https://www.gleam.eu/,,,
+crop-water-origins-and-hydroclimate-vulnerability-of-global-croplands,Cited in data availability statement,https://gee-community-catalog.org/projects/global_esi/?h=esi,,,
+crop-water-origins-and-hydroclimate-vulnerability-of-global-croplands,Cited in data availability statement,https://doi.org/10.5281/zenodo.15041289,,,
+droughts-floods-crop-yield-sudanese-sahel,Card target,https://onlinelibrary.wiley.com/doi/full/10.1002/hyp.14978,403,,2026-11-13
+droughts-floods-crop-yield-sudanese-sahel,Open version,https://e-docs.geo-leo.de/entities/publication/19873f35-e37e-406f-94de-ac13d83c70e3,403,,2026-11-13
+evolution-of-climate-extremes-over-the-indian-subcontinent-using-a-revised-cei,Card target,https://rmets.onlinelibrary.wiley.com/doi/10.1002/joc.70467,403,,2026-11-13
+eoliann-airis-on-earthmover,Card target,https://www.earthmover.io/blog/from-geotiff-chaos-to-cloud-native-climate-risk-how-eoliann-built-airis-on-earthmover,200,From GeoTIFF Chaos to Cloud-Native Climate Risk: How Eoliann Built Airis on Earthmover | Earthmover,2026-11-13
+global-assessment-population-exposure-multiple-climate-related-hazards,Card target,https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(25)00173-1/fulltext,403,,2026-11-13
+gdpcir-downscaled-projections-preserving-extremes,Card target,https://impactlab.org/research/global-downscaled-projections-for-climate-impacts-research-gdpcir-preserving-extremes-for-modeling-future-climate-impacts/,200,Global downscaled projections for climate impacts research (GDPCIR): Preserving extremes for modeling future climate impacts - Climate Impact Lab,2026-11-13
+gdpcir-downscaled-projections-preserving-extremes,"Data (Planetary Computer, 3 collections by licence)",https://planetarycomputer.microsoft.com/dataset/group/cil-gdpcir,200,Planetary Computer,2026-11-13
+gdpcir-downscaled-projections-preserving-extremes,Paper (GMD 2024),https://doi.org/10.5194/gmd-17-191-2024,200,GMD - Global Downscaled Projections for Climate Impacts Research (GDPCIR): preserving quantile trends for modeling  future climate impacts,2026-11-13
+gdpcir-downscaled-projections-preserving-extremes,"Code · repo (downscaleCMIP6, MIT)",https://github.com/ClimateImpactLab/downscaleCMIP6,200,"GitHub - ClimateImpactLab/downscaleCMIP6: Downscaling & bias correction of CMIP6 tasmin, tasmax,  and pr for the R/CIL GDPCIR project · GitHub",2026-11-13
+gdpcir-downscaled-projections-preserving-extremes,Public enquiry route,https://impactlab.org/about/contact/,,,
+google-flood-hub,Card target,https://sites.research.google/floods/l/0/0/3,200,,2026-11-13
+hungermap-live,Card target,https://hungermap.wfp.org/,200,HungerMap LIVE,2026-11-13
+nature-communications-s41467-026-72715-y,Card target,https://www.nature.com/articles/s41467-026-72715-y,200,Addressing global hotspots of drought-related crop production losses | Nature Communications,2026-11-13
+socioeconomic-predictors-vulnerability-flood-induced-displacement,Card target,https://www.nature.com/articles/s41467-025-64015-8,200,Socioeconomic predictors of vulnerability to flood-induced displacement | Nature Communications,2026-11-13
+socioeconomic-predictors-vulnerability-flood-induced-displacement,Cited in data availability statement,https://global-flood-database.cloudtostreet.ai,,,
+socioeconomic-predictors-vulnerability-flood-induced-displacement,Cited in data availability statement,https://www.internal-displacement.org/database/,,,
+socioeconomic-predictors-vulnerability-flood-induced-displacement,Cited in data availability statement,https://floodobservatory.colorado.edu/Archives/index.html,,,
+socioeconomic-predictors-vulnerability-flood-induced-displacement,Article-specific copyright statement,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12441118/fullTextXML,,,
+soil-erosion-watch,Card target,https://github.com/SoilWatch/soil-erosion-watch,200,GitHub - SoilWatch/soil-erosion-watch: GEE App to explore the state of the world's (degraded) soils · GitHub,2026-11-13
+soil-erosion-watch,Repository metadata,https://api.github.com/repos/SoilWatch/soil-erosion-watch,200,,2026-11-13
+soil-erosion-watch,Repository revision,https://github.com/SoilWatch/soil-erosion-watch/commit/52e97cee6325548216a9fe25bc1f6eeaeb7265b7,,,
+soil-erosion-watch,Software citation,https://github.com/SoilWatch/soil-erosion-watch/blob/master/CITATION.cff,,,
+soil-erosion-watch,Copyright notice,https://github.com/SoilWatch/soil-erosion-watch/blob/52e97cee6325548216a9fe25bc1f6eeaeb7265b7/LICENSE,,,
+fao-soilfer-cropsuit,Card target,https://data.apps.fao.org/soilfer/cropsuit,200,SoilFER App,2026-11-13
+merge-dataset-climate-disaster-impacts-human-vulnerability,Card target,https://www.nature.com/articles/s41597-026-07522-7,200,The MERGE Dataset: A Harmonized Global Resource for Climate Disaster Impacts and Human Vulnerability | Scientific Data,2026-11-13
+merge-dataset-climate-disaster-impacts-human-vulnerability,Cited in data availability statement,https://zenodo.org/records/16837695,,,
+merge-dataset-climate-disaster-impacts-human-vulnerability,Cited in data availability statement,https://doi.org/10.5281/zenodo.16837695,,,
+merge-dataset-climate-disaster-impacts-human-vulnerability,"Dataset deposit, licence, release and inventory",https://zenodo.org/api/records/16837695,200,,2026-11-13
+wfp-document-0000172936,Card target,https://docs.wfp.org/api/documents/WFP-0000172936/download/,403,,2026-11-13
+projections-of-future-agricultural-management-and-crop-choice-under-ssps,Card target,https://www.nature.com/articles/s41597-025-06103-4,200,Projections of future agricultural management and crop choice under shared socioeconomic pathways | Scientific Data,2026-11-13
+projections-of-future-agricultural-management-and-crop-choice-under-ssps,Cited in data availability statement,https://doi.org/10.6084/m9.figshare.28838930,,,
+projections-of-future-agricultural-management-and-crop-choice-under-ssps,Provider metadata for linked release,https://api.figshare.com/v2/articles/28838930,,,
+ai4ch4-ai-for-methane,Card target,https://ai4ch4.com/,200,AI4CH4,2026-11-13
+alphaearth-earth-engine-adk-skill,Card target,https://github.com/google/earthengine-community/blob/master/skills/alphaearth/SKILL.md,404,,2026-11-13
+alphaearth-earth-engine-adk-skill,Repository metadata,https://api.github.com/repos/google/earthengine-community,200,,2026-11-13
+cgiar-on-hugging-face,Card target,https://huggingface.co/CGIAR,200,CGIAR (CGIAR),2026-11-13
+climsight,Card target,https://github.com/CliDyn/climsight,200,"GitHub - CliDyn/climsight: A next-generation climate information system that uses large language models (LLMs) alongside high-resolution climate model data, scientific literature, ",2026-11-13
+climsight,Repository metadata,https://api.github.com/repos/CliDyn/climsight,200,,2026-11-13
+climsight,Repository revision,https://github.com/CliDyn/climsight/commit/146b478e57b14cc31109bfbd57494306965cb185,,,
+climsight,Tagged software release,https://github.com/CliDyn/climsight/releases/tag/v1.0.0,,,
+closing-the-gap-between-crop-simulation-and-practical-decision-making,Card target,https://www.sciencedirect.com/science/article/pii/S0168169926002504,403,,2026-11-13
+closing-the-gap-between-crop-simulation-and-practical-decision-making,Code (GitHub),https://github.com/MSU-CECO/DSSATLM-AgNeSy,200,GitHub - MSU-CECO/DSSATLM-AgNeSy: A Framework: Closing the Gap Between Crop Simulation and Practical Decision-Making · GitHub,2026-11-13
+dssatlm-agnesy,Card target,https://github.com/MSU-CECO/DSSATLM-AgNeSy/tree/dev,200,GitHub - MSU-CECO/DSSATLM-AgNeSy: A Framework: Closing the Gap Between Crop Simulation and Practical Decision-Making · GitHub,2026-11-13
+dssatlm-agnesy,Repository metadata,https://api.github.com/repos/MSU-CECO/DSSATLM-AgNeSy,200,,2026-11-13
+empowering-the-google-earth-engine-community-with-example-adk-agents,Card target,https://medium.com/google-earth/empowering-the-google-earth-engine-community-with-example-adk-agents-4afa22dab855,200,Medium,2026-11-13
+forestcast-forecasting-deforestation-risk-at-scale-with-deep-learning,Card target,https://eartharxiv.org/repository/view/10674/,200,ForestCast: Forecasting Deforestation Risk at Scale with Deep Learning,2026-11-13
+google-agricultural-understanding-platform,Card target,https://agri.withgoogle.com/,200,Agricultural Understanding Platform — Google DeepMind,2026-11-13
+google-agricultural-understanding-platform,anthrokrishi-io-demo.uc.r.appspot.com,https://anthrokrishi-io-demo.uc.r.appspot.com/,404,,2026-11-13
+loom-video-demo-291e886a,Card target,https://www.loom.com/share/291e886a8350406e8e7f9a230a66832e,200,MSU-CECO/DSSATLM-AgNeSy POC Demo | Loom,2026-11-13
+mapping-the-planet-with-earth-index-is-now-open-to-everyone,Card target,https://www.earthgenome.org/blog/mapping-the-planet-with-earth-index-is-now-open-to-everyone,200,Mapping the planet with Earth Index is now open to everyone,2026-11-13
+nature-article-s44458-026-00071-5,Card target,https://www.nature.com/articles/s44458-026-00071-5,200,Ways forward for global adaptation evidence synthesis building on the Global Adaptation Mapping Initiative | Communications Sustainability,2026-11-13
+nature-article-s44458-026-00071-5,Dataset (Zenodo),https://doi.org/10.5281/zenodo.18898017,200,GAMI Review Survey - Figure Source Data | Zenodo,2026-11-13
+nature-article-s44458-026-00071-5,Cited in data availability statement,https://doi.org/10.5281/zenodo.18898017,200,GAMI Review Survey - Figure Source Data | Zenodo,2026-11-13
+earth-science-data-sets-on-aws,Card target,https://aws.amazon.com/blogs/aws/earth-science-data-sets-on-aws/,200,Earth Science on AWS with new CGIAR and Landsat Public Data Sets | AWS News Blog,2026-11-13
+earth-observations-for-climate-adaptation-tracking-the-global-goal-on-adaptation,Card target,https://www.nature.com/articles/s41612-025-01251-1,200,Earth observations for climate adaptation: tracking progress towards the Global Goal on Adaptation through satellite-derived indicators | npj Climate and Atmospheric Science,2026-11-13
+earth-observations-for-climate-adaptation-tracking-the-global-goal-on-adaptation,CEOS ECV Inventory,https://climatemonitoring.info/ecvinventory,200,ECV Inventory – Climate Monitoring from Space – Joint CEOS/CGMS Working Group,2026-11-13
+earth-observations-for-climate-adaptation-tracking-the-global-goal-on-adaptation,Cited in data availability statement,https://climatemonitoring.info/ecvinventory,200,ECV Inventory – Climate Monitoring from Space – Joint CEOS/CGMS Working Group,2026-11-13
+fao-gleam-global-livestock-environmental-assessment-model,Card target,https://github.com/un-fao/GLEAM,200,"GitHub - un-fao/GLEAM: R package implementing the FAO GLEAM model to simulate livestock systems and estimate emissions based on herd, feed, and energy flows. · GitHub",2026-11-13
+fao-gleam-global-livestock-environmental-assessment-model,Repository revision,https://github.com/un-fao/GLEAM/commit/4068c238bc0d86ee79be986dc1cfbe38f53bbd90,,,
+fao-gleam-global-livestock-environmental-assessment-model,Tagged software release,https://github.com/un-fao/GLEAM/releases/tag/v0.8.0-alpha,,,
+alphaearth-foundations-helps-map-our-planet-in-unprecedented-detail,Card target,https://deepmind.google/blog/alphaearth-foundations-helps-map-our-planet-in-unprecedented-detail/,200,AlphaEarth Foundations helps map our planet in unprecedented detail — Google DeepMind,2026-11-13
+alphaearth-foundations-helps-map-our-planet-in-unprecedented-detail,Satellite Embedding dataset (Google Earth Engine),https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_ANNUAL,200,Satellite Embedding V1  |  Earth Engine Data Catalog  |  Google for Developers,2026-11-13
+synthesizing-scientific-literature-with-retrieval-augmented-language-models,Card target,https://www.nature.com/articles/s41586-025-10072-4,200,Synthesizing scientific literature with retrieval-augmented language models | Nature,2026-11-13
+synthesizing-scientific-literature-with-retrieval-augmented-language-models,Code (GitHub),https://github.com/AkariAsai/OpenScholar,200,GitHub - AkariAsai/OpenScholar: This repository includes the official implementation of OpenScholar: Synthesizing Scientific Literature with Retrieval-augmented LMs. · GitHub,2026-11-13
+synthesizing-scientific-literature-with-retrieval-augmented-language-models,Preprint (arXiv),https://arxiv.org/abs/2411.14199,200,[2411.14199] OpenScholar: Synthesizing Scientific Literature with Retrieval-augmented LMs,2026-11-13
+synthesizing-scientific-literature-with-retrieval-augmented-language-models,Cited in data availability statement,https://huggingface.co/datasets/OpenSciLM/OS_Train_Data,,,
+synthesizing-scientific-literature-with-retrieval-augmented-language-models,Cited in data availability statement,https://github.com/AkariAsai/ScholarQABench/tree/main/data,,,
+synthesizing-scientific-literature-with-retrieval-augmented-language-models,Cited in data availability statement,https://huggingface.co/datasets/allenai/openscilm_queries,,,
+synthesizing-scientific-literature-with-retrieval-augmented-language-models,Article-specific copyright statement,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12935541/fullTextXML,,,
+kenya-crop-type-detection-dataset-kaggle,Card target,https://www.kaggle.com/discussions/general/435213,200,[New Dataset] Kenya Crop Type Detection Dataset | Kaggle,2026-11-13
+alphaearth-foundations,Card target,https://arxiv.org/abs/2507.22291,200,[2507.22291] AlphaEarth Foundations: An embedding field model for accurate and efficient global mapping from sparse label data,2026-11-13
+alphaearth-foundations,Satellite Embedding dataset (Google Earth Engine),https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_ANNUAL,200,Satellite Embedding V1  |  Earth Engine Data Catalog  |  Google for Developers,2026-11-13
+alphaearth-foundations,Public enquiry route,https://info.arxiv.org/help/contact.html,,,
+building-and-managing-local-databases-from-google-earth-engine-with-the-geelite-r-package,Card target,https://documents1.worldbank.org/curated/en/099459405072542252/pdf/,404,,2026-11-13
+building-and-managing-local-databases-from-google-earth-engine-with-the-geelite-r-package,Code (GitHub),https://github.com/mtkurbucz/geeLite,200,"GitHub - mtkurbucz/geeLite: This package streamlines the process of building, managing, and updating local SQLite databases that contain geospatial features extracted from Google E",2026-11-13
+changes-in-temperature-and-precipitation-extremes-over-the-greater-horn-of-africa-region-from-1961-to-2010,Card target,http://onlinelibrary.wiley.com/doi/10.1002/joc.3763/abstract,403,,2026-11-13
+changes-in-temperature-and-precipitation-extremes-over-the-greater-horn-of-africa-region-from-1961-to-2010,Open version,https://orca.cardiff.ac.uk/id/eprint/94858/,403,,2026-11-13
+choosegcm-toolkit-to-select-general-circulation-models-in-r,Card target,https://onlinelibrary.wiley.com/doi/10.1111/gcb.70008,403,,2026-11-13
+choosegcm-toolkit-to-select-general-circulation-models-in-r,Code (GitHub),https://github.com/luizesser/chooseGCM,200,GitHub - luizesser/chooseGCM: R package to help select GCM models · GitHub,2026-11-13
+choosegcm-toolkit-to-select-general-circulation-models-in-r,Package metadata,https://github.com/luizesser/chooseGCM/blob/1c6bc638ba26c7176baeb045efda7d1240970923/DESCRIPTION,,,2026-11-13
+choosegcm-toolkit-to-select-general-circulation-models-in-r,Package metadata,https://github.com/luizesser/chooseGCM/blob/1c6bc638ba26c7176baeb045efda7d1240970923/LICENSE,,,2026-11-13
+choosegcm-toolkit-to-select-general-circulation-models-in-r,Package metadata,https://github.com/luizesser/chooseGCM/blob/1c6bc638ba26c7176baeb045efda7d1240970923/inst/CITATION,,,2026-11-13
+climate-analogues-homologues-agricultural-systems,Card target,https://www.sciencedirect.com/science/article/pii/S0308521X22001007,403,,2026-11-13
+cordex-ml-bench-benchmark-regional-climate-downscaling,Card target,https://arxiv.org/abs/2606.29172,200,[2606.29172] CORDEX-ML-Bench: A Benchmark for Data-Driven Regional Climate Downscaling -Experiment Design and Overview,2026-11-13
+cordex-ml-bench-benchmark-regional-climate-downscaling,Benchmark dataset (Zenodo),https://zenodo.org/records/20345249,200,,2026-11-13
+cordex-ml-bench-benchmark-regional-climate-downscaling,Code (GitHub),https://github.com/WCRP-CORDEX/ml-benchmark,200,GitHub - WCRP-CORDEX/ml-benchmark: CORDEX Machine Learning benchmark · GitHub,2026-11-13
+cordex-ml-bench-benchmark-regional-climate-downscaling,Public enquiry route,https://info.arxiv.org/help/contact.html,,,
+yield-forecasting-remote-sensing-article-ijaeo,Card target,https://www.sciencedirect.com/science/article/pii/S1569843226001329,403,,2026-11-13
+farm-level-in-season-crop-identification-for-india,Card target,https://arxiv.org/abs/2507.02972,200,"[2507.02972] Farm-Level, In-Season Crop Identification for India",2026-11-13
+farm-level-in-season-crop-identification-for-india,Public enquiry route,https://info.arxiv.org/help/contact.html,,,
+geedl,Card target,https://github.com/amirafshari/geedl,200,"GitHub - amirafshari/geedl: Agentic Google Earth Engine downloader: Talk to it. Get a job.yaml. Sentinel & Landsat to COG. Parallel, resumable, YAML-driven. No GCS. No Drive. · Git",2026-11-13
+geedl,Repository metadata,https://api.github.com/repos/amirafshari/geedl,200,,2026-11-13
+geedl,Repository revision,https://github.com/amirafshari/geedl/commit/f8ff153baab8b0280652f3cd2175fd3b63e15ed3,,,
+harmonized-in-situ-datasets-agricultural-land-use-tropical-countries,Card target,https://essd.copernicus.org/articles/13/5951/2021/,200,ESSD - Harmonized in situ datasets for agricultural land use mapping and monitoring in tropical countries,2026-11-13
+harmonized-in-situ-datasets-agricultural-land-use-tropical-countries,JECAM dataset (CIRAD Dataverse),https://doi.org/10.18167/DVN1/P7OLAP,200,Harmonized in situ JECAM datasets for agricultural land use mapping and monitoring in tropical countries - UMR TETIS,2026-11-13
+jecam-harmonized-in-situ-crop-type-dataset-cirad-dataverse,Card target,https://dataverse.cirad.fr/dataset.xhtml?persistentId=doi:10.18167/DVN1/P7OLAP,200,Harmonized in situ JECAM datasets for agricultural land use mapping and monitoring in tropical countries - UMR TETIS,2026-11-13
+helmets-labeling-crops-kenya-crop-type-dataset,Card target,https://www.nature.com/articles/s41597-025-05762-7,200,Helmets Labeling Crops: Kenya Crop Type Dataset Created via Helmet-Mounted Cameras and Deep Learning | Scientific Data,2026-11-13
+helmets-labeling-crops-kenya-crop-type-dataset,Dataset (Zenodo),https://doi.org/10.5281/zenodo.15133324,200,Helmets Kenya Crop Type Dataset | Zenodo,2026-11-13
+helmets-labeling-crops-kenya-crop-type-dataset,"Dataset deposit, licence, release and inventory",https://zenodo.org/api/records/15133324,200,,2026-11-13
+high-resolution-and-bias-corrected-cmip5-projections,Card target,https://www.nature.com/articles/s41597-019-0343-8,200,High-resolution and bias-corrected CMIP5 projections for climate change impact assessments | Scientific Data,2026-11-13
+high-resolution-and-bias-corrected-cmip5-projections,Dataset (CGIAR CGSpace),https://cgspace.cgiar.org/items/5a3d246a-b910-4b3b-aaaf-1af5a971cc79,200,High-resolution and bias-corrected CMIP5 projections for climate change impact assessments,2026-11-13
+investment-trends-and-evaluation-gaps-in-rainwater-harvesting-in-sub-saharan-african-drylands,Card target,https://www.sciencedirect.com/science/article/pii/S0378377426001460,403,,2026-11-13
+methods-for-assessing-climate-vulnerability-in-africa-across-two-decades-a-scoping-review,Card target,https://link.springer.com/article/10.1186/s44329-025-00041-7,200,Methods for assessing climate vulnerability in Africa across two decades: a scoping review | BMC Environmental Science | Springer Nature Link,2026-11-13
+methods-for-assessing-climate-vulnerability-in-africa-across-two-decades-a-scoping-review,Article-specific copyright statement,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12684232/fullTextXML,,,
+olmoearth,Card target,https://www.datocms-assets.com/64837/1762355216-olmoearth_v2.pdf,200,,2026-11-13
+olmoearth,Models & code (Ai2),https://allenai.org/olmoearth,200,OlmoEarth  | Ai2,2026-11-13
+cordex-ml-benchmark-repository,Card target,https://github.com/WCRP-CORDEX/ml-benchmark,200,GitHub - WCRP-CORDEX/ml-benchmark: CORDEX Machine Learning benchmark · GitHub,2026-11-13
+cordex-ml-benchmark-repository,Benchmark dataset (Zenodo),https://zenodo.org/records/20345249,200,,2026-11-13
+cordex-ml-benchmark-repository,Repository metadata,https://api.github.com/repos/WCRP-CORDEX/ml-benchmark,200,,2026-11-13
+cordex-ml-benchmark-repository,Repository revision,https://github.com/WCRP-CORDEX/ml-benchmark/commit/950e74927ca8af2898458e0e5dea4d2bf78e60f0,,,
+gmia-next-global-map-of-irrigated-areas,Card target,https://agdatacommons.nal.usda.gov/articles/dataset/GMIA-NEXT_Next-Generation_Global_Map_of_Irrigated_Areas/32755521,202,,2026-11-13
+gmia-next-global-map-of-irrigated-areas,Overview,https://earthstuff.substack.com/p/gmia-next-next-generation-global,200,GMIA-NEXT - Next-Generation Global Map of Irrigated Areas,2026-11-13
+gmia-next-global-map-of-irrigated-areas,Data (Zenodo),https://zenodo.org/records/17627111,200,GMIA-NEXT: Next-Generation Global Map of Irrigated Areas | Zenodo,2026-11-13
+gmia-next-global-map-of-irrigated-areas,"Dataset deposit, licence, release and inventory",https://zenodo.org/api/records/17627111,200,,2026-11-13
+youth-lead-dietary-emissions-seniors-drive-growth,Card target,https://www.nature.com/articles/s43016-026-01383-4,200,Youth lead current dietary emissions while seniors increasingly drive total emission growth | Nature Food,2026-11-13
+youth-lead-dietary-emissions-seniors-drive-growth,DOI,https://doi.org/10.1038/s43016-026-01383-4,200,Youth lead current dietary emissions while seniors increasingly drive total emission growth | Nature Food,2026-11-13
+climateserv-2,Card target,https://github.com/SERVIR/ClimateSERV2,200,"GitHub - SERVIR/ClimateSERV2: ClimateSERV allows development practitioners, scientists/researchers, and government decision-makers to visualize and download historical rainfall dat",2026-11-13
+climateserv-2,Web app,https://climateserv.servirglobal.net/,200,ClimateSERV - Home,2026-11-13
+climateserv-2,DOI (Zenodo),https://doi.org/10.5281/zenodo.11550665,200,SERVIR/ClimateSERV2: Initial Release | Zenodo,2026-11-13
+climateserv-2,Python package,https://pypi.org/project/climateserv/,200,Client Challenge,2026-11-13
+climateserv-2,Repository metadata,https://api.github.com/repos/SERVIR/ClimateSERV2,200,,2026-11-13
+climateserv-2,Repository revision,https://github.com/SERVIR/ClimateSERV2/commit/232267a65f13dc218f6757b9a9d0808a1fa24406,,,
+climateserv-2,Tagged software release,https://github.com/SERVIR/ClimateSERV2/releases/tag/v1.0.0,,,
+global-1km-gridded-household-consumption-ppp,Card target,https://www.nature.com/articles/s41597-026-07919-4,200,A global 1 km gridded dataset of household consumption expenditure in purchasing power parity 2013–2024 | Scientific Data,2026-11-13
+global-1km-gridded-household-consumption-ppp,PDF,https://www.nature.com/articles/s41597-026-07919-4_reference.pdf,200,,2026-11-13
+global-1km-gridded-household-consumption-ppp,DOI,https://doi.org/10.1038/s41597-026-07919-4,200,A global 1 km gridded dataset of household consumption expenditure in purchasing power parity 2013–2024 | Scientific Data,2026-11-13
+global-1km-gridded-household-consumption-ppp,Cited in data availability statement,https://doi.org/10.5281/zenodo.21122277,,,
+global-1km-gridded-household-consumption-ppp,"Dataset deposit, licence, release and inventory",https://zenodo.org/api/records/21122277,200,,2026-11-13
+lira-ai,Card target,https://github.com/jemsethio/LIRA-AI,200,GitHub - jemsethio/LIRA-AI: LIRA-AI: Landscape Intelligence for Regeneration and Adaptation · GitHub,2026-11-13
+lira-ai,Repository metadata,https://api.github.com/repos/jemsethio/LIRA-AI,200,,2026-11-13
+lira-ai,Repository revision,https://github.com/jemsethio/LIRA-AI/commit/9b7a100e8707cf284575a85c2268cf92386a4de6,,,
+satellite-foundation-model-wealth-monitoring,Card target,https://arxiv.org/abs/2604.23166,200,[2604.23166] A satellite foundation model for improved wealth monitoring,2026-11-13
+satellite-foundation-model-wealth-monitoring,PDF (arXiv),https://arxiv.org/pdf/2604.23166,200,,2026-11-13
+satellite-foundation-model-wealth-monitoring,Public enquiry route,https://info.arxiv.org/help/contact.html,,,
+climate-risk-commons-ocrf,Card target,https://riskthinking.org/,200,Climate Risk Commons,2026-11-13
+quasi-global-downscaled-cmip6-climate-impact,Card target,https://zenodo.org/records/21915837,200,"Quasi-global, land-only, high-resolution and spatially averaged climate variables from downscaled CMIP6 models for climate impact research | Zenodo",2026-11-13
+quasi-global-downscaled-cmip6-climate-impact,Data files (Box),https://imperialcollegelondon.box.com/v/downscaled-cmip6-models,200,Box,2026-11-13
+quasi-global-downscaled-cmip6-climate-impact,Preprint (Research Square),https://www.researchsquare.com/article/rs-9508034/v2,200,"Quasi-global, land-only, high-resolution and spatially averaged climate variables from downscaled CMIP6 models for climate impact research | Research Square",2026-11-13
+quasi-global-downscaled-cmip6-climate-impact,DOI,https://doi.org/10.5281/zenodo.21915837,200,"Quasi-global, land-only, high-resolution and spatially averaged climate variables from downscaled CMIP6 models for climate impact research | Zenodo",2026-11-13
+quasi-global-downscaled-cmip6-climate-impact,"Dataset deposit, licence, release and inventory",https://zenodo.org/api/records/21915837,200,,2026-11-13
+fews-net-data-explorer,Card target,https://fdw.fews.net/data-explorer/visualizations,200,FEWS NET Data Explorer,2026-11-13
+fews-net-data-explorer,FEWS NET,https://fews.net/,200,HOME | FEWS NET,2026-11-13
+esgf-metagrid-east-index,Card target,https://metagrid-ceda.east.esgf.io/search,200,ESGF MetaGrid,2026-11-13
+esgf-metagrid-east-index,West index (MetaGrid),https://metagrid.esgf-west.org/,200,ESGF MetaGrid,2026-11-13
+esgf-metagrid-east-index,CMIP7 guidance for data users,https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_users/,200,CMIP7 Guidance for Data Users,2026-11-13
+esgf-metagrid-east-index,MetaGrid FAQ (ESGF user support),https://esgf.github.io/esgf-user-support/metagrid.html,200,Metagrid (Beta): Introduction/FAQ — ESGF User Support 0.0.0 documentation,2026-11-13
+esgf-metagrid-east-index,Code · repo,https://github.com/esgf2-us/metagrid,200,GitHub - esgf2-us/metagrid: ESGF Search UI · GitHub,2026-11-13
+fields-of-the-world-ftw,Card target,https://fieldsofthe.world/ecosystem.html#data-products,200,Fields of The World: The FTW Ecosystem,2026-11-13
+fields-of-the-world-ftw,Benchmark data (Source Cooperative),https://source.coop/kerner-lab/fields-of-the-world,200,,2026-11-13
+fields-of-the-world-ftw,Paper (AAAI 2025),https://ojs.aaai.org/index.php/AAAI/article/view/35034,200,"Fields of The World: A Machine Learning Benchmark Dataset for Global Agricultural Field Boundary Segmentation
+							| Proceedings of the AAAI Conference on Artificial Intelligence",2026-11-13
+fields-of-the-world-ftw,Preprint (arXiv),https://arxiv.org/abs/2409.16252,200,[2409.16252] Fields of The World: A Machine Learning Benchmark Dataset For Global Agricultural Field Boundary Segmentation,2026-11-13
+fields-of-the-world-ftw,Code · repo (GitHub org),https://github.com/fieldsoftheworld,200,Fields of The World (FTW) · GitHub,2026-11-13
+fields-of-the-world-ftw,Inference app,https://fieldsofthe.world/ftw-inference-app,200,Fields of The World Explorer,2026-11-13
+fields-of-the-world-ftw,Constituent datasets & licences,https://github.com/fieldsoftheworld/ftw-datasets-list,200,GitHub - fieldsoftheworld/ftw-datasets-list: Description of FTW dataset and list of field boundary datasets it includes · GitHub,2026-11-13
+fields-of-the-world-ftw,fiboa field-boundary spec,https://fiboa.org,200,"fiboa | Field Boundaries for Agriculture (fiboa) - An ecosystem of data schema specifications, tools and data for more interoperability between field boundaries and related agricul",2026-11-13
+open-climate-ai,Card target,https://open-climate.ai/,200,Open emission factors and a matching agent | open-climate.ai,2026-11-13
+open-climate-ai,Documentation,https://open-climate.ai/docs/,200,open-climate.ai Docs,2026-11-13
+open-climate-ai,Licences & redistribution tiers,https://open-climate.ai/docs/methodology/licences/,200,Licences and redistribution of emission factors | open-climate.ai Docs,2026-11-13
+open-climate-ai,Data terms & own licence,https://open-climate.ai/docs/methodology/data-terms/,200,The data terms and open-climate.ai's own licence | open-climate.ai Docs,2026-11-13
+open-climate-ai,API reference,https://open-climate.ai/docs/api/,200,Emission factor API reference · open-climate.ai,2026-11-13
+open-climate-ai,Third-party matching benchmark (Carbon+Alt+Delete),https://www.carbonaltdelete.eu/en/insights/emission-factor-matching-is-a-reasoning-problem-not-a-database-lookup/,200,Carbon+Alt+Delete – Carbon accounting software for sustainability consultancies.,2026-11-13
+fao-livestock-hub,Card target,https://livestock.fao.org/,200,FAO Livestock Hub,2026-11-13
+fao-livestock-hub,GLEAM dashboard,https://foodandagricultureorganization.shinyapps.io/GLEAMV3_Public/,200,,2026-11-13
+fao-livestock-hub,GLEAM tools & data (FAO),https://www.fao.org/gleam/tools-and-data/en,200,,2026-11-13
+fao-livestock-hub,Livestock & the environment (FAO),https://www.fao.org/livestock-environment/en,200,Livestock and the environment,2026-11-13
+fao-ex-act-webapp,Card target,https://github.com/un-fao/exact-django-webapp,200,GitHub - un-fao/exact-django-webapp · GitHub,2026-11-13
+fao-ex-act-webapp,Hosted app,https://exact.apps.fao.org/,200,EX-ACT,2026-11-13
+fao-ex-act-webapp,EX-ACT tool page (FAO),https://www.fao.org/in-action/epic/ex-act-tool/en/,404,,2026-11-13
+fao-ex-act-webapp,Technical guidelines (FAO publication),https://www.fao.org/agrifood-economics/publications/detail/en/c/1539447/,404,,2026-11-13
+fao-ex-act-webapp,Repository revision,https://github.com/un-fao/exact-django-webapp/commit/776f1ed4c52cd03e83d3056b5b39baad31020f69,,,
+fao-ex-act-webapp,Tagged software release,https://github.com/un-fao/exact-django-webapp/releases/tag/v1.18.2,,,
+crop-suitability-major-food-crops-africa,Card target,https://www.nature.com/articles/s41597-024-03118-1,200,Dataset of the suitability of major food crops in Africa under climate change | Scientific Data,2026-11-13
+crop-suitability-major-food-crops-africa,Data (figshare collection),https://doi.org/10.6084/m9.figshare.c.6777351.v1,202,,2026-11-13
+crop-suitability-major-food-crops-africa,Code · repo,https://github.com/achemura/cropsuitafriq,200,GitHub - achemura/cropsuitafriq: R codes used for crating crop suitability maps for 23 crops in Africa under climate change. · GitHub,2026-11-13
+crop-suitability-major-food-crops-africa,Free full text (Europe PMC),https://europepmc.org/article/MED/38485989,403,,2026-11-13
+crop-suitability-major-food-crops-africa,Article-specific copyright statement,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10940296/fullTextXML,,,
+geoaquacrop,Card target,https://github.com/aquacropos/geoaquacrop,200,"GitHub - aquacropos/geoaquacrop: Run AquaCrop-OSPy over large regions in gridded format — preprocessing, simulation and visualisation behind one import. · GitHub",2026-11-13
+geoaquacrop,Documentation,https://geoaquacrop.readthedocs.io,200,GeoAquaCrop 0.1.2,2026-11-13
+geoaquacrop,PyPI package,https://pypi.org/project/geoaquacrop/,200,Client Challenge,2026-11-13
+geoaquacrop,AquaCrop-OSPy (underlying model),https://github.com/aquacropos/aquacrop,200,GitHub - aquacropos/aquacrop: AquaCrop-OSPy: Python implementation of AquaCrop-OS · GitHub,2026-11-13
+geoaquacrop,Preprocessing stage & data sources,https://github.com/aquacropos/geoaquacrop_preprocess,200,GitHub - aquacropos/geoaquacrop_preprocess: Automatic data download and preprocessing pipeline for global gridded datasets to serve as inputs to agricultural crop and irrigation mo,2026-11-13
+geoaquacrop,Repository metadata,https://api.github.com/repos/aquacropos/geoaquacrop,200,,2026-11-13
+geoaquacrop,Repository revision,https://github.com/aquacropos/geoaquacrop/commit/fc43c4279e9a3bd98efa007863f8a18dd782e22d,,,
+geoaquacrop,Tagged software release,https://github.com/aquacropos/geoaquacrop/releases/tag/v0.1.2,,,
+agwise-data-sourcing,Card target,https://github.com/byliz-ai/data_sourcing,200,GitHub - byliz-ai/data_sourcing · GitHub,2026-11-13
+agwise-data-sourcing,Function reference,https://github.com/byliz-ai/data_sourcing/blob/main/REFERENCE.md,200,data_sourcing/REFERENCE.md at main · byliz-ai/data_sourcing · GitHub,2026-11-13
+agwise-data-sourcing,User guide,https://github.com/byliz-ai/data_sourcing/blob/main/docs/user_guide.md,200,data_sourcing/docs/user_guide.md at main · byliz-ai/data_sourcing · GitHub,2026-11-13
+agwise-data-sourcing,Credentials setup,https://github.com/byliz-ai/data_sourcing/blob/main/docs/credentials_setup.md,200,data_sourcing/docs/credentials_setup.md at main · byliz-ai/data_sourcing · GitHub,2026-11-13
+agwise-data-sourcing,Examples (Python + R),https://github.com/byliz-ai/data_sourcing/tree/main/examples,200,data_sourcing/examples at main · byliz-ai/data_sourcing · GitHub,2026-11-13
+agwise-data-sourcing,Repository metadata,https://api.github.com/repos/byliz-ai/data_sourcing,200,,2026-11-13
+agwise-data-sourcing,Copyright notice,https://github.com/byliz-ai/data_sourcing/blob/main/LICENSE,,,
+agwise-data-sourcing,Repository revision,https://github.com/byliz-ai/data_sourcing/commit/ea81eb8349fc13936ffe3e5ad80192670ef6c102,,,
+global-mobile-network-coverage-1km-1999-2030,Card target,https://arxiv.org/abs/2609.11320,200,"[2609.11320] A global mobile network coverage raster product at 1km resolution, 1999--2030",2026-11-13
+global-mobile-network-coverage-1km-1999-2030,Data (Zenodo),https://doi.org/10.5281/zenodo.21594337,200,,2026-11-13
+global-mobile-network-coverage-1km-1999-2030,PDF,https://arxiv.org/pdf/2609.11320v1,200,,2026-11-13
+global-mobile-network-coverage-1km-1999-2030,Public enquiry route,https://info.arxiv.org/help/contact.html,,,
+forty-global-forest-typology-10m,Card target,https://developers.google.com/earth-engine/datasets/catalog/projects_nature-trace_assets_forest_typology_forest_typology_2020_v1_0_collection,200,Forest Typology (ForTy) 2020 v1.0  |  Earth Engine Data Catalog  |  Google for Developers,2026-11-13
+forty-global-forest-typology-10m,Paper (Scientific Data 2026),https://doi.org/10.1038/s41597-026-08299-5,200,Global forest typology at 10-meter resolution for forest and land-use monitoring | Scientific Data,2026-11-13
+forty-global-forest-typology-10m,Preprint (EarthArXiv),https://doi.org/10.31223/X58R27,200,Global forest typology at 10-meter resolution for forest and land-use monitoring,2026-11-13
+forty-global-forest-typology-10m,Nature Trace publisher page,https://developers.google.com/earth-engine/datasets/publisher/nature-trace,200,Nature Trace  |  Earth Engine Data Catalog  |  Google for Developers,2026-11-13
+beyond-tree-cover-mapping-the-worlds-forest-types,Card target,https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/,200,Not All Forests Are Equal: Mapping the World’s Forests — Google DeepMind,2026-11-13
+beyond-tree-cover-mapping-the-worlds-forest-types,Dataset (Earth Engine),https://developers.google.com/earth-engine/datasets/catalog/projects_nature-trace_assets_forest_typology_forest_typology_2020_v1_0_collection,200,Forest Typology (ForTy) 2020 v1.0  |  Earth Engine Data Catalog  |  Google for Developers,2026-11-13
+beyond-tree-cover-mapping-the-worlds-forest-types,Paper (Scientific Data 2026),https://doi.org/10.1038/s41597-026-08299-5,200,Global forest typology at 10-meter resolution for forest and land-use monitoring | Scientific Data,2026-11-13
+forest-data-partnership-commodity-models,Card target,https://developers.google.com/earth-engine/datasets/publisher/forestdatapartnership,200,Forest Data Partnership  |  Earth Engine Data Catalog  |  Google for Developers,2026-11-13
+forest-data-partnership-commodity-models,Whisp — EUDR plot assessment (MIT),https://github.com/forestdatapartnership/whisp,200,GitHub - forestdatapartnership/whisp · GitHub,2026-11-13
+forest-data-partnership-commodity-models,Models · repo,https://github.com/forestdatapartnership/models,200,GitHub - forestdatapartnership/models: CM AI and other ML delicacies · GitHub,2026-11-13
+forest-data-partnership-commodity-models,Forest Persistence v0 (Earth Engine),https://developers.google.com/earth-engine/datasets/catalog/projects_forestdatapartnership_assets_community_forests_ForestPersistence_2020,200,Forest Persistence v0  |  Earth Engine Data Catalog  |  Google for Developers,2026-11-13
+forest-data-partnership-commodity-models,Initiative page (WRI),https://www.wri.org/initiatives/forest-data-partnership,200,,2026-11-13
+ocelot-planetary-scale-species-distribution-modeling,Card target,https://arxiv.org/abs/2611.00284,200,[2611.00284] OCELOT: Planetary-Scale Species Distribution Modeling with Satellite Foundation Embeddings,2026-11-13
+ocelot-planetary-scale-species-distribution-modeling,PDF,https://arxiv.org/pdf/2611.00284,200,,2026-11-13
+ocelot-planetary-scale-species-distribution-modeling,Public enquiry route,https://info.arxiv.org/help/contact.html,,,

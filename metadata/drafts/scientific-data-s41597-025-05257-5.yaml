@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: scientific-data-s41597-025-05257-5
+title: GROW-Africa (Groundtruthing Remote-sensing for Optimizing Yield in Africa) Database, v1.0
+description: Data descriptor for GROW-Africa, a database of 535,844 georeferenced crop-yield observations across
+  Africa spanning 1960-2023 (the vast majority 2000-2023). Supports analysis of historical yield trends and
+  training of algorithms to estimate crop yields from Earth-observation satellite data.
+resource_type: dataset
+keywords:
+- africa
+- agricultural-statistics
+- crop-yields
+- grow-africa
+- remote-sensing
+cdh:
+  domain:
+  - agricultural-production
+created: '2026-11-13'
+updated: '2026-11-13'
+doi: 10.5281/zenodo.14961637
+version: v1.0
+license: CC-BY-4.0
+data:
+- name: GROW-Africa-Database.zip
+  locations:
+  - url: https://zenodo.org/api/records/14961637/files/GROW-Africa-Database.zip/content
+  checksum: md5:e7c5b8d4783ab5bfee23ae143203b1af
+- name: Shapefiles-simplified.zip
+  locations:
+  - url: https://zenodo.org/api/records/14961637/files/Shapefiles-simplified.zip/content
+  checksum: md5:644fda503969b010f4f8089958770485
+- name: Spatial-Look-Up-Tables.zip
+  locations:
+  - url: https://zenodo.org/api/records/14961637/files/Spatial-Look-Up-Tables.zip/content
+  checksum: md5:830c076ebd3fdf1cd1403e2a12547e16
+- name: readme.txt
+  locations:
+  - url: https://zenodo.org/api/records/14961637/files/readme.txt/content
+  checksum: md5:3a503c73891bff6687df439d44540b15
+- name: Matlab-Code.zip
+  locations:
+  - url: https://zenodo.org/api/records/14961637/files/Matlab-Code.zip/content
+  checksum: md5:8646002b1787afdfb4543330e7374385
+- name: Shapefiles.zip
+  locations:
+  - url: https://zenodo.org/api/records/14961637/files/Shapefiles.zip/content
+  checksum: md5:461a632471ae343acfd53c9ff5adaf56
+access: public
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

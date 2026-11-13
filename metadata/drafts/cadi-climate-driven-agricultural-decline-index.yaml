@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: cadi-climate-driven-agricultural-decline-index
+title: CADI – Climate-Driven Agricultural Decline Index (SSP3-7.0 Map Explorer)
+description: Interactive map explorer estimating decline in maximum agricultural production capacity attributable
+  to climate change under IPCC scenarios. The SSP3-7.0 absolute view compares attainable yields across 20-year
+  periods at ~10 km, holding 2020 crop composition constant so differences reflect climate only.
+resource_type: service
+keywords:
+- cmip
+- dashboard
+- global
+- high-resolution
+- yield-forecast
+cdh:
+  domain:
+  - agricultural-production
+  - climate
+created: '2026-11-13'
+updated: '2026-11-13'
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

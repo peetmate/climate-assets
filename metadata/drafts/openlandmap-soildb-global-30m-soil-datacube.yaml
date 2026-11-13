@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: openlandmap-soildb-global-30m-soil-datacube
+title: OpenLandMap-soilDB global 30 metre soil datacube
+description: Google Earth Engine web viewer for the OpenLandMap-soilDB global soil datacube, providing dynamic
+  predictions of soil organic carbon, bulk density, pH, texture fractions and USDA soil types at 30 m resolution
+  based on spatiotemporal machine learning. Registered under a CC-BY licence.
+resource_type: service
+keywords:
+- carbon
+- earth-engine
+- global
+- high-resolution
+- machine-learning
+- soils
+cdh:
+  domain:
+  - land
+created: '2026-11-13'
+updated: '2026-11-13'
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets
