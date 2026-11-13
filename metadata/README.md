@@ -2,7 +2,7 @@
 
 Each card in the [source catalogue](../climate-assets.json) has a YAML file linked from the [register](register.csv). Data and software stay with their providers. The register tracks the resource described, the provider route, the editing outcome and owner review. The first pass covers catalogue commit `2969f36` on 13 November 2026.
 
-* [Records](records/) contain metadata ready for CDH submission. Each passed the CDH profile and cross-field validator. Owner review is tracked independently.
+* [Records](records/) contain metadata that passed local checks against the CDH profile and cross-field rules. The register status `ready` refers only to these local checks. Do not send records to CDH for validation. Owner review is tracked independently.
 * [Drafts](drafts/) contain partial records. A missing access field in a draft means access still needs checking. The CDH standard interprets omission as public on publication.
 * [Gaps](gaps.csv) lists blocking questions and optional enrichment by card and field. The provider route identifies the resource under discussion. Consult [evidence](evidence.csv) for request forms, source documents and public enquiry routes. An HTTP status records a retrieval attempt. It cannot establish rights, access to files or permission to reuse.
 
