@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: climate-risk-commons-ocrf
+title: Climate Risk Commons (Open Climate Risk Framework)
+description: Open-source tools, schemas and starter impact functions for assessing physical climate risk. The
+  software and input datasets have separate terms.
+resource_type: software
+keywords:
+- climate-risk
+- financial-risk
+- physical-risk
+- open-standard
+- cmip7
+- multi-hazard
+- flood
+- heat
+- wildfire
+- apache-2
+- stochastic
+- finance
+- global
+cdh:
+  domain:
+  - climate
+created: '2026-11-13'
+updated: '2026-11-13'
+license: AGPL-3.0-or-later
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

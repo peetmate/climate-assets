@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: climateserv-2
+title: ClimateSERV 2.0
+description: ClimateSERV allows development practitioners, scientists/researchers, and government decision-makers
+  to visualize and download historical rainfall data, vegetation condition data, and 180-day forecasts of rainfall
+  and temperature to improve understanding of, and make improved decisions for, issues related to agriculture
+  and water availability.
+resource_type: software
+keywords:
+- forecast
+- rainfall
+- ndvi
+- drought
+- chirps
+- imerg
+- remote-sensing
+- api
+- python
+- water
+- agriculture
+- servir
+- global
+cdh:
+  domain:
+  - climate
+created: '2026-11-13'
+updated: '2026-11-13'
+data:
+- name: primary
+  locations:
+  - url: https://github.com/SERVIR/ClimateSERV2/tree/v1.0.0
+access: public
+version: v1.0.0
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

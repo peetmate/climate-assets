@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: fao-soilfer-cropsuit
+title: SoilFER CropSuit
+description: Free web-based decision-support application under FAO's SoilFER programme that combines soil,
+  climate, topography and land-cover data to identify crops most likely to perform well in a given location.
+  Built on the FAO/IIASA Agro-Ecological Zoning framework.
+resource_type: software
+keywords:
+- africa
+- crop-mapping
+- dashboard
+- latin-america
+- soils
+cdh:
+  domain:
+  - agricultural-production
+created: '2026-11-13'
+updated: '2026-11-13'
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

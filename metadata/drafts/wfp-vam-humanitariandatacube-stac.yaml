@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: wfp-vam-humanitariandatacube-stac
+title: HumanitarianDataCube STAC
+description: World Food Programme service for searching the HumanitarianDataCube satellite data collections
+  through a STAC API.
+resource_type: service
+keywords:
+- api
+- food-security
+- global
+- real-time
+- remote-sensing
+cdh:
+  domain:
+  - climate
+created: '2026-11-13'
+updated: '2026-11-13'
+data:
+- name: primary
+  locations:
+  - url: https://api.earthobservation.vam.wfp.org/stac/
+access: public
+contact:
+- organization: World Food Programme
+  roles:
+  - producer
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

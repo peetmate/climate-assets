@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: meta-wri-global-canopy-height-map
+title: Meta / WRI Global Canopy Height Map (1 m)
+description: Google Earth Engine app viewing the Meta and WRI global tree canopy height map at 1 m resolution,
+  derived with machine learning from Maxar satellite imagery (2009-2020), enabling detection of individual
+  trees and forest carbon accounting worldwide.
+resource_type: service
+keywords:
+- carbon
+- earth-engine
+- forests
+- high-resolution
+- machine-learning
+- satellite
+cdh:
+  domain:
+  - land
+  - mitigation
+created: '2026-11-13'
+updated: '2026-11-13'
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

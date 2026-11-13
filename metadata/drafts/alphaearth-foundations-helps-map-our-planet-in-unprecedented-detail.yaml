@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: alphaearth-foundations-helps-map-our-planet-in-unprecedented-detail
+title: AlphaEarth Foundations Helps Map Our Planet in Unprecedented Detail
+description: Announcement of AlphaEarth Foundations, a geospatial foundation model that integrates satellite
+  imagery, radar, LiDAR, elevation and climate data into unified annual 10-metre-resolution embeddings of the
+  planet's land and coastal waters. The embeddings support downstream mapping and analysis tasks such as ecosystem
+  classification and change detection.
+resource_type: document
+keywords:
+- foundation-model
+- global
+- high-resolution
+- remote-sensing
+- satellite
+cdh:
+  domain:
+  - land
+created: '2026-11-13'
+updated: '2026-11-13'
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets
+version: '1'

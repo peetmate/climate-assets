@@ -1,0 +1,332 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: global-1km-gridded-household-consumption-ppp
+title: A global 1 km gridded dataset of household consumption expenditure in purchasing power parity 2013-2024
+description: A global 1 km gridded dataset of household and NPISH final consumption expenditure in purchasing-power-parity
+  (constant 2021 international dollars), 2013-2024. Disaggregates World Bank economy-level totals using nighttime
+  lights, population, built-up surface, roads and POIs in a stacked Super Learner framework; released as observed-only
+  and regionally completed variants with per-capita, cell-total and QA rasters. Aimed at welfare geography,
+  market access and SDG analyses (poverty, equity).
+resource_type: dataset
+keywords:
+- gridded
+- poverty
+- socioeconomic
+- consumption
+- ppp
+- nighttime-lights
+- machine-learning
+- sdg
+- 1km
+- high-resolution
+- global
+cdh:
+  domain:
+  - socioeconomic
+created: '2026-11-13'
+updated: '2026-11-13'
+doi: 10.5281/zenodo.21122277
+version: '2.0'
+license: CC-BY-4.0
+data:
+- name: consumption_ppp_cell_2013.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_cell_2013.tif/content
+  checksum: md5:1bf1a281be13bf1196298ec1118ac24b
+- name: qa_flag_fill_2024.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/qa_flag_fill_2024.tif/content
+  checksum: md5:43e74ed811a8cd4eafbe64c678334cb4
+- name: qa_flag_fill_2021.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/qa_flag_fill_2021.tif/content
+  checksum: md5:8c92bb8e2b50d2468518884b33283318
+- name: qa_flag_2024.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/qa_flag_2024.tif/content
+  checksum: md5:cffe1b3ecbc5341c0ab41371ed430dfd
+- name: qa_flag_2015.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/qa_flag_2015.tif/content
+  checksum: md5:cfa718f3ab75b5b6f148de0de6542fbb
+- name: qa_flag_2017.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/qa_flag_2017.tif/content
+  checksum: md5:00a2aa372c6f329ab31086f1087a5e38
+- name: qa_flag_fill_2016.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/qa_flag_fill_2016.tif/content
+  checksum: md5:d6b37de8ba2dd105449d964910dadca4
+- name: qa_flag_fill_2018.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/qa_flag_fill_2018.tif/content
+  checksum: md5:714d7fbef70cc7920866912118010c6a
+- name: qa_flag_fill_2013.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/qa_flag_fill_2013.tif/content
+  checksum: md5:b345e5f0a10047397e68ac5b35326946
+- name: qa_flag_2021.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/qa_flag_2021.tif/content
+  checksum: md5:e620dbe77293bd2c5d07217d5c7f4a44
+- name: qa_flag_fill_2017.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/qa_flag_fill_2017.tif/content
+  checksum: md5:7ec347a32d4024a5d6f96d71d6252e2d
+- name: qa_flag_fill_2022.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/qa_flag_fill_2022.tif/content
+  checksum: md5:62513eb436f40e8f2f386cbe3cffee2c
+- name: qa_flag_fill_2020.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/qa_flag_fill_2020.tif/content
+  checksum: md5:ec232248fd1641c8bc8b936e8da76007
+- name: qa_flag_2019.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/qa_flag_2019.tif/content
+  checksum: md5:7e9f0f27c523592637d742eb1a80c1c0
+- name: qa_flag_fill_2023.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/qa_flag_fill_2023.tif/content
+  checksum: md5:6449bc7590b53ee0eb3193013fadd01a
+- name: qa_flag_2013.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/qa_flag_2013.tif/content
+  checksum: md5:d8eedd6f21e26294d15854d12bd80366
+- name: qa_flag_2014.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/qa_flag_2014.tif/content
+  checksum: md5:e6b475c2e8a6140b630d4a4152bec021
+- name: qa_flag_2016.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/qa_flag_2016.tif/content
+  checksum: md5:c2b5dae1d52203c062cc253fc532e443
+- name: qa_flag_2018.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/qa_flag_2018.tif/content
+  checksum: md5:19562d0d64420f008eb2bea85ae2f0db
+- name: qa_flag_2020.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/qa_flag_2020.tif/content
+  checksum: md5:fe8cfe07b73f4fe628b0634f3b0e6f9c
+- name: qa_flag_2022.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/qa_flag_2022.tif/content
+  checksum: md5:92355a7bca0796d3445dd5371b749e18
+- name: qa_flag_2023.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/qa_flag_2023.tif/content
+  checksum: md5:3295fb20cc4a3d71917eb7517a3eb2ac
+- name: qa_flag_fill_2015.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/qa_flag_fill_2015.tif/content
+  checksum: md5:7946fb29f95de940d565be972cbfe844
+- name: qa_flag_fill_2014.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/qa_flag_fill_2014.tif/content
+  checksum: md5:50286ad01dd87f048e1aa27cbcac65ff
+- name: qa_flag_fill_2019.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/qa_flag_fill_2019.tif/content
+  checksum: md5:08056096c8a777d51d073dec0845c7a0
+- name: consumption_ppp_cell_2019.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_cell_2019.tif/content
+  checksum: md5:e4648d420b69713826f49ca97931c078
+- name: consumption_ppp_cell_2023.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_cell_2023.tif/content
+  checksum: md5:eb8dd0ca732f1fdb83ce914fe87e2676
+- name: consumption_ppp_cell_2017.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_cell_2017.tif/content
+  checksum: md5:922a0545031574952167bd7c0b0d5dca
+- name: consumption_ppp_cell_2018.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_cell_2018.tif/content
+  checksum: md5:fd6680745435396d4a986943801978ea
+- name: consumption_ppp_cell_2022.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_cell_2022.tif/content
+  checksum: md5:496f7898cde80a793be3a134aa70923e
+- name: consumption_ppp_cell_2014.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_cell_2014.tif/content
+  checksum: md5:045c5ecc718364e31288b0e34279026c
+- name: consumption_ppp_cell_2015.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_cell_2015.tif/content
+  checksum: md5:7cf48497ba0eb968d5b0df007252cf9b
+- name: consumption_ppp_cell_2016.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_cell_2016.tif/content
+  checksum: md5:50e384bc37ff736dc76381872f9bc7bd
+- name: consumption_ppp_cell_2021.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_cell_2021.tif/content
+  checksum: md5:1392df6f3b78647d331e12d5a0ac25c4
+- name: consumption_ppp_cell_fillpop_2022.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_cell_fillpop_2022.tif/content
+  checksum: md5:dec0a65c94b45bdb4886785abdb9340b
+- name: consumption_ppp_cell_fillpop_2015.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_cell_fillpop_2015.tif/content
+  checksum: md5:b0fdd9ee2cee91096843504fbf65424b
+- name: consumption_ppp_cell_2020.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_cell_2020.tif/content
+  checksum: md5:f8cc48ebda1b91bffbe53f9906ca8991
+- name: consumption_ppp_cell_2024.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_cell_2024.tif/content
+  checksum: md5:3a55511b7f64c4e3ec11d108d31b95b9
+- name: consumption_ppp_cell_fillpop_2018.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_cell_fillpop_2018.tif/content
+  checksum: md5:533dd0c362dee8e2d5e0e1533df0f010
+- name: consumption_ppp_cell_fillpop_2013.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_cell_fillpop_2013.tif/content
+  checksum: md5:f64691ed0ac178ab1451ffdbfaa9ef62
+- name: consumption_ppp_cell_fillpop_2014.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_cell_fillpop_2014.tif/content
+  checksum: md5:0c0a808a60ec51f197ff599853741b7c
+- name: consumption_ppp_cell_fillpop_2016.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_cell_fillpop_2016.tif/content
+  checksum: md5:1b3074f4b97f5503d5c14f86a4565e66
+- name: consumption_ppp_cell_fillpop_2017.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_cell_fillpop_2017.tif/content
+  checksum: md5:2fe99d5a287a5ebe601d62734957ad25
+- name: consumption_ppp_cell_fillpop_2023.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_cell_fillpop_2023.tif/content
+  checksum: md5:08a9ab20257fadb8d62d7a60330ff811
+- name: consumption_ppp_cell_fillpop_2019.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_cell_fillpop_2019.tif/content
+  checksum: md5:39f77e010aec64a1f628252ba8e6a676
+- name: consumption_ppp_cell_fillpop_2020.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_cell_fillpop_2020.tif/content
+  checksum: md5:723ed267410335c39f0611747338749c
+- name: consumption_ppp_percap_2024.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_percap_2024.tif/content
+  checksum: md5:f6e1cea58841276b15f6e86f60d38e1e
+- name: consumption_ppp_cell_fillpop_2021.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_cell_fillpop_2021.tif/content
+  checksum: md5:e1590f3b8f7895377e54fa67d4935d66
+- name: consumption_ppp_percap_fillpop_2022.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_percap_fillpop_2022.tif/content
+  checksum: md5:9ba264f0776209cbf407803bf0f31a57
+- name: consumption_ppp_percap_fillpop_2023.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_percap_fillpop_2023.tif/content
+  checksum: md5:bf770e83fc6805b8516f52165ba77236
+- name: consumption_ppp_percap_fillpop_2014.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_percap_fillpop_2014.tif/content
+  checksum: md5:f51b4cb7b7255e22fcb03db097d0f451
+- name: consumption_ppp_percap_2021.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_percap_2021.tif/content
+  checksum: md5:f52c6c0c670ce5c3f08b45cf45b9ab72
+- name: consumption_ppp_cell_fillpop_2024.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_cell_fillpop_2024.tif/content
+  checksum: md5:d2316eca169b4cf5df8facfbfe2b73cc
+- name: consumption_ppp_percap_2019.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_percap_2019.tif/content
+  checksum: md5:50b7118d7118c37f172184adb55f4982
+- name: consumption_ppp_percap_2014.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_percap_2014.tif/content
+  checksum: md5:d5e680a5a085676100e90c445d7c12b6
+- name: consumption_ppp_percap_2022.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_percap_2022.tif/content
+  checksum: md5:2a52a69bb6919a138f55d1d294e82365
+- name: consumption_ppp_percap_2015.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_percap_2015.tif/content
+  checksum: md5:1c8e505e506156eea3ba409d837e607e
+- name: consumption_ppp_percap_2020.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_percap_2020.tif/content
+  checksum: md5:2b74bf4472b5586691c1eed175778005
+- name: consumption_ppp_percap_fillpop_2019.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_percap_fillpop_2019.tif/content
+  checksum: md5:2637c8844466433ecad10e9158861272
+- name: consumption_ppp_percap_2013.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_percap_2013.tif/content
+  checksum: md5:06b2e8132588194c4417dd6ced6ecf11
+- name: consumption_ppp_percap_2023.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_percap_2023.tif/content
+  checksum: md5:60cc7b5e28354aed6764c2b961963024
+- name: consumption_ppp_percap_fillpop_2013.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_percap_fillpop_2013.tif/content
+  checksum: md5:016004bb881f4d43d6050dfb97383b85
+- name: consumption_ppp_percap_2016.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_percap_2016.tif/content
+  checksum: md5:d75d77eff68c3a8de3ddb23394c2ee00
+- name: consumption_ppp_percap_2017.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_percap_2017.tif/content
+  checksum: md5:07a60dceb74d3a6862f95ff099298e6d
+- name: consumption_ppp_percap_2018.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_percap_2018.tif/content
+  checksum: md5:74b1f7804155cebf9434e6f29e7cbd24
+- name: consumption_ppp_percap_fillpop_2020.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_percap_fillpop_2020.tif/content
+  checksum: md5:e2d30db5aaf502ad84c01d0a6e9dbfbd
+- name: consumption_ppp_percap_fillpop_2017.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_percap_fillpop_2017.tif/content
+  checksum: md5:7f953619990a3bc4f05e1de67fc2b927
+- name: consumption_ppp_percap_fillpop_2015.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_percap_fillpop_2015.tif/content
+  checksum: md5:6ce6f19f80888025e9b9c4c195549eb9
+- name: consumption_ppp_percap_fillpop_2016.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_percap_fillpop_2016.tif/content
+  checksum: md5:ebb638e4cd04be544c727f35f762e45d
+- name: consumption_ppp_percap_fillpop_2018.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_percap_fillpop_2018.tif/content
+  checksum: md5:836c51b14a8e7d7c8e4813c9a3cb8403
+- name: consumption_ppp_percap_fillpop_2021.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_percap_fillpop_2021.tif/content
+  checksum: md5:26a53ef25021fe2d39c068092963ab15
+- name: consumption_ppp_percap_fillpop_2024.tif
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/consumption_ppp_percap_fillpop_2024.tif/content
+  checksum: md5:2a07cad8f6b5e3eca6c0d97fafed09b9
+- name: country_year_metadata_release.csv
+  locations:
+  - url: https://zenodo.org/api/records/21122277/files/country_year_metadata_release.csv/content
+  checksum: md5:65ac6f18d21b95eb9975a3808758f444
+access: public
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

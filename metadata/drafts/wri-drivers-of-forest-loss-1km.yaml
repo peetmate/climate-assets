@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: wri-drivers-of-forest-loss-1km
+title: Global drivers of forest loss at 1 km resolution
+description: Global 1 km raster of the dominant driver of tree cover loss during 2001–2025. Seven driver classes
+  cover permanent agriculture, hard commodities, shifting cultivation, logging, wildfire, settlements and infrastructure,
+  and other natural disturbances. The release includes training and validation samples.
+resource_type: dataset
+keywords:
+- deforestation
+- earth-engine
+- forests
+- global
+- high-resolution
+- machine-learning
+cdh:
+  domain:
+  - land
+  - mitigation
+created: '2026-11-13'
+updated: '2026-11-13'
+doi: 10.5281/zenodo.19485190
+version: '1.3'
+license: CC-BY-4.0
+data:
+- name: validation_2001_2022.csv
+  locations:
+  - url: https://zenodo.org/api/records/19485190/files/validation_2001_2022.csv/content
+  checksum: md5:bc804d30187986108e17cbbf75b9082f
+- name: validation_2001_2022.geojson
+  locations:
+  - url: https://zenodo.org/api/records/19485190/files/validation_2001_2022.geojson/content
+  checksum: md5:d430f5f333038952e18b4a69ce5196f8
+- name: training_2001_2025_v1_3.geojson
+  locations:
+  - url: https://zenodo.org/api/records/19485190/files/training_2001_2025_v1_3.geojson/content
+  checksum: md5:e25b77b67367efc9bf4f592de7ded2bf
+- name: drivers_forest_loss_1km_2001_2025_v1_3.tif
+  locations:
+  - url: https://zenodo.org/api/records/19485190/files/drivers_forest_loss_1km_2001_2025_v1_3.tif/content
+  checksum: md5:37dc18d5cdf384e8b751036617de9ded
+- name: training_2001_2025_v1_3.csv
+  locations:
+  - url: https://zenodo.org/api/records/19485190/files/training_2001_2025_v1_3.csv/content
+  checksum: md5:b3a5dc69434898c4256933da785af9ab
+access: public
+spatial:
+  geography:
+  - world
+temporal:
+  start_date: '2001'
+  end_date: '2025'
+contact:
+- organization: World Resources Institute
+  roles:
+  - producer
+  - point-of-contact
+  name: Michelle Sims
+  url: https://zenodo.org/records/19485190
+  email: Michelle.Sims@wri.org
+- organization: Google DeepMind
+  roles:
+  - producer
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets
+note: The raster reports one dominant driver per cell over the whole period. It includes planted and natural
+  trees.

@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: alphaearth-foundations
+title: 'AlphaEarth Foundations: An embedding field model for accurate and efficient global mapping from sparse
+  label data'
+description: Describes an embedding field model that compresses multi-source Earth observation data into 64-dimensional
+  annual embeddings at 10 m resolution, enabling mapping and monitoring from sparse labels. An accompanying
+  Satellite Embedding V1 dataset covering 2017-2024 is released.
+resource_type: document
+keywords:
+- foundation-model
+- global
+- high-resolution
+- remote-sensing
+- satellite
+cdh:
+  domain:
+  - land
+created: '2026-11-13'
+updated: '2026-11-13'
+data:
+- name: primary
+  locations:
+  - url: https://arxiv.org/pdf/2507.22291
+access: public
+doi: 10.48550/arXiv.2507.22291
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets
+version: '1'

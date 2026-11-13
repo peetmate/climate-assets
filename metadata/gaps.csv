@@ -1,0 +1,704 @@
+card_id,field,blocks_release,question_or_action,unverified_card_clue,provider_route
+harmonised-dataset-for-earth-system-foundation-models,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://arxiv.org/html/2607.03298v1
+harmonised-dataset-for-earth-system-foundation-models,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://arxiv.org/html/2607.03298v1
+aiccra-agdatahub-mali,version,yes,Which release or version does this entry describe?,,https://mali.agdatahub.ilri.org
+aiccra-agdatahub-mali,license,yes,Which reuse licence and terms apply to this specific resource?,,https://mali.agdatahub.ilri.org
+aiccra-agdatahub-mali,data,yes,Which stable URL serves the resource or accepts access requests?,,https://mali.agdatahub.ilri.org
+aiccra-agdatahub-mali,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://mali.agdatahub.ilri.org
+aiccra-agdatahub-mali,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://mali.agdatahub.ilri.org
+aiccra-agdatahub-mali,citation,yes,What DOI or preferred citation identifies this resource?,2024,https://mali.agdatahub.ilri.org
+agmrv-knowledge-portal,version,yes,Which release or version does this entry describe?,,https://www.agmrv.org/knowledge-portal/
+agmrv-knowledge-portal,license,yes,Which reuse licence and terms apply to this specific resource?,,https://www.agmrv.org/knowledge-portal/
+agmrv-knowledge-portal,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.agmrv.org/knowledge-portal/
+agmrv-knowledge-portal,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://www.agmrv.org/knowledge-portal/
+agmrv-knowledge-portal,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.agmrv.org/knowledge-portal/
+agmrv-knowledge-portal,citation,yes,What DOI or preferred citation identifies this resource?,,https://www.agmrv.org/knowledge-portal/
+agra-climate-vulnerability-assessment-tool,version,yes,Which release or version does this entry describe?,,https://agra-cva.onrender.com/hazard_change
+agra-climate-vulnerability-assessment-tool,license,yes,Which reuse licence and terms apply to this specific resource?,,https://agra-cva.onrender.com/hazard_change
+agra-climate-vulnerability-assessment-tool,data,yes,Which stable URL serves the resource or accepts access requests?,,https://agra-cva.onrender.com/hazard_change
+agra-climate-vulnerability-assessment-tool,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://agra-cva.onrender.com/hazard_change
+agra-climate-vulnerability-assessment-tool,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://agra-cva.onrender.com/hazard_change
+agra-climate-vulnerability-assessment-tool,citation,yes,What DOI or preferred citation identifies this resource?,,https://agra-cva.onrender.com/hazard_change
+aiccra-collection-cgspace,version,yes,Which release or version does this entry describe?,,https://cgspace.cgiar.org/collections/54b8a647-be8e-416a-9117-864359b7593b
+aiccra-collection-cgspace,license,yes,Which reuse licence and terms apply to this specific resource?,,https://cgspace.cgiar.org/collections/54b8a647-be8e-416a-9117-864359b7593b
+aiccra-collection-cgspace,data,yes,Which stable URL serves the resource or accepts access requests?,,https://cgspace.cgiar.org/collections/54b8a647-be8e-416a-9117-864359b7593b
+aiccra-collection-cgspace,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://cgspace.cgiar.org/collections/54b8a647-be8e-416a-9117-864359b7593b
+aiccra-collection-cgspace,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://cgspace.cgiar.org/collections/54b8a647-be8e-416a-9117-864359b7593b
+aiccra-collection-cgspace,citation,yes,What DOI or preferred citation identifies this resource?,,https://cgspace.cgiar.org/collections/54b8a647-be8e-416a-9117-864359b7593b
+acasa-atlas-of-climate-adaptation-in-south-asian-agriculture,version,yes,Which release or version does this entry describe?,,https://acasa-bisa.org/#/viewer
+acasa-atlas-of-climate-adaptation-in-south-asian-agriculture,license,yes,Which reuse licence and terms apply to this specific resource?,,https://acasa-bisa.org/#/viewer
+acasa-atlas-of-climate-adaptation-in-south-asian-agriculture,data,yes,Which stable URL serves the resource or accepts access requests?,,https://acasa-bisa.org/#/viewer
+acasa-atlas-of-climate-adaptation-in-south-asian-agriculture,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://acasa-bisa.org/#/viewer
+acasa-atlas-of-climate-adaptation-in-south-asian-agriculture,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://acasa-bisa.org/#/viewer
+acasa-atlas-of-climate-adaptation-in-south-asian-agriculture,citation,yes,What DOI or preferred citation identifies this resource?,,https://acasa-bisa.org/#/viewer
+climate-analytics-tools,version,yes,Which release or version does this entry describe?,,https://climateanalytics.org/tools
+climate-analytics-tools,license,yes,Which reuse licence and terms apply to this specific resource?,,https://climateanalytics.org/tools
+climate-analytics-tools,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://climateanalytics.org/tools
+climate-analytics-tools,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://climateanalytics.org/tools
+climate-analytics-tools,citation,yes,What DOI or preferred citation identifies this resource?,,https://climateanalytics.org/tools
+climate-engine,version,yes,Which release or version does this entry describe?,,https://app.climateengine.org/climateEngine
+climate-engine,license,yes,Which reuse licence and terms apply to this specific resource?,,https://app.climateengine.org/climateEngine
+climate-engine,data,yes,Which stable URL serves the resource or accepts access requests?,,https://app.climateengine.org/climateEngine
+climate-engine,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",login,https://app.climateengine.org/climateEngine
+climate-engine,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://app.climateengine.org/climateEngine
+climate-engine,citation,yes,What DOI or preferred citation identifies this resource?,,https://app.climateengine.org/climateEngine
+climate-impact-lab,version,yes,Which release or version does this entry describe?,,https://impactlab.org/
+climate-impact-lab,license,yes,Which reuse licence and terms apply to this specific resource?,,https://impactlab.org/
+climate-impact-lab,data,yes,Which stable URL serves the resource or accepts access requests?,,https://impactlab.org/
+climate-impact-lab,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://impactlab.org/
+climate-impact-lab,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://impactlab.org/
+climate-impact-lab,citation,yes,What DOI or preferred citation identifies this resource?,,https://impactlab.org/
+climate-project-explorer,version,yes,Which release or version does this entry describe?,,https://climateprojectexplorer.org/
+climate-project-explorer,license,yes,Which reuse licence and terms apply to this specific resource?,,https://climateprojectexplorer.org/
+climate-project-explorer,data,yes,Which stable URL serves the resource or accepts access requests?,,https://climateprojectexplorer.org/
+climate-project-explorer,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://climateprojectexplorer.org/
+climate-project-explorer,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://climateprojectexplorer.org/
+climate-project-explorer,citation,yes,What DOI or preferred citation identifies this resource?,,https://climateprojectexplorer.org/
+deadtrees-earth,version,yes,Which release or version does this entry describe?,,https://deadtrees.earth/
+deadtrees-earth,license,yes,Which reuse licence and terms apply to this specific resource?,,https://deadtrees.earth/
+deadtrees-earth,data,yes,Which stable URL serves the resource or accepts access requests?,,https://deadtrees.earth/
+deadtrees-earth,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",unknown,https://deadtrees.earth/
+deadtrees-earth,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://deadtrees.earth/
+deadtrees-earth,citation,yes,What DOI or preferred citation identifies this resource?,2024,https://deadtrees.earth/
+destination-earth-data-hub,version,yes,Which release or version does this entry describe?,,https://earthdatahub.destine.eu/
+destination-earth-data-hub,license,yes,Which reuse licence and terms apply to this specific resource?,,https://earthdatahub.destine.eu/
+destination-earth-data-hub,data,yes,Which stable URL serves the resource or accepts access requests?,,https://earthdatahub.destine.eu/
+destination-earth-data-hub,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",login,https://earthdatahub.destine.eu/
+destination-earth-data-hub,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://earthdatahub.destine.eu/
+destination-earth-data-hub,citation,yes,What DOI or preferred citation identifies this resource?,,https://earthdatahub.destine.eu/
+destination-earth-vizlab,version,yes,Which release or version does this entry describe?,,https://vizlab.destine.eu/
+destination-earth-vizlab,license,yes,Which reuse licence and terms apply to this specific resource?,,https://vizlab.destine.eu/
+destination-earth-vizlab,data,yes,Which stable URL serves the resource or accepts access requests?,,https://vizlab.destine.eu/
+destination-earth-vizlab,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",login,https://vizlab.destine.eu/
+destination-earth-vizlab,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://vizlab.destine.eu/
+destination-earth-vizlab,citation,yes,What DOI or preferred citation identifies this resource?,,https://vizlab.destine.eu/
+digital-earth-africa-aws-open-data,version,yes,Which release or version does this entry describe?,,https://registry.opendata.aws/collab/deafrica/
+digital-earth-africa-aws-open-data,license,yes,Which reuse licence and terms apply to this specific resource?,,https://registry.opendata.aws/collab/deafrica/
+digital-earth-africa-aws-open-data,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://registry.opendata.aws/collab/deafrica/
+digital-earth-africa-aws-open-data,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://registry.opendata.aws/collab/deafrica/
+digital-earth-africa-aws-open-data,citation,yes,What DOI or preferred citation identifies this resource?,,https://registry.opendata.aws/collab/deafrica/
+digital-gender-gaps-dashboard,version,yes,Which release or version does this entry describe?,,https://digitalgendergaps.org/dashboard/
+digital-gender-gaps-dashboard,license,yes,Which reuse licence and terms apply to this specific resource?,,https://digitalgendergaps.org/dashboard/
+digital-gender-gaps-dashboard,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://digitalgendergaps.org/dashboard/
+digital-gender-gaps-dashboard,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://digitalgendergaps.org/dashboard/
+digital-gender-gaps-dashboard,citation,yes,What DOI or preferred citation identifies this resource?,,https://digitalgendergaps.org/dashboard/
+ecosystem-integrity-index,version,yes,Which release or version does this entry describe?,,https://ecosystemintegrityindex.org/
+ecosystem-integrity-index,license,yes,Which reuse licence and terms apply to this specific resource?,,https://ecosystemintegrityindex.org/
+ecosystem-integrity-index,data,yes,Which stable URL serves the resource or accepts access requests?,,https://ecosystemintegrityindex.org/
+ecosystem-integrity-index,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",unknown,https://ecosystemintegrityindex.org/
+ecosystem-integrity-index,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://ecosystemintegrityindex.org/
+ecosystem-integrity-index,citation,yes,What DOI or preferred citation identifies this resource?,,https://ecosystemintegrityindex.org/
+fao-hand-in-hand-geospatial-platform,version,yes,Which release or version does this entry describe?,,https://data.apps.fao.org/?lang=en
+fao-hand-in-hand-geospatial-platform,license,yes,Which reuse licence and terms apply to this specific resource?,,https://data.apps.fao.org/?lang=en
+fao-hand-in-hand-geospatial-platform,data,yes,Which stable URL serves the resource or accepts access requests?,,https://data.apps.fao.org/?lang=en
+fao-hand-in-hand-geospatial-platform,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://data.apps.fao.org/?lang=en
+fao-hand-in-hand-geospatial-platform,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://data.apps.fao.org/?lang=en
+fao-hand-in-hand-geospatial-platform,citation,yes,What DOI or preferred citation identifies this resource?,,https://data.apps.fao.org/?lang=en
+food-systems-dashboard-fsci-indicators,version,yes,Which release or version does this entry describe?,,https://www.foodsystemsdashboard.org/fsci-indicators
+food-systems-dashboard-fsci-indicators,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-NC-SA-4.0,https://www.foodsystemsdashboard.org/fsci-indicators
+food-systems-dashboard-fsci-indicators,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.foodsystemsdashboard.org/fsci-indicators
+food-systems-dashboard-fsci-indicators,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://www.foodsystemsdashboard.org/fsci-indicators
+food-systems-dashboard-fsci-indicators,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.foodsystemsdashboard.org/fsci-indicators
+food-systems-dashboard-fsci-indicators,citation,yes,What DOI or preferred citation identifies this resource?,,https://www.foodsystemsdashboard.org/fsci-indicators
+global-nature-watch,version,yes,Which release or version does this entry describe?,,https://www.globalnaturewatch.org/
+global-nature-watch,license,yes,Which reuse licence and terms apply to this specific resource?,,https://www.globalnaturewatch.org/
+global-nature-watch,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.globalnaturewatch.org/
+global-nature-watch,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://www.globalnaturewatch.org/
+global-nature-watch,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.globalnaturewatch.org/
+global-nature-watch,citation,yes,What DOI or preferred citation identifies this resource?,,https://www.globalnaturewatch.org/
+nature-positive-agrifood-systems-toolkit,version,yes,Which release or version does this entry describe?,,https://agrifood-systems-toolkit.panda.org/
+nature-positive-agrifood-systems-toolkit,license,yes,Which reuse licence and terms apply to this specific resource?,,https://agrifood-systems-toolkit.panda.org/
+nature-positive-agrifood-systems-toolkit,data,yes,Which stable URL serves the resource or accepts access requests?,,https://agrifood-systems-toolkit.panda.org/
+nature-positive-agrifood-systems-toolkit,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://agrifood-systems-toolkit.panda.org/
+nature-positive-agrifood-systems-toolkit,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://agrifood-systems-toolkit.panda.org/
+nature-positive-agrifood-systems-toolkit,citation,yes,What DOI or preferred citation identifies this resource?,2025,https://agrifood-systems-toolkit.panda.org/
+naturebase,version,yes,Which release or version does this entry describe?,,https://www.naturebase.org/
+naturebase,license,yes,Which reuse licence and terms apply to this specific resource?,,https://www.naturebase.org/
+naturebase,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.naturebase.org/
+naturebase,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://www.naturebase.org/
+naturebase,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.naturebase.org/
+naturebase,citation,yes,What DOI or preferred citation identifies this resource?,,https://www.naturebase.org/
+un-spider-data-sources,version,yes,Which release or version does this entry describe?,,https://www.un-spider.org/links-and-resources/data-sources
+un-spider-data-sources,license,yes,Which reuse licence and terms apply to this specific resource?,,https://www.un-spider.org/links-and-resources/data-sources
+un-spider-data-sources,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.un-spider.org/links-and-resources/data-sources
+un-spider-data-sources,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://www.un-spider.org/links-and-resources/data-sources
+un-spider-data-sources,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.un-spider.org/links-and-resources/data-sources
+un-spider-data-sources,citation,yes,What DOI or preferred citation identifies this resource?,,https://www.un-spider.org/links-and-resources/data-sources
+unfccc-ghg-data-interface,version,yes,Which release or version does this entry describe?,,https://data.unfccc.int/
+unfccc-ghg-data-interface,license,yes,Which reuse licence and terms apply to this specific resource?,,https://data.unfccc.int/
+unfccc-ghg-data-interface,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://data.unfccc.int/
+unfccc-ghg-data-interface,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://data.unfccc.int/
+unfccc-ghg-data-interface,citation,yes,What DOI or preferred citation identifies this resource?,,https://data.unfccc.int/
+wfp-vam-humanitariandatacube-stac,license,yes,Which terms apply to use of the STAC catalogue service itself?,,https://api.earthobservation.vam.wfp.org/stac/
+wfp-vam-humanitariandatacube-stac,citation,yes,What DOI or preferred citation identifies this resource?,,https://api.earthobservation.vam.wfp.org/stac/
+wfp-vam-humanitariandatacube-stac,version,yes,Which release or version does this entry describe?,,https://api.earthobservation.vam.wfp.org/stac/
+wfp-vam-humanitariandatacube-stac,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://api.earthobservation.vam.wfp.org/stac/
+what-climate-smart-agriculture-means-for-smallholder-farmers,license,yes,Which reuse licence and terms apply to this specific resource?,proprietary,https://www.mckinsey.com/industries/agriculture/our-insights/what-climate-smart-agriculture-means-for-smallholder-farmers
+what-climate-smart-agriculture-means-for-smallholder-farmers,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.mckinsey.com/industries/agriculture/our-insights/what-climate-smart-agriculture-means-for-smallholder-farmers
+what-climate-smart-agriculture-means-for-smallholder-farmers,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://www.mckinsey.com/industries/agriculture/our-insights/what-climate-smart-agriculture-means-for-smallholder-farmers
+what-climate-smart-agriculture-means-for-smallholder-farmers,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.mckinsey.com/industries/agriculture/our-insights/what-climate-smart-agriculture-means-for-smallholder-farmers
+what-climate-smart-agriculture-means-for-smallholder-farmers,citation,yes,What DOI or preferred citation identifies this resource?,2023,https://www.mckinsey.com/industries/agriculture/our-insights/what-climate-smart-agriculture-means-for-smallholder-farmers
+world-bank-climate-change-knowledge-portal,version,yes,Which release or version does this entry describe?,,https://climateknowledgeportal.worldbank.org/
+world-bank-climate-change-knowledge-portal,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://climateknowledgeportal.worldbank.org/
+world-bank-climate-change-knowledge-portal,data,yes,Which stable URL serves the resource or accepts access requests?,,https://climateknowledgeportal.worldbank.org/
+world-bank-climate-change-knowledge-portal,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://climateknowledgeportal.worldbank.org/
+world-bank-climate-change-knowledge-portal,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://climateknowledgeportal.worldbank.org/
+world-bank-climate-change-knowledge-portal,citation,yes,What DOI or preferred citation identifies this resource?,,https://climateknowledgeportal.worldbank.org/
+world-bank-data360-climate-atlas,version,yes,Which release or version does this entry describe?,,https://data360.worldbank.org/en/atlas/climate
+world-bank-data360-climate-atlas,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-3.0-IGO,https://data360.worldbank.org/en/atlas/climate
+world-bank-data360-climate-atlas,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://data360.worldbank.org/en/atlas/climate
+world-bank-data360-climate-atlas,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://data360.worldbank.org/en/atlas/climate
+world-bank-data360-climate-atlas,citation,yes,What DOI or preferred citation identifies this resource?,2026-05,https://data360.worldbank.org/en/atlas/climate
+wri-drivers-of-forest-loss-1km,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://zenodo.org/records/19485190
+adaptation-finance-power-bi-dashboard,version,yes,Which release or version does this entry describe?,,https://app.powerbi.com/view?r=eyJrIjoiNzkyMGNjYjAtMzZhMi00OTRhLWFlNjEtYjRhMDQ5MWNlNGIzIiwidCI6IjJhNmMxMmFkLTQwNmEtNGYzMy1iNjg2LWY3OGZmNTgyMjIwOCIsImMiOjh9
+adaptation-finance-power-bi-dashboard,license,yes,Which reuse licence and terms apply to this specific resource?,,https://app.powerbi.com/view?r=eyJrIjoiNzkyMGNjYjAtMzZhMi00OTRhLWFlNjEtYjRhMDQ5MWNlNGIzIiwidCI6IjJhNmMxMmFkLTQwNmEtNGYzMy1iNjg2LWY3OGZmNTgyMjIwOCIsImMiOjh9
+adaptation-finance-power-bi-dashboard,data,yes,Which stable URL serves the resource or accepts access requests?,,https://app.powerbi.com/view?r=eyJrIjoiNzkyMGNjYjAtMzZhMi00OTRhLWFlNjEtYjRhMDQ5MWNlNGIzIiwidCI6IjJhNmMxMmFkLTQwNmEtNGYzMy1iNjg2LWY3OGZmNTgyMjIwOCIsImMiOjh9
+adaptation-finance-power-bi-dashboard,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://app.powerbi.com/view?r=eyJrIjoiNzkyMGNjYjAtMzZhMi00OTRhLWFlNjEtYjRhMDQ5MWNlNGIzIiwidCI6IjJhNmMxMmFkLTQwNmEtNGYzMy1iNjg2LWY3OGZmNTgyMjIwOCIsImMiOjh9
+adaptation-finance-power-bi-dashboard,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://app.powerbi.com/view?r=eyJrIjoiNzkyMGNjYjAtMzZhMi00OTRhLWFlNjEtYjRhMDQ5MWNlNGIzIiwidCI6IjJhNmMxMmFkLTQwNmEtNGYzMy1iNjg2LWY3OGZmNTgyMjIwOCIsImMiOjh9
+adaptation-finance-power-bi-dashboard,citation,yes,What DOI or preferred citation identifies this resource?,,https://app.powerbi.com/view?r=eyJrIjoiNzkyMGNjYjAtMzZhMi00OTRhLWFlNjEtYjRhMDQ5MWNlNGIzIiwidCI6IjJhNmMxMmFkLTQwNmEtNGYzMy1iNjg2LWY3OGZmNTgyMjIwOCIsImMiOjh9
+climate-resilience-platform,version,yes,Which release or version does this entry describe?,,https://climate-resilience-platform.org/
+climate-resilience-platform,license,yes,Which reuse licence and terms apply to this specific resource?,,https://climate-resilience-platform.org/
+climate-resilience-platform,data,yes,Which stable URL serves the resource or accepts access requests?,,https://climate-resilience-platform.org/
+climate-resilience-platform,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://climate-resilience-platform.org/
+climate-resilience-platform,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://climate-resilience-platform.org/
+climate-resilience-platform,citation,yes,What DOI or preferred citation identifies this resource?,,https://climate-resilience-platform.org/
+global-adaptation-mapping-initiative,version,yes,Which release or version does this entry describe?,,https://globaladaptation.github.io/
+global-adaptation-mapping-initiative,license,yes,Which reuse licence and terms apply to this specific resource?,,https://globaladaptation.github.io/
+global-adaptation-mapping-initiative,data,yes,Which stable URL serves the resource or accepts access requests?,,https://globaladaptation.github.io/
+global-adaptation-mapping-initiative,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://globaladaptation.github.io/
+global-adaptation-mapping-initiative,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://globaladaptation.github.io/
+global-adaptation-mapping-initiative,citation,yes,What DOI or preferred citation identifies this resource?,,https://globaladaptation.github.io/
+impacts-of-climate-change-on-global-agriculture-accounting-for-adaptation,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.nature.com/articles/s41586-025-09085-w
+unfccc-adaptation-country-portal,version,yes,Which release or version does this entry describe?,,https://unfccc.int/adaptation_country_portal
+unfccc-adaptation-country-portal,license,yes,Which reuse licence and terms apply to this specific resource?,,https://unfccc.int/adaptation_country_portal
+unfccc-adaptation-country-portal,data,yes,Which stable URL serves the resource or accepts access requests?,,https://unfccc.int/adaptation_country_portal
+unfccc-adaptation-country-portal,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://unfccc.int/adaptation_country_portal
+unfccc-adaptation-country-portal,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://unfccc.int/adaptation_country_portal
+unfccc-adaptation-country-portal,citation,yes,What DOI or preferred citation identifies this resource?,,https://unfccc.int/adaptation_country_portal
+annual-global-gridded-livestock-mapping-1961-2021,spatial / temporal,no,"Verify coverage and resolution against dataset documentation. Card clues: Global, 1961–2021, 5 km",,https://essd.copernicus.org/preprints/essd-2025-175/
+annual-global-gridded-livestock-mapping-1961-2021,variables,no,"Confirm variable names, definitions and units in the data dictionary.",,https://essd.copernicus.org/preprints/essd-2025-175/
+annual-global-gridded-livestock-mapping-1961-2021,version,yes,Which release or version does this entry describe?,,https://essd.copernicus.org/preprints/essd-2025-175/
+annual-global-gridded-livestock-mapping-1961-2021,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://essd.copernicus.org/preprints/essd-2025-175/
+annual-global-gridded-livestock-mapping-1961-2021,data,yes,Which stable URL serves the resource or accepts access requests?,,https://essd.copernicus.org/preprints/essd-2025-175/
+annual-global-gridded-livestock-mapping-1961-2021,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://essd.copernicus.org/preprints/essd-2025-175/
+annual-global-gridded-livestock-mapping-1961-2021,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://essd.copernicus.org/preprints/essd-2025-175/
+annual-global-gridded-livestock-mapping-1961-2021,citation,yes,What DOI or preferred citation identifies this resource?,2025,https://essd.copernicus.org/preprints/essd-2025-175/
+eth-cocoa-suitability-map,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://arxiv.org/abs/2206.06119
+eth-cocoa-suitability-map,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://arxiv.org/abs/2206.06119
+cropgrids-global-crop-dataset,spatial / temporal,no,"Verify coverage and resolution against dataset documentation. Card clues: Global, reference year 2020, 0.05 degrees (~5.6 km at equator)",,https://doi.org/10.6084/m9.figshare.22491997.v9
+cropgrids-global-crop-dataset,variables,no,"Confirm variable names, definitions and units in the data dictionary.",,https://doi.org/10.6084/m9.figshare.22491997.v9
+cropgrids-global-crop-dataset,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://doi.org/10.6084/m9.figshare.22491997.v9
+dry-matter-productivity-v2-1km,spatial / temporal,no,"Verify coverage and resolution against dataset documentation. Card clues: Global, 1999–June 2020 (10-daily), 1 km",,https://sdi.eea.europa.eu/catalogue/srv/api/records/c8cf5bec-83e9-4e27-8c13-80f74a89bd0c?language=all
+dry-matter-productivity-v2-1km,variables,no,"Confirm variable names, definitions and units in the data dictionary.",,https://sdi.eea.europa.eu/catalogue/srv/api/records/c8cf5bec-83e9-4e27-8c13-80f74a89bd0c?language=all
+dry-matter-productivity-v2-1km,license,yes,Which reuse licence and terms apply to this specific resource?,,https://sdi.eea.europa.eu/catalogue/srv/api/records/c8cf5bec-83e9-4e27-8c13-80f74a89bd0c?language=all
+dry-matter-productivity-v2-1km,data,yes,Which stable URL serves the resource or accepts access requests?,,https://sdi.eea.europa.eu/catalogue/srv/api/records/c8cf5bec-83e9-4e27-8c13-80f74a89bd0c?language=all
+dry-matter-productivity-v2-1km,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://sdi.eea.europa.eu/catalogue/srv/api/records/c8cf5bec-83e9-4e27-8c13-80f74a89bd0c?language=all
+dry-matter-productivity-v2-1km,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://sdi.eea.europa.eu/catalogue/srv/api/records/c8cf5bec-83e9-4e27-8c13-80f74a89bd0c?language=all
+global-livestock-dynamics,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://landcarbonlab.org/insights/global-livestock-dynamics/
+global-livestock-dynamics,data,yes,Which stable URL serves the resource or accepts access requests?,,https://landcarbonlab.org/insights/global-livestock-dynamics/
+global-livestock-dynamics,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://landcarbonlab.org/insights/global-livestock-dynamics/
+global-livestock-dynamics,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://landcarbonlab.org/insights/global-livestock-dynamics/
+global-livestock-dynamics,citation,yes,What DOI or preferred citation identifies this resource?,,https://landcarbonlab.org/insights/global-livestock-dynamics/
+global-pasture-watch,version,yes,Which release or version does this entry describe?,,https://landcarbonlab.org/about-global-pasture-watch/
+global-pasture-watch,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://landcarbonlab.org/about-global-pasture-watch/
+global-pasture-watch,data,yes,Which stable URL serves the resource or accepts access requests?,,https://landcarbonlab.org/about-global-pasture-watch/
+global-pasture-watch,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://landcarbonlab.org/about-global-pasture-watch/
+global-pasture-watch,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://landcarbonlab.org/about-global-pasture-watch/
+global-pasture-watch,citation,yes,What DOI or preferred citation identifies this resource?,2024,https://landcarbonlab.org/about-global-pasture-watch/
+global-spatially-explicit-crop-water-consumption,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.nature.com/articles/s43016-025-01231-x
+harveststat-africa,spatial / temporal,no,"Verify coverage and resolution against dataset documentation. Card clues: Sub-Saharan Africa, 1980–2022 (33 countries, 94 crop types), Subnational (administrative units)",,https://doi.org/10.5061/dryad.vq83bk42w
+harveststat-africa,variables,no,"Confirm variable names, definitions and units in the data dictionary.",,https://doi.org/10.5061/dryad.vq83bk42w
+harveststat-africa,access,yes,Does the Dryad download require authentication? Please confirm the download instructions for version 12.,open,https://doi.org/10.5061/dryad.vq83bk42w
+harveststat-africa,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://doi.org/10.5061/dryad.vq83bk42w
+sample-earth,spatial / temporal,no,"Verify coverage and resolution against dataset documentation. Card clues: Vietnam, Ghana, GPS-located point samples",,https://sampleearth.org/
+sample-earth,variables,no,"Confirm variable names, definitions and units in the data dictionary.",,https://sampleearth.org/
+sample-earth,version,yes,Which release or version does this entry describe?,,https://sampleearth.org/
+sample-earth,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://sampleearth.org/
+sample-earth,data,yes,Which stable URL serves the resource or accepts access requests?,,https://sampleearth.org/
+sample-earth,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://sampleearth.org/
+sample-earth,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://sampleearth.org/
+sample-earth,citation,yes,What DOI or preferred citation identifies this resource?,2026,https://sampleearth.org/
+scientific-data-s41597-025-05257-5,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://zenodo.org/records/14961637
+spatial-frameworks-for-robust-estimation-of-yield-gaps,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.nature.com/articles/s43016-021-00365-y
+terra-i-plus,version,yes,Which release or version does this entry describe?,,https://www.terra-iplus.org/
+terra-i-plus,license,yes,Which reuse licence and terms apply to this specific resource?,proprietary,https://www.terra-iplus.org/
+terra-i-plus,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.terra-iplus.org/
+terra-i-plus,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",login,https://www.terra-iplus.org/
+terra-i-plus,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.terra-iplus.org/
+terra-i-plus,citation,yes,What DOI or preferred citation identifies this resource?,2023,https://www.terra-iplus.org/
+agroforestry-carbon-finance,version,yes,Which release or version does this entry describe?,,https://songbaelee.github.io/agroforestry-carbon-finance/
+agroforestry-carbon-finance,license,yes,Which reuse licence and terms apply to this specific resource?,,https://songbaelee.github.io/agroforestry-carbon-finance/
+agroforestry-carbon-finance,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://songbaelee.github.io/agroforestry-carbon-finance/
+agroforestry-carbon-finance,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://songbaelee.github.io/agroforestry-carbon-finance/
+agroforestry-carbon-finance,citation,yes,What DOI or preferred citation identifies this resource?,,https://songbaelee.github.io/agroforestry-carbon-finance/
+cropland-ghg-emissions-removals-climate-action-food-systems,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.nature.com/articles/s41558-026-02558-4
+erw-fpr-explorer,version,yes,Which release or version does this entry describe?,,https://sandbox.maticarbon.com/tools/erw-fpr-explorer
+erw-fpr-explorer,license,yes,Which reuse licence and terms apply to this specific resource?,,https://sandbox.maticarbon.com/tools/erw-fpr-explorer
+erw-fpr-explorer,data,yes,Which stable URL serves the resource or accepts access requests?,,https://sandbox.maticarbon.com/tools/erw-fpr-explorer
+erw-fpr-explorer,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://sandbox.maticarbon.com/tools/erw-fpr-explorer
+erw-fpr-explorer,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://sandbox.maticarbon.com/tools/erw-fpr-explorer
+erw-fpr-explorer,citation,yes,What DOI or preferred citation identifies this resource?,,https://sandbox.maticarbon.com/tools/erw-fpr-explorer
+fao-ghg-drose-drained-organic-soils-emissions,spatial / temporal,no,"Verify coverage and resolution against dataset documentation. Card clues: Global, 1992-2022",,https://developers.google.com/earth-engine/datasets/catalog/FAO_GHG_1_DROSE_A
+fao-ghg-drose-drained-organic-soils-emissions,variables,no,"Confirm variable names, definitions and units in the data dictionary.",,https://developers.google.com/earth-engine/datasets/catalog/FAO_GHG_1_DROSE_A
+fao-ghg-drose-drained-organic-soils-emissions,version,yes,Which release or version does this entry describe?,,https://developers.google.com/earth-engine/datasets/catalog/FAO_GHG_1_DROSE_A
+fao-ghg-drose-drained-organic-soils-emissions,license,yes,Which reuse licence and terms apply to this specific resource?,,https://developers.google.com/earth-engine/datasets/catalog/FAO_GHG_1_DROSE_A
+fao-ghg-drose-drained-organic-soils-emissions,data,yes,Which stable URL serves the resource or accepts access requests?,,https://developers.google.com/earth-engine/datasets/catalog/FAO_GHG_1_DROSE_A
+fao-ghg-drose-drained-organic-soils-emissions,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://developers.google.com/earth-engine/datasets/catalog/FAO_GHG_1_DROSE_A
+fao-ghg-drose-drained-organic-soils-emissions,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://developers.google.com/earth-engine/datasets/catalog/FAO_GHG_1_DROSE_A
+fao-ghg-drose-drained-organic-soils-emissions,citation,yes,What DOI or preferred citation identifies this resource?,,https://developers.google.com/earth-engine/datasets/catalog/FAO_GHG_1_DROSE_A
+global-renewables-watch,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://github.com/microsoft/global-renewables-watch
+global-renewables-watch,citation,yes,What DOI or preferred citation identifies this resource?,2025,https://github.com/microsoft/global-renewables-watch
+meta-wri-global-canopy-height-map,version,yes,Which release or version does this entry describe?,,https://meta-forest-monitoring-okw37.projects.earthengine.app/view/canopyheight
+meta-wri-global-canopy-height-map,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://meta-forest-monitoring-okw37.projects.earthengine.app/view/canopyheight
+meta-wri-global-canopy-height-map,data,yes,Which stable URL serves the resource or accepts access requests?,,https://meta-forest-monitoring-okw37.projects.earthengine.app/view/canopyheight
+meta-wri-global-canopy-height-map,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://meta-forest-monitoring-okw37.projects.earthengine.app/view/canopyheight
+meta-wri-global-canopy-height-map,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://meta-forest-monitoring-okw37.projects.earthengine.app/view/canopyheight
+meta-wri-global-canopy-height-map,citation,yes,What DOI or preferred citation identifies this resource?,,https://meta-forest-monitoring-okw37.projects.earthengine.app/view/canopyheight
+openlandmap-soildb-global-30m-soil-datacube,version,yes,Which release or version does this entry describe?,,https://world.soils.app/
+openlandmap-soildb-global-30m-soil-datacube,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://world.soils.app/
+openlandmap-soildb-global-30m-soil-datacube,data,yes,Which stable URL serves the resource or accepts access requests?,,https://world.soils.app/
+openlandmap-soildb-global-30m-soil-datacube,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://world.soils.app/
+openlandmap-soildb-global-30m-soil-datacube,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://world.soils.app/
+openlandmap-soildb-global-30m-soil-datacube,citation,yes,What DOI or preferred citation identifies this resource?,2025,https://world.soils.app/
+openlandmap-soildb-github,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://github.com/openlandmap/soildb
+openlandmap-soildb-github,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://github.com/openlandmap/soildb
+openlandmap-soildb-github,citation,yes,What DOI or preferred citation identifies this resource?,2025-06-06,https://github.com/openlandmap/soildb
+reducing-emissions-from-fertilizers-opportunities-and-challenges,license,yes,Which reuse licence and terms apply to this specific resource?,proprietary,https://doi.org/10.1016/bs.agron.2026.03.002
+reducing-emissions-from-fertilizers-opportunities-and-challenges,data,yes,Which stable URL serves the resource or accepts access requests?,,https://doi.org/10.1016/bs.agron.2026.03.002
+reducing-emissions-from-fertilizers-opportunities-and-challenges,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",paywall,https://doi.org/10.1016/bs.agron.2026.03.002
+reducing-emissions-from-fertilizers-opportunities-and-challenges,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://doi.org/10.1016/bs.agron.2026.03.002
+climateaf-high-resolution-climate-africa,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.nature.com/articles/s41597-025-05575-8
+buildforward-explorer,version,yes,Which release or version does this entry describe?,,https://explore.buildforward.io/
+buildforward-explorer,license,yes,Which reuse licence and terms apply to this specific resource?,,https://explore.buildforward.io/
+buildforward-explorer,data,yes,Which stable URL serves the resource or accepts access requests?,,https://explore.buildforward.io/
+buildforward-explorer,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",login,https://explore.buildforward.io/
+buildforward-explorer,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://explore.buildforward.io/
+buildforward-explorer,citation,yes,What DOI or preferred citation identifies this resource?,,https://explore.buildforward.io/
+buildforward-precipitation-methodology,license,yes,Which reuse licence and terms apply to this specific resource?,,https://data.buildforward.io/docs/methodology_buildforward_precip.pdf
+buildforward-precipitation-methodology,data,yes,Which stable URL serves the resource or accepts access requests?,,https://data.buildforward.io/docs/methodology_buildforward_precip.pdf
+buildforward-precipitation-methodology,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://data.buildforward.io/docs/methodology_buildforward_precip.pdf
+buildforward-precipitation-methodology,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://data.buildforward.io/docs/methodology_buildforward_precip.pdf
+buildforward-precipitation-methodology,citation,yes,What DOI or preferred citation identifies this resource?,,https://data.buildforward.io/docs/methodology_buildforward_precip.pdf
+burger-global-sub-daily-idf-data,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://zenodo.org/records/15473689
+chelsa-climatologies-high-resolution,spatial / temporal,no,"Verify coverage and resolution against dataset documentation. Card clues: Global (land surface), 1979-2013 (V1.2); climatologies, 30 arcsec (~1 km)",,https://www.chelsa-climate.org/
+chelsa-climatologies-high-resolution,variables,no,"Confirm variable names, definitions and units in the data dictionary.",,https://www.chelsa-climate.org/
+chelsa-climatologies-high-resolution,version,yes,Which release or version does this entry describe?,,https://www.chelsa-climate.org/
+chelsa-climatologies-high-resolution,license,yes,Which reuse licence and terms apply to this specific resource?,,https://www.chelsa-climate.org/
+chelsa-climatologies-high-resolution,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.chelsa-climate.org/
+chelsa-climatologies-high-resolution,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://www.chelsa-climate.org/
+chelsa-climatologies-high-resolution,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.chelsa-climate.org/
+chelsa-climatologies-high-resolution,citation,yes,What DOI or preferred citation identifies this resource?,,https://www.chelsa-climate.org/
+cra5-dataset-github,spatial / temporal,no,"Verify coverage and resolution against dataset documentation. Card clues: Global, 1979-2023, hourly, ERA5-derived (~0.25 degree)",,https://github.com/taohan10200/CRA5
+cra5-dataset-github,variables,no,"Confirm variable names, definitions and units in the data dictionary.",,https://github.com/taohan10200/CRA5
+cra5-dataset-github,version,yes,Which release or version does this entry describe?,,https://github.com/taohan10200/CRA5
+cra5-dataset-github,license,yes,Which reuse licence and terms apply to this specific resource?,,https://github.com/taohan10200/CRA5
+cra5-dataset-github,data,yes,Which stable URL serves the resource or accepts access requests?,,https://github.com/taohan10200/CRA5
+cra5-dataset-github,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://github.com/taohan10200/CRA5
+cra5-dataset-github,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://github.com/taohan10200/CRA5
+cra5-dataset-github,citation,yes,What DOI or preferred citation identifies this resource?,2024,https://github.com/taohan10200/CRA5
+fews-net-software-tool,version,yes,Which release or version does this entry describe?,,https://earlywarning.usgs.gov/fews/software-tools/26/
+fews-net-software-tool,license,yes,Which reuse licence and terms apply to this specific resource?,public domain,https://earlywarning.usgs.gov/fews/software-tools/26/
+fews-net-software-tool,data,yes,Which stable URL serves the resource or accepts access requests?,,https://earlywarning.usgs.gov/fews/software-tools/26/
+fews-net-software-tool,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://earlywarning.usgs.gov/fews/software-tools/26/
+fews-net-software-tool,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://earlywarning.usgs.gov/fews/software-tools/26/
+fews-net-software-tool,citation,yes,What DOI or preferred citation identifies this resource?,,https://earlywarning.usgs.gov/fews/software-tools/26/
+global-gridded-heating-cooling-degree-days,license,yes,Which reuse licence and terms apply to this specific resource?,,https://www.nature.com/articles/s41893-025-01754-y
+global-gridded-heating-cooling-degree-days,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.nature.com/articles/s41893-025-01754-y
+global-gridded-heating-cooling-degree-days,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",paywall,https://www.nature.com/articles/s41893-025-01754-y
+global-gridded-heating-cooling-degree-days,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.nature.com/articles/s41893-025-01754-y
+mercury-multi-resolution-global-emulator-of-compound-climate-hazards,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024MS004905
+mercury-multi-resolution-global-emulator-of-compound-climate-hazards,data,yes,Which stable URL serves the resource or accepts access requests?,,https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024MS004905
+mercury-multi-resolution-global-emulator-of-compound-climate-hazards,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024MS004905
+mercury-multi-resolution-global-emulator-of-compound-climate-hazards,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024MS004905
+xclim-climate-indicators,version,yes,Which release or version does this entry describe?,,https://xclim.readthedocs.io/en/stable/indicators.html
+xclim-climate-indicators,license,yes,Which reuse licence and terms apply to this specific resource?,Apache-2.0,https://xclim.readthedocs.io/en/stable/indicators.html
+xclim-climate-indicators,data,yes,Which stable URL serves the resource or accepts access requests?,,https://xclim.readthedocs.io/en/stable/indicators.html
+xclim-climate-indicators,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://xclim.readthedocs.io/en/stable/indicators.html
+xclim-climate-indicators,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://xclim.readthedocs.io/en/stable/indicators.html
+xclim-climate-indicators,citation,yes,What DOI or preferred citation identifies this resource?,,https://xclim.readthedocs.io/en/stable/indicators.html
+defining-the-agricultural-wet-season-in-africa-using-soil-moisture-from-smap,license,yes,Which reuse licence and terms apply to this specific resource?,,https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025GL118236
+defining-the-agricultural-wet-season-in-africa-using-soil-moisture-from-smap,data,yes,Which stable URL serves the resource or accepts access requests?,,https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025GL118236
+defining-the-agricultural-wet-season-in-africa-using-soil-moisture-from-smap,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",unknown,https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025GL118236
+defining-the-agricultural-wet-season-in-africa-using-soil-moisture-from-smap,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025GL118236
+dynamical-org-catalog,version,yes,Which release or version does this entry describe?,,https://dynamical.org/catalog/
+dynamical-org-catalog,license,yes,Which reuse licence and terms apply to this specific resource?,,https://dynamical.org/catalog/
+dynamical-org-catalog,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://dynamical.org/catalog/
+dynamical-org-catalog,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://dynamical.org/catalog/
+dynamical-org-catalog,citation,yes,What DOI or preferred citation identifies this resource?,2026,https://dynamical.org/catalog/
+earthmover,version,yes,Which release or version does this entry describe?,,https://www.earthmover.io/
+earthmover,license,yes,Which reuse licence and terms apply to this specific resource?,proprietary,https://www.earthmover.io/
+earthmover,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.earthmover.io/
+earthmover,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",login,https://www.earthmover.io/
+earthmover,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.earthmover.io/
+earthmover,citation,yes,What DOI or preferred citation identifies this resource?,,https://www.earthmover.io/
+el-nino-2026,version,yes,Which release or version does this entry describe?,,https://elnino2026.com/
+el-nino-2026,license,yes,Which reuse licence and terms apply to this specific resource?,,https://elnino2026.com/
+el-nino-2026,data,yes,Which stable URL serves the resource or accepts access requests?,,https://elnino2026.com/
+el-nino-2026,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://elnino2026.com/
+el-nino-2026,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://elnino2026.com/
+el-nino-2026,citation,yes,What DOI or preferred citation identifies this resource?,2026,https://elnino2026.com/
+iwmi-enso-dashboard,version,yes,Which release or version does this entry describe?,,https://enso.iwmi.org/dashboard
+iwmi-enso-dashboard,license,yes,Which reuse licence and terms apply to this specific resource?,,https://enso.iwmi.org/dashboard
+iwmi-enso-dashboard,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://enso.iwmi.org/dashboard
+iwmi-enso-dashboard,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://enso.iwmi.org/dashboard
+iwmi-enso-dashboard,citation,yes,What DOI or preferred citation identifies this resource?,,https://enso.iwmi.org/dashboard
+cmip7-forcing-datasets,version,yes,Which release or version does this entry describe?,,https://wcrp-cmip.org/cmip-phases/cmip7/cmip7-forcing-datasets/
+cmip7-forcing-datasets,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://wcrp-cmip.org/cmip-phases/cmip7/cmip7-forcing-datasets/
+cmip7-forcing-datasets,data,yes,Which stable URL serves the resource or accepts access requests?,,https://wcrp-cmip.org/cmip-phases/cmip7/cmip7-forcing-datasets/
+cmip7-forcing-datasets,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://wcrp-cmip.org/cmip-phases/cmip7/cmip7-forcing-datasets/
+cmip7-forcing-datasets,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://wcrp-cmip.org/cmip-phases/cmip7/cmip7-forcing-datasets/
+cmip7-forcing-datasets,citation,yes,What DOI or preferred citation identifies this resource?,2024-07-23,https://wcrp-cmip.org/cmip-phases/cmip7/cmip7-forcing-datasets/
+copernicus-era6-reanalysis-production-starts,license,yes,Which reuse licence and terms apply to this specific resource?,,https://climate.copernicus.eu/copernicus-climates-era6-reanalysis-production-starts
+copernicus-era6-reanalysis-production-starts,data,yes,Which stable URL serves the resource or accepts access requests?,,https://climate.copernicus.eu/copernicus-climates-era6-reanalysis-production-starts
+copernicus-era6-reanalysis-production-starts,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://climate.copernicus.eu/copernicus-climates-era6-reanalysis-production-starts
+copernicus-era6-reanalysis-production-starts,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://climate.copernicus.eu/copernicus-climates-era6-reanalysis-production-starts
+copernicus-era6-reanalysis-production-starts,citation,yes,What DOI or preferred citation identifies this resource?,2026-03-06,https://climate.copernicus.eu/copernicus-climates-era6-reanalysis-production-starts
+input4mips-cvs-documentation,version,yes,Which release or version does this entry describe?,,https://input4mips-cvs.readthedocs.io/en/latest/
+input4mips-cvs-documentation,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://input4mips-cvs.readthedocs.io/en/latest/
+input4mips-cvs-documentation,data,yes,Which stable URL serves the resource or accepts access requests?,,https://input4mips-cvs.readthedocs.io/en/latest/
+input4mips-cvs-documentation,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://input4mips-cvs.readthedocs.io/en/latest/
+input4mips-cvs-documentation,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://input4mips-cvs.readthedocs.io/en/latest/
+input4mips-cvs-documentation,citation,yes,What DOI or preferred citation identifies this resource?,,https://input4mips-cvs.readthedocs.io/en/latest/
+input4mips-cvs-releases-github,version,yes,Which release or version does this entry describe?,,https://github.com/PCMDI/input4MIPs_CVs/releases
+input4mips-cvs-releases-github,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://github.com/PCMDI/input4MIPs_CVs/releases
+a-new-class-of-climate-hazard-metrics-ten-fold-increase-extreme-heat-europe,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://www.sciencedirect.com/science/article/pii/S221209472600006X
+a-new-class-of-climate-hazard-metrics-ten-fold-increase-extreme-heat-europe,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.sciencedirect.com/science/article/pii/S221209472600006X
+a-new-class-of-climate-hazard-metrics-ten-fold-increase-extreme-heat-europe,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://www.sciencedirect.com/science/article/pii/S221209472600006X
+a-new-class-of-climate-hazard-metrics-ten-fold-increase-extreme-heat-europe,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.sciencedirect.com/science/article/pii/S221209472600006X
+a-new-class-of-climate-hazard-metrics-ten-fold-increase-extreme-heat-europe,citation,yes,What DOI or preferred citation identifies this resource?,2026,https://www.sciencedirect.com/science/article/pii/S221209472600006X
+global-gridded-multi-temporal-datasets-human-population-distribution-modelling,spatial / temporal,no,"Verify coverage and resolution against dataset documentation. Card clues: Global, annual, multi-temporal time series, 3 arc-seconds (~100 m)",,https://gatesopenresearch.org/articles/9-72
+global-gridded-multi-temporal-datasets-human-population-distribution-modelling,variables,no,"Confirm variable names, definitions and units in the data dictionary.",,https://gatesopenresearch.org/articles/9-72
+global-gridded-multi-temporal-datasets-human-population-distribution-modelling,version,yes,Which release or version does this entry describe?,,https://gatesopenresearch.org/articles/9-72
+global-gridded-multi-temporal-datasets-human-population-distribution-modelling,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://gatesopenresearch.org/articles/9-72
+global-gridded-multi-temporal-datasets-human-population-distribution-modelling,data,yes,Which stable URL serves the resource or accepts access requests?,,https://gatesopenresearch.org/articles/9-72
+global-gridded-multi-temporal-datasets-human-population-distribution-modelling,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://gatesopenresearch.org/articles/9-72
+global-gridded-multi-temporal-datasets-human-population-distribution-modelling,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://gatesopenresearch.org/articles/9-72
+global-gridded-multi-temporal-datasets-human-population-distribution-modelling,citation,yes,What DOI or preferred citation identifies this resource?,2025-09-15,https://gatesopenresearch.org/articles/9-72
+worldpop-hub-population-dataset-category,version,yes,Which release or version does this entry describe?,,https://hub.worldpop.org/project/categories?id=21
+worldpop-hub-population-dataset-category,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://hub.worldpop.org/project/categories?id=21
+worldpop-hub-population-dataset-category,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://hub.worldpop.org/project/categories?id=21
+worldpop-hub-population-dataset-category,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://hub.worldpop.org/project/categories?id=21
+worldpop-hub-population-dataset-category,citation,yes,What DOI or preferred citation identifies this resource?,,https://hub.worldpop.org/project/categories?id=21
+zenodo-record-14443334,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://zenodo.org/records/14443334
+global-dataset-of-7-billion-individuals-with-socio-economic-characteristics,spatial / temporal,no,"Verify coverage and resolution against dataset documentation. Card clues: Global, individual-level (synthetic population)",,https://www.nature.com/articles/s41597-024-03864-2
+global-dataset-of-7-billion-individuals-with-socio-economic-characteristics,variables,no,"Confirm variable names, definitions and units in the data dictionary.",,https://www.nature.com/articles/s41597-024-03864-2
+global-dataset-of-7-billion-individuals-with-socio-economic-characteristics,version,yes,Which release or version does this entry describe?,,https://www.nature.com/articles/s41597-024-03864-2
+global-dataset-of-7-billion-individuals-with-socio-economic-characteristics,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://www.nature.com/articles/s41597-024-03864-2
+global-dataset-of-7-billion-individuals-with-socio-economic-characteristics,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.nature.com/articles/s41597-024-03864-2
+global-dataset-of-7-billion-individuals-with-socio-economic-characteristics,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://www.nature.com/articles/s41597-024-03864-2
+global-dataset-of-7-billion-individuals-with-socio-economic-characteristics,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.nature.com/articles/s41597-024-03864-2
+global-dataset-of-7-billion-individuals-with-socio-economic-characteristics,citation,yes,What DOI or preferred citation identifies this resource?,2024-10-07,https://www.nature.com/articles/s41597-024-03864-2
+spatially-explicit-harmonized-global-dataset-of-critical-infrastructure,spatial / temporal,no,"Verify coverage and resolution against dataset documentation. Card clues: Global, spatially-explicit vector (VGI/OSM-based)",,https://doi.org/10.5281/zenodo.4957647
+spatially-explicit-harmonized-global-dataset-of-critical-infrastructure,variables,no,"Confirm variable names, definitions and units in the data dictionary.",,https://doi.org/10.5281/zenodo.4957647
+spatially-explicit-harmonized-global-dataset-of-critical-infrastructure,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://doi.org/10.5281/zenodo.4957647
+downscaled-gridded-global-dataset-gdp-per-capita-ppp-1990-2022,spatial / temporal,no,"Verify coverage and resolution against dataset documentation. Card clues: Global, 1990-2022 (annual), admin level 0/1/2 (down to 43,501 units), gridded",,https://www.nature.com/articles/s41597-025-04487-x
+downscaled-gridded-global-dataset-gdp-per-capita-ppp-1990-2022,variables,no,"Confirm variable names, definitions and units in the data dictionary.",,https://www.nature.com/articles/s41597-025-04487-x
+downscaled-gridded-global-dataset-gdp-per-capita-ppp-1990-2022,version,yes,Which release or version does this entry describe?,,https://www.nature.com/articles/s41597-025-04487-x
+downscaled-gridded-global-dataset-gdp-per-capita-ppp-1990-2022,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://www.nature.com/articles/s41597-025-04487-x
+downscaled-gridded-global-dataset-gdp-per-capita-ppp-1990-2022,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.nature.com/articles/s41597-025-04487-x
+downscaled-gridded-global-dataset-gdp-per-capita-ppp-1990-2022,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://www.nature.com/articles/s41597-025-04487-x
+downscaled-gridded-global-dataset-gdp-per-capita-ppp-1990-2022,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.nature.com/articles/s41597-025-04487-x
+downscaled-gridded-global-dataset-gdp-per-capita-ppp-1990-2022,citation,yes,What DOI or preferred citation identifies this resource?,2025-01-30,https://www.nature.com/articles/s41597-025-04487-x
+africa-agriculture-watch-aagwa,version,yes,Which release or version does this entry describe?,,https://www.aagwa.org/
+africa-agriculture-watch-aagwa,license,yes,Which reuse licence and terms apply to this specific resource?,proprietary,https://www.aagwa.org/
+africa-agriculture-watch-aagwa,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.aagwa.org/
+africa-agriculture-watch-aagwa,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://www.aagwa.org/
+africa-agriculture-watch-aagwa,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.aagwa.org/
+africa-agriculture-watch-aagwa,citation,yes,What DOI or preferred citation identifies this resource?,,https://www.aagwa.org/
+attribution-of-extreme-weather-and-climate-events-and-their-impacts,license,yes,Which reuse licence and terms apply to this specific resource?,,https://www.nationalacademies.org/read/28590/chapter/1
+attribution-of-extreme-weather-and-climate-events-and-their-impacts,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.nationalacademies.org/read/28590/chapter/1
+attribution-of-extreme-weather-and-climate-events-and-their-impacts,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://www.nationalacademies.org/read/28590/chapter/1
+attribution-of-extreme-weather-and-climate-events-and-their-impacts,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.nationalacademies.org/read/28590/chapter/1
+attribution-of-extreme-weather-and-climate-events-and-their-impacts,citation,yes,What DOI or preferred citation identifies this resource?,2026-07-16,https://www.nationalacademies.org/read/28590/chapter/1
+cadi-climate-driven-agricultural-decline-index,version,yes,Which release or version does this entry describe?,,https://cadi.econai.org/ssp370_absolute.html
+cadi-climate-driven-agricultural-decline-index,license,yes,Which reuse licence and terms apply to this specific resource?,,https://cadi.econai.org/ssp370_absolute.html
+cadi-climate-driven-agricultural-decline-index,data,yes,Which stable URL serves the resource or accepts access requests?,,https://cadi.econai.org/ssp370_absolute.html
+cadi-climate-driven-agricultural-decline-index,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://cadi.econai.org/ssp370_absolute.html
+cadi-climate-driven-agricultural-decline-index,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://cadi.econai.org/ssp370_absolute.html
+cadi-climate-driven-agricultural-decline-index,citation,yes,What DOI or preferred citation identifies this resource?,,https://cadi.econai.org/ssp370_absolute.html
+childrens-climate-risk-report-2026,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-3.0-IGO,https://data.unicef.org/resources/childrens-climate-risk-report-2026/
+childrens-climate-risk-report-2026,data,yes,Which stable URL serves the resource or accepts access requests?,,https://data.unicef.org/resources/childrens-climate-risk-report-2026/
+childrens-climate-risk-report-2026,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://data.unicef.org/resources/childrens-climate-risk-report-2026/
+childrens-climate-risk-report-2026,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://data.unicef.org/resources/childrens-climate-risk-report-2026/
+childrens-climate-risk-report-2026,citation,yes,What DOI or preferred citation identifies this resource?,2026-06-16,https://data.unicef.org/resources/childrens-climate-risk-report-2026/
+climate-change-drives-a-decline-in-global-grazing-systems,license,yes,Which reuse licence and terms apply to this specific resource?,,https://www.pnas.org/doi/10.1073/pnas.2534015123
+climate-change-drives-a-decline-in-global-grazing-systems,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.pnas.org/doi/10.1073/pnas.2534015123
+climate-change-drives-a-decline-in-global-grazing-systems,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",paywall,https://www.pnas.org/doi/10.1073/pnas.2534015123
+climate-change-drives-a-decline-in-global-grazing-systems,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.pnas.org/doi/10.1073/pnas.2534015123
+climate-hazard-mortality-diagnosing-trends-and-outliers,license,yes,Which reuse licence and terms apply to this specific resource?,,https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025GL119218
+climate-hazard-mortality-diagnosing-trends-and-outliers,data,yes,Which stable URL serves the resource or accepts access requests?,,https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025GL119218
+climate-hazard-mortality-diagnosing-trends-and-outliers,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",unknown,https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025GL119218
+climate-hazard-mortality-diagnosing-trends-and-outliers,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025GL119218
+climate-shift-index,version,yes,Which release or version does this entry describe?,,https://csi.climatecentral.org/climate-shift-index
+climate-shift-index,license,yes,Which reuse licence and terms apply to this specific resource?,,https://csi.climatecentral.org/climate-shift-index
+climate-shift-index,data,yes,Which stable URL serves the resource or accepts access requests?,,https://csi.climatecentral.org/climate-shift-index
+climate-shift-index,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://csi.climatecentral.org/climate-shift-index
+climate-shift-index,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://csi.climatecentral.org/climate-shift-index
+climate-shift-index,citation,yes,What DOI or preferred citation identifies this resource?,,https://csi.climatecentral.org/climate-shift-index
+crop-water-origins-and-hydroclimate-vulnerability-of-global-croplands,license,yes,Which reuse licence and terms apply to this specific resource?,,https://www.nature.com/articles/s41893-025-01662-1
+crop-water-origins-and-hydroclimate-vulnerability-of-global-croplands,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.nature.com/articles/s41893-025-01662-1
+crop-water-origins-and-hydroclimate-vulnerability-of-global-croplands,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",paywall,https://www.nature.com/articles/s41893-025-01662-1
+crop-water-origins-and-hydroclimate-vulnerability-of-global-croplands,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.nature.com/articles/s41893-025-01662-1
+droughts-floods-crop-yield-sudanese-sahel,license,yes,Which reuse licence and terms apply to this specific resource?,,https://onlinelibrary.wiley.com/doi/full/10.1002/hyp.14978
+droughts-floods-crop-yield-sudanese-sahel,data,yes,Which stable URL serves the resource or accepts access requests?,,https://onlinelibrary.wiley.com/doi/full/10.1002/hyp.14978
+droughts-floods-crop-yield-sudanese-sahel,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",paywall,https://onlinelibrary.wiley.com/doi/full/10.1002/hyp.14978
+droughts-floods-crop-yield-sudanese-sahel,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://onlinelibrary.wiley.com/doi/full/10.1002/hyp.14978
+evolution-of-climate-extremes-over-the-indian-subcontinent-using-a-revised-cei,license,yes,Which reuse licence and terms apply to this specific resource?,,https://rmets.onlinelibrary.wiley.com/doi/10.1002/joc.70467
+evolution-of-climate-extremes-over-the-indian-subcontinent-using-a-revised-cei,data,yes,Which stable URL serves the resource or accepts access requests?,,https://rmets.onlinelibrary.wiley.com/doi/10.1002/joc.70467
+evolution-of-climate-extremes-over-the-indian-subcontinent-using-a-revised-cei,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",unknown,https://rmets.onlinelibrary.wiley.com/doi/10.1002/joc.70467
+evolution-of-climate-extremes-over-the-indian-subcontinent-using-a-revised-cei,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://rmets.onlinelibrary.wiley.com/doi/10.1002/joc.70467
+eoliann-airis-on-earthmover,license,yes,Which reuse licence and terms apply to this specific resource?,,https://www.earthmover.io/blog/from-geotiff-chaos-to-cloud-native-climate-risk-how-eoliann-built-airis-on-earthmover
+eoliann-airis-on-earthmover,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.earthmover.io/blog/from-geotiff-chaos-to-cloud-native-climate-risk-how-eoliann-built-airis-on-earthmover
+eoliann-airis-on-earthmover,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://www.earthmover.io/blog/from-geotiff-chaos-to-cloud-native-climate-risk-how-eoliann-built-airis-on-earthmover
+eoliann-airis-on-earthmover,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.earthmover.io/blog/from-geotiff-chaos-to-cloud-native-climate-risk-how-eoliann-built-airis-on-earthmover
+eoliann-airis-on-earthmover,citation,yes,What DOI or preferred citation identifies this resource?,2026-04-13,https://www.earthmover.io/blog/from-geotiff-chaos-to-cloud-native-climate-risk-how-eoliann-built-airis-on-earthmover
+global-assessment-population-exposure-multiple-climate-related-hazards,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(25)00173-1/fulltext
+global-assessment-population-exposure-multiple-climate-related-hazards,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(25)00173-1/fulltext
+global-assessment-population-exposure-multiple-climate-related-hazards,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(25)00173-1/fulltext
+global-assessment-population-exposure-multiple-climate-related-hazards,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(25)00173-1/fulltext
+global-assessment-population-exposure-multiple-climate-related-hazards,citation,yes,What DOI or preferred citation identifies this resource?,2025-08-01,https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(25)00173-1/fulltext
+gdpcir-downscaled-projections-preserving-extremes,spatial / temporal,no,"Verify coverage and resolution against dataset documentation. Card clues: Global, Historical 1950-2014; projections 2015-2100 (SSP1-2.6, SSP2-4.5, SSP3-7.0, SSP5-8.5), 0.25 degree (daily)",,https://impactlab.org/research/global-downscaled-projections-for-climate-impacts-research-gdpcir-preserving-extremes-for-modeling-future-climate-impacts/
+gdpcir-downscaled-projections-preserving-extremes,variables,no,"Confirm variable names, definitions and units in the data dictionary.",,https://impactlab.org/research/global-downscaled-projections-for-climate-impacts-research-gdpcir-preserving-extremes-for-modeling-future-climate-impacts/
+gdpcir-downscaled-projections-preserving-extremes,version,yes,Which release or version does this entry describe?,,https://impactlab.org/research/global-downscaled-projections-for-climate-impacts-research-gdpcir-preserving-extremes-for-modeling-future-climate-impacts/
+gdpcir-downscaled-projections-preserving-extremes,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0 / CC-BY-SA-4.0 / CC0-1.0 (varies by source model),https://impactlab.org/research/global-downscaled-projections-for-climate-impacts-research-gdpcir-preserving-extremes-for-modeling-future-climate-impacts/
+gdpcir-downscaled-projections-preserving-extremes,data,yes,Which stable URL serves the resource or accepts access requests?,,https://impactlab.org/research/global-downscaled-projections-for-climate-impacts-research-gdpcir-preserving-extremes-for-modeling-future-climate-impacts/
+gdpcir-downscaled-projections-preserving-extremes,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://impactlab.org/research/global-downscaled-projections-for-climate-impacts-research-gdpcir-preserving-extremes-for-modeling-future-climate-impacts/
+gdpcir-downscaled-projections-preserving-extremes,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://impactlab.org/research/global-downscaled-projections-for-climate-impacts-research-gdpcir-preserving-extremes-for-modeling-future-climate-impacts/
+gdpcir-downscaled-projections-preserving-extremes,citation,yes,What DOI or preferred citation identifies this resource?,2023-01-16,https://impactlab.org/research/global-downscaled-projections-for-climate-impacts-research-gdpcir-preserving-extremes-for-modeling-future-climate-impacts/
+google-flood-hub,version,yes,Which release or version does this entry describe?,,https://sites.research.google/floods/l/0/0/3
+google-flood-hub,license,yes,Which reuse licence and terms apply to this specific resource?,proprietary,https://sites.research.google/floods/l/0/0/3
+google-flood-hub,data,yes,Which stable URL serves the resource or accepts access requests?,,https://sites.research.google/floods/l/0/0/3
+google-flood-hub,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://sites.research.google/floods/l/0/0/3
+google-flood-hub,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://sites.research.google/floods/l/0/0/3
+google-flood-hub,citation,yes,What DOI or preferred citation identifies this resource?,2022,https://sites.research.google/floods/l/0/0/3
+hungermap-live,version,yes,Which release or version does this entry describe?,,https://hungermap.wfp.org/
+hungermap-live,license,yes,Which reuse licence and terms apply to this specific resource?,,https://hungermap.wfp.org/
+hungermap-live,data,yes,Which stable URL serves the resource or accepts access requests?,,https://hungermap.wfp.org/
+hungermap-live,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://hungermap.wfp.org/
+hungermap-live,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://hungermap.wfp.org/
+hungermap-live,citation,yes,What DOI or preferred citation identifies this resource?,,https://hungermap.wfp.org/
+nature-communications-s41467-026-72715-y,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.nature.com/articles/s41467-026-72715-y
+fao-soilfer-cropsuit,version,yes,Which release or version does this entry describe?,,https://data.apps.fao.org/soilfer/cropsuit
+fao-soilfer-cropsuit,license,yes,Which reuse licence and terms apply to this specific resource?,,https://data.apps.fao.org/soilfer/cropsuit
+fao-soilfer-cropsuit,data,yes,Which stable URL serves the resource or accepts access requests?,,https://data.apps.fao.org/soilfer/cropsuit
+fao-soilfer-cropsuit,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://data.apps.fao.org/soilfer/cropsuit
+fao-soilfer-cropsuit,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://data.apps.fao.org/soilfer/cropsuit
+fao-soilfer-cropsuit,citation,yes,What DOI or preferred citation identifies this resource?,,https://data.apps.fao.org/soilfer/cropsuit
+merge-dataset-climate-disaster-impacts-human-vulnerability,scope,yes,Does this proof-of-concept release cover the full MERGE asset?,,https://zenodo.org/records/16837695
+merge-dataset-climate-disaster-impacts-human-vulnerability,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://zenodo.org/records/16837695
+wfp-document-0000172936,license,yes,Which reuse licence and terms apply to this specific resource?,,https://docs.wfp.org/api/documents/WFP-0000172936/download/
+wfp-document-0000172936,data,yes,Which stable URL serves the resource or accepts access requests?,,https://docs.wfp.org/api/documents/WFP-0000172936/download/
+wfp-document-0000172936,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://docs.wfp.org/api/documents/WFP-0000172936/download/
+wfp-document-0000172936,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://docs.wfp.org/api/documents/WFP-0000172936/download/
+wfp-document-0000172936,citation,yes,What DOI or preferred citation identifies this resource?,,https://docs.wfp.org/api/documents/WFP-0000172936/download/
+projections-of-future-agricultural-management-and-crop-choice-under-ssps,spatial / temporal,no,"Verify coverage and resolution against dataset documentation. Card clues: Global (197 countries), future projections under SSP scenarios, country-level, 10 crop groups",,https://doi.org/10.6084/m9.figshare.28838930.v1
+projections-of-future-agricultural-management-and-crop-choice-under-ssps,variables,no,"Confirm variable names, definitions and units in the data dictionary.",,https://doi.org/10.6084/m9.figshare.28838930.v1
+projections-of-future-agricultural-management-and-crop-choice-under-ssps,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://doi.org/10.6084/m9.figshare.28838930.v1
+ai4ch4-ai-for-methane,version,yes,Which release or version does this entry describe?,,https://ai4ch4.com/
+ai4ch4-ai-for-methane,license,yes,Which reuse licence and terms apply to this specific resource?,,https://ai4ch4.com/
+ai4ch4-ai-for-methane,data,yes,Which stable URL serves the resource or accepts access requests?,,https://ai4ch4.com/
+ai4ch4-ai-for-methane,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",unknown,https://ai4ch4.com/
+ai4ch4-ai-for-methane,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://ai4ch4.com/
+ai4ch4-ai-for-methane,citation,yes,What DOI or preferred citation identifies this resource?,2026,https://ai4ch4.com/
+alphaearth-earth-engine-adk-skill,version,yes,Which release or version does this entry describe?,,https://github.com/google/earthengine-community/blob/master/skills/alphaearth/SKILL.md
+alphaearth-earth-engine-adk-skill,license,yes,Which reuse licence and terms apply to this specific resource?,Apache-2.0,https://github.com/google/earthengine-community/blob/master/skills/alphaearth/SKILL.md
+alphaearth-earth-engine-adk-skill,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://github.com/google/earthengine-community/blob/master/skills/alphaearth/SKILL.md
+alphaearth-earth-engine-adk-skill,citation,yes,What DOI or preferred citation identifies this resource?,,https://github.com/google/earthengine-community/blob/master/skills/alphaearth/SKILL.md
+cgiar-on-hugging-face,version,yes,Which release or version does this entry describe?,,https://huggingface.co/CGIAR
+cgiar-on-hugging-face,license,yes,Which reuse licence and terms apply to this specific resource?,,https://huggingface.co/CGIAR
+cgiar-on-hugging-face,data,yes,Which stable URL serves the resource or accepts access requests?,,https://huggingface.co/CGIAR
+cgiar-on-hugging-face,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://huggingface.co/CGIAR
+cgiar-on-hugging-face,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://huggingface.co/CGIAR
+cgiar-on-hugging-face,citation,yes,What DOI or preferred citation identifies this resource?,,https://huggingface.co/CGIAR
+climsight,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://github.com/CliDyn/climsight
+climsight,citation,yes,What DOI or preferred citation identifies this resource?,2025,https://github.com/CliDyn/climsight
+closing-the-gap-between-crop-simulation-and-practical-decision-making,license,yes,Which reuse licence and terms apply to this specific resource?,proprietary,https://www.sciencedirect.com/science/article/pii/S0168169926002504
+closing-the-gap-between-crop-simulation-and-practical-decision-making,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.sciencedirect.com/science/article/pii/S0168169926002504
+closing-the-gap-between-crop-simulation-and-practical-decision-making,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",paywall,https://www.sciencedirect.com/science/article/pii/S0168169926002504
+closing-the-gap-between-crop-simulation-and-practical-decision-making,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.sciencedirect.com/science/article/pii/S0168169926002504
+closing-the-gap-between-crop-simulation-and-practical-decision-making,citation,yes,What DOI or preferred citation identifies this resource?,2026,https://www.sciencedirect.com/science/article/pii/S0168169926002504
+dssatlm-agnesy,version,yes,Which release or version does this entry describe?,,https://github.com/MSU-CECO/DSSATLM-AgNeSy/tree/dev
+dssatlm-agnesy,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://github.com/MSU-CECO/DSSATLM-AgNeSy/tree/dev
+dssatlm-agnesy,citation,yes,What DOI or preferred citation identifies this resource?,2026,https://github.com/MSU-CECO/DSSATLM-AgNeSy/tree/dev
+empowering-the-google-earth-engine-community-with-example-adk-agents,license,yes,Which reuse licence and terms apply to this specific resource?,,https://medium.com/google-earth/empowering-the-google-earth-engine-community-with-example-adk-agents-4afa22dab855
+empowering-the-google-earth-engine-community-with-example-adk-agents,data,yes,Which stable URL serves the resource or accepts access requests?,,https://medium.com/google-earth/empowering-the-google-earth-engine-community-with-example-adk-agents-4afa22dab855
+empowering-the-google-earth-engine-community-with-example-adk-agents,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://medium.com/google-earth/empowering-the-google-earth-engine-community-with-example-adk-agents-4afa22dab855
+empowering-the-google-earth-engine-community-with-example-adk-agents,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://medium.com/google-earth/empowering-the-google-earth-engine-community-with-example-adk-agents-4afa22dab855
+empowering-the-google-earth-engine-community-with-example-adk-agents,citation,yes,What DOI or preferred citation identifies this resource?,2026-06-18,https://medium.com/google-earth/empowering-the-google-earth-engine-community-with-example-adk-agents-4afa22dab855
+forestcast-forecasting-deforestation-risk-at-scale-with-deep-learning,license,yes,Which reuse licence and terms apply to this specific resource?,,https://eartharxiv.org/repository/view/10674/
+forestcast-forecasting-deforestation-risk-at-scale-with-deep-learning,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://eartharxiv.org/repository/view/10674/
+google-agricultural-understanding-platform,version,yes,Which release or version does this entry describe?,,https://agri.withgoogle.com/
+google-agricultural-understanding-platform,license,yes,Which reuse licence and terms apply to this specific resource?,proprietary,https://agri.withgoogle.com/
+google-agricultural-understanding-platform,data,yes,Which stable URL serves the resource or accepts access requests?,,https://agri.withgoogle.com/
+google-agricultural-understanding-platform,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",login,https://agri.withgoogle.com/
+google-agricultural-understanding-platform,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://agri.withgoogle.com/
+google-agricultural-understanding-platform,citation,yes,What DOI or preferred citation identifies this resource?,,https://agri.withgoogle.com/
+loom-video-demo-291e886a,resource_type,yes,Which CDH type should describe a standalone video demonstration?,,https://www.loom.com/share/291e886a8350406e8e7f9a230a66832e
+loom-video-demo-291e886a,version,yes,Which release or version does this entry describe?,,https://www.loom.com/share/291e886a8350406e8e7f9a230a66832e
+loom-video-demo-291e886a,license,yes,Which reuse licence and terms apply to this specific resource?,,https://www.loom.com/share/291e886a8350406e8e7f9a230a66832e
+loom-video-demo-291e886a,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.loom.com/share/291e886a8350406e8e7f9a230a66832e
+loom-video-demo-291e886a,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://www.loom.com/share/291e886a8350406e8e7f9a230a66832e
+loom-video-demo-291e886a,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.loom.com/share/291e886a8350406e8e7f9a230a66832e
+loom-video-demo-291e886a,citation,yes,What DOI or preferred citation identifies this resource?,,https://www.loom.com/share/291e886a8350406e8e7f9a230a66832e
+mapping-the-planet-with-earth-index-is-now-open-to-everyone,license,yes,Which reuse licence and terms apply to this specific resource?,,https://www.earthgenome.org/blog/mapping-the-planet-with-earth-index-is-now-open-to-everyone
+mapping-the-planet-with-earth-index-is-now-open-to-everyone,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.earthgenome.org/blog/mapping-the-planet-with-earth-index-is-now-open-to-everyone
+mapping-the-planet-with-earth-index-is-now-open-to-everyone,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://www.earthgenome.org/blog/mapping-the-planet-with-earth-index-is-now-open-to-everyone
+mapping-the-planet-with-earth-index-is-now-open-to-everyone,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.earthgenome.org/blog/mapping-the-planet-with-earth-index-is-now-open-to-everyone
+mapping-the-planet-with-earth-index-is-now-open-to-everyone,citation,yes,What DOI or preferred citation identifies this resource?,2026-04-28,https://www.earthgenome.org/blog/mapping-the-planet-with-earth-index-is-now-open-to-everyone
+nature-article-s44458-026-00071-5,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.nature.com/articles/s44458-026-00071-5
+earth-science-data-sets-on-aws,license,yes,Which reuse licence and terms apply to this specific resource?,,https://aws.amazon.com/blogs/aws/earth-science-data-sets-on-aws/
+earth-science-data-sets-on-aws,data,yes,Which stable URL serves the resource or accepts access requests?,,https://aws.amazon.com/blogs/aws/earth-science-data-sets-on-aws/
+earth-science-data-sets-on-aws,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://aws.amazon.com/blogs/aws/earth-science-data-sets-on-aws/
+earth-science-data-sets-on-aws,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://aws.amazon.com/blogs/aws/earth-science-data-sets-on-aws/
+earth-science-data-sets-on-aws,citation,yes,What DOI or preferred citation identifies this resource?,2014-12-09,https://aws.amazon.com/blogs/aws/earth-science-data-sets-on-aws/
+earth-observations-for-climate-adaptation-tracking-the-global-goal-on-adaptation,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.nature.com/articles/s41612-025-01251-1
+fao-gleam-global-livestock-environmental-assessment-model,license,yes,Which reuse licence and terms apply to this specific resource?,AGPL-3.0,https://github.com/un-fao/GLEAM
+fao-gleam-global-livestock-environmental-assessment-model,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://github.com/un-fao/GLEAM
+fao-gleam-global-livestock-environmental-assessment-model,citation,yes,What DOI or preferred citation identifies this resource?,2026,https://github.com/un-fao/GLEAM
+alphaearth-foundations-helps-map-our-planet-in-unprecedented-detail,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://deepmind.google/blog/alphaearth-foundations-helps-map-our-planet-in-unprecedented-detail/
+alphaearth-foundations-helps-map-our-planet-in-unprecedented-detail,data,yes,Which stable URL serves the resource or accepts access requests?,,https://deepmind.google/blog/alphaearth-foundations-helps-map-our-planet-in-unprecedented-detail/
+alphaearth-foundations-helps-map-our-planet-in-unprecedented-detail,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://deepmind.google/blog/alphaearth-foundations-helps-map-our-planet-in-unprecedented-detail/
+alphaearth-foundations-helps-map-our-planet-in-unprecedented-detail,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://deepmind.google/blog/alphaearth-foundations-helps-map-our-planet-in-unprecedented-detail/
+alphaearth-foundations-helps-map-our-planet-in-unprecedented-detail,citation,yes,What DOI or preferred citation identifies this resource?,2025-07-30,https://deepmind.google/blog/alphaearth-foundations-helps-map-our-planet-in-unprecedented-detail/
+kenya-crop-type-detection-dataset-kaggle,license,yes,Which reuse licence and terms apply to this specific resource?,,https://www.kaggle.com/discussions/general/435213
+kenya-crop-type-detection-dataset-kaggle,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.kaggle.com/discussions/general/435213
+kenya-crop-type-detection-dataset-kaggle,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",login,https://www.kaggle.com/discussions/general/435213
+kenya-crop-type-detection-dataset-kaggle,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.kaggle.com/discussions/general/435213
+kenya-crop-type-detection-dataset-kaggle,citation,yes,What DOI or preferred citation identifies this resource?,2020,https://www.kaggle.com/discussions/general/435213
+alphaearth-foundations,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://arxiv.org/abs/2507.22291
+alphaearth-foundations,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://arxiv.org/abs/2507.22291
+building-and-managing-local-databases-from-google-earth-engine-with-the-geelite-r-package,license,yes,Which reuse licence and terms apply to this specific resource?,,https://documents1.worldbank.org/curated/en/099459405072542252/pdf/
+building-and-managing-local-databases-from-google-earth-engine-with-the-geelite-r-package,data,yes,Which stable URL serves the resource or accepts access requests?,,https://documents1.worldbank.org/curated/en/099459405072542252/pdf/
+building-and-managing-local-databases-from-google-earth-engine-with-the-geelite-r-package,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://documents1.worldbank.org/curated/en/099459405072542252/pdf/
+building-and-managing-local-databases-from-google-earth-engine-with-the-geelite-r-package,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://documents1.worldbank.org/curated/en/099459405072542252/pdf/
+building-and-managing-local-databases-from-google-earth-engine-with-the-geelite-r-package,citation,yes,What DOI or preferred citation identifies this resource?,2025,https://documents1.worldbank.org/curated/en/099459405072542252/pdf/
+changes-in-temperature-and-precipitation-extremes-over-the-greater-horn-of-africa-region-from-1961-to-2010,license,yes,Which reuse licence and terms apply to this specific resource?,,http://onlinelibrary.wiley.com/doi/10.1002/joc.3763/abstract
+changes-in-temperature-and-precipitation-extremes-over-the-greater-horn-of-africa-region-from-1961-to-2010,data,yes,Which stable URL serves the resource or accepts access requests?,,http://onlinelibrary.wiley.com/doi/10.1002/joc.3763/abstract
+changes-in-temperature-and-precipitation-extremes-over-the-greater-horn-of-africa-region-from-1961-to-2010,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",paywall,http://onlinelibrary.wiley.com/doi/10.1002/joc.3763/abstract
+changes-in-temperature-and-precipitation-extremes-over-the-greater-horn-of-africa-region-from-1961-to-2010,contact.licensor,yes,Who holds or administers licensing rights for this release?,,http://onlinelibrary.wiley.com/doi/10.1002/joc.3763/abstract
+climate-analogues-homologues-agricultural-systems,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://www.sciencedirect.com/science/article/pii/S0308521X22001007
+climate-analogues-homologues-agricultural-systems,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.sciencedirect.com/science/article/pii/S0308521X22001007
+climate-analogues-homologues-agricultural-systems,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",paywall,https://www.sciencedirect.com/science/article/pii/S0308521X22001007
+climate-analogues-homologues-agricultural-systems,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.sciencedirect.com/science/article/pii/S0308521X22001007
+climate-analogues-homologues-agricultural-systems,citation,yes,What DOI or preferred citation identifies this resource?,2022,https://www.sciencedirect.com/science/article/pii/S0308521X22001007
+cordex-ml-bench-benchmark-regional-climate-downscaling,license,yes,Which reuse licence and terms apply to this specific resource?,,https://arxiv.org/abs/2606.29172
+cordex-ml-bench-benchmark-regional-climate-downscaling,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://arxiv.org/abs/2606.29172
+yield-forecasting-remote-sensing-article-ijaeo,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://www.sciencedirect.com/science/article/pii/S1569843226001329
+yield-forecasting-remote-sensing-article-ijaeo,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.sciencedirect.com/science/article/pii/S1569843226001329
+yield-forecasting-remote-sensing-article-ijaeo,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://www.sciencedirect.com/science/article/pii/S1569843226001329
+yield-forecasting-remote-sensing-article-ijaeo,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.sciencedirect.com/science/article/pii/S1569843226001329
+yield-forecasting-remote-sensing-article-ijaeo,citation,yes,What DOI or preferred citation identifies this resource?,2026,https://www.sciencedirect.com/science/article/pii/S1569843226001329
+farm-level-in-season-crop-identification-for-india,license,yes,Which reuse licence and terms apply to this specific resource?,,https://arxiv.org/abs/2507.02972
+farm-level-in-season-crop-identification-for-india,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://arxiv.org/abs/2507.02972
+geedl,license,yes,Which reuse licence and terms apply to this specific resource?,,https://github.com/amirafshari/geedl
+geedl,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://github.com/amirafshari/geedl
+geedl,citation,yes,What DOI or preferred citation identifies this resource?,,https://github.com/amirafshari/geedl
+harmonized-in-situ-datasets-agricultural-land-use-tropical-countries,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://essd.copernicus.org/articles/13/5951/2021/
+harmonized-in-situ-datasets-agricultural-land-use-tropical-countries,data,yes,Which stable URL serves the resource or accepts access requests?,,https://essd.copernicus.org/articles/13/5951/2021/
+harmonized-in-situ-datasets-agricultural-land-use-tropical-countries,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://essd.copernicus.org/articles/13/5951/2021/
+harmonized-in-situ-datasets-agricultural-land-use-tropical-countries,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://essd.copernicus.org/articles/13/5951/2021/
+jecam-harmonized-in-situ-crop-type-dataset-cirad-dataverse,spatial / temporal,no,"Verify coverage and resolution against dataset documentation. Card clues: Tropical belt (nine sites across seven countries), 2013-2020, Field-scale polygons",,https://dataverse.cirad.fr/dataset.xhtml?persistentId=doi:10.18167/DVN1/P7OLAP
+jecam-harmonized-in-situ-crop-type-dataset-cirad-dataverse,variables,no,"Confirm variable names, definitions and units in the data dictionary.",,https://dataverse.cirad.fr/dataset.xhtml?persistentId=doi:10.18167/DVN1/P7OLAP
+jecam-harmonized-in-situ-crop-type-dataset-cirad-dataverse,version,yes,Which release or version does this entry describe?,,https://dataverse.cirad.fr/dataset.xhtml?persistentId=doi:10.18167/DVN1/P7OLAP
+jecam-harmonized-in-situ-crop-type-dataset-cirad-dataverse,license,yes,Which reuse licence and terms apply to this specific resource?,,https://dataverse.cirad.fr/dataset.xhtml?persistentId=doi:10.18167/DVN1/P7OLAP
+jecam-harmonized-in-situ-crop-type-dataset-cirad-dataverse,data,yes,Which stable URL serves the resource or accepts access requests?,,https://dataverse.cirad.fr/dataset.xhtml?persistentId=doi:10.18167/DVN1/P7OLAP
+jecam-harmonized-in-situ-crop-type-dataset-cirad-dataverse,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://dataverse.cirad.fr/dataset.xhtml?persistentId=doi:10.18167/DVN1/P7OLAP
+jecam-harmonized-in-situ-crop-type-dataset-cirad-dataverse,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://dataverse.cirad.fr/dataset.xhtml?persistentId=doi:10.18167/DVN1/P7OLAP
+helmets-labeling-crops-kenya-crop-type-dataset,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://zenodo.org/records/15133324
+high-resolution-and-bias-corrected-cmip5-projections,spatial / temporal,no,Verify coverage and resolution against dataset documentation. Card clues: Global,,https://www.nature.com/articles/s41597-019-0343-8
+high-resolution-and-bias-corrected-cmip5-projections,variables,no,"Confirm variable names, definitions and units in the data dictionary.",,https://www.nature.com/articles/s41597-019-0343-8
+high-resolution-and-bias-corrected-cmip5-projections,version,yes,Which release or version does this entry describe?,,https://www.nature.com/articles/s41597-019-0343-8
+high-resolution-and-bias-corrected-cmip5-projections,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://www.nature.com/articles/s41597-019-0343-8
+high-resolution-and-bias-corrected-cmip5-projections,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.nature.com/articles/s41597-019-0343-8
+high-resolution-and-bias-corrected-cmip5-projections,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://www.nature.com/articles/s41597-019-0343-8
+high-resolution-and-bias-corrected-cmip5-projections,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.nature.com/articles/s41597-019-0343-8
+high-resolution-and-bias-corrected-cmip5-projections,citation,yes,What DOI or preferred citation identifies this resource?,2020-01-20,https://www.nature.com/articles/s41597-019-0343-8
+investment-trends-and-evaluation-gaps-in-rainwater-harvesting-in-sub-saharan-african-drylands,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://www.sciencedirect.com/science/article/pii/S0378377426001460
+investment-trends-and-evaluation-gaps-in-rainwater-harvesting-in-sub-saharan-african-drylands,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.sciencedirect.com/science/article/pii/S0378377426001460
+investment-trends-and-evaluation-gaps-in-rainwater-harvesting-in-sub-saharan-african-drylands,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",paywall,https://www.sciencedirect.com/science/article/pii/S0378377426001460
+investment-trends-and-evaluation-gaps-in-rainwater-harvesting-in-sub-saharan-african-drylands,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.sciencedirect.com/science/article/pii/S0378377426001460
+investment-trends-and-evaluation-gaps-in-rainwater-harvesting-in-sub-saharan-african-drylands,citation,yes,What DOI or preferred citation identifies this resource?,2026,https://www.sciencedirect.com/science/article/pii/S0378377426001460
+olmoearth,license,yes,Which reuse licence and terms apply to this specific resource?,Apache-2.0,https://www.datocms-assets.com/64837/1762355216-olmoearth_v2.pdf
+olmoearth,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.datocms-assets.com/64837/1762355216-olmoearth_v2.pdf
+olmoearth,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://www.datocms-assets.com/64837/1762355216-olmoearth_v2.pdf
+olmoearth,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.datocms-assets.com/64837/1762355216-olmoearth_v2.pdf
+olmoearth,citation,yes,What DOI or preferred citation identifies this resource?,2025-11-05,https://www.datocms-assets.com/64837/1762355216-olmoearth_v2.pdf
+cordex-ml-benchmark-repository,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://github.com/WCRP-CORDEX/ml-benchmark
+cordex-ml-benchmark-repository,citation,yes,What DOI or preferred citation identifies this resource?,,https://github.com/WCRP-CORDEX/ml-benchmark
+gmia-next-global-map-of-irrigated-areas,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://zenodo.org/records/17627111
+youth-lead-dietary-emissions-seniors-drive-growth,license,yes,Which reuse licence and terms apply to this specific resource?,,https://www.nature.com/articles/s43016-026-01383-4
+youth-lead-dietary-emissions-seniors-drive-growth,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.nature.com/articles/s43016-026-01383-4
+youth-lead-dietary-emissions-seniors-drive-growth,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",paywall,https://www.nature.com/articles/s43016-026-01383-4
+youth-lead-dietary-emissions-seniors-drive-growth,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.nature.com/articles/s43016-026-01383-4
+climateserv-2,license,yes,Which reuse licence and terms apply to this specific resource?,MIT,https://github.com/SERVIR/ClimateSERV2
+climateserv-2,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://github.com/SERVIR/ClimateSERV2
+climateserv-2,citation,yes,What DOI or preferred citation identifies this resource?,2024-06,https://github.com/SERVIR/ClimateSERV2
+global-1km-gridded-household-consumption-ppp,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://zenodo.org/records/21122277
+lira-ai,license,yes,Which reuse licence and terms apply to this specific resource?,MIT,https://github.com/jemsethio/LIRA-AI
+lira-ai,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://github.com/jemsethio/LIRA-AI
+lira-ai,citation,yes,What DOI or preferred citation identifies this resource?,2026,https://github.com/jemsethio/LIRA-AI
+satellite-foundation-model-wealth-monitoring,license,yes,Which reuse licence and terms apply to this specific resource?,,https://arxiv.org/abs/2604.23166
+satellite-foundation-model-wealth-monitoring,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://arxiv.org/abs/2604.23166
+climate-risk-commons-ocrf,version,yes,Which release or version does this entry describe?,,https://riskthinking.org/
+climate-risk-commons-ocrf,data,yes,Which stable URL serves the resource or accepts access requests?,,https://riskthinking.org/
+climate-risk-commons-ocrf,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",request,https://riskthinking.org/
+climate-risk-commons-ocrf,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://riskthinking.org/
+climate-risk-commons-ocrf,citation,yes,What DOI or preferred citation identifies this resource?,2026,https://riskthinking.org/
+quasi-global-downscaled-cmip6-climate-impact,access,yes,"Can users download the climate files directly from the Box folder, and under what conditions?",open,https://zenodo.org/records/21915837
+quasi-global-downscaled-cmip6-climate-impact,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://zenodo.org/records/21915837
+fews-net-data-explorer,version,yes,Which release or version does this entry describe?,,https://fdw.fews.net/data-explorer/visualizations
+fews-net-data-explorer,license,yes,Which reuse licence and terms apply to this specific resource?,,https://fdw.fews.net/data-explorer/visualizations
+fews-net-data-explorer,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://fdw.fews.net/data-explorer/visualizations
+fews-net-data-explorer,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://fdw.fews.net/data-explorer/visualizations
+fews-net-data-explorer,citation,yes,What DOI or preferred citation identifies this resource?,,https://fdw.fews.net/data-explorer/visualizations
+esgf-metagrid-east-index,version,yes,Which release or version does this entry describe?,,https://metagrid-ceda.east.esgf.io/search
+esgf-metagrid-east-index,license,yes,Which reuse licence and terms apply to this specific resource?,,https://metagrid-ceda.east.esgf.io/search
+esgf-metagrid-east-index,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://metagrid-ceda.east.esgf.io/search
+esgf-metagrid-east-index,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://metagrid-ceda.east.esgf.io/search
+esgf-metagrid-east-index,citation,yes,What DOI or preferred citation identifies this resource?,,https://metagrid-ceda.east.esgf.io/search
+fields-of-the-world-ftw,version,yes,Which release or version does this entry describe?,,https://fieldsofthe.world/ecosystem.html#data-products
+fields-of-the-world-ftw,license,yes,Which reuse licence and terms apply to this specific resource?,,https://fieldsofthe.world/ecosystem.html#data-products
+fields-of-the-world-ftw,data,yes,Which stable URL serves the resource or accepts access requests?,,https://fieldsofthe.world/ecosystem.html#data-products
+fields-of-the-world-ftw,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://fieldsofthe.world/ecosystem.html#data-products
+fields-of-the-world-ftw,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://fieldsofthe.world/ecosystem.html#data-products
+fields-of-the-world-ftw,citation,yes,What DOI or preferred citation identifies this resource?,2025,https://fieldsofthe.world/ecosystem.html#data-products
+open-climate-ai,version,yes,Which release or version does this entry describe?,,https://open-climate.ai/
+open-climate-ai,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://open-climate.ai/
+open-climate-ai,data,yes,Which stable URL serves the resource or accepts access requests?,,https://open-climate.ai/
+open-climate-ai,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",login,https://open-climate.ai/
+open-climate-ai,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://open-climate.ai/
+open-climate-ai,citation,yes,What DOI or preferred citation identifies this resource?,,https://open-climate.ai/
+fao-livestock-hub,version,yes,Which release or version does this entry describe?,,https://livestock.fao.org/
+fao-livestock-hub,license,yes,Which reuse licence and terms apply to this specific resource?,,https://livestock.fao.org/
+fao-livestock-hub,data,yes,Which stable URL serves the resource or accepts access requests?,,https://livestock.fao.org/
+fao-livestock-hub,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://livestock.fao.org/
+fao-livestock-hub,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://livestock.fao.org/
+fao-livestock-hub,citation,yes,What DOI or preferred citation identifies this resource?,2026,https://livestock.fao.org/
+fao-ex-act-webapp,license,yes,Which reuse licence and terms apply to this specific resource?,AGPL-3.0-or-later,https://github.com/un-fao/exact-django-webapp
+fao-ex-act-webapp,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://github.com/un-fao/exact-django-webapp
+fao-ex-act-webapp,citation,yes,What DOI or preferred citation identifies this resource?,,https://github.com/un-fao/exact-django-webapp
+geoaquacrop,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://github.com/aquacropos/geoaquacrop
+geoaquacrop,citation,yes,What DOI or preferred citation identifies this resource?,2026,https://github.com/aquacropos/geoaquacrop
+agwise-data-sourcing,citation,yes,What DOI or preferred citation identifies this resource?,2026,https://github.com/byliz-ai/data_sourcing
+global-mobile-network-coverage-1km-1999-2030,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://arxiv.org/abs/2609.11320
+global-mobile-network-coverage-1km-1999-2030,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://arxiv.org/abs/2609.11320
+forty-global-forest-typology-10m,spatial / temporal,no,"Verify coverage and resolution against dataset documentation. Card clues: Global (65S to 84N), 2020 baseline (v1.0); 2017-2025 time series in early release, 10 m",,https://developers.google.com/earth-engine/datasets/catalog/projects_nature-trace_assets_forest_typology_forest_typology_2020_v1_0_collection
+forty-global-forest-typology-10m,variables,no,"Confirm variable names, definitions and units in the data dictionary.",,https://developers.google.com/earth-engine/datasets/catalog/projects_nature-trace_assets_forest_typology_forest_typology_2020_v1_0_collection
+forty-global-forest-typology-10m,attribution,yes,The provider lists a placeholder for required attribution. What wording should users reproduce?,,https://developers.google.com/earth-engine/datasets/catalog/projects_nature-trace_assets_forest_typology_forest_typology_2020_v1_0_collection
+forty-global-forest-typology-10m,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://developers.google.com/earth-engine/datasets/catalog/projects_nature-trace_assets_forest_typology_forest_typology_2020_v1_0_collection
+forty-global-forest-typology-10m,citation,yes,What DOI or preferred citation identifies this resource?,2026-10-21,https://developers.google.com/earth-engine/datasets/catalog/projects_nature-trace_assets_forest_typology_forest_typology_2020_v1_0_collection
+beyond-tree-cover-mapping-the-worlds-forest-types,license,yes,Which reuse licence and terms apply to this specific resource?,,https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/
+beyond-tree-cover-mapping-the-worlds-forest-types,data,yes,Which stable URL serves the resource or accepts access requests?,,https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/
+beyond-tree-cover-mapping-the-worlds-forest-types,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/
+beyond-tree-cover-mapping-the-worlds-forest-types,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/
+beyond-tree-cover-mapping-the-worlds-forest-types,citation,yes,What DOI or preferred citation identifies this resource?,2026-10-22,https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/
+forest-data-partnership-commodity-models,spatial / temporal,no,"Verify coverage and resolution against dataset documentation. Card clues: Global, Annual 2018-2024 (commodity models, 2026a); 2020 (Forest Persistence v0), 10 m (commodity probability); 30 m (forest persistence)",,https://developers.google.com/earth-engine/datasets/publisher/forestdatapartnership
+forest-data-partnership-commodity-models,variables,no,"Confirm variable names, definitions and units in the data dictionary.",,https://developers.google.com/earth-engine/datasets/publisher/forestdatapartnership
+forest-data-partnership-commodity-models,version,yes,Which release or version does this entry describe?,,https://developers.google.com/earth-engine/datasets/publisher/forestdatapartnership
+forest-data-partnership-commodity-models,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://developers.google.com/earth-engine/datasets/publisher/forestdatapartnership
+forest-data-partnership-commodity-models,data,yes,Which stable URL serves the resource or accepts access requests?,,https://developers.google.com/earth-engine/datasets/publisher/forestdatapartnership
+forest-data-partnership-commodity-models,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://developers.google.com/earth-engine/datasets/publisher/forestdatapartnership
+forest-data-partnership-commodity-models,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://developers.google.com/earth-engine/datasets/publisher/forestdatapartnership
+forest-data-partnership-commodity-models,citation,yes,What DOI or preferred citation identifies this resource?,2026,https://developers.google.com/earth-engine/datasets/publisher/forestdatapartnership
+ocelot-planetary-scale-species-distribution-modeling,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://arxiv.org/abs/2611.00284
+ocelot-planetary-scale-species-distribution-modeling,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://arxiv.org/abs/2611.00284

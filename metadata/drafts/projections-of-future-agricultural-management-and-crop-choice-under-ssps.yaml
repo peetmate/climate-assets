@@ -1,0 +1,95 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: projections-of-future-agricultural-management-and-crop-choice-under-ssps
+title: Projections of future agricultural management and crop choice under shared socioeconomic pathways
+description: Scientific Data descriptor of a global dataset projecting harvested-area allocation for ten major
+  crop groups across 197 countries under the Shared Socioeconomic Pathways. Associated with IIASA.
+resource_type: dataset
+keywords:
+- crop-mapping
+- global
+cdh:
+  domain:
+  - agricultural-production
+  - socioeconomic
+created: '2026-11-13'
+updated: '2026-11-13'
+doi: 10.6084/m9.figshare.28838930.v1
+license: CC-BY-4.0
+version: '1'
+access: public
+data:
+- name: README.txt
+  locations:
+  - url: https://ndownloader.figshare.com/files/57943864
+- name: code-projection.do
+  locations:
+  - url: https://ndownloader.figshare.com/files/57943867
+- name: regression_outputs-spices_share.xlsx
+  locations:
+  - url: https://ndownloader.figshare.com/files/57943870
+- name: regression_outputs-stimulants_share.xlsx
+  locations:
+  - url: https://ndownloader.figshare.com/files/57943873
+- name: regression_outputs-vegetables_share.xlsx
+  locations:
+  - url: https://ndownloader.figshare.com/files/57943876
+- name: regression_outputs-sugarcrops_share.xlsx
+  locations:
+  - url: https://ndownloader.figshare.com/files/57943885
+- name: regression_outputs-oilcrops_share.xlsx
+  locations:
+  - url: https://ndownloader.figshare.com/files/57943882
+- name: regression_outputs-fruit_share.xlsx
+  locations:
+  - url: https://ndownloader.figshare.com/files/57943879
+- name: regression_outputs-fertilizer.xlsx
+  locations:
+  - url: https://ndownloader.figshare.com/files/57943900
+- name: regression_outputs-roots_share.xlsx.xlsx
+  locations:
+  - url: https://ndownloader.figshare.com/files/57943897
+- name: regression_outputs-irrigation.xlsx
+  locations:
+  - url: https://ndownloader.figshare.com/files/57943894
+- name: regression_outputs-soybean_share.xlsx
+  locations:
+  - url: https://ndownloader.figshare.com/files/57943891
+- name: regression_outputs-pulses_share.xlsx
+  locations:
+  - url: https://ndownloader.figshare.com/files/57943888
+- name: regression_outputs-cereal_share.xlsx
+  locations:
+  - url: https://ndownloader.figshare.com/files/57943903
+- name: predict_Rh_ssp460.csv
+  locations:
+  - url: https://ndownloader.figshare.com/files/57943912
+- name: predict_Rh_ssp434.csv
+  locations:
+  - url: https://ndownloader.figshare.com/files/57943909
+- name: regression_outputs-machinery.xlsx
+  locations:
+  - url: https://ndownloader.figshare.com/files/57943906
+- name: regression_outputs-farm_size.xlsx
+  locations:
+  - url: https://ndownloader.figshare.com/files/57943915
+- name: predict_Rh_ssp585.csv
+  locations:
+  - url: https://ndownloader.figshare.com/files/57943918
+- name: predict_Rh_ssp245.csv
+  locations:
+  - url: https://ndownloader.figshare.com/files/57943921
+- name: predict_Rh_ssp126.csv
+  locations:
+  - url: https://ndownloader.figshare.com/files/57943924
+- name: predict_Rh_ssp370.csv
+  locations:
+  - url: https://ndownloader.figshare.com/files/57943927
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

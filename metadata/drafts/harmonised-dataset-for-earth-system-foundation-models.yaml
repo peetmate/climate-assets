@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: harmonised-dataset-for-earth-system-foundation-models
+title: A harmonised dataset for Earth system foundation models (WorldTensor)
+description: A preprint presenting WorldTensor, a harmonised global dataset aligning hundreds of environmental
+  and socioeconomic variables to a standardised 0.25 degree grid and annual temporal framework. It integrates
+  reanalysis, remote sensing, emissions inventories, land use, hydrology, infrastructure, hazard and socioeconomic
+  data to support multimodal Earth system foundation models.
+resource_type: document
+keywords:
+- foundation-model
+- global
+- high-resolution
+- reanalysis
+- remote-sensing
+cdh:
+  domain:
+  - climate
+created: '2026-11-13'
+updated: '2026-11-13'
+data:
+- name: primary
+  locations:
+  - url: https://arxiv.org/html/2607.03298v1
+access: public
+doi: 10.48550/arXiv.2607.03298
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets
+version: '1'
