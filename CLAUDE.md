@@ -9,8 +9,8 @@ docs (an Assets list and a Methods list); entries are now added one URL at a tim
 
 **Git repo, local disk**, pushed to `github.com/peetmate/climate-assets` (public). Moved out of
 OneDrive on 2026-10-02 — a `.git` directory inside a synced folder risks index corruption, and two
-sessions editing through OneDrive were clobbering each other. `whats-new-astro/preview/` is now
-tracked (it was ignored back when OneDrive was the backup; it no longer is).
+sessions editing through OneDrive were clobbering each other. The OneDrive folder now holds only a
+stub README pointing here.
 
 **Public repo — keep it clean.** Internal Slack doc IDs and colleague names were stripped before
 publication; `shared_by` reads "Alliance colleague" where a name would identify someone. Contact
@@ -21,25 +21,21 @@ add internal identifiers, personal emails or unpublished contacts.
 
 | Path | Role |
 |------|------|
-| `climate-assets.json` | **Master** catalogue: `meta` + `assets[]`. 153 entries. |
+| `climate-assets.json` | **Master** catalogue: `meta` + `assets[]`. 161 entries. |
 | `climate-assets.schema.json` | **Authoritative** schema (draft-07, `additionalProperties: false`). |
 | `scripts/validate_catalogue.py` | Validate + recompute `meta.counts` + resync copies. Run after every edit. |
 | `skills/climate-asset-card/SKILL.md` | The process for adding/enriching/QA-ing an entry. Follow it. |
 | `skills/climate-asset-card/reference/` | `qa-checklist.md` (adversarial QA), `entry-template.json`, schema copy. |
 | `whats-new-astro/` | The tab. `src/pages/index.astro` is the whole UI; `public/images/` has 34 covers. |
 | `whats-new-astro/src/data/themes.json` | Theme/subtheme vocabulary + definitions driving the facets. |
+| `.github/workflows/deploy.yml` | Builds the tab and publishes it to GitHub Pages. |
+| `.github/ISSUE_TEMPLATE/` | `suggest-asset.yml`, `report-issue.yml` — the forms `SUBMIT.repo` routes to. |
 | `THEMES.md` | Prose write-up of the theme taxonomy and where each definition came from. |
 | `adversarial-review.md`, `-2.md` | Two completed QA passes. Read `-2.md`'s "Systemic caveat". |
-| `images/` | Source cover images (mirrored into the Astro `public/images/`). |
-
-Legacy / dead — do not edit or read as source of truth:
-- `whats-new-tab.html` (209 KB) — superseded single-file prototype, kept as a snapshot.
-- `skills/zidHq6wp` — a **zip archive** of the skill with a mangled name (binary; don't `cat` it).
-- `skills/climate-asset-card.skill` — 0 bytes, junk.
 
 ## The copy gotcha
 
-`climate-assets.json` exists in **three** places and the schema in **two**:
+`climate-assets.json` exists in **two** places and the schema in **two**:
 
 - master `climate-assets.json` → copy at `whats-new-astro/src/data/climate-assets.json` (**the
   Astro build reads the copy**, so an unsynced master means the site serves stale data);
@@ -55,6 +51,8 @@ python3 scripts/validate_catalogue.py --add new-entry.json   # validate then app
 
 It exits non-zero on failure and writes nothing, so it is safe to run first and often. There is no
 `jsonschema` module on this machine — the script implements the draft-07 subset the schema uses.
+CI re-checks the sync: `deploy.yml` diffs the master against the Astro copy and fails the build if
+they differ, so a catalogue edit that skipped the script cannot reach the live page.
 
 ## Adding an entry
 
@@ -78,11 +76,39 @@ Follow `skills/climate-asset-card/SKILL.md`. The rules that get broken most ofte
    CAPTCHAs.
 7. Then run the QA checklist, and hold anything unresolved with `⚠ NEEDS REVIEW` in `notes`.
 
+Prefer authoritative metadata APIs over scraping the landing page: Crossref, Europe PMC, the arXiv
+API (over **https**; plain http returns an empty body), Zenodo, the GitHub API, Planetary Computer
+STAC. Several publishers bot-wall their pages, and web search has fabricated a plausible-looking
+Zenodo DOI at least once — resolve every DOI against the API before recording it.
+
+## Publishing the tab
+
+`.github/workflows/deploy.yml` builds `whats-new-astro/` and deploys to GitHub Pages on any push to
+`main` touching `whats-new-astro/**`, or via `gh workflow run "Deploy What's New site"`. Target URL:
+
+```
+https://peetmate.github.io/climate-assets
+```
+
+**Pages is not enabled yet**, so the `deploy` job 404s with "Ensure GitHub Pages has been enabled"
+while `build` passes. One-time fix, by whoever owns the repo:
+
+```bash
+gh api -X POST repos/peetmate/climate-assets/pages -f build_type=workflow
+```
+
+or Settings → Pages → Source: **GitHub Actions**. Then re-run the workflow.
+
+`astro.config.mjs` sets `site` and `base: '/climate-assets'` because a project site is served from a
+sub-path. Only the hashed `_astro/` bundles take that prefix; the `images/` and `brand/` references
+in `index.astro` are relative and resolve against the page URL on their own. Hosting this elsewhere
+means changing those two values and nothing else.
+
 ## Known state and debt
 
 - `date_added` is `TBC` across the original Slack-doc intake (those docs carry no dates); entries
   logged since carry real dates. Feed order uses the asset's own `date`, with `ongoing` pinned top.
-- Completeness gaps, as reported by the script: **61 entries without an image, 80 without a
+- Completeness gaps, as reported by the script: **67 entries without an image, 81 without a
   licence, 17 undated and not ongoing**. Not errors — the backlog to chase before publication.
 - Author/contact fields were auto-harvested and the fabrication pattern recurred; verify before any
   card is used to email someone. See `adversarial-review-2.md`.
@@ -91,8 +117,9 @@ Follow `skills/climate-asset-card/SKILL.md`. The rules that get broken most ofte
   asset `id`, so **never rename an id once published** — it is the join key for comments, ratings
   and permalinks.
 - `SUBMIT.repo` in `index.astro` is empty, so "Suggest an asset" and "Report" fall back to a
-  mailto to `p.steward@cgiar.org`. Set it to `"org/repo"` to route to GitHub Issues instead.
-- A desktop Claude Code session also edits this folder. Two sessions writing
+  mailto to `p.steward@cgiar.org`. Set it to `"peetmate/climate-assets"` (or the hub's repo) to
+  route to the issue forms in `.github/ISSUE_TEMPLATE/` instead.
+- A desktop Claude Code session also works on this project. Two sessions writing
   `climate-assets.json` will clobber each other — read immediately before writing, and prefer
   `--add` over rewriting the file.
 
@@ -105,7 +132,8 @@ npm run dev      # http://localhost:4321
 npm run build    # static site into ./dist
 npm run preview  # serve ./dist
 ```
-Node 18+. `preview/index.html` opens without a build (snapshot, not the source of truth).
+Node 18+ (CI pins 20). `dist/` is gitignored — there is no committed snapshot of the built site any
+more; build it, or read it from Pages once that is switched on.
 
 ## Brand (CGIAR Climate Action)
 
@@ -115,16 +143,26 @@ logo on the dark-green header.
 
 ## Session log
 
-- **2026-10-07** — Merged the Earth Engine access route into `global-pasture-watch` (it was already
-  catalogued under its Land & Carbon Lab page) and cleared a stale "fetch timed out" note from its
-  `notes`. Scrubbed internal Slack doc IDs and colleague names ahead of the repo going public,
-  tracked `whats-new-astro/preview/`, and rebuilt the git history as a single clean commit.
-
+- **2026-11-13** — Housekeeping. Deleted the dead `whats-new-tab.html` prototype, the `skills/`
+  zip and 0-byte junk, the root `images/` directory (byte-identical to the Astro `public/images/`,
+  which SKILL.md names as canonical), and the committed `preview/` build — a 5.4 MB snapshot from
+  8 October still claiming 148 assets. Moved `.github/ISSUE_TEMPLATE/` from under `whats-new-astro/`
+  to the repo root: GitHub only reads `.github/` at the root, so the forms had never been reachable.
+  Untracked `scripts/__pycache__` and gitignored it. Refreshed every count to 161.
+- **2026-11-10** — Added the GitHub Pages workflow and set Astro's `site`/`base`. Build job passes
+  and guards the master↔Astro copy sync; deploy job awaits Pages being enabled on the repo.
+- **2026-11-03 → 11-09** — Added entries 154–161: mobile-coverage raster, ForTy + its DeepMind
+  announcement, Forest Data Partnership models, OCELOT. Merged `downscaleCMIP6` into the GDPCIR
+  entry and corrected that licence — Planetary Computer splits it three ways (CC-BY-4.0 /
+  CC-BY-SA-4.0 / CC0-1.0 by source model), where the entry had claimed a flat CC-BY-4.0.
+- **2026-10-07** — Merged the Earth Engine access route into `global-pasture-watch` (already
+  catalogued under its Land & Carbon Lab page) and cleared a stale "fetch timed out" note. Scrubbed
+  internal Slack doc IDs and colleague names ahead of the repo going public, and rebuilt the git
+  history as a single clean commit.
 - **2026-10-02** — Added `open-climate-ai`, `fao-livestock-hub`, `fao-ex-act-webapp` (151–153).
   Extended the permissive-licence list (BSD, AGPL/LGPL, ODbL, Etalab-2.0, OGL) across SKILL.md, the
   QA checklist and the schema — BSD was missing, so `climsight` false-flagged on every audit. Added
-  `scripts/validate_catalogue.py` and pointed both READMEs at it. Refreshed the stale entry counts
-  (README said 143, the Astro README said 141).
+  `scripts/validate_catalogue.py` and pointed both READMEs at it.
 - **2026-09-10** — Added `fields-of-the-world-ftw` (150). Licence is a per-country mosaic including
   NC and GPL components, so `reusable` is false by design.
 - **2026-09-07** — Added `esgf-metagrid-east-index` (149). First pass that recomputed `meta.counts`,

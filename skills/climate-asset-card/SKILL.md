@@ -18,7 +18,8 @@ real mistakes made before — do not repeat them.
 
 ## 0. Where things live
 - Data: `climate-assets.json` (`meta` + `assets[]`).
-- Schema (authoritative field list + controlled vocabularies): `climate-assets.schema.json` — read it and **validate every entry against it** (`jsonschema`).
+- Schema (authoritative field list + controlled vocabularies): `climate-assets.schema.json` — read it and **validate every entry against it**
+  by running `python3 scripts/validate_catalogue.py` (there is no `jsonschema` module on this machine; the script implements the draft-07 subset the schema uses, and also recounts and resyncs the copies).
 - The tab: `whats-new-astro/` (Astro). Cover images in `whats-new-astro/public/images/`.
 
 ## 1. Classify by what the URL SERVES, not the topic

@@ -13,16 +13,17 @@ toggleable **newsfeed** and **dashboard** views, search, comments, and star rati
 | `scripts/validate_catalogue.py` | Validates every entry, recomputes `meta.counts`, resyncs the copies. Run it after any edit. |
 | `skills/climate-asset-card/` | The skill for adding/enriching/QA-ing an entry (`SKILL.md` + `reference/`). |
 | `whats-new-astro/` | The Astro build of the What's-New tab. Reads its **own copy** of the JSON. |
+| `.github/workflows/deploy.yml` | Builds the tab and publishes it to GitHub Pages on every push that touches it. |
 | `README.md` | This document — schema explainer, provenance, and the UI/feature design note. |
 
 ## What's in it
 
-153 entries — the original 143 collated from two internal Alliance Slack docs (an Assets list and
-a Methods list), plus later additions logged one URL at a time, minus a merged duplicate:
+161 entries — the original 143 collated from two internal Alliance Slack docs (an Assets list and
+a Methods list), plus later additions logged one URL at a time, minus merged duplicates:
 
-- **By collection:** 131 assets, 22 methods.
-- **By type:** 44 atlas/hubs, 43 publications, 28 datasets, 25 tools/software, 9 media, 4 models.
-- **By access:** 119 open, 17 paywall, 9 login, 6 unknown, 2 on-request.
+- **By collection:** 139 assets, 22 methods.
+- **By type:** 46 publications, 44 atlas/hubs, 30 datasets, 27 tools/software, 10 media, 4 models.
+- **By access:** 127 open, 17 paywall, 9 login, 6 unknown, 2 on-request.
 
 > The numbers above are a snapshot and drift as entries are added. `meta.counts` inside the JSON is
 > the live figure — regenerate it with `python3 scripts/validate_catalogue.py`, never by hand.
@@ -108,13 +109,20 @@ and permalinks, so avoid renaming ids once published.
 
 ## Suggested next steps
 
-1. **Verify a first tranche** (the ones you'd feature first) — I can re-run enrichment per-URL once
-   fetching is working, or you can correct entries directly in the JSON.
-2. **Backfill `date_added` and `shared_by`** where you can, so the newsfeed ordering is meaningful.
-3. **Confirm the theme taxonomy** — happy to split/rename (e.g. separate "Soils", "Livestock") or
-   collapse thin themes.
-4. Then I can build the **prototype newsfeed/dashboard page** (single HTML reading this JSON) with
-   search, the view toggle, giscus threads, and rating placeholders.
+The newsfeed/dashboard page itself is built — see `whats-new-astro/`. What is left is data work and
+wiring:
+
+1. **Close the completeness gaps.** `scripts/validate_catalogue.py` reports them on every run:
+   currently 67 entries without a cover image, 81 without a licence, 17 undated and not ongoing.
+   Licences matter most — `reusable` is derived from them, and that flag is what says whether an
+   asset could be ingested into the Hub.
+2. **Verify a first tranche** (the ones you'd feature first). Descriptions and access flags from the
+   original automated enrichment are draft; see the caveats above and `adversarial-review-2.md`.
+3. **Backfill `date_added` and `shared_by`** where you can, so the newsfeed ordering is meaningful.
+4. **Confirm the theme taxonomy** — themes can still be split (e.g. separate "Soils", "Livestock")
+   or thin ones collapsed. `THEMES.md` records where each definition came from.
+5. **Wire comments and ratings**, and point `SUBMIT.repo` at a real repo so suggestions land as
+   issues rather than email. Details in `whats-new-astro/README.md`.
 
 ---
 _Generated for the CGIAR Climate Data Hub. Source: internal Alliance Slack docs (Assets and Methods)._

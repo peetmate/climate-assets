@@ -1,16 +1,24 @@
 # What's New in Climate Data — Astro tab
 
 A standalone [Astro](https://astro.build) build of the **"What's New in Climate Data"** radar for
-the CGIAR Climate Data Hub: a browsable, filterable view of 153 cutting-edge climate/agriculture
+the CGIAR Climate Data Hub: a browsable, filterable view of 161 cutting-edge climate/agriculture
 data assets (datasets, atlases, tools, models, publications, methods) shared across the network.
 Styled to the **CGIAR Climate Action** visual identity.
 
 Intended to be handed to the Climate Data Hub web team and dropped into the Hub as a tab.
 
-## Quick preview (no build)
+## Published site
 
-Open `preview/index.html` in a browser — a pre-built static copy with relative asset paths, so it
-works by double-click. (This is a convenience snapshot; the source below is the thing to maintain.)
+```
+https://peetmate.github.io/climate-assets
+```
+
+`../.github/workflows/deploy.yml` rebuilds and republishes on every push to `main` that touches
+this directory, so the live page always reflects the committed catalogue. **GitHub Pages has not
+been switched on for the repo yet** — until someone sets Settings → Pages → Source to *GitHub
+Actions*, the build job passes and the deploy job 404s. There is deliberately no committed snapshot
+of the built site: the one that used to live in `preview/` went stale at 148 assets and was removed.
+Build locally instead (below).
 
 ## Run / build
 
@@ -27,11 +35,11 @@ Node 18+ recommended.
 
 ```
 whats-new-astro/
-├── astro.config.mjs        # static output; set `site`/`base` if hosted under a sub-path
+├── astro.config.mjs        # static output; `site`/`base` set for the Pages sub-path
 ├── package.json
 ├── src/
 │   ├── data/
-│   │   └── climate-assets.json   # THE DATA — 153 assets (see schema in ../../climate-assets.schema.json)
+│   │   └── climate-assets.json   # THE DATA — 161 assets (see schema in ../../climate-assets.schema.json)
 │   │   └── themes.json            # theme/subtheme vocabulary + definitions for the facets
 │   └── pages/
 │       └── index.astro     # the whole tab: markup + brand styles + client-side UI logic
@@ -45,7 +53,8 @@ whats-new-astro/
 > **Updating the catalogue.** `src/data/climate-assets.json` is a **copy** of the master catalogue
 > at `../climate-assets.json`. Do not resync by hand — run `python3 scripts/validate_catalogue.py`
 > from the project root, which validates the master, recomputes `meta.counts` and copies it here.
-> Build from a stale copy and the site silently serves the old data.
+> Build from a stale copy and the site silently serves the old data. CI guards this: the deploy
+> workflow diffs the two files and fails the build if they differ.
 
 `index.astro` imports `src/data/climate-assets.json` at build time and embeds it in the page as a
 JSON `<script>`. A small inline vanilla-JS script renders the feed/dashboard, facets, search, sort
@@ -85,8 +94,9 @@ const SUBMIT = { repo: "", email: "p.steward@cgiar.org" };
 
 - **Default (repo empty):** opens a pre-filled **email** to the address given.
 - **Recommended (set `repo` to `"org/repo"`):** routes to **GitHub Issues** using the structured
-  issue forms in `.github/ISSUE_TEMPLATE/` (`suggest-asset.yml`, `report-issue.yml`). Set the repo
-  to the hub's GitHub repository and submissions land as triageable, labelled issues
+  issue forms in `../.github/ISSUE_TEMPLATE/` (`suggest-asset.yml`, `report-issue.yml` — they live
+  at the repo root because GitHub only reads `.github/` from there). Set the repo to the hub's
+  GitHub repository and submissions land as triageable, labelled issues
   (`new-asset`, `data-correction`) — the same GitHub backbone as giscus.
 
 ## To be wired by the web team
