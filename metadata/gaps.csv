@@ -208,7 +208,6 @@ global-pasture-watch,citation,yes,What DOI or preferred citation identifies this
 global-spatially-explicit-crop-water-consumption,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.nature.com/articles/s43016-025-01231-x
 harveststat-africa,spatial / temporal,no,"Verify coverage and resolution against dataset documentation. Card clues: Sub-Saharan Africa, 1980–2022 (33 countries, 94 crop types), Subnational (administrative units)",,https://doi.org/10.5061/dryad.vq83bk42w
 harveststat-africa,variables,no,"Confirm variable names, definitions and units in the data dictionary.",,https://doi.org/10.5061/dryad.vq83bk42w
-harveststat-africa,access,yes,Does the Dryad download require authentication? Please confirm the download instructions for version 12.,open,https://doi.org/10.5061/dryad.vq83bk42w
 harveststat-africa,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://doi.org/10.5061/dryad.vq83bk42w
 sample-earth,spatial / temporal,no,"Verify coverage and resolution against dataset documentation. Card clues: Vietnam, Ghana, GPS-located point samples",,https://sampleearth.org/
 sample-earth,variables,no,"Confirm variable names, definitions and units in the data dictionary.",,https://sampleearth.org/
@@ -644,7 +643,6 @@ climate-risk-commons-ocrf,data,yes,Which stable URL serves the resource or accep
 climate-risk-commons-ocrf,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",request,https://riskthinking.org/
 climate-risk-commons-ocrf,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://riskthinking.org/
 climate-risk-commons-ocrf,citation,yes,What DOI or preferred citation identifies this resource?,2026,https://riskthinking.org/
-quasi-global-downscaled-cmip6-climate-impact,access,yes,"Can users download the climate files directly from the Box folder, and under what conditions?",open,https://zenodo.org/records/21915837
 quasi-global-downscaled-cmip6-climate-impact,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://zenodo.org/records/21915837
 fews-net-data-explorer,version,yes,Which release or version does this entry describe?,,https://fdw.fews.net/data-explorer/visualizations
 fews-net-data-explorer,license,yes,Which reuse licence and terms apply to this specific resource?,,https://fdw.fews.net/data-explorer/visualizations
@@ -702,3 +700,5 @@ forest-data-partnership-commodity-models,contact.licensor,yes,Who holds or admin
 forest-data-partnership-commodity-models,citation,yes,What DOI or preferred citation identifies this resource?,2026,https://developers.google.com/earth-engine/datasets/publisher/forestdatapartnership
 ocelot-planetary-scale-species-distribution-modeling,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://arxiv.org/abs/2611.00284
 ocelot-planetary-scale-species-distribution-modeling,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://arxiv.org/abs/2611.00284
+projections-of-future-agricultural-management-and-crop-choice-under-ssps,variables.interval_bounds,no,"Are Rh_Cereal_lb and Rh_Cereal_ub labelled or calculated as intended for Armenia, 2025, SSP2-4.5? The reported lower bound exceeds the upper bound.",,https://doi.org/10.6084/m9.figshare.28838930.v1
+wfp-vam-humanitariandatacube-stac,CHIRPS dekad band unit,no,The STAC item declares unit 1 for rainfall. Which physical unit and accumulation apply to this WFP raster?,,https://api.earthobservation.vam.wfp.org/stac/collections/chirps_dekad

@@ -18,8 +18,17 @@ cdh:
   domain:
   - agricultural-production
 created: '2026-11-13'
-updated: '2026-11-13'
+updated: '2026-11-16'
 doi: 10.18167/DVN1/P7OLAP
+note: >-
+  The paper describes 27,074 polygons collected during 2013–2020. CIRAD directs users of
+  the deaccessioned Dataverse V4 record to a transfer containing 31,879 polygons for
+  2013–2022. The transferred release has a live WFS. Access to the earlier sample
+  described above remains unverified.
+additional_links:
+- rel: related
+  title: CIRAD metadata for transferred V4 data
+  url: https://geode.cirad.fr/geonetwork/srv/api/records/6855571d-677a-4852-afa8-7d7084ed2de8/formatters/xml
 contact:
 - organization: CGIAR Climate Data Hub
   roles:

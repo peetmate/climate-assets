@@ -17,12 +17,23 @@ cdh:
   domain:
   - agricultural-production
 created: '2026-11-13'
-updated: '2026-11-13'
+updated: '2026-11-16'
 doi: 10.5061/dryad.vq83bk42w
 license: CC0-1.0
 version: '12'
+access: public
+note: >-
+  File v1.2 is available anonymously from the pinned project mirror below and matches
+  the CSV listed for Dryad release 12. The Dryad API archive download requires a token.
+additional_links:
+- rel: describedby
+  url: https://raw.githubusercontent.com/HarvestStat/HarvestStat-Africa/4104ce0abfc09277cf6f9db420854b686e96337f/public/README.md
 data:
-- name: primary
+- name: harveststat-csv
+  checksum: sha256:f659e121e315b9d8656699e4b16421ed3b313e4c8d09d15199452000836dbef9
+  locations:
+  - url: https://raw.githubusercontent.com/HarvestStat/HarvestStat-Africa/4104ce0abfc09277cf6f9db420854b686e96337f/public/hvstat_africa_data_v1.2.csv
+- name: dryad-archive
   locations:
   - url: https://datadryad.org/api/v2/datasets/doi%3A10.5061%2Fdryad.vq83bk42w/download
 contact:

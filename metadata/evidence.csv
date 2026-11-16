@@ -394,3 +394,7 @@ forest-data-partnership-commodity-models,Initiative page (WRI),https://www.wri.o
 ocelot-planetary-scale-species-distribution-modeling,Card target,https://arxiv.org/abs/2611.00284,200,[2611.00284] OCELOT: Planetary-Scale Species Distribution Modeling with Satellite Foundation Embeddings,2026-11-13
 ocelot-planetary-scale-species-distribution-modeling,PDF,https://arxiv.org/pdf/2611.00284,200,,2026-11-13
 ocelot-planetary-scale-species-distribution-modeling,Public enquiry route,https://info.arxiv.org/help/contact.html,,,
+merge-dataset-climate-disaster-impacts-human-vulnerability,Version 1 restriction and disabled access requests,https://zenodo.org/records/16837695,200,MERGE Essential PROOF OF CONCEPT Datasets,2026-11-16
+merge-dataset-climate-disaster-impacts-human-vulnerability,Version 2 scope and public files,https://zenodo.org/api/records/24127714,200,MERGE Essential PROOF OF CONCEPT Datasets,2026-11-16
+harveststat-africa,Release 12 CSV checksum and file listing,https://datadryad.org/api/v2/versions/452999/files,200,Dryad file inventory,2026-11-16
+harveststat-africa,Public CSV with matching release 12 checksum,https://raw.githubusercontent.com/HarvestStat/HarvestStat-Africa/4104ce0abfc09277cf6f9db420854b686e96337f/public/hvstat_africa_data_v1.2.csv,200,HarvestStat Africa data v1.2,2026-11-16
