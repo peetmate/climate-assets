@@ -29,11 +29,13 @@ contact:
 - organization: Climate Impact Lab
   url: https://impactlab.org/about/contact/
   roles:
+  - producer
   - point-of-contact
 - organization: CGIAR Climate Data Hub
   roles:
   - maintainer
   url: https://github.com/peetmate/climate-assets
+license: CC-BY-4.0 AND CC-BY-SA-4.0 AND CC0-1.0
 access: public
 spatial:
   bbox:
@@ -74,4 +76,30 @@ additional_links:
 note: Daily pr is precipitation in mm/day, tasmin and tasmax are daily minimum and maximum near-surface
   temperature in kelvin. Select model, scenario, member and calendar before decoding. The example v1.1
   store uses time, lat, lon at 0.25 degrees and a noleap calendar. Follow the item’s cmip6:license link
-  for source-model terms. The three collections have different licences.
+  for source-model terms. The compound licence describes the whole group. For an individual model,
+  follow its collection licence and source-model citation requirements. The project requests citation of
+  its methods paper, ERA5 and the source-model data used. Historical simulations span 1950–2014.
+  Scenario simulations start in 2015 and end in 2099 or 2100 depending on model.
+temporal:
+  start_date: '1950-01-01'
+  end_date: '2100-12-31'
+citation:
+  authors:
+  - given: Diana R.
+    family: Gergel
+  - given: Steven B.
+    family: Malevich
+  - given: Kelly E.
+    family: McCusker
+  - given: Emile
+    family: Tenezakis
+  - given: Michael T.
+    family: Delgado
+  - given: Meredith A.
+    family: Fish
+  - given: Robert E.
+    family: Kopp
+  title: 'Global Downscaled Projections for Climate Impacts Research (GDPCIR): preserving quantile trends
+    for modeling future climate impacts'
+  date: '2024-01-11'
+  url: https://doi.org/10.5194/gmd-17-191-2024

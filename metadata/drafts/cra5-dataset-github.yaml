@@ -48,15 +48,23 @@ note: The DOI snapshot declares CDLA-Sharing-1.0. The data paper and the subsequ
   GB, in addition to model and working memory.
 data:
 - name: first-hour
-  description: Complete global state for 1979-01-01 00:00 UTC. Download and save as frame.bin. Use the pinned decoder
-    with the 268-channel VAEformer checkpoint, installed from the linked source with its recommended Python 3.10
-    environment. The decoder does not need ERA5 downloads. Its high-level constructor also creates a Climate Data
-    Store client for encoding. For a decode-only invocation, suppress that unused downloader during construction
-    using Python unittest.mock.patch("cra5.api.cra5_api.era5_downloader"). Instantiate api = cra5_api() from cra5.api
-    in that context. Then set x = api.decode_from_bin(custom_path="frame.bin", return_format="de_normalized")["x_hat"].
-    This applies each channel’s standard deviation and mean. Read x[api.vname_to_channels["t2m"], 360, 0] for reconstructed
-    2 m air temperature in kelvin at 0° latitude, 0° longitude. Row i is 90 − 0.25i degrees north. Column j is 0.25j
-    degrees east.
+  description: |
+    Complete global state for 1979-01-01 00:00 UTC. Save the linked file as frame.bin.
+    Install the pinned source in its Python 3.10 environment and run from the checkout
+    or put the checkout on PYTHONPATH. The constructor loads the 268-channel checkpoint.
+    For decode-only use, skip its unused Climate Data Store downloader:
+
+        from importlib import import_module
+        from unittest.mock import patch
+        from cra5.api import cra5_api
+
+        with patch.object(import_module("cra5.api.cra5_api"), "era5_downloader"):
+            api = cra5_api()
+        x = api.decode_from_bin(custom_path="frame.bin", return_format="de_normalized")["x_hat"]
+        print(x[api.vname_to_channels["t2m"], 360, 0].item())
+
+    This returns reconstructed 2 m air temperature in kelvin at 0° latitude, 0° longitude.
+    Row i is 90 − 0.25i degrees north. Column j is 0.25j degrees east.
   media_type: application/octet-stream
   file_size: 2386828
   locations:

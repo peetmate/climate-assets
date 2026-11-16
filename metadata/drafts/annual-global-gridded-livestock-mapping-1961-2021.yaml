@@ -78,7 +78,8 @@ structures:
 note: 'For one density GeoTIFF, send HTTP Range: bytes=582055744-585638275 to the v3 density ZIP URL. Require status
   206 and the requested Content-Range, then decompress the 3,582,532 returned bytes with Python zlib.decompress(body,
   -15). The result is LivestockMap/Buffa_1963.tif (4,389,361 bytes, CRC32 1575933d). Open band 1 with a raster reader,
-  use its geotransform for the coordinate and its NoData mask. Read populated land cells in heads of buffalo per
+  use its geotransform for the coordinate and discard non-finite values. This TIFF contains NaN even though it
+  declares no NoData value. Read valid land cells in heads of buffalo per
   square kilometre. Ignore ZIP members beginning with ._ (macOS metadata).'
 additional_links:
 - rel: describedby
