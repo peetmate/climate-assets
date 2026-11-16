@@ -17,9 +17,11 @@ Each card in the [source catalogue](../climate-assets.json) has a YAML file link
 
 ## Can an AI use the data from the YAML alone?
 
-[Entry-only test results, 16 November 2026](usability/2026-11-16.csv) cover all 30 cards labelled dataset in the source catalogue. Their federated YAML describes 27 datasets and three discovery services. The tested revision is [8511d35](https://github.com/peetmate/climate-assets/tree/8511d359d90fba806524313f0506b3a049679026/metadata). Each row records one attempt, the provider evidence and any change needed. A successful service test applies to the sampled product or table.
+[Entry-only test results, 16 November 2026](usability/2026-11-16.csv) cover all 30 cards labelled dataset at the tested revision. Their federated YAML describes 27 datasets and three discovery services. The tested revision is [8511d35](https://github.com/peetmate/climate-assets/tree/8511d359d90fba806524313f0506b3a049679026/metadata). Each row records one attempt, the provider evidence and any change needed. A successful service test applies to the sampled product or table.
 
 Of 30 entries, 13 yielded a sample whose meaning the reader verified. One more yielded a raster value with an unresolved unit. Eleven lacked a provider route. Three reached an authentication barrier, one had a verified request form, and one led to a different release. These outcomes describe the tested revision. The subsequent corrections to HarvestStat, MERGE and JECAM are documented in their YAML.
+
+[GMID and Trends.Earth follow-up](usability/2026-11-16-gmid-trends-earth.csv) tests the two new entries from [revision 66db370](https://github.com/peetmate/climate-assets/tree/66db370757e5b25a8b3d2b033ee60ff10361212d/metadata). Each agent started from a single YAML. The GMID question concerns a NetCDF grid-cell value. The Trends.Earth question concerns the distributed plugin’s drought calculation. Its software licence remains open in the gap register.
 
 To repeat the test, give a fresh reader or agent only the candidate YAML and this task:
 
