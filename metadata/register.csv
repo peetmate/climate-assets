@@ -160,3 +160,5 @@ forty-global-forest-typology-10m,assets,dataset,dataset,blocked,drafts/forty-glo
 beyond-tree-cover-mapping-the-worlds-forest-types,assets,media,document,blocked,drafts/beyond-tree-cover-mapping-the-worlds-forest-types.yaml,https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/,not requested
 forest-data-partnership-commodity-models,assets,dataset,dataset,blocked,drafts/forest-data-partnership-commodity-models.yaml,https://developers.google.com/earth-engine/datasets/publisher/forestdatapartnership,not requested
 ocelot-planetary-scale-species-distribution-modeling,assets,publication,document,blocked,drafts/ocelot-planetary-scale-species-distribution-modeling.yaml,https://arxiv.org/abs/2611.00284,not requested
+ukceh-global-multi-index-drought,assets,dataset,dataset,ready,records/ukceh-global-multi-index-drought.yaml,https://catalogue.ceh.ac.uk/documents/f5ce92b0-03e8-4719-82ff-c62e6ebe927b,not requested
+trends-earth-qgis,methods,tool-software,software,blocked,drafts/trends-earth-qgis.yaml,https://plugins.qgis.org/plugins/LDMP/version/2.3.8/,not requested

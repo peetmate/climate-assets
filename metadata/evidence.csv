@@ -398,3 +398,13 @@ merge-dataset-climate-disaster-impacts-human-vulnerability,Version 1 restriction
 merge-dataset-climate-disaster-impacts-human-vulnerability,Version 2 scope and public files,https://zenodo.org/api/records/24127714,200,MERGE Essential PROOF OF CONCEPT Datasets,2026-11-16
 harveststat-africa,Release 12 CSV checksum and file listing,https://datadryad.org/api/v2/versions/452999/files,200,Dryad file inventory,2026-11-16
 harveststat-africa,Public CSV with matching release 12 checksum,https://raw.githubusercontent.com/HarvestStat/HarvestStat-Africa/4104ce0abfc09277cf6f9db420854b686e96337f/public/hvstat_africa_data_v1.2.csv,200,HarvestStat Africa data v1.2,2026-11-16
+ukceh-global-multi-index-drought,"Release, authors, spatial and temporal extent, rights holder",https://catalogue.ceh.ac.uk/documents/f5ce92b0-03e8-4719-82ff-c62e6ebe927b,,,2026-11-16
+ukceh-global-multi-index-drought,DOI metadata and SPDX identifier,https://api.datacite.org/dois/10.5285/f5ce92b0-03e8-4719-82ff-c62e6ebe927b,,,2026-11-16
+ukceh-global-multi-index-drought,Licence and required attribution,https://eidc.ac.uk/licences/ogl/plain,,,2026-11-16
+ukceh-global-multi-index-drought,Provider NetCDF file manifest including MD5,https://data.ceda.ac.uk/eidc/deposits01/f5ce92b0-03e8-4719-82ff-c62e6ebe927b/reference/monthly/spei/scale_03?json,,,2026-11-16
+ukceh-global-multi-index-drought,"Version, time axis, missing value, standardization and units in NetCDF header",https://dap.ceda.ac.uk/eidc/deposits01/f5ce92b0-03e8-4719-82ff-c62e6ebe927b/reference/monthly/spei/scale_03/ref_mon_spei_03_2024.nc,,,2026-11-16
+trends-earth-qgis,Package manifest and LDMP/LICENSE,https://plugins.qgis.org/plugins/LDMP/version/2.3.8/download/,,,2026-11-16
+trends-earth-qgis,Tagged GPL licence text,https://github.com/ConservationInternational/trends.earth/blob/v2.3.8/LICENCE,,,2026-11-16
+trends-earth-qgis,Tagged Apache licence text,https://github.com/ConservationInternational/trends.earth/blob/v2.3.8/LICENSE,,,2026-11-16
+trends-earth-qgis,Project software and product terms,https://docs.trends.earth/en/latest/general/index.html#license,,,2026-11-16
+trends-earth-qgis,Changes in drought and population calculations,https://docs.trends.earth/en/latest/for_developers/changelog.html,,,2026-11-16

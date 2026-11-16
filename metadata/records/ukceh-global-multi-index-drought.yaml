@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+cdh_schema_version: v0.5.0
+extensions:
+  - https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: ukceh-global-multi-index-drought
+title: High-resolution Global Multi-Index Drought (GMID) dataset, 1980–2024
+version: v1.0
+resource_type: dataset
+description: >-
+  Global 0.1-degree NetCDF grids for the SPI, SPEI, EDDI, SEDI and SVPDI drought indices.
+  The archive groups files by distribution fit (reference or best-fit), frequency (weekly
+  or monthly), index, and accumulation period (1–12, 18, 24 or 48 months). Inputs include
+  MSWEP v2.8, GLEAM v4.2a and MSWX-Past.
+keywords: [drought, flash drought, water balance, SPEI, SPI, EDDI, SEDI, SVPDI]
+cdh:
+  domain: [climate, hydrology]
+spatial:
+  geography: [world]
+  bbox: [-180, -90, 180, 90]
+  crs: EPSG:4326
+temporal:
+  start_date: '1980-01-01'
+  end_date: '2024-12-31'
+doi: 10.5285/f5ce92b0-03e8-4719-82ff-c62e6ebe927b
+access: public
+license: OGL-UK-3.0
+attribution: Contains data supplied by UK Centre for Ecology & Hydrology.
+contact:
+  - organization: UK Centre for Ecology & Hydrology
+    roles: [producer, licensor]
+    url: https://catalogue.ceh.ac.uk/documents/f5ce92b0-03e8-4719-82ff-c62e6ebe927b
+  - organization: UK Centre for Ecology & Hydrology
+    name: Ivan Noguera
+    email: ivanog@ceh.ac.uk
+    roles: [point-of-contact]
+  - organization: CGIAR Climate Data Hub
+    roles: [maintainer]
+    url: https://github.com/peetmate/climate-assets
+data:
+  - name: archive
+    description: Complete provider archive. Append ?json to a directory URL for its machine-readable listing.
+    locations:
+      - url: https://data.ceda.ac.uk/eidc/deposits01/f5ce92b0-03e8-4719-82ff-c62e6ebe927b
+  - name: reference-monthly-spei-03-2024
+    description: >-
+      Annual file of monthly three-month SPEI, reference fit. Select the month using the time
+      coordinate and the nearest grid-cell centre using lat and lon. Read spei(time, lat, lon)
+      in z-units. Mask -999. Negative values indicate a drier climatic water balance.
+      This file uses a log-logistic fit and a 1980–2020 reference period.
+    media_type: application/x-netcdf
+    checksum: md5:8362676dce8b0349917f84995e927b85
+    locations:
+      - url: https://dap.ceda.ac.uk/eidc/deposits01/f5ce92b0-03e8-4719-82ff-c62e6ebe927b/reference/monthly/spei/scale_03/ref_mon_spei_03_2024.nc
+note: >-
+  Compare with CHIRPS/CHIRTS-derived SPEI using matching accumulation periods and recording
+  the fit and baseline. Check agreement with local observations before operational use.
+  Annual updates depend on upstream inputs. The documented release ends in 2024.
+additional_links:
+  - rel: describedby
+    url: https://doi.org/10.1038/s41597-026-07904-x
+  - rel: license
+    url: https://eidc.ac.uk/licences/ogl/plain
+created: '2026-11-16'
+updated: '2026-11-16'
