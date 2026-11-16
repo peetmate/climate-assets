@@ -4,11 +4,11 @@ cdh_schema_version: v0.5.0
 extensions:
 - https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
 id: sample-earth
-title: Sample Earth
-description: An open, machine-learning-ready global land-cover reference dataset of GPS-located, quality-controlled
-  sample points to train and validate AI land-cover maps, with a focus on coffee and cocoa smallholder production
-  systems. Uses 10 main classes and 68 sub-classes, combining expert interpretation of high-resolution imagery
-  with ground-truth observations.
+title: 'Sample Earth: Machine-Learning–Ready Land-Cover Reference Dataset'
+description: GPS-located land-cover reference points for the Central Highlands of Vietnam, northern Ghana and Tano-Offin,
+  Ghana. This release supplies 10 main classes and 68 subclasses for training or validating land-cover maps, with
+  emphasis on coffee and cocoa. Experts interpreted high-resolution imagery and used field observations for a subset
+  of the Vietnam points.
 resource_type: dataset
 keywords:
 - cocoa
@@ -21,9 +21,91 @@ cdh:
   - agricultural-production
   - land
 created: '2026-11-13'
-updated: '2026-11-13'
+updated: '2026-11-16'
 contact:
+- organization: Alliance of Bioversity International and CIAT
+  roles:
+  - producer
+  - licensor
+  - point-of-contact
+  name: Alliance Data Management
+  email: alliance-dm@cgiar.org
+  url: https://dataverse.harvard.edu/api/datasets/13156670/versions/1.1
 - organization: CGIAR Climate Data Hub
   roles:
   - maintainer
   url: https://github.com/peetmate/climate-assets
+version: '1.1'
+doi: 10.7910/DVN/U7HWY1
+license: CC-BY-NC-4.0
+access: restricted
+access_note: On the Harvard Dataverse V1.1 page, choose Access File for the northern Ghana GeoPackage and then the
+  original download. Dataverse requires a response to Alliance Guestbook 306 before ordinary file downloads. Its
+  published form marks name, email, institution, position and the intended-use question as optional. The release
+  metadata, guestbook specification and class table schema can be read anonymously. Contact Alliance Data Management
+  for a commercial data-sharing agreement.
+spatial:
+  geography:
+  - ghana
+  - viet-nam
+temporal:
+  start_date: '2018-01-01'
+  end_date: '2024-12-31'
+note: Open a GeoPackage in QGIS or GDAL, select a point and read its geometry, sampling date and class identifier.
+  In 01b. class_name.tab match the numeric class column to its text name. These nominal codes identify land-cover
+  categories. The repository records coverage as 2018–2024 and collection as 2020–2024. Use the date on the point
+  when reporting an observation.
+data:
+- name: northern-ghana
+  description: Smallest point GeoPackage in V1.1. File ID 13156674 in the pinned version manifest.
+  locations:
+  - url: https://dataverse.harvard.edu/api/access/datafile/13156674
+  file_size: 831488
+  checksum: md5:5edec3bdfbbd8030272a9d9c32fbed27
+  media_type: application/geopackage+sqlite3
+additional_links:
+- rel: create-form
+  title: V1.1 Access File download and guestbook
+  url: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910%2FDVN%2FU7HWY1&version=1.1
+- rel: help
+  title: Guestbook 306 and required-field flags (JSON)
+  url: https://dataverse.harvard.edu/api/guestbooks/306
+- rel: via
+  title: V1.1 release metadata, reuse terms, contacts and complete file list
+  url: https://dataverse.harvard.edu/api/datasets/13156670/versions/1.1
+- rel: describedby
+  title: Release README (guestbook download)
+  url: https://dataverse.harvard.edu/api/access/datafile/13156676
+- rel: describedby
+  title: 68-class code-to-label table (guestbook download)
+  url: https://dataverse.harvard.edu/api/access/datafile/13156671
+- rel: describedby
+  title: Class table field definitions (DDI XML)
+  url: https://dataverse.harvard.edu/api/access/datafile/13156671/metadata
+- rel: license
+  title: Creative Commons Attribution-NonCommercial 4.0
+  url: https://creativecommons.org/licenses/by-nc/4.0/
+citation:
+  authors:
+  - family: Vantalon
+    given: Thibaud
+  - family: Luong
+    given: Phuong Thi
+  - family: Perez Escobar
+    given: Jorge Andres
+  - family: Tello Dagua
+    given: Jhon Jairo
+  - family: Phan
+    given: Trong Van
+  - family: Nguyen
+    given: Hang
+  - family: Nguyen
+    given: Hong
+  - family: Nguyen
+    given: Hoa
+  - family: Reymondin
+    given: Louis
+  date: '2025'
+  title: 'Sample Earth: Machine-Learning–Ready Land-Cover Reference Dataset'
+  publisher: Harvard Dataverse
+  url: https://doi.org/10.7910/DVN/U7HWY1

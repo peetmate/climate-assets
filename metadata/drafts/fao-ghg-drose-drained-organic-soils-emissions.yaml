@@ -4,10 +4,10 @@ cdh_schema_version: v0.5.0
 extensions:
 - https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
 id: fao-ghg-drose-drained-organic-soils-emissions
-title: FAO GHG Drained Organic Soils Emissions (Annual)
-description: FAOSTAT estimates of CO2 and N2O greenhouse-gas emissions from drained organic (histosol) soils
-  under cropland and grassland, computed in Google Earth Engine using IPCC Tier I methods with annual land-cover
-  maps. Emission layers reported in tonnes/hectare.
+title: Drained Organic Soils Emissions (Annual) 1.0
+description: FAO annual global grids of carbon and nitrous oxide emissions from drained cropland and grazed grassland
+  organic soils, 1992–2018. Estimates use histosols as a proxy for organic soils and a Tier 1 method. The cells
+  span 30 arc-seconds, about 928 metres at the equator.
 resource_type: dataset
 keywords:
 - carbon
@@ -20,9 +20,77 @@ cdh:
   - mitigation
   - land
 created: '2026-11-13'
-updated: '2026-11-13'
+updated: '2026-11-16'
 contact:
+- organization: Food and Agriculture Organization of the United Nations
+  roles:
+  - licensor
+  - producer
+  url: https://storage.googleapis.com/earthengine-stac/catalog/FAO/FAO_GHG_1_DROSE_A.json
+- organization: Food and Agriculture Organization of the United Nations
+  roles:
+  - point-of-contact
+  name: Giulia Conchedda
+  email: giulia.conchedda@fao.org
+  url: https://data.fao.org/catalog/dataset/898cdbc4-b154-4b8a-a05a-59a47c7fd2d9
 - organization: CGIAR Climate Data Hub
   roles:
   - maintainer
   url: https://github.com/peetmate/climate-assets
+version: '1.0'
+access: public
+license: CC-BY-NC-SA-4.0
+spatial:
+  geography:
+  - world
+temporal:
+  start_date: '1992'
+  end_date: '2018'
+data:
+- name: cropland-nitrous-oxide-1992
+  description: Estimated nitrous oxide emitted by agricultural drainage of cropland organic soils in one raster
+    cell in 1992, in gigagrams of N2O.
+  locations:
+  - url: https://storage.googleapis.com/fao-gismgr-faostat-data/DATA/FAOSTAT/MAPSET/DROSE-A/FAOSTAT.DROSE-A.1992.CROP.N2O.tif
+  media_type: image/tiff; application=geotiff
+  file_size: 41722737
+  structures:
+  - cropland-nitrous-oxide-grid
+structures:
+- name: cropland-nitrous-oxide-grid
+  variables:
+  - name: band1
+    description: Estimated nitrous oxide emitted by agricultural drainage of cropland organic soils in one raster
+      cell in 1992, in gigagrams of N2O.
+    unit: Gg
+note: Open the FAO GeoTIFF directly or through GDAL /vsicurl/ and read its single band at a land coordinate, using
+  the file’s NoData mask. One Gg is 1,000 metric tonnes. To select another file, use the object inventory. The filename
+  encodes year, land use (CROP or GRASS) and emitted substance (CRB for elemental carbon or N2O for nitrous oxide).
+  The corresponding Earth Engine bands are croplandc, grasslandc, croplandn2o and grasslandn2o. Earth Engine pixel
+  access requires a registered project. The FAO bucket accepts anonymous reads.
+additional_links:
+- rel: collection
+  title: Provider object inventory for DROSE-A
+  url: https://storage.googleapis.com/storage/v1/b/fao-gismgr-faostat-data/o?prefix=DATA%2FFAOSTAT%2FMAPSET%2FDROSE-A%2F
+- rel: describedby
+  title: FAO mapset dictionary for years, land use and gas
+  url: https://data.apps.fao.org/catalog/dataset/5b94ccb9-c58d-4059-bdd1-6b79b6ff1470/resource/3f067006-1f02-46d6-9dee-93223c0adb0d/download/drose-a.json
+- rel: describedby
+  title: FAO release, citation, contacts and data rights
+  url: https://data.fao.org/catalog/dataset/898cdbc4-b154-4b8a-a05a-59a47c7fd2d9
+- rel: license
+  title: Release licence as stated by FAO
+  url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+- rel: describedby
+  title: Earth Engine 1.0 collection, band names and units
+  url: https://developers.google.com/earth-engine/datasets/catalog/FAO_GHG_1_DROSE_A
+- rel: via
+  title: Earth Engine collection metadata and provider roles
+  url: https://storage.googleapis.com/earthengine-stac/catalog/FAO/FAO_GHG_1_DROSE_A.json
+citation:
+  authors:
+  - organization: FAOSTAT
+  date: '2020-06-01'
+  title: Greenhouse Gas Emissions from drained organic soils (Global - Yearly - Landuse - Gg)
+  publisher: Food and Agriculture Organization of the United Nations
+  url: https://data.fao.org/catalog/dataset/898cdbc4-b154-4b8a-a05a-59a47c7fd2d9
