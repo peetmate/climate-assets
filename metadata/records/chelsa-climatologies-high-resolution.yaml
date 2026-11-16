@@ -1,0 +1,98 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: chelsa-climatologies-high-resolution
+title: CHELSA V1.2 land-surface climatologies, 1979–2013
+description: Monthly temperature and precipitation normals and bioclimatic variables for global land at 30 arc-second
+  resolution. This release downscales ERA-Interim and includes terrain-dependent corrections. EnviDat marks V1.2
+  as deprecated.
+resource_type: dataset
+keywords:
+- climatology
+- downscaling
+- global
+- high-resolution
+- precipitation
+- reanalysis
+- temperature
+cdh:
+  domain:
+  - climate
+created: '2026-11-13'
+updated: '2026-11-16'
+contact:
+- organization: CHELSA V1.2 dataset authors
+  roles:
+  - licensor
+  - producer
+  url: https://datadryad.org/api/v2/datasets/doi%3A10.5061%2Fdryad.kd1d4
+- organization: Swiss Federal Institute for Forest, Snow and Landscape Research WSL
+  roles:
+  - point-of-contact
+  name: Dirk Nikolaus Karger
+  email: dirk.karger@wsl.ch
+  url: https://www.envidat.ch/api/3/action/package_show?id=chelsa-climatologies
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets
+version: '1.2'
+doi: 10.5061/dryad.kd1d4
+license: CC0-1.0
+access: public
+spatial:
+  geography:
+  - world
+temporal:
+  start_date: '1979'
+  end_date: '2013'
+note: Read band 1 of the January GeoTIFF at a land coordinate with a raster reader and honour its NoData mask. The
+  cell gives the mean of the January monthly precipitation totals for 1979–2013 in millimetres. In the bucket listing,
+  prec, tmean, tmax, tmin and bio name the variable folders. The V1.2 file specification and the Data Records section
+  of the paper document units and temperature scaling.
+data:
+- name: january-precipitation
+  description: January precipitation climatology over land. Each stored unit represents one millimetre of monthly
+    precipitation.
+  locations:
+  - url: https://zhc-c.s3.cloud.switch.ch/chelsav1/climatologies/prec/CHELSA_prec_01_V1.2_land.tif
+  file_size: 94582151
+  media_type: image/tiff; application=geotiff
+additional_links:
+- rel: collection
+  title: Version 1.2 climatology file inventory (XML)
+  url: https://zhc-c.s3.cloud.switch.ch/chelsav1?list-type=2&prefix=climatologies%2F
+- rel: describedby
+  title: CHELSA V1.2 technical specification
+  url: https://zenodo.org/records/11562017/files/CHELSA_tech_specification_V1.2.pdf?download=1
+- rel: describedby
+  title: Data Records section and bioclimatic variable definitions
+  url: https://www.nature.com/articles/sdata2017122
+- rel: via
+  title: EnviDat release history, archive endpoint and data contact
+  url: https://www.envidat.ch/api/3/action/package_show?id=chelsa-climatologies
+citation:
+  authors:
+  - family: Karger
+    given: Dirk N.
+  - family: Conrad
+    given: Olaf
+  - family: Böhner
+    given: Jürgen
+  - family: Kawohl
+    given: Tobias
+  - family: Kreft
+    given: Holger
+  - family: Soria-Auza
+    given: Rodrigo W.
+  - family: Zimmermann
+    given: Niklaus E.
+  - family: Linder
+    given: H. Peter
+  - family: Kessler
+    given: Michael
+  date: '2018-08-10'
+  title: 'Data from: Climatologies at high resolution for the earth''s land surface areas'
+  publisher: Dryad
+  url: https://doi.org/10.5061/dryad.kd1d4

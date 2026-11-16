@@ -5,9 +5,9 @@ extensions:
 - https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
 id: downscaled-gridded-global-dataset-gdp-per-capita-ppp-1990-2022
 title: Downscaled gridded global dataset for gross domestic product (GDP) per capita PPP over 1990-2022
-description: Scientific Data descriptor of a gridded global GDP per capita (PPP) dataset downscaled to admin-2
-  level (43,501 units) using reported subnational data from 89 countries and machine-learning extrapolation.
-  Authored by Kummu, Kosonen and Masoumzadeh Sayyar (Aalto University); data on Zenodo.
+description: Annual GDP per capita at purchasing power parity (PPP) for 1990–2022. National and subnational estimates
+  are harmonised and downscaled to 43,501 administrative units. Gridded GDP per capita represents an administrative
+  estimate assigned to cells. Separate products provide total GDP.
 resource_type: dataset
 keywords:
 - downscaling
@@ -18,8 +18,69 @@ cdh:
   domain:
   - socioeconomic
 created: '2026-11-13'
-updated: '2026-11-13'
+updated: '2026-11-16'
+version: '3'
+doi: 10.5281/zenodo.16741980
+license: CC-BY-4.0
+access: public
+spatial:
+  bbox:
+  - -180
+  - -90
+  - 180
+  - 90
+  crs: EPSG:4326
+temporal:
+  start_date: '1990'
+  end_date: '2022'
+citation:
+  title: 'Data for: Downscaled gridded global dataset for Gross Domestic Product (GDP) per capita at purchasing
+    power parity (PPP) over 1990-2022'
+  authors:
+  - given: Matti
+    family: Kummu
+  - given: Maria
+    family: Kosonen
+  - given: Sina
+    family: Masoumzadeh Sayyar
+  date: '2025-08-06'
+  publisher: Zenodo
+  url: https://zenodo.org/records/16741980
+note: Zenodo version 3 is the last release covering precisely 1990–2022. The provider recommends its newer 1990–2024
+  release for current applications. Cite the accompanying Kummu, Kosonen and Masoumzadeh Sayyar (2025) paper when
+  using these data. Values are constant 2017 international dollars per person, adjusted for purchasing power.
+data:
+- name: admin2-per-capita-grid
+  description: Global 30 arc-minute multiband GeoTIFF. Band 1 is 1990 and band 33 is 2022. Sample a populated land
+    coordinate in longitude, latitude order and mask the raster NoData value. Read the value as GDP per capita for
+    the represented area.
+  media_type: image/tiff
+  file_size: 4822876
+  locations:
+  - url: https://zenodo.org/api/records/16741980/files/rast_adm2_gdp_perCapita_1990_2022_30arcmin.tif/content
+  checksum: md5:061e6841746e70546b07d9f12e8f654e
+- name: national-per-capita-table
+  description: National estimates for the same release. Match a country using iso3 or Country and read the year
+    from its named column, e.g. 2022. The table gives a national estimate.
+  media_type: text/csv
+  file_size: 50808
+  locations:
+  - url: https://zenodo.org/api/records/16741980/files/tabulated_adm0_gdp_perCapita.csv/content
+  checksum: md5:754fbac8c97e31060ddbb38d616387f3
+additional_links:
+- rel: describedby
+  title: Version 3 file inventory, units, coverage and data citation
+  url: https://zenodo.org/api/records/16741980
+- rel: cite-as
+  title: Methodology and requested accompanying paper
+  url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11782586/fullTextXML
 contact:
+- organization: Aalto University
+  name: Matti Kummu
+  roles:
+  - producer
+  - point-of-contact
+  url: https://zenodo.org/records/16741980
 - organization: CGIAR Climate Data Hub
   roles:
   - maintainer

@@ -4,11 +4,11 @@ cdh_schema_version: v0.5.0
 extensions:
 - https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
 id: annual-global-gridded-livestock-mapping-1961-2021
-title: Annual global gridded livestock mapping from 1961 to 2021
-description: First annual gridded livestock-of-the-world dataset at 5 km resolution for eight groups (cattle,
-  buffaloes, sheep, goats, horses, pigs, chickens, ducks), produced by a Random Forest workflow constrained
-  by FAOSTAT, with per-pixel per-year uncertainty layers. Useful for livestock distribution, food security
-  and emissions analyses.
+title: Annual global gridded livestock density and uncertainty, 1961–2021
+description: Annual modelled densities on a nominal 5-km global grid for cattle, buffaloes, sheep, goats, horses,
+  pigs, chickens and ducks. The random forest workflow allocates FAOSTAT totals using suitability masks and environmental
+  and human predictors. Matching annual rasters estimate uncertainty from temporal extrapolation, predictor completeness
+  and environmental similarity.
 resource_type: dataset
 keywords:
 - food-security
@@ -21,9 +21,103 @@ cdh:
   - agricultural-production
   - mitigation
 created: '2026-11-13'
-updated: '2026-11-13'
+updated: '2026-11-16'
 contact:
+- organization: Tsinghua University
+  roles:
+  - point-of-contact
+  name: Le Yu
+  email: leyu@tsinghua.edu.cn
+  url: https://essd.copernicus.org/articles/17/5543/2025/
 - organization: CGIAR Climate Data Hub
   roles:
   - maintainer
   url: https://github.com/peetmate/climate-assets
+version: v3
+doi: 10.5281/zenodo.17128483
+access: public
+license: CC-BY-4.0
+spatial:
+  geography:
+  - world
+temporal:
+  start_date: '1961'
+  end_date: '2021'
+data:
+- name: density
+  description: 488 species-by-year density layers. The v3 buffalo 1963 member can be retrieved in about 3.6 MB using
+    the byte range below.
+  locations:
+  - url: https://zenodo.org/records/17128483/files/LivestockMap.zip?download=1
+  file_size: 7377312937
+  checksum: md5:a6042583181b6715f201618498cb61c1
+  media_type: application/zip
+  structures:
+  - density-grid
+- name: uncertainty
+  description: Per-species and per-year uncertainty maps.
+  locations:
+  - url: https://zenodo.org/records/17128483/files/MapUncertainty.zip?download=1
+  file_size: 10189830314
+  checksum: md5:6771e86f412e180f9a66a71ac4868d6a
+  media_type: application/zip
+  structures:
+  - uncertainty-grid
+structures:
+- name: density-grid
+  variables:
+  - name: density
+    description: Modelled number of animals per square kilometre, for the species and year in the GeoTIFF member
+      name.
+    unit: '{head}/km2'
+- name: uncertainty-grid
+  variables:
+  - name: uncertainty
+    description: Unitless relative uncertainty score from zero to one. Higher scores indicate greater uncertainty.
+    unit: '1'
+note: 'For one density GeoTIFF, send HTTP Range: bytes=582055744-585638275 to the v3 density ZIP URL. Require status
+  206 and the requested Content-Range, then decompress the 3,582,532 returned bytes with Python zlib.decompress(body,
+  -15). The result is LivestockMap/Buffa_1963.tif (4,389,361 bytes, CRC32 1575933d). Open band 1 with a raster reader,
+  use its geotransform for the coordinate and discard non-finite values. This TIFF contains NaN even though it
+  declares no NoData value. Read valid land cells in heads of buffalo per
+  square kilometre. Ignore ZIP members beginning with ._ (macOS metadata).'
+additional_links:
+- rel: describedby
+  title: Version v3, density units, uncertainty interpretation and CC BY licence
+  url: https://zenodo.org/records/17128483
+- rel: describedby
+  title: Methods, validation and data availability
+  url: https://essd.copernicus.org/articles/17/5543/2025/
+- rel: via
+  title: Zenodo file manifest and checksums
+  url: https://zenodo.org/api/records/17128483
+citation:
+  authors:
+  - family: Du
+    given: Zhenrong
+  - family: Yu
+    given: Le
+  - family: Zhao
+    given: Yue
+  - family: Li
+    given: Xinyue
+  - family: Liu
+    given: Xiaoxuan
+  - family: Li
+    given: Xiyu
+  - family: Hao
+    given: Pengyu
+  - family: Chen
+    given: Zhongxin
+  - family: Guo
+    given: Zhe
+  - family: You
+    given: Liangzhi
+  - family: Ma
+    given: Xiaorui
+  - family: Wang
+    given: Hongyu
+  date: '2025-09-17'
+  title: Annual global grided livestock mapping from 1961 to 2021
+  publisher: Zenodo
+  url: https://doi.org/10.5281/zenodo.17128483

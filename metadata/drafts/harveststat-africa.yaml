@@ -5,8 +5,8 @@ extensions:
 - https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
 id: harveststat-africa
 title: HarvestStat Africa – Harmonized Subnational Crop Statistics for Sub-Saharan Africa
-description: Harmonized subnational crop statistics for Sub-Saharan Africa with ~574,204 records covering quantity
-  produced, harvested area and yield. Provides a consistent long-term baseline for agricultural production
+description: Harmonized subnational crop statistics for Sub-Saharan Africa covering production, harvested area
+  and yield. The release 12 CSV (file v1.2) contains 217,487 data rows. Provides a consistent long-term baseline for agricultural production
   and yield analysis.
 resource_type: dataset
 keywords:
@@ -25,6 +25,8 @@ access: public
 note: >-
   File v1.2 is available anonymously from the pinned project mirror below and matches
   the CSV listed for Dryad release 12. The Dryad API archive download requires a token.
+  Dryad reports 574,204 records in its abstract. Its counting basis is unresolved. The
+  mirror README labels its dictionary v1.1. Check the v1.2 headers when applying it.
 additional_links:
 - rel: describedby
   url: https://raw.githubusercontent.com/HarvestStat/HarvestStat-Africa/4104ce0abfc09277cf6f9db420854b686e96337f/public/README.md
