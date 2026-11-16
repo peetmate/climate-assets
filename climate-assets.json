@@ -5,23 +5,23 @@
     "version": "0.1-draft",
     "generated": "2026-07-23",
     "source": "Collated from internal Alliance Slack docs (Assets and Methods lists)",
-    "entry_count": 161,
+    "entry_count": 163,
     "counts": {
       "by_collection": {
-        "assets": 139,
-        "methods": 22
+        "assets": 140,
+        "methods": 23
       },
       "by_type": {
         "atlas-hub": 44,
-        "dataset": 30,
+        "dataset": 31,
         "media": 10,
         "model": 4,
         "publication": 46,
-        "tool-software": 27
+        "tool-software": 28
       },
       "by_access": {
         "login": 9,
-        "open": 127,
+        "open": 129,
         "paywall": 17,
         "request": 2,
         "unknown": 6
@@ -32,8 +32,8 @@
         "Crop & land management": 12,
         "Cross-cutting / AI & methods": 5,
         "Emissions & mitigation": 16,
-        "Hazards & impacts": 26,
-        "Land, soil & ecosystems": 27,
+        "Hazards & impacts": 27,
+        "Land, soil & ecosystems": 28,
         "Population & exposure": 8,
         "Production & yields": 19,
         "Socio-economic & gender": 7,
@@ -7661,6 +7661,152 @@
         "affiliation": "",
         "email": ""
       }
+    },
+    {
+      "id": "ukceh-global-multi-index-drought",
+      "title": "High-resolution Global Multi-Index Drought (GMID) dataset, 1980–2024",
+      "type": "dataset",
+      "url": "https://catalogue.ceh.ac.uk/documents/f5ce92b0-03e8-4719-82ff-c62e6ebe927b",
+      "themes": [
+        "Hazards & impacts",
+        "Weather & forecasting"
+      ],
+      "tags": [
+        "drought",
+        "spei",
+        "spi",
+        "flash-drought",
+        "precipitation",
+        "evapotranspiration",
+        "netcdf",
+        "global",
+        "open-data"
+      ],
+      "source": "NERC Environmental Information Data Centre",
+      "description": "Five drought indices (SPI, SPEI, EDDI, SEDI and SVPDI) track different aspects of drought using MSWEP v2.8 precipitation, GLEAM v4.2a evaporation and MSWX-Past meteorology. Weekly and monthly NetCDF grids offer accumulation periods of 1–12, 18, 24 and 48 months, with reference and best-fit distribution variants.",
+      "region": "Global",
+      "spatial_resolution": "0.1° (WGS 84)",
+      "temporal_coverage": "1980–2024, weekly and monthly",
+      "access": "open",
+      "collection": "assets",
+      "section": "Datasets",
+      "shared_by": "Pete Steward",
+      "notes": "The upstream release was published on 31 March 2026. The paper appeared on 7 October, and on 12 November the authors reaffirmed annual updates as inputs become available. SPI and SPEI are established indices. Widespread uptake of GMID itself is unconfirmed. Compare GMID SPEI with CDH’s CHIRPS/CHIRTS-derived SPEI at matching accumulation periods and document the distribution used. SPI can misstate severity in very dry regions. Check local impacts and the latest available year before operational use.",
+      "date_added": "2026-11-16",
+      "date": "2026-03-31",
+      "ongoing": true,
+      "image": "",
+      "links": [
+        {
+          "label": "CEDA data archive",
+          "url": "https://data.ceda.ac.uk/eidc/deposits01/f5ce92b0-03e8-4719-82ff-c62e6ebe927b"
+        },
+        {
+          "label": "Example NetCDF · 3-month SPEI, 2024",
+          "url": "https://dap.ceda.ac.uk/eidc/deposits01/f5ce92b0-03e8-4719-82ff-c62e6ebe927b/reference/monthly/spei/scale_03/ref_mon_spei_03_2024.nc?download=1"
+        },
+        {
+          "label": "Data descriptor · Scientific Data",
+          "url": "https://doi.org/10.1038/s41597-026-07904-x"
+        },
+        {
+          "label": "Authors’ November update",
+          "url": "https://blogs.egu.eu/divisions/hs/2026/11/12/gmid-drought-dataset/"
+        },
+        {
+          "label": "UNCCD guidance on interpreting drought indices",
+          "url": "https://prais4-reporting-manual.unccd.int/en/latest/SO3.html"
+        },
+        {
+          "label": "UKCEH attribution and licence",
+          "url": "https://eidc.ac.uk/licences/ogl/plain"
+        }
+      ],
+      "organisations": [],
+      "lead_contact": {
+        "name": "Ivan Noguera",
+        "affiliation": "UK Centre for Ecology & Hydrology",
+        "email": "ivanog@ceh.ac.uk"
+      },
+      "licence": "OGL-UK-3.0",
+      "data_availability": "Open data",
+      "reusable": true
+    },
+    {
+      "id": "trends-earth-qgis",
+      "title": "Trends.Earth QGIS plugin",
+      "type": "tool-software",
+      "url": "https://github.com/ConservationInternational/trends.earth",
+      "themes": [
+        "Land, soil & ecosystems",
+        "Hazards & impacts"
+      ],
+      "tags": [
+        "qgis",
+        "drought",
+        "population-exposure",
+        "land-degradation",
+        "sdg-15-3-1",
+        "remote-sensing",
+        "sex-disaggregated",
+        "global"
+      ],
+      "source": "Conservation International",
+      "description": "QGIS workflows assess drought hazard and population exposure and combine land productivity, land cover and soil organic carbon for SDG indicator 15.3.1. Version 2.3.8 accepts custom total or sex-disaggregated population inputs.",
+      "region": "Global",
+      "spatial_resolution": "Depends on input rasters",
+      "temporal_coverage": "Depends on input series and reporting period",
+      "access": "open",
+      "collection": "methods",
+      "section": "Tools and methods",
+      "shared_by": "Pete Steward",
+      "notes": "Relevant to CDH, SFP and MOSAIC. Version 2.3.4 fixed omission of the fourth year in each worst-drought period. Version 2.3.6 retained floating-point population values; 2.3.8 improved preservation of totals during resampling. Both Malawi packages inspected in the source assessment used drought-summary 2.1.17 in November 2025. Recompute before using their exposure totals as corrected estimates. SFP review of the land-degradation datasets is proposed; their relative suitability remains unassessed. ⚠ NEEDS REVIEW: the software guide specifies GPL-2.0-or-later, but the 2.3.8 plugin ZIP ships an Apache-2.0 LICENSE. Confirm the applicable code terms before redistribution. The guide assigns CC-BY-4.0 to project products and documentation. Check third-party input licences individually.",
+      "date_added": "2026-11-16",
+      "date": "2026-10-16",
+      "ongoing": true,
+      "image": "https://raw.githubusercontent.com/ConservationInternational/trends.earth/v2.3.8/LDMP/data/trends_earth_logo_bl_600width.png",
+      "links": [
+        {
+          "label": "Project",
+          "url": "https://trends.earth/"
+        },
+        {
+          "label": "QGIS plugin · 2.3.8",
+          "url": "https://plugins.qgis.org/plugins/LDMP/version/2.3.8/"
+        },
+        {
+          "label": "User guide",
+          "url": "https://docs.trends.earth/en/latest/"
+        },
+        {
+          "label": "Version history and drought fixes",
+          "url": "https://docs.trends.earth/en/latest/for_developers/changelog.html"
+        },
+        {
+          "label": "Project licence statement",
+          "url": "https://docs.trends.earth/en/latest/general/index.html#license"
+        },
+        {
+          "label": "Tagged source · LICENCE",
+          "url": "https://github.com/ConservationInternational/trends.earth/blob/v2.3.8/LICENCE"
+        },
+        {
+          "label": "Tagged source · LICENSE",
+          "url": "https://github.com/ConservationInternational/trends.earth/blob/v2.3.8/LICENSE"
+        }
+      ],
+      "organisations": [
+        "Lund University",
+        "NASA"
+      ],
+      "lead_contact": {
+        "name": "",
+        "affiliation": "",
+        "email": "trends.earth@conservation.org"
+      },
+      "licence": "",
+      "data_availability": "Code only",
+      "reusable": false
     }
   ]
 }
