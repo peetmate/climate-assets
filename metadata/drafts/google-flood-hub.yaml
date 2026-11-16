@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: google-flood-hub
+title: Google Flood Hub
+description: A free, publicly available tool providing AI-based riverine flood forecasts, inundation maps and
+  alerts up to 7 days ahead, covering river basins in over 150 countries. Combines a hydrologic model and an
+  inundation model on public data sources.
+resource_type: software
+keywords:
+- ai
+- flood
+- global
+- hydrology
+- machine-learning
+- real-time
+cdh:
+  domain:
+  - climate
+created: '2026-11-13'
+updated: '2026-11-13'
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

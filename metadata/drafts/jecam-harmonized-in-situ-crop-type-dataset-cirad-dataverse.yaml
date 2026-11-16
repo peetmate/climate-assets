@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: jecam-harmonized-in-situ-crop-type-dataset-cirad-dataverse
+title: Harmonized in situ JECAM datasets for agricultural land use mapping and monitoring in tropical countries
+  (dataset)
+description: 'The harmonized in situ crop-type dataset (24 datasets, 27,074 polygons: 20,257 crop and 6,817
+  non-crop) collected 2013-2020 over nine JECAM sites in seven tropical countries, with precise geographic
+  coordinates and a common protocol. Distributed under a CC-BY license and usable in GIS software, filterable
+  by region, year or keyword.'
+resource_type: dataset
+keywords:
+- crop-mapping
+- land-cover
+cdh:
+  domain:
+  - agricultural-production
+created: '2026-11-13'
+updated: '2026-11-16'
+doi: 10.18167/DVN1/P7OLAP
+note: >-
+  The paper describes 27,074 polygons collected during 2013–2020. CIRAD directs users of
+  the deaccessioned Dataverse V4 record to a transfer containing 31,879 polygons for
+  2013–2022. The transferred release has a live WFS. Access to the earlier sample
+  described above remains unverified.
+additional_links:
+- rel: related
+  title: CIRAD metadata for transferred V4 data
+  url: https://geode.cirad.fr/geonetwork/srv/api/records/6855571d-677a-4852-afa8-7d7084ed2de8/formatters/xml
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

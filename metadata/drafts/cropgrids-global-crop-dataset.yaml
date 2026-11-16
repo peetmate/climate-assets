@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: cropgrids-global-crop-dataset
+title: 'CROPGRIDS: a global geo-referenced dataset of 173 crops'
+description: A comprehensive global geo-referenced dataset providing harvested and physical area information
+  for 173 crops for reference year 2020 at 0.05 degree resolution. Updates the widely used Monfreda et al.
+  (2008) dataset using published gridded datasets, subnational data and FAOSTAT statistics.
+resource_type: dataset
+keywords:
+- crop-mapping
+- global
+- high-resolution
+cdh:
+  domain:
+  - agricultural-production
+created: '2026-11-13'
+updated: '2026-11-13'
+doi: 10.6084/m9.figshare.22491997.v9
+license: CC-BY-4.0
+version: '1.08'
+access: public
+data:
+- name: CODES.zip
+  locations:
+  - url: https://ndownloader.figshare.com/files/44950360
+- name: CROPGRIDSv1.08_NC_maps.zip
+  locations:
+  - url: https://ndownloader.figshare.com/files/44950942
+- name: CROPGRIDSv1.08_PNG_maps.zip
+  locations:
+  - url: https://ndownloader.figshare.com/files/44950939
+- name: Table_CROPGRIDSv1.08_COU.xlsx
+  locations:
+  - url: https://ndownloader.figshare.com/files/44950936
+temporal:
+  date: '2020'
+spatial:
+  geography:
+  - world
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

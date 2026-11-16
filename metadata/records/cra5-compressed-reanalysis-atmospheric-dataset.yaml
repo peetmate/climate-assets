@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: cra5-compressed-reanalysis-atmospheric-dataset
+title: CRA5 a high-fidelity compressed reanalysis atmospheric dataset for weather and climate research
+description: Data descriptor introducing CRA5, a deep-learning-compressed version of the ERA5 reanalysis that
+  reduces a 400+ TB dataset to under 1 TB using a variational transformer (VAEformer) while retaining scientific
+  utility. Authored by Tao Han, Dazhao Du, Zhenghao Chen, Song Guo, Wanli Ouyang and Lei Bai.
+resource_type: document
+keywords:
+- ai
+- era5
+- global
+- machine-learning
+- reanalysis
+cdh:
+  domain:
+  - climate
+created: '2026-11-13'
+updated: '2026-11-13'
+doi: 10.1038/s41597-026-07381-2
+access: public
+data:
+- name: primary
+  locations:
+  - url: https://www.nature.com/articles/s41597-026-07381-2
+license: CC-BY-NC-ND-4.0
+contact:
+- organization: Authors of CRA5 a high-fidelity compressed reanalysis atmospheric dataset for weather and climate
+    research
+  roles:
+  - licensor
+  url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13443884/fullTextXML
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets
+version: '1'

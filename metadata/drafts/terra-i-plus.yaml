@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: terra-i-plus
+title: Terra-i+
+description: A satellite-based monitoring platform for agroforestry supply-chain sustainability, providing
+  high-resolution deforestation detection (10 m, Sentinel-1, updated every 12 days), crop-specific land cover,
+  shade-tree/carbon-stock and coffee climate-suitability maps. Supports EU Deforestation Regulation compliance
+  and carbon-sequestration assessment.
+resource_type: service
+keywords:
+- carbon
+- coffee
+- deforestation
+- remote-sensing
+- satellite
+- vietnam
+cdh:
+  domain:
+  - land
+  - agricultural-production
+created: '2026-11-13'
+updated: '2026-11-13'
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

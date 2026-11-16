@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: zenodo-record-14443334
+title: Geographic distribution of the global agricultural workforce every decade for the years 2000-2100
+description: Gridded estimates of the number of people working in agriculture, for baseline years (2000, 2010,
+  2020) and decadally to 2100 under SSP1–5, corrected to ILO data. Aimed at research on climate risks, labour
+  productivity and policy interventions.
+resource_type: dataset
+keywords:
+- agriculture
+- food-security
+- global
+- gridded
+- labour
+- population
+- ssp
+cdh:
+  domain:
+  - socioeconomic
+created: '2026-11-13'
+updated: '2026-11-13'
+doi: 10.5281/zenodo.14443334
+version: '1'
+license: CC-BY-4.0
+data:
+- name: Output.zip
+  locations:
+  - url: https://zenodo.org/api/records/14443334/files/Output.zip/content
+  checksum: md5:55d36add7c6b4e2e26434b038285aec6
+- name: global_ag_workforce.zip
+  locations:
+  - url: https://zenodo.org/api/records/14443334/files/global_ag_workforce.zip/content
+  checksum: md5:d48cde815a3cbbad29b5addf36f9540f
+access: public
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

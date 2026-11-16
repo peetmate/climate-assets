@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: agmrv-knowledge-portal
+title: AgMRV Knowledge Portal
+description: A gateway to guidance, methodologies, case studies, databases and software for the measurement,
+  reporting and verification (MRV) of greenhouse gas emissions and mitigation in agriculture. It covers livestock,
+  rice and agroforestry, with sections on MRV in Practice, a Resource Library, and Software & Tools.
+resource_type: service
+keywords:
+- carbon
+- cgiar
+- global
+- livestock
+- methane
+cdh:
+  domain:
+  - mitigation
+created: '2026-11-13'
+updated: '2026-11-13'
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

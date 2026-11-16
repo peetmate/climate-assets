@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: aiccra-agdatahub-mali
+title: AgDataHub Mali
+description: A country data hub for Mali presenting weather forecasts (short, medium and seasonal range), rainfall
+  (CHIRPS, TAMSAT, ARC2), agriculture (FAO area/production/yield), soils (ISRIC) and satellite imagery including
+  the Agricultural Stress Index. Combines forecast, current and historic climate and crop data for decision
+  support.
+resource_type: service
+keywords:
+- africa
+- cgiar
+- precipitation
+- satellite
+- seasonal-forecast
+- soils
+cdh:
+  domain:
+  - climate
+  - agricultural-production
+created: '2026-11-13'
+updated: '2026-11-13'
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: global-assessment-population-exposure-multiple-climate-related-hazards
+title: 'Global assessment of population exposure to multiple climate-related hazards from 2003 to 2021: a retrospective
+  analysis'
+description: Retrospective study (Stalhandske et al. 2025) mapping historical global population exposure to
+  multiple interacting climate-related hazards from 2003 to 2021, drawing on Lancet Countdown, IBTrACS, ISIMIP
+  and WorldPop data.
+resource_type: document
+keywords:
+- extreme-events
+- global
+cdh:
+  domain:
+  - socioeconomic
+  - climate
+created: '2026-11-13'
+updated: '2026-11-13'
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets
+version: '1'

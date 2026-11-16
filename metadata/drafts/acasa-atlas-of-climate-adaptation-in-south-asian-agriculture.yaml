@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: acasa-atlas-of-climate-adaptation-in-south-asian-agriculture
+title: Atlas of Climate Adaptation in South Asian Agriculture (ACASA)
+description: A web-enabled atlas integrating high-resolution climate data, crop modelling and expert-validated
+  adaptation practices for South Asian agriculture, covering 15 crops and six livestock species. It maps climate
+  hazards, exposure and vulnerability of smallholder populations and farms, and evidence on adaptation interventions.
+resource_type: software
+keywords:
+- cgiar
+- crop-mapping
+- high-resolution
+- livestock
+- south-asia
+cdh:
+  domain:
+  - adaptation
+  - climate
+created: '2026-11-13'
+updated: '2026-11-13'
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

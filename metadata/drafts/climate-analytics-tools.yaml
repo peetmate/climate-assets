@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: climate-analytics-tools
+title: Climate Analytics Tools
+description: A portal of open-access analytical tools for policymakers and researchers, including the Climate
+  Action Tracker, Climate Impact Explorer, Climate Risk Dashboard and 1.5C National Pathway Explorer. Resources
+  are filterable by region and topics such as adaptation, climate finance, impacts and risks, and decarbonisation
+  targets.
+resource_type: service
+keywords:
+- carbon
+- dashboard
+- global
+cdh:
+  domain:
+  - mitigation
+  - climate
+created: '2026-11-13'
+updated: '2026-11-13'
+data:
+- name: primary
+  locations:
+  - url: https://climateanalytics.org/tools
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

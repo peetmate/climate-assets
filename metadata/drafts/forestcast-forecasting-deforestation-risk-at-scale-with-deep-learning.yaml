@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: forestcast-forecasting-deforestation-risk-at-scale-with-deep-learning
+title: 'ForestCast: Forecasting Deforestation Risk at Scale with Deep Learning'
+description: A preprint introducing the ForestCast dataset, the first publicly available dataset for training
+  deep learning models to forecast deforestation risk. It benchmarks several deep learning models against a
+  Random Forest baseline and evaluates the relative importance of satellite imagery, derived feature layers
+  and past-deforestation change history.
+resource_type: document
+keywords:
+- ai
+- deforestation
+- forests
+- global
+- machine-learning
+- satellite
+cdh:
+  domain:
+  - land
+  - mitigation
+created: '2026-11-13'
+updated: '2026-11-13'
+data:
+- name: primary
+  locations:
+  - url: https://eartharxiv.org/repository/view/10674/
+access: public
+doi: 10.48550/arXiv.
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets
+version: '1'

@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: cordex-ml-bench-benchmark-regional-climate-downscaling
+title: 'CORDEX-ML-Bench: A Benchmark for Data-Driven Regional Climate Downscaling -Experiment Design and Overview'
+description: Introduces CORDEX-ML-Bench, a standardized benchmark aligned with the CORDEX initiative that evaluates
+  40 machine-learning downscaling configurations across the European Alps, New Zealand and Southern Africa.
+  It targets downscaling of daily maximum temperature and precipitation to ~10 km resolution using a public
+  dataset and common evaluation methods.
+resource_type: document
+keywords:
+- bias-correction
+- downscaling
+- high-resolution
+- machine-learning
+- precipitation
+- temperature
+cdh:
+  domain:
+  - climate
+created: '2026-11-13'
+updated: '2026-11-13'
+data:
+- name: primary
+  locations:
+  - url: https://arxiv.org/pdf/2606.29172
+access: public
+doi: 10.48550/arXiv.2606.29172
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets
+version: '1'
