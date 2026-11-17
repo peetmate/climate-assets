@@ -40,7 +40,9 @@ access_note: >-
   CIRAD deaccessioned V2.0 and V2.1. Both records describe the 27,074-polygon
   release and name BD_JECAM_CIRAD_2021.tar.gz. Neither offers a public download
   of that archive. A publicly downloadable subset is listed below. Audrey Jolivot
-  is the corresponding author for enquiries about the complete archive.
+  is the corresponding author for enquiries about the complete archive. For repository routing,
+  CIRAD’s GeoDE record identifies UMR TETIS (tetis.geode@cirad.fr) as custodian for the transferred
+  layer. Its feature service advertises only the 2023 JECAM layer.
 note: >-
   The paper’s abstract and CIRAD’s V2 records agree on 27,074 polygons. Section 3
   of the paper also gives 27,197, the count in Dataverse V1. The authors’ preprint
