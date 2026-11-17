@@ -112,6 +112,8 @@ the **mean QA pass** in `reference/qa-checklist.md` — assume fields are wrong 
 especially re-check author (corresponding, not last), email (published, not fabricated), licence,
 date, and duplicates. Leave genuinely unknown fields empty; never fill with a guess. Flag unsupported claims `⚠ NEEDS REVIEW` and hold those claims until resolved. A verified permission route or an unknown download size can be reported as such. Keep validation local.
 
+For federated inventory metadata, follow the [inventory completion rule](../../metadata/README.md#inventory-completion). Unknowns are acceptable once stated in the entry and gap register. Missing profile fields or an owner reply do not hold up the inventory review. Report review coverage, local profile results and data-access outcomes independently.
+
 ## Dataset mapping summary
 
 When assigning dataset discovery, mapping, enrichment or QA, include this section in the agent brief. Return one row per dataset release assessed, including releases behind access controls. Use the following columns in the handoff.
