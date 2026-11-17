@@ -6,9 +6,9 @@ extensions:
 id: gdpcir-downscaled-projections-preserving-extremes
 title: 'Global Downscaled Projections for Climate Impacts Research (GDPCIR): Preserving Extremes for Modeling
   Future Climate Impacts'
-description: A global daily 0.25-degree bias-adjusted and downscaled climate projection product derived
-  from CMIP6 models using quantile-preserving methods (QDM and QPLAD) to retain trends in temperature
-  and precipitation extremes. Hosted on Microsoft Planetary Computer.
+description: A global daily 0.25-degree bias-adjusted and downscaled climate projection product derived from
+  CMIP6 models using quantile-preserving methods (QDM and QPLAD) to retain trends in temperature and precipitation
+  extremes. Hosted on Microsoft Planetary Computer.
 resource_type: dataset
 keywords:
 - bias-correction
@@ -24,14 +24,14 @@ cdh:
   domain:
   - climate
 created: '2026-11-13'
-updated: '2026-11-16'
+updated: '2026-11-17'
 contact:
 - organization: Climate Impact Lab
   url: https://impactlab.org/about/contact/
   roles:
   - producer
   - point-of-contact
-- organization: CGIAR Climate Data Hub
+- organization: Climate Assets inventory
   roles:
   - maintainer
   url: https://github.com/peetmate/climate-assets
@@ -63,9 +63,9 @@ data:
 - name: nesm3-precipitation-v1-1
   locations:
   - url: https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/NUIST/NESM3/ssp585/r1i1p1f1/day/pr/v1.1.zarr
-  description: Consolidated Zarr v2 store. To read over HTTPS, fetch the anonymous token from the help
-    URL, then append ? and the returned token to each object request (including /.zmetadata and array
-    chunks). Alternatively use planetary_computer.sign with the STAC item and its xarray storage options.
+  description: Consolidated Zarr v2 store. To read over HTTPS, fetch the anonymous token from the help URL,
+    then append ? and the returned token to each object request (including /.zmetadata and array chunks). Alternatively
+    use planetary_computer.sign with the STAC item and its xarray storage options.
 additional_links:
 - rel: related
   url: https://planetarycomputer.microsoft.com/dataset/group/cil-gdpcir
@@ -73,13 +73,36 @@ additional_links:
   url: https://planetarycomputer.microsoft.com/api/sas/v1/token/rhgeuwest/cil-gdpcir
 - rel: describedby
   url: https://doi.org/10.5194/gmd-17-191-2024
-note: Daily pr is precipitation in mm/day, tasmin and tasmax are daily minimum and maximum near-surface
-  temperature in kelvin. Select model, scenario, member and calendar before decoding. The example v1.1
-  store uses time, lat, lon at 0.25 degrees and a noleap calendar. Follow the item’s cmip6:license link
-  for source-model terms. The compound licence describes the whole group. For an individual model,
-  follow its collection licence and source-model citation requirements. The project requests citation of
-  its methods paper, ERA5 and the source-model data used. Historical simulations span 1950–2014.
-  Scenario simulations start in 2015 and end in 2099 or 2100 depending on model.
+- rel: describedby
+  title: Additional inventory or release-scope evidence
+  url: https://rhgeuwest.blob.core.windows.net/cil-gdpcir
+- rel: license
+  title: CanESM5 downscaled-data licence, CC BY 4.0
+  url: https://raw.githubusercontent.com/ClimateImpactLab/downscaleCMIP6/master/data_licenses/CanESM5.txt
+- rel: license
+  title: NESM3 downscaled-data licence and attribution
+  url: https://raw.githubusercontent.com/ClimateImpactLab/downscaleCMIP6/master/data_licenses/NESM3.txt
+note: 'Daily pr is precipitation in mm/day, tasmin and tasmax are daily minimum and maximum near-surface temperature
+  in kelvin. Select model, scenario, member and calendar before decoding. The example v1.1 store uses time,
+  lat, lon at 0.25 degrees and a noleap calendar. Follow the item’s cmip6:license link for source-model terms.
+  The compound licence describes the whole group. For an individual model, follow its collection licence and
+  source-model citation requirements. The project requests citation of its methods paper, ERA5 and the source-model
+  data used. Historical simulations span 1950–2014. Scenario simulations start in 2015 and end in 2099 or 2100
+  depending on model. Inventory audit checked 2026-11-17. Microsoft Planetary Computer provides chunked Zarr
+  stores organised by model, scenario, member and variable. The group has CC BY, CC BY-SA and CC0 collections.
+  Follow each item’s model-specific data licence. Fifteen CanESM5 stores appear in both CC BY and CC BY-SA
+  collections, but both item records point to the same downscaled-data terms: CC BY 4.0, with credit to the
+  original model and GDPCIR. The assessed release contains 247,997 Azure blobs. Stored download size is 23,118,984,118,093
+  bytes. Current three Planetary Computer STAC collections. All 332 distinct Zarr store prefixes were queried
+  with Azure List Blobs and an anonymously issued SAS. Summed Content-Length once per object, including chunks
+  and metadata. The 116 items include duplicate references across licences. These are provider download volumes;
+  converted storage requirements remain unknown. Licensing rights-holder identity is unknown. Actual Zarr reads
+  need a short-lived SAS token issued anonymously at the linked token endpoint. An unsigned .zmetadata request
+  returned HTTP 409 and the signed metadata and chunk requests succeeded. Cloud format, mixed model licences
+  and this token requirement are recorded separately. A version for the entire group remains unknown; v1.1
+  applies to the linked NESM3 variable store. The 332 distinct stores were deduplicated across 116 STAC items
+  before counting blobs. Fifteen CanESM5 stores appear under two licence collections; both item records link
+  to the same provider terms specifying CC BY 4.0 for the downscaled results, with credit to CanESM5 and GDPCIR.'
 temporal:
   start_date: '1950-01-01'
   end_date: '2100-12-31'
@@ -99,7 +122,7 @@ citation:
     family: Fish
   - given: Robert E.
     family: Kopp
-  title: 'Global Downscaled Projections for Climate Impacts Research (GDPCIR): preserving quantile trends
-    for modeling future climate impacts'
+  title: 'Global Downscaled Projections for Climate Impacts Research (GDPCIR): preserving quantile trends for
+    modeling future climate impacts'
   date: '2024-01-11'
   url: https://doi.org/10.5194/gmd-17-191-2024

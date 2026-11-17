@@ -20,7 +20,7 @@ cdh:
   - climate
   - adaptation
 created: '2026-11-13'
-updated: '2026-11-16'
+updated: '2026-11-17'
 contact:
 - organization: International Center for Tropical Agriculture
   url: https://doi.org/10.26050/WDCC/CCAFS-CMIP5_downscaling
@@ -28,13 +28,13 @@ contact:
   - point-of-contact
   name: Carlos Eduardo Navarro Racines
   email: c.e.navarro@cgiar.org
-- organization: CGIAR Climate Data Hub
+- organization: Climate Assets inventory
   roles:
   - maintainer
   url: https://github.com/peetmate/climate-assets
+  name: Pete Steward
 version: '1'
 doi: 10.26050/WDCC/CCAFS-CMIP5_downscaling
-license: CC-BY-4.0
 access: public
 spatial:
   bbox:
@@ -69,8 +69,10 @@ data:
   locations:
   - url: https://cgiardata.s3.amazonaws.com/ccafs/ccafs-climate/data/ipcc_5ar_ciat_downscaled/rcp2_6/2030s/bcc_csm1_1_m/10min/bcc_csm1_1_m_rcp2_6_2030s_prec_10min_r1i1p1_no_tile_asc.zip
   description: Global 10 arc-minute ESRI ASCII grids for BCC-CSM1-1-M, RCP2.6, member r1i1p1, 2030s (2020–2049
-    mean). Each prec_N.asc gives the mean monthly precipitation total in mm for calendar month N (1–12).
-    Read NODATA_value and grid coordinates from the ASCII header.
+    mean). Each prec_N.asc gives the mean monthly precipitation total in mm for calendar month N (1–12). Read
+    NODATA_value and grid coordinates from the ASCII header.
+  file_size: 5475820
+  media_type: application/zip
 additional_links:
 - rel: describedby
   url: https://www.nature.com/articles/s41597-019-0343-8
@@ -78,5 +80,33 @@ additional_links:
   url: https://ccafs-climate.org/data_spatial_downscaling/
 - rel: describedby
   url: https://api.datacite.org/dois/10.26050/WDCC/CCAFS-CMIP5_downscaling
-note: The CCAFS distribution provides an anonymous ZIP for the named model and period. The WDCC record
-  is the archival citation. Monthly layers represent 30-year climatologies.
+- rel: describedby
+  title: Provider delivery format and release
+  url: https://doi.org/10.26050/WDCC/CCAFS-CMIP5_downscaling
+- rel: describedby
+  title: Download inventory checked 17 November 2026
+  url: https://cgiardata.s3.amazonaws.com/?list-type=2&prefix=ccafs%2Fccafs-climate%2Fdata%2Fipcc_5ar_ciat_downscaled%2F
+note: 'The CCAFS distribution provides an anonymous ZIP for the named model and period. The WDCC record is
+  the archival citation. Monthly layers represent 30-year climatologies.
+
+
+  Local inventory review on 17 November 2026. The linked CCAFS distribution packages monthly climate layers
+  in model and period ZIP files. Prepare a directly accessible grid store. WDCC declares CC BY 4.0 for its archive. The linked CCAFS
+  download page, last updated 2015, requires written permission for commercial, non-free resale or redistribution.
+  Whether the later WDCC licence covers the sampled S3 distribution remains unknown. A reader retrieved data from the reviewed distribution
+  without credentials, a form or paid access.
+
+
+  Download inventory checked on 2026-11-17. 4,235,935,512,583 bytes; 20,803 objects. Complete public CCAFS
+  CMIP5 S3 prefix. Includes 17,815 ZIPs plus ancillary objects and empty processing markers. Excludes directory
+  keys. The separate WDCC archive reports 6,826,309,928,877 bytes for 35 models. Its physical file count is
+  unconfirmed.
+
+
+  The release-level licensing rights holder or administrator is unknown. Published creators and contact authors
+  have their documented roles only.
+
+
+  The 4,235,935,512,583-byte S3 prefix and the WDCC 6,826,309,928,877-byte archive are different distributions.
+  The S3 total includes 17,815 ZIPs and ancillary objects. The original WDCC physical-file count is unknown;
+  35 denotes climate models. The sample ZIP below is 5,475,820 bytes.'

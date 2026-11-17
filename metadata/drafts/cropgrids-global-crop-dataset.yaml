@@ -5,9 +5,9 @@ extensions:
 - https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
 id: cropgrids-global-crop-dataset
 title: 'CROPGRIDS: a global geo-referenced dataset of 173 crops'
-description: A comprehensive global geo-referenced dataset providing harvested and physical area information
-  for 173 crops for reference year 2020 at 0.05 degree resolution. Updates the widely used Monfreda et al.
-  (2008) dataset using published gridded datasets, subnational data and FAOSTAT statistics.
+description: A comprehensive global geo-referenced dataset providing harvested and physical area information for
+  173 crops for reference year 2020 at 0.05 degree resolution. Updates the widely used Monfreda et al. (2008)
+  dataset using published gridded datasets, subnational data and FAOSTAT statistics.
 resource_type: dataset
 keywords:
 - crop-mapping
@@ -17,7 +17,7 @@ cdh:
   domain:
   - agricultural-production
 created: '2026-11-13'
-updated: '2026-11-13'
+updated: '2026-11-17'
 doi: 10.6084/m9.figshare.22491997.v9
 license: CC-BY-4.0
 version: '1.08'
@@ -26,22 +26,70 @@ data:
 - name: CODES.zip
   locations:
   - url: https://ndownloader.figshare.com/files/44950360
+  file_size: 553488
 - name: CROPGRIDSv1.08_NC_maps.zip
   locations:
   - url: https://ndownloader.figshare.com/files/44950942
+  file_size: 806855203
+  description: ZIP with 173 crop-specific NetCDFs and Countries_2018.nc. Read a crop-specific file for agricultural
+    area variables.
+  structures:
+  - crop-areas
 - name: CROPGRIDSv1.08_PNG_maps.zip
   locations:
   - url: https://ndownloader.figshare.com/files/44950939
+  file_size: 135274328
 - name: Table_CROPGRIDSv1.08_COU.xlsx
   locations:
   - url: https://ndownloader.figshare.com/files/44950936
+  file_size: 515789
 temporal:
   date: '2020'
 spatial:
   geography:
   - world
 contact:
-- organization: CGIAR Climate Data Hub
+- organization: Climate Assets inventory
   roles:
   - maintainer
   url: https://github.com/peetmate/climate-assets
+  name: Pete Steward
+additional_links:
+- rel: collection
+  title: Provider inventory checked 17 November 2026
+  url: https://api.figshare.com/v2/articles/22491997/versions/9
+- rel: describedby
+  title: Format evidence
+  url: https://doi.org/10.6084/m9.figshare.22491997.v9
+- rel: describedby
+  title: Access evidence
+  url: https://ndownloader.figshare.com/files/44950942
+- rel: describedby
+  title: Deposited article with variable definitions and methods
+  url: https://ndownloader.figshare.com/files/45797169
+- rel: describedby
+  title: Dataset distribution guide
+  url: https://ndownloader.figshare.com/files/45823569
+structures:
+- name: crop-areas
+  variables:
+  - name: harvarea
+    description: Harvested area of the named crop within the grid cell.
+    unit: ha
+  - name: croparea
+    description: Cropped physical area of the named crop within the grid cell.
+    unit: ha
+  - name: qual
+    description: Data quality score. One is highest, zero is lowest.
+    unit: '1'
+  - name: set
+    description: Source dataset code; interpret using the Dataset attribute stored on this variable.
+note: Inventory review checked 2026-11-17. The v1.08 crop maps are NetCDF files inside ZIP archives. Prepare a
+  chunked store for direct cloud access. CC BY 4.0 allows sharing and adaptation. Credit the creators, link the
+  licence and identify changes. A reader retrieved data from the reviewed distribution without credentials, a
+  form or paid access. Stored download volume is 948,409,515 bytes across 6 files. Six deposit files include the
+  map archives, code archive, workbook and two PDFs. The NetCDF map archive contains 174 NetCDF members including
+  the country grid. The sampled CROPGRIDSv1.08_popcorn.nc has 3,600 latitude by 7,200 longitude cells at 0.05
+  degree spacing. Variables harvarea and croparea are hectares per cell; qual is a zero-to-one quality score and
+  set identifies the input dataset. Each variable marks ocean with -1. Use lon and lat coordinate arrays to select
+  cells. The reference year is 2020. A separately named licensing rights holder remains unknown.

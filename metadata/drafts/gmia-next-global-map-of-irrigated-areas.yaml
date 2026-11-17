@@ -21,7 +21,7 @@ cdh:
   domain:
   - agricultural-production
 created: '2026-11-13'
-updated: '2026-11-13'
+updated: '2026-11-17'
 doi: 10.5281/zenodo.17627111
 version: v0
 license: CC-BY-4.0
@@ -30,41 +30,156 @@ data:
   locations:
   - url: https://zenodo.org/api/records/17627111/files/GMIA-NEXT_Binary_v0.zip/content
   checksum: md5:9240361602d55d7ba12a9d6bd11fe189
+  file_size: 5179919661
 - name: GMIA-NEXT_prob_AF_2024_v0.tif
   locations:
   - url: https://zenodo.org/api/records/17627111/files/GMIA-NEXT_prob_AF_2024_v0.tif/content
   checksum: md5:309e8a769ab20d75028357af35bd98c0
+  file_size: 1813798585
 - name: GMIA-NEXT_prob_AS2_2024_v0.tif
   locations:
   - url: https://zenodo.org/api/records/17627111/files/GMIA-NEXT_prob_AS2_2024_v0.tif/content
   checksum: md5:92289dd3c5658ff1182ce5a4b02be81a
+  file_size: 2643332208
 - name: GMIA-NEXT_prob_AS1_2024_v0.tif
   locations:
   - url: https://zenodo.org/api/records/17627111/files/GMIA-NEXT_prob_AS1_2024_v0.tif/content
   checksum: md5:98e72e647a264138275a7f672980cf34
+  file_size: 353846670
 - name: GMIA-NEXT_prob_EU_2024_v0.tif
   locations:
   - url: https://zenodo.org/api/records/17627111/files/GMIA-NEXT_prob_EU_2024_v0.tif/content
   checksum: md5:510c1da35cbdd5b3be6c57b3f3413d51
+  file_size: 2240085003
 - name: GMIA-NEXT_prob_NAM1_2024_v0.tif
   locations:
   - url: https://zenodo.org/api/records/17627111/files/GMIA-NEXT_prob_NAM1_2024_v0.tif/content
   checksum: md5:b62681971e95fa38f7a5f9529714281d
+  file_size: 303808234
 - name: GMIA-NEXT_prob_NAM2_2024_v0.tif
   locations:
   - url: https://zenodo.org/api/records/17627111/files/GMIA-NEXT_prob_NAM2_2024_v0.tif/content
   checksum: md5:4d55606e3cf842a2fbb83113905120f3
+  file_size: 862885877
 - name: GMIA-NEXT_prob_OC_2024_v0.tif
   locations:
   - url: https://zenodo.org/api/records/17627111/files/GMIA-NEXT_prob_OC_2024_v0.tif/content
   checksum: md5:223a7b87276f323b98116f8e3b066012
+  file_size: 1311021419
 - name: GMIA-NEXT_prob_SAM_2024_v0.tif
   locations:
   - url: https://zenodo.org/api/records/17627111/files/GMIA-NEXT_prob_SAM_2024_v0.tif/content
   checksum: md5:7979a5850d8fd368d04b0aba8c05b3c5
+  file_size: 736660913
 access: public
 contact:
-- organization: CGIAR Climate Data Hub
+- organization: Climate Assets inventory
   roles:
   - maintainer
   url: https://github.com/peetmate/climate-assets
+  name: Pete Steward
+note: 'Local inventory review on 17 November 2026. The sampled Africa probability TIFF has 512 × 512 tiles
+  and no overviews. Prepare a COG with overviews for multi-scale access. CC BY 4.0 allows sharing and adaptation.
+  Credit the creators, link the licence and identify changes. A reader retrieved data from the reviewed distribution
+  without credentials, a form or paid access.
+
+
+  Download inventory checked on 2026-11-17. 15,445,363,239 bytes; 10 files. Published deposit, including any
+  documentation and archives. Archive members are not counted separately.
+
+
+  The release-level licensing rights holder or administrator is unknown. Published creators and contact authors
+  have their documented roles only.
+
+
+  The provider README defines probability raster values as 0–100 percent probability that a 30 m cropland pixel
+  was irrigated during 2023/24. Binary products encode irrigated as 1 and non-irrigated as 0, using either
+  a fixed 50% or a dynamically optimized threshold. Honour each GeoTIFF’s NoData value and geotransform. The
+  ground-truth training/validation dataset is a separate deposit.'
+additional_links:
+- rel: describedby
+  title: Provider delivery format and release
+  url: https://zenodo.org/records/17627111
+- rel: describedby
+  title: Provider redistribution terms
+  url: https://doi.org/10.5281/zenodo.17627111
+- rel: describedby
+  title: Download inventory checked 17 November 2026
+  url: https://zenodo.org/api/records/17627111
+- rel: describedby
+  title: Provider variable definitions and map conventions
+  url: https://zenodo.org/api/records/17627111/files/GMIA-NEXT_README_Main.md/content
+citation:
+  title: 'GMIA-NEXT: Next-Generation Global Map of Irrigated Areas'
+  date: '2026-06-12'
+  publisher: Zenodo
+  url: https://doi.org/10.5281/zenodo.17627111
+  authors:
+  - family: Kebede
+    given: Endalkachew Abebe
+  - family: Xie
+    given: Yanhua
+  - family: Laboy
+    given: Gabriel
+  - family: Bhimani
+    given: Kevin
+  - family: Boser
+    given: Anna
+  - family: Urfels
+    given: Anton
+  - family: Khan
+    given: Bhoktear Mahbub
+  - family: Adepoju
+    given: Matthew
+  - family: Adeluyi
+    given: Oluseun
+  - family: Brauman
+    given: Kate
+  - family: Casirati
+    given: Stefano
+  - family: Chandrasekaran
+    given: Sunita
+  - family: Deines
+    given: Jillian M
+  - family: Flach
+    given: Rafaela
+  - family: Hansen
+    given: Matthew
+  - family: Hartman
+    given: Sarah
+  - family: Jobbagy
+    given: Esteban
+  - family: Khan
+    given: Ahmad
+  - family: Kurapati
+    given: Vasavi
+  - family: Lark
+    given: Tyler
+  - family: Marquez
+    given: Jack
+  - family: Michael
+    given: Holly
+  - family: Nakalembe
+    given: Catherine
+  - family: NG
+    given: Kin
+  - family: Nozari
+    given: Soheil
+  - family: Potapov
+    given: Peter
+  - family: Rosa
+    given: Lorenzo
+  - family: Siebert
+    given: Stefan
+  - family: Smith
+    given: Ryan
+  - family: Taufer
+    given: Michela
+  - family: Davis
+    given: Kyle Frankel
+spatial:
+  geography:
+  - world
+temporal:
+  start_date: '2023'
+  end_date: '2024'

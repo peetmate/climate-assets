@@ -5,8 +5,8 @@ extensions:
 - https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
 id: harveststat-africa
 title: HarvestStat Africa – Harmonized Subnational Crop Statistics for Sub-Saharan Africa
-description: Harmonized subnational crop statistics. The v1.2 CSV in Dryad release 12 contains 217,487 rows
-  from 33 Sub-Saharan African countries, with 92 distinct crop labels and 1,041 geographic unit identifiers.
+description: Harmonized subnational crop statistics. The v1.2 CSV in Dryad release 12 contains 217,487 rows from
+  33 Sub-Saharan African countries, with 92 distinct crop labels and 1,041 geographic unit identifiers.
 resource_type: dataset
 keywords:
 - africa
@@ -16,7 +16,7 @@ cdh:
   domain:
   - agricultural-production
 created: '2026-11-13'
-updated: '2026-11-16'
+updated: '2026-11-17'
 doi: 10.5061/dryad.vq83bk42w
 license: CC0-1.0
 version: '12'
@@ -24,15 +24,23 @@ access: public
 temporal:
   start_date: '1960'
   end_date: '2026'
-note: >-
-  Coverage here uses observed harvest years. The earliest harvest in the v1.2 CSV is November 1960,
-  the latest April 2026. Coverage varies by crop and place. The provider flags post-2024 seasons in
-  Somalia as potentially incomplete. Join boundaries from the same release on fnid, especially for
-  Ethiopia, whose geographic keys changed. The v1.0 paper counts 574,204 individual measurements
-  (198,346 production, 190,428 area and 185,430 yield). Counting nonmissing values in the v1.2 CSV gives
-  213,884 production, 204,972 area and 201,259 yield across 217,487 rows. The checksum below matches
-  the Dryad file. Dryad publishes the deposit under CC0. The tagged GitHub repository README describes
-  repository data as MIT. The scope of that separate statement needs author confirmation.
+note: Coverage here uses observed harvest years. The earliest harvest in the v1.2 CSV is November 1960, the latest
+  April 2026. Coverage varies by crop and place. The provider flags post-2024 seasons in Somalia as potentially
+  incomplete. Join boundaries from the same release on fnid, especially for Ethiopia, whose geographic keys changed.
+  The v1.0 paper counts 574,204 individual measurements (198,346 production, 190,428 area and 185,430 yield).
+  Counting nonmissing values in the v1.2 CSV gives 213,884 production, 204,972 area and 201,259 yield across 217,487
+  rows. The checksum below matches the Dryad file. Dryad publishes the deposit under CC0. The tagged GitHub repository
+  README describes repository data as MIT. The scope of that separate statement needs author confirmation. Inventory
+  review checked 2026-11-17. Crop statistics v1.2 are CSV and the corresponding boundaries are GeoPackage or Shapefile.
+  Convert them to Parquet or GeoParquet for selective reads. Dryad v1.2 is CC0. The anonymous v1.2 GitHub statistics
+  CSV exactly matches Dryad’s SHA-256 and can be attributed to the CC0 deposit. The GitHub README calls repository
+  data MIT. Check other mirror components individually. The v1.2 statistics CSV on GitHub is anonymously readable
+  and checksum-matches Dryad. The Dryad API archive requires a bearer token; six linked Dryad website downloads
+  returned HTTP 403 to this reader. Stored download volume is 94,023,588 bytes across 6 files. Published deposit,
+  including any documentation and archives. Archive members are not counted separately. The 94,023,588-byte inventory
+  refers to the six Dryad deposit files, and the directly linked CSV is 25,312,039 bytes. The CSV’s matching SHA-256
+  establishes its identity with the CC0 deposit. The person or organization making that dedication remains unknown.
+  Licence scope for GitHub-only components and an anonymous route to the complete Dryad release remain unresolved.
 related_publications:
 - doi: 10.1038/s41597-025-05001-z
 additional_links:
@@ -55,9 +63,13 @@ data:
   checksum: sha256:f659e121e315b9d8656699e4b16421ed3b313e4c8d09d15199452000836dbef9
   locations:
   - url: https://raw.githubusercontent.com/HarvestStat/HarvestStat-Africa/4104ce0abfc09277cf6f9db420854b686e96337f/public/hvstat_africa_data_v1.2.csv
+  file_size: 25312039
+  media_type: text/csv
 - name: dryad-archive
   locations:
   - url: https://datadryad.org/api/v2/datasets/doi%3A10.5061%2Fdryad.vq83bk42w/download
+  description: Complete Dryad deposit download. API returned HTTP 401 requiring a bearer token during the audit;
+    website file links returned HTTP 403. Use the public checksum-matched CSV above for statistics.
 structures:
 - name: crop-statistics
   variables:
@@ -85,7 +97,8 @@ contact:
   - point-of-contact
   name: Donghoon Lee
   url: https://datadryad.org/api/v2/datasets/doi%3A10.5061%2Fdryad.vq83bk42w
-- organization: CGIAR Climate Data Hub
+- organization: Climate Assets inventory
   roles:
   - maintainer
   url: https://github.com/peetmate/climate-assets
+  name: Pete Steward

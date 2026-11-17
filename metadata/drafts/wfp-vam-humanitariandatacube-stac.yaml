@@ -5,9 +5,9 @@ extensions:
 - https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
 id: wfp-vam-humanitariandatacube-stac
 title: HumanitarianDataCube STAC
-description: The World Food Programme's SpatioTemporal Asset Catalog (STAC) API provides public search
-  and access to satellite and climate collections in its Humanitarian Data Cube. Each collection
-  identifies its own providers and reuse terms.
+description: The World Food Programme's SpatioTemporal Asset Catalog (STAC) API provides public search and access
+  to satellite and climate collections in its Humanitarian Data Cube. Each collection identifies its own providers
+  and reuse terms.
 resource_type: service
 keywords:
 - api
@@ -19,7 +19,7 @@ cdh:
   domain:
   - climate
 created: '2026-11-13'
-updated: '2026-11-16'
+updated: '2026-11-17'
 data:
 - name: primary
   description: Follow the data link for collections or the search link for items and their asset URLs.
@@ -27,22 +27,29 @@ data:
   - url: https://api.earthobservation.vam.wfp.org/stac/
 access: public
 license: LicenseRef-WFP-Website-Terms
-note: >-
-  Worked collection example for chirps_dekad, the final CHIRPS v3 dekadal rainfall series. Fetch item
-  chirps_dekad-202610d3 for 21–31 October 2026, then read band 1 of the linked WFP GeoTIFF at
-  longitude 36.82, latitude -1.28. With the file saved as rain.tif, run
-  gdallocationinfo -wgs84 -valonly rain.tif 36.82 -1.28. The Float32 value 19.287365 is accumulated
-  rainfall in millimetres over that entire interval. Mask -9999 as missing. The item's unit field
-  currently reads “1”. WFP documents dekadal totals, and the source's 2026 dekadal NetCDF declares
-  precip:units = "mm/dekad". All 7200 × 2400 full-resolution band values match the UCSB GeoTIFF
-  for this date. To reproduce that comparison, convert each TIFF with gdal_translate -of ENVI and
-  compare the two Float32 binary data files. For this collection WFP lists CC-BY-4.0 and cites
-  the CHIRPS v3 repository (10.15780/G2JQ0P). For material supplied by WFP, the default website terms
-  permit personal, non-commercial copying with acknowledgement and restrict redistribution and derivative
-  works. Special terms can override this default. Individual collections publish their own terms.
-  The catalogue root identifies WFP and the service title. STAC 1.0.0 identifies the metadata standard.
-  The OpenAPI description identifies FastAPI 0.1.0 and supplies no catalogue publication date or release.
-  WFP's preferred service citation and any special catalogue-metadata terms remain unconfirmed.
+note: Worked collection example for chirps_dekad, the final CHIRPS v3 dekadal rainfall series. Fetch item chirps_dekad-202610d3
+  for 21–31 October 2026, then read band 1 of the linked WFP GeoTIFF at longitude 36.82, latitude -1.28. With
+  the file saved as rain.tif, run gdallocationinfo -wgs84 -valonly rain.tif 36.82 -1.28. The Float32 value 19.287365
+  is accumulated rainfall in millimetres over that entire interval. Mask -9999 as missing. The item's unit field
+  currently reads “1”. WFP documents dekadal totals, and the source's 2026 dekadal NetCDF declares precip:units
+  = "mm/dekad". All 7200 × 2400 full-resolution band values match the UCSB GeoTIFF for this date. To reproduce
+  that comparison, convert each TIFF with gdal_translate -of ENVI and compare the two Float32 binary data files.
+  For this collection WFP lists CC-BY-4.0 and cites the CHIRPS v3 repository (10.15780/G2JQ0P). For material supplied
+  by WFP, the default website terms permit personal, non-commercial copying with acknowledgement and restrict
+  redistribution and derivative works. Special terms can override this default. Individual collections publish
+  their own terms. The catalogue root identifies WFP and the service title. STAC 1.0.0 identifies the metadata
+  standard. The OpenAPI description identifies FastAPI 0.1.0 and supplies no catalogue publication date or release.
+  WFP's preferred service citation and any special catalogue-metadata terms remain unconfirmed. Inventory review
+  checked 2026-11-17. Formats vary by collection. Verified COG pixel reads for final CHIRPS v3 Daily SAT, Daily
+  RNL and Dekad. The three verified CHIRPS v3 collections specify CC BY 4.0. Credit the source, link the licence
+  and identify changes. Other WFP collections have their own terms. Final CHIRPS v3 Daily SAT, Daily RNL and Dekad
+  allow anonymous selective reads. Check the selected route for other collections. Complete stored byte total
+  and physical file count are unknown. The provider lists 168 collections. The whole catalogue requires collection-specific
+  review. The three final CHIRPS v3 distributions qualify for direct federation with attribution. Service release
+  identifier, preferred service citation and special catalogue-metadata terms remain unknown. The final daily
+  SAT variant returned 0.23286 mm at 76.30 degrees W, 3.53 degrees N on 15 September 2026 using band 1 and anonymous
+  range reads. The final daily RNL variant returned 1.79931 mm at 76.30 degrees W, 3.53 degrees N on 15 September
+  2026 using band 1 and anonymous range reads.
 additional_links:
 - rel: license
   title: WFP website terms, including scope, special terms and restrictions on reuse
@@ -71,6 +78,33 @@ additional_links:
 - rel: describedby
   title: Climate Hazards Center 2026 NetCDF with dekadal precipitation units
   url: https://data.chc.ucsb.edu/products/CHIRPS/v3.0/dekads/global/netcdf/chirps-v3.0.2026.dekads.nc
+- rel: collection
+  title: Provider inventory checked 17 November 2026
+  url: https://api.earthobservation.vam.wfp.org/stac/collections
+- rel: describedby
+  title: Format evidence
+  url: https://api.earthobservation.vam.wfp.org/stac/
+- rel: collection
+  title: Final CHIRPS v3 daily SAT collection
+  url: https://api.earthobservation.vam.wfp.org/stac/collections/chirps_sat_daily
+- rel: item
+  title: Final CHIRPS v3 daily SAT sample item, 15 September 2026
+  url: https://api.earthobservation.vam.wfp.org/stac/collections/chirps_sat_daily/items/chirps_sat_daily-20260915
+- rel: enclosure
+  title: Anonymous final daily SAT COG for 15 September 2026
+  url: https://data.source.coop/wfp/chirps-sat-daily/v3.0/2026/09/15/chirps-v3.0.sat.2026.09.15.tif
+- rel: collection
+  title: Final CHIRPS v3 daily RNL collection
+  url: https://api.earthobservation.vam.wfp.org/stac/collections/chirps_rnl_daily
+- rel: item
+  title: Final CHIRPS v3 daily RNL sample item, 15 September 2026
+  url: https://api.earthobservation.vam.wfp.org/stac/collections/chirps_rnl_daily/items/chirps_rnl_daily-20260915
+- rel: enclosure
+  title: Anonymous final daily RNL COG for 15 September 2026
+  url: https://data.source.coop/wfp/chirps-rnl-daily/v3.0/2026/09/15/chirps-v3.0.rnl.2026.09.15.tif
+- rel: describedby
+  title: CHIRPS v3 producer documentation for daily SAT and RNL variants
+  url: https://www.chc.ucsb.edu/data/chirps3
 contact:
 - organization: World Food Programme
   roles:
@@ -82,7 +116,8 @@ contact:
   - point-of-contact
   email: hq.geospatial@wfp.org
   url: https://data.source.coop/wfp/chirps-dekad/README.md
-- organization: CGIAR Climate Data Hub
+- organization: Climate Assets inventory
   roles:
   - maintainer
   url: https://github.com/peetmate/climate-assets
+  name: Pete Steward

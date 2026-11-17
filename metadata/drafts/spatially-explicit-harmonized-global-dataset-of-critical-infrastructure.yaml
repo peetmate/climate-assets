@@ -5,9 +5,9 @@ extensions:
 - https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
 id: spatially-explicit-harmonized-global-dataset-of-critical-infrastructure
 title: A spatially-explicit harmonized global dataset of critical infrastructure
-description: Scientific Data descriptor of a harmonized, spatially-explicit global dataset of critical infrastructure
-  derived largely from Volunteered Geographic Information (OpenStreetMap), including a Critical Infrastructure
-  Spatial Index and infrastructure density at global scale. Published 2022.
+description: Global infrastructure rasters and the Critical Infrastructure Spatial Index (CISI), derived from
+  the 8 January 2021 OpenStreetMap extract. The data cover 39 infrastructure types in seven systems, provided
+  on 0.10-degree and 0.25-degree grids.
 resource_type: dataset
 keywords:
 - exposure
@@ -18,7 +18,7 @@ cdh:
   - socioeconomic
   - climate
 created: '2026-11-13'
-updated: '2026-11-13'
+updated: '2026-11-17'
 doi: 10.5281/zenodo.4957647
 access: public
 license: CC-BY-4.0
@@ -27,11 +27,67 @@ data:
 - name: CISI.zip
   locations:
   - url: https://zenodo.org/api/records/4957647/files/CISI.zip/content
+  file_size: 85938025
+  media_type: application/zip
+  checksum: md5:d6306f7da0f27324203c97c552fc57f7
+  description: Archive of global and continent-normalized CISI and system sub-scores. Select a TIFF by resolution
+    and region, inspect its CRS and NoData value, then read a valid land cell. CISI is dimensionless, from
+    0 (no infrastructure intensity) to 1 (highest intensity) within its normalization domain.
 - name: Amount_of_infrastructure.zip
   locations:
   - url: https://zenodo.org/api/records/4957647/files/Amount_of_infrastructure.zip/content
+  file_size: 108475707
+  media_type: application/zip
+  checksum: md5:3f98814584e308dc8d9fa42b2d49e51d
+  description: Archive of absolute infrastructure amounts by type at 0.10 and 0.25 degrees. Consult the linked
+    paper’s data dictionary for each type’s units before comparing values.
 contact:
-- organization: CGIAR Climate Data Hub
+- name: Sadhana Nirandjan
+  organization: Institute for Environmental Studies, Vrije Universiteit Amsterdam
+  roles:
+  - producer
+  url: https://zenodo.org/records/4957647
+- organization: Climate Assets inventory
   roles:
   - maintainer
   url: https://github.com/peetmate/climate-assets
+note: Inventory audit checked 2026-11-17. Both infrastructure products are ZIP archives. The Africa 0.10° CISI
+  GeoTIFF has 722 strips and no tile index. Unpack and prepare tiled COGs for selective raster reads. CC BY
+  4.0 allows sharing and adaptation. Credit the creators, link the licence and identify changes. The assessed
+  release contains 2 files. Stored download size is 194,413,732 bytes. Published deposit, including any documentation
+  and archives. Archive members are not counted separately. These are provider download volumes; converted
+  storage requirements remain unknown. Licensing rights-holder identity is unknown.
+additional_links:
+- rel: describedby
+  title: Provider inventory supporting size and element count, checked 2026-11-17
+  url: https://zenodo.org/api/records/4957647
+- rel: describedby
+  title: Delivered format and release documentation
+  url: https://doi.org/10.5281/zenodo.4957647
+- rel: via
+  title: Reviewed data access route
+  url: https://zenodo.org/api/records/4957647/files/CISI.zip/content
+- rel: describedby
+  title: Data dictionary, units, normalization domains and 8 January 2021 source extract
+  url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8975875/fullTextXML
+- rel: describedby
+  title: Producer processing code and source extract date
+  url: https://github.com/snirandjan/CISI
+spatial:
+  geography:
+  - world
+temporal:
+  date: '2021-01-08'
+citation:
+  title: A spatially-explicit harmonized global dataset of critical infrastructure
+  authors:
+  - given: Sadhana
+    family: Nirandjan
+  - given: Elco E.
+    family: Koks
+  - given: Philip J.
+    family: Ward
+  - given: Jeroen C.J.H.
+    family: Aerts
+  date: '2022-04-01'
+  url: https://doi.org/10.1038/s41597-022-01218-4

@@ -21,7 +21,7 @@ cdh:
   domain:
   - socioeconomic
 created: '2026-11-13'
-updated: '2026-11-13'
+updated: '2026-11-17'
 doi: 10.5281/zenodo.14443334
 version: '1'
 license: CC-BY-4.0
@@ -30,13 +30,66 @@ data:
   locations:
   - url: https://zenodo.org/api/records/14443334/files/Output.zip/content
   checksum: md5:55d36add7c6b4e2e26434b038285aec6
+  file_size: 329528523
+  media_type: application/zip
+  description: ZIP archive. Select the output raster whose filename identifies baseline year or future decade,
+    scenario and predicted versus ILO-corrected estimate. Values are modelled agricultural workers per cell.
 - name: global_ag_workforce.zip
   locations:
   - url: https://zenodo.org/api/records/14443334/files/global_ag_workforce.zip/content
   checksum: md5:d48cde815a3cbbad29b5addf36f9540f
+  file_size: 29709424895
+  media_type: application/zip
+  description: Larger ZIP archive accompanying the gridded workforce outputs. Inspect its member names and
+    provider documentation before selecting an input, workflow or data product.
 access: public
 contact:
-- organization: CGIAR Climate Data Hub
+- organization: Climate Assets inventory
   roles:
   - maintainer
   url: https://github.com/peetmate/climate-assets
+note: Inventory audit checked 2026-11-17. The gridded baseline and scenario rasters are packaged in ZIP files.
+  Extract and prepare the selected grids for direct cloud access. CC BY 4.0 allows sharing and adaptation.
+  Credit the creators, link the licence and identify changes. The assessed release contains 2 files. Stored
+  download size is 30,038,953,418 bytes. Published deposit, including any documentation and archives. Archive
+  members are not counted separately. These are provider download volumes; converted storage requirements remain
+  unknown. Licensing rights-holder identity is unknown. The provider describes a 4,320 × 1,673 grid in EPSG:4326
+  with 0.083333-degree cells (about 10 km at the equator). Baselines are 2000, 2010 and 2020; projections are
+  decadal 2030–2100 under SSP1–5. Predicted values are raw model output; corrected values match ILO totals.
+  Read the selected TIFF band as people working in agriculture per cell, retain the fractional model estimate,
+  and mask its NoData value.
+additional_links:
+- rel: describedby
+  title: Provider inventory supporting size and element count, checked 2026-11-17
+  url: https://zenodo.org/api/records/14443334
+- rel: describedby
+  title: Delivered format and release documentation
+  url: https://zenodo.org/records/14443334
+- rel: license
+  title: Provider redistribution terms
+  url: https://doi.org/10.5281/zenodo.14443334
+- rel: via
+  title: Reviewed data access route
+  url: https://zenodo.org/api/records/14443334/files/Output.zip/content
+spatial:
+  bbox:
+  - -180
+  - -55.775
+  - 180
+  - 83.642
+  crs: EPSG:4326
+temporal:
+  start_date: '2000'
+  end_date: '2100'
+citation:
+  title: Geographic distribution of the global agricultural workforce every decade for the years 2000-2100
+  authors:
+  - family: Ormaza Zulueta
+    given: Naia
+  - family: Miller
+    given: Steve
+  - family: Mehrabi
+    given: Zia
+  date: '2024-12-20'
+  publisher: Zenodo
+  url: https://doi.org/10.5281/zenodo.14443334

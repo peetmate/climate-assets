@@ -49,6 +49,12 @@ To repeat the test, give a fresh reader or agent only the candidate YAML and thi
 
 A decoded observation qualifies as a sample. An archive listing, landing page, metadata description or request form alone does not. Count a verified interpretation only when sample and documentation support the answer for the described resource. If only a successor or unconfirmed mirror is accessible, name the release and record the distinction. A reader must be able to follow the entry without searching by title, consulting the gap register or borrowing a link from another card. These local checks are independent of schema validation, licensing review and owner review.
 
+## Updated partial dataset records, 17 November 2026
+
+The [25-record enrichment and test report](usability/2026-11-17-updated-25.md) records the completed inventory review. Fresh independent readers used only isolated candidate YAMLs and linked provider sources. Twenty-two entries yielded observations through their intended routes, JECAM yielded a documented subset and MERGE a documented successor observation. BURGER’s approval route was verified. Two of the 24 observations retain interpretation caveats. Exact YAML hashes and local profile diagnostics are in the [test results](usability/2026-11-17-updated-25.csv).
+
+Seven prior questions were resolved and 16 additional unknowns logged, leaving 55 open fields for these entries. The [reconciliation log](usability/2026-11-17-gap-reconciliation.csv) preserves the decisions. ForTy moved to records after local profile validation; 24 updated templates remain usable drafts with explicit gaps. All 31 dataset cards have now had their audit findings reviewed, with seven locally profile-valid and 24 partial records. Owner questions remain drafts for review.
+
 ## Methods and tools
 
 The profile supports datasets, software, services and documents. ChooseGCM provides a worked software example with its package licence and the citation requested by its authors. WFP HumanitarianDataCube describes a STAC service with independently licensed collections. A methods paper can use document. Record which implementation, publication or endpoint was selected whenever a card describes several.

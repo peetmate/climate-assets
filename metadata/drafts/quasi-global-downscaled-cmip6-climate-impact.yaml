@@ -27,18 +27,94 @@ cdh:
   domain:
   - climate
 created: '2026-11-13'
-updated: '2026-11-16'
+updated: '2026-11-17'
 doi: 10.5281/zenodo.21915837
 version: '1'
 license: CC-BY-4.0
 access: public
-note: The public Box folder includes country archives. The Vanuatu archive contains daily administrative-area Parquet files compressed with XZ.
+note: 'The public Box folder includes country archives. The Vanuatu archive contains daily administrative-area
+  Parquet files compressed with XZ.
+
+
+  Local inventory review on 17 November 2026. The inspected Vanuatu tables are already Parquet, wrapped in
+  XZ inside a country ZIP. Remove both wrappers and host the Parquet objects directly. The gridded product
+  is NetCDF. Zenodo identifies the linked Box dataset and CC BY 4.0. Credit the creators, link the licence
+  and identify changes. The README also requests citation of the paper, dataset, Box repository and original
+  inputs. Anonymous Box download and byte-range read of a Vanuatu ZIP member succeeded. Its XZ-compressed Parquet
+  was decoded locally.
+
+
+  Download inventory checked on 2026-11-17. 20,956,214,274,037 bytes; 1,737 files. The provider’s Box listing
+  reports this size and file count for its Data folder. Country ZIPs are counted as files; internal Parquet
+  members and the separate Zenodo documentation are excluded.
+
+
+  The release-level licensing rights holder or administrator is unknown. Published creators and contact authors
+  have their documented roles only.
+
+
+  Follow Box’s download control for the selected country archive; the included Vanuatu direct download route
+  was range-read anonymously in the local audit. The release DOI has no provider version string, so version
+  1 is this inventory’s initial record version. The gridded NetCDF layouts need inspection after extraction.
+  Extracted and reformatted byte totals remain unknown.'
 data:
 - name: primary
   locations:
   - url: https://imperialcollegelondon.box.com/v/downscaled-cmip6-models
+- name: vanuatu-example
+  description: Vanuatu country ZIP. Members with .pq.xz contain XZ-compressed Parquet tables. Parquet schema
+    metadata gives variables, units, weighting and model/scenario. Exclude members marked .bad. The CanESM5
+    SSP2-4.5 adm2 member VUT_1_1_1 contains daily rows from 2015 through 2100; pr_popWP is daily WorldPop-weighted
+    total precipitation in mm and pr_area is area-weighted precipitation.
+  locations:
+  - url: https://imperialcollegelondon.app.box.com/v/downscaled-cmip6-models/file/2408627154043
+  file_size: 745137056
+  media_type: application/zip
 contact:
-- organization: CGIAR Climate Data Hub
+- organization: Climate Assets inventory
   roles:
   - maintainer
   url: https://github.com/peetmate/climate-assets
+  name: Pete Steward
+additional_links:
+- rel: describedby
+  title: Provider delivery format and release
+  url: https://imperialcollegelondon.box.com/v/downscaled-cmip6-models
+- rel: describedby
+  title: Provider redistribution terms
+  url: https://doi.org/10.5281/zenodo.21915837
+- rel: describedby
+  title: Versioned provider metadata and file inventory
+  url: https://zenodo.org/api/records/21915837
+- rel: describedby
+  title: Provider download and citation instructions
+  url: https://zenodo.org/records/21915837/files/README.pdf?download=1
+- rel: describedby
+  title: Provider file names and climate-variable metadata
+  url: https://zenodo.org/records/21915837/files/DatasetInformation.pdf?download=1
+- rel: related
+  title: Anonymous Vanuatu ZIP download supporting HTTP ranges
+  url: https://imperialcollegelondon.app.box.com/index.php?rm=box_download_shared_file&shared_name=y4f0ywor4gvcrdxkewlzerfxw4lik4ts&file_id=f_2408627154043
+citation:
+  title: Quasi-global, land-only, high-resolution and spatially averaged climate variables from downscaled
+    CMIP6 models for climate impact research
+  date: '2026-08-13'
+  publisher: Zenodo
+  url: https://doi.org/10.5281/zenodo.21915837
+  authors:
+  - family: Jahn
+    given: Sally
+  - family: Gaythorpe
+    given: Katy
+  - family: Dorigatti
+    given: Ilaria
+  - family: Winskill
+    given: Peter
+  - family: Hinsley
+    given: Wes
+  - family: Wainwright
+    given: Caroline
+  - family: Toumi
+    given: Ralf
+  - family: Ferguson
+    given: Neil

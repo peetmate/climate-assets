@@ -21,7 +21,7 @@ cdh:
   - agricultural-production
   - mitigation
 created: '2026-11-13'
-updated: '2026-11-16'
+updated: '2026-11-17'
 contact:
 - organization: Tsinghua University
   roles:
@@ -29,10 +29,11 @@ contact:
   name: Le Yu
   email: leyu@tsinghua.edu.cn
   url: https://essd.copernicus.org/articles/17/5543/2025/
-- organization: CGIAR Climate Data Hub
+- organization: Climate Assets inventory
   roles:
   - maintainer
   url: https://github.com/peetmate/climate-assets
+  name: Pete Steward
 version: v3
 doi: 10.5281/zenodo.17128483
 access: public
@@ -45,8 +46,8 @@ temporal:
   end_date: '2021'
 data:
 - name: density
-  description: 488 species-by-year density layers. The v3 buffalo 1963 member can be retrieved in about 3.6 MB using
-    the byte range below.
+  description: 488 species-by-year density layers. The v3 buffalo 1963 member can be retrieved in about 3.6 MB
+    using the byte range below.
   locations:
   - url: https://zenodo.org/records/17128483/files/LivestockMap.zip?download=1
   file_size: 7377312937
@@ -75,12 +76,18 @@ structures:
   - name: uncertainty
     description: Unitless relative uncertainty score from zero to one. Higher scores indicate greater uncertainty.
     unit: '1'
-note: 'For one density GeoTIFF, send HTTP Range: bytes=582055744-585638275 to the v3 density ZIP URL. Require status
-  206 and the requested Content-Range, then decompress the 3,582,532 returned bytes with Python zlib.decompress(body,
-  -15). The result is LivestockMap/Buffa_1963.tif (4,389,361 bytes, CRC32 1575933d). Open band 1 with a raster reader,
-  use its geotransform for the coordinate and discard non-finite values. This TIFF contains NaN even though it
-  declares no NoData value. Read valid land cells in heads of buffalo per
-  square kilometre. Ignore ZIP members beginning with ._ (macOS metadata).'
+note: 'For one density GeoTIFF, send HTTP Range: bytes=582055744-585638275 to the v3 density ZIP URL. Require
+  status 206 and the requested Content-Range, then decompress the 3,582,532 returned bytes with Python zlib.decompress(body,
+  -15). The result is LivestockMap/Buffa_1963.tif (4,389,361 bytes, CRC32 1575933d). Open band 1 with a raster
+  reader, use its geotransform for the coordinate and discard non-finite values. This TIFF contains NaN even though
+  it declares no NoData value. Read valid land cells in heads of buffalo per square kilometre. Ignore ZIP members
+  beginning with ._ (macOS metadata). Inventory review checked 2026-11-17. The ZIPs contain tiled BigTIFFs. The
+  sampled map and uncertainty raster lack internal overviews. Extract and prepare overviewed COGs for hosting.
+  CC BY 4.0 allows sharing and adaptation. Credit the creators, link the licence and identify changes. A reader
+  retrieved data from the reviewed distribution without credentials, a form or paid access. Stored download volume
+  is 17,567,143,251 bytes across 2 files. Two downloadable archives. Each ZIP lists 1,400 .tif-suffixed members,
+  including macOS sidecars. Excluding __MACOSX and ._ files leaves 488 density rasters and 488 uncertainty rasters
+  (976 total, eight species across 61 years). A separately named licensing rights holder remains unknown.'
 additional_links:
 - rel: describedby
   title: Version v3, density units, uncertainty interpretation and CC BY licence
@@ -91,6 +98,12 @@ additional_links:
 - rel: via
   title: Zenodo file manifest and checksums
   url: https://zenodo.org/api/records/17128483
+- rel: describedby
+  title: Format evidence
+  url: https://doi.org/10.5281/zenodo.17128483
+- rel: describedby
+  title: Access evidence
+  url: https://zenodo.org/records/17128483/files/LivestockMap.zip?download=1
 citation:
   authors:
   - family: Du

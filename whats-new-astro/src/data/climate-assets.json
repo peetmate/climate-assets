@@ -1652,7 +1652,7 @@
         "bytes": 17567143251,
         "count": 2,
         "unit": "files",
-        "note": "Two downloadable archives. Their central directories contain 1,400 density and 1,400 uncertainty GeoTIFFs (2,800 rasters total)."
+        "note": "Two downloadable archives. Each ZIP lists 1,400 .tif-suffixed members, including macOS sidecars. Excluding __MACOSX and ._ files leaves 488 density rasters and 488 uncertainty rasters (976 total, eight species across 61 years)."
       }
     },
     {
@@ -2178,9 +2178,9 @@
         "format": "convert",
         "format_note": "GROW-Africa distributes zipped workbooks and Shapefiles. Convert the tabular or spatial data for direct cloud access.",
         "format_source": "https://zenodo.org/records/14961637",
-        "rights": "allowed",
-        "rights_note": "CC BY 4.0 allows sharing and adaptation. Credit the creators, link the licence and identify changes.",
-        "rights_source": "https://doi.org/10.5281/zenodo.14961637",
+        "rights": "varies",
+        "rights_note": "Zenodo declares CC BY 4.0 for the deposit. The provider README identifies GADM-derived companion boundaries; coverage of those components by the deposit grant remains unknown. Credit the creators and resolve original-source obligations before re-hosting those boundaries.",
+        "rights_source": "https://zenodo.org/api/records/14961637/files/readme.txt/content",
         "data_access": "anonymous",
         "access_note": "A reader retrieved data from the reviewed distribution without credentials, a form or paid access.",
         "access_source": "https://zenodo.org/api/records/14961637/files/GROW-Africa-Database.zip/content"
@@ -6615,7 +6615,7 @@
       "collection": "methods",
       "section": "Bias-Correction/Downscaling/Ensembling",
       "shared_by": "",
-      "notes": "Navarro-Racines, Tarapues, Thornton, Jarvis and Ramirez-Villegas",
+      "notes": "Navarro-Racines, Tarapues, Thornton, Jarvis and Ramirez-Villegas WDCC archive declares CC BY 4.0; CCAFS S3 redistribution terms remain unresolved.",
       "date_added": "TBC",
       "tags": [
         "bias-correction",
@@ -6642,17 +6642,17 @@
         "affiliation": "International Center for Tropical Agriculture (CIAT)",
         "email": ""
       },
-      "licence": "CC-BY-4.0",
+      "licence": "",
       "data_availability": "Open data",
-      "reusable": true,
+      "reusable": false,
       "ongoing": false,
       "hosting": {
         "format": "convert",
         "format_note": "The linked CCAFS distribution packages monthly climate layers in model and period ZIP files. Prepare a directly accessible grid store.",
         "format_source": "https://doi.org/10.26050/WDCC/CCAFS-CMIP5_downscaling",
-        "rights": "allowed",
-        "rights_note": "CC BY 4.0 allows sharing and adaptation. Credit the creators, link the licence and identify changes.",
-        "rights_source": "https://doi.org/10.26050/WDCC/CCAFS-CMIP5_downscaling",
+        "rights": "unknown",
+        "rights_note": "WDCC declares CC BY 4.0 for its archive. The CCAFS download page (last updated 2015) requires written permission for commercial, non-free resale or redistribution. Applicability of the later WDCC licence to the S3 distribution remains unknown.",
+        "rights_source": "https://ccafs-climate.org/data_spatial_downscaling/",
         "data_access": "anonymous",
         "access_note": "A reader retrieved data from the reviewed distribution without credentials, a form or paid access.",
         "access_source": "https://cgiardata.s3.amazonaws.com/ccafs/ccafs-climate/data/ipcc_5ar_ciat_downscaled/rcp2_6/2030s/bcc_csm1_1_m/10min/bcc_csm1_1_m_rcp2_6_2030s_prec_10min_r1i1p1_no_tile_asc.zip"

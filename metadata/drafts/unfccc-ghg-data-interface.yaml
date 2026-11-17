@@ -6,9 +6,9 @@ extensions:
 id: unfccc-ghg-data-interface
 title: UNFCCC Greenhouse Gas Data Interface
 description: The official interface providing access to greenhouse gas data reported by Parties to the Climate
-  Change Convention, from Annex I annual GHG inventory submissions and non-Annex I national communications
-  and biennial update reports. Data are presented in tabular and graphical form and many tables are downloadable
-  as Excel spreadsheets.
+  Change Convention, from Annex I annual GHG inventory submissions and non-Annex I national communications and
+  biennial update reports. Data are presented in tabular and graphical form and many tables are downloadable as
+  Excel spreadsheets.
 resource_type: service
 keywords:
 - carbon
@@ -18,13 +18,42 @@ cdh:
   domain:
   - mitigation
 created: '2026-11-13'
-updated: '2026-11-13'
+updated: '2026-11-17'
 data:
 - name: primary
   locations:
-  - url: https://data.unfccc.int/
+  - url: https://ghgdi.unfccc.int/convention/time-series/
+  description: Public time-series browser. JavaScript loads a Power BI report with automatically issued short-lived
+    tokens.
 contact:
-- organization: CGIAR Climate Data Hub
+- organization: Climate Assets inventory
   roles:
   - maintainer
   url: https://github.com/peetmate/climate-assets
+  name: Pete Steward
+additional_links:
+- rel: collection
+  title: Provider inventory checked 17 November 2026
+  url: https://data.unfccc.int/
+- rel: describedby
+  title: Access evidence
+  url: https://ghgdi.unfccc.int/js/powerbi-embed.js
+- rel: describedby
+  title: Reuse terms evidence
+  url: https://ghgdi.unfccc.int/notes-ghg-data/
+- rel: service-desc
+  title: Public time-series interface
+  url: https://ghgdi.unfccc.int/convention/time-series/
+access: public
+access_note: Visitors can use the browser without an account. Direct Power BI data requests require the token
+  supplied and renewed by the public interface.
+note: Inventory review checked 2026-11-17. This is a reporting interface. Downloadable tables include spreadsheets
+  that can be converted to Parquet. Population and GDP series carry third-party terms. UNFCCC directs users to
+  consult the United Nations or World Bank before further use. Check the specific table. Visitors can read the
+  time-series table without a login. The embedded Power BI data service requires a short-lived token supplied
+  automatically by the public interface. Complete stored byte total and physical file count are unknown. Open
+  the time-series browser with JavaScript enabled. Select a Party, year, gas and category, and read the table
+  units and whether land use, land-use change and forestry (LULUCF) is included. An Australia 2024 all-greenhouse-gas
+  total excluding LULUCF was read as 518,566.81 kt CO2e in the audit. This value depends on the selected submission
+  and reporting filters. Service release identifier, preferred citation, table-specific redistribution grant and
+  licensing rights holder remain unknown.

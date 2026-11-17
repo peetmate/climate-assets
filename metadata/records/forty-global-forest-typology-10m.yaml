@@ -27,7 +27,7 @@ cdh:
   - land
   - agricultural-production
 created: '2026-11-13'
-updated: '2026-11-16'
+updated: '2026-11-17'
 license: CC-BY-4.0
 version: '1.0'
 temporal:
@@ -78,10 +78,11 @@ contact:
   roles:
   - point-of-contact
   url: https://doi.org/10.25452/figshare.plus.32288616.v1
-- organization: CGIAR Climate Data Hub
+- organization: Climate Assets inventory
   roles:
   - maintainer
   url: https://github.com/peetmate/climate-assets
+  name: Pete Steward
 spatial:
   bbox:
   - -180
@@ -203,7 +204,28 @@ additional_links:
   url: https://api.figshare.com/v2/articles/32301177/versions/1
 - rel: related
   url: https://doi.org/10.25452/figshare.plus.32301177.v1
-note: For valid pixels, derive the sixth raw score (Other Land) by subtracting the sum of the five bands from
+- rel: describedby
+  title: Download inventory checked 17 November 2026
+  url: https://storage.googleapis.com/storage/v1/b/nature-trace/o?prefix=export_rasters%2Fforest_typology_2020_v1_0%2F
+note: 'For valid pixels, derive the sixth raw score (Other Land) by subtracting the sum of the five bands from
   250. Use a signed or wider integer for the arithmetic. Treat these scores as relative model confidence. Figshare
   supplies the dataset citation. The Earth Engine terms still contain a placeholder for their required credit
   line.
+
+
+  Local inventory review on 17 November 2026. The original confidence rasters are COGs served individually
+  from the producer bucket. Figshare also distributes ZIP files. The provider lists CC BY 4.0 for the map,
+  including the direct confidence tiles. Cite the versioned Figshare deposit. Earth Engine still shows a placeholder
+  for the requested credit line. Google serves the native confidence tiles without credentials. Figshare also
+  permits anonymous downloads.
+
+
+  Download inventory checked on 2026-11-17. 333,335,750,879 bytes; 135,542 COG tiles. Original v1.0 confidence
+  COG prefix (all TIFFs; directory marker excluded). Separately, Figshare lists 613 confidence ZIPs (331,503,524,295
+  bytes) and 613 classification ZIPs (25,648,189,902 bytes). Do not add the mirrors together.
+
+
+  The 333,335,750,879-byte native confidence prefix contains 135,542 COG tiles. The two Figshare ZIP distributions
+  are alternative packaging; confidence ZIPs total 331,503,524,295 bytes and classification ZIPs total 25,648,189,902
+  bytes. For local federation assessment, the native confidence tiles meet selective-read, redistribution and
+  anonymous-access criteria. The exact additional Earth Engine credit-line wording remains unknown.'

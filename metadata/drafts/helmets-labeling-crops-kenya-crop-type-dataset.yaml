@@ -5,9 +5,9 @@ extensions:
 - https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
 id: helmets-labeling-crops-kenya-crop-type-dataset
 title: Helmets Kenya Crop Type Dataset
-description: Presents a Kenya crop-type dataset built from helmet-mounted camera imagery collected in the field
-  and labeled with deep learning, aimed at improving agricultural monitoring in smallholder farming regions.
-  Published in Scientific Data volume 12, article 1496 (2025).
+description: Georeferenced crop-type points and associated roadside imagery from 16 counties in Kenya in 2021
+  and 2022. The provider deposit describes 4,925 crop-type points produced using helmet-mounted cameras and
+  deep learning.
 resource_type: dataset
 keywords:
 - africa
@@ -18,7 +18,7 @@ cdh:
   domain:
   - agricultural-production
 created: '2026-11-13'
-updated: '2026-11-13'
+updated: '2026-11-17'
 doi: 10.5281/zenodo.15133324
 version: '1'
 license: CC-BY-SA-4.0
@@ -27,13 +27,81 @@ data:
   locations:
   - url: https://zenodo.org/api/records/15133324/files/Helmets_Kenya_v1.csv/content
   checksum: md5:af56f7d88d708f29f2acc50537d57cfb
+  file_size: 2915308
 - name: KENYA_v2.zip
   locations:
   - url: https://zenodo.org/api/records/15133324/files/KENYA_v2.zip/content
   checksum: md5:2f69ad5f0f6056a498a7c9f2e52f31a1
+  file_size: 11962834279
 access: public
 contact:
-- organization: CGIAR Climate Data Hub
+- organization: Climate Assets inventory
   roles:
   - maintainer
   url: https://github.com/peetmate/climate-assets
+  name: Pete Steward
+note: 'Local inventory review on 17 November 2026. The v1 release lists a CSV table and a ZIP distribution.
+  The tabular observations can be converted to Parquet. The deposited data are CC BY-SA 4.0. Give credit, link
+  the licence, indicate changes and share adaptations under the same licence. A reader retrieved data from
+  the reviewed distribution without credentials, a form or paid access.
+
+
+  Download inventory checked on 2026-11-17. 11,965,749,587 bytes; 2 files. Published deposit, including any
+  documentation and archives. Archive members are not counted separately.
+
+
+  The release-level licensing rights holder or administrator is unknown. Published creators and contact authors
+  have their documented roles only.
+
+
+  Start with Helmets_Kenya_v1.csv. latitude and longitude locate each crop-label point, crop_type gives its
+  category, and capture_time identifies the timestamp. The year column groups observations by year. image_path
+  identifies its image inside KENYA_v2.zip. The Google Cloud image_url is an alternative route whose access
+  can differ from the public ZIP.'
+additional_links:
+- rel: describedby
+  title: Provider delivery format and release
+  url: https://zenodo.org/records/15133324
+- rel: describedby
+  title: Download inventory checked 17 November 2026
+  url: https://zenodo.org/api/records/15133324
+citation:
+  title: Helmets Kenya Crop Type Dataset
+  date: '2025-04-15'
+  publisher: Zenodo
+  url: https://doi.org/10.5281/zenodo.15133324
+  authors:
+  - family: Zvonkov
+    given: Ivan
+  - family: Nakalembe
+    given: Catherine
+  - family: Kerner
+    given: Hannah
+  - family: Frimpong
+    given: Diana
+  - family: Mwangi
+    given: Kenneth
+  - family: Kioko
+    given: Jane
+  - family: Tokas
+    given: Bhanu
+  - family: Jawanjal
+    given: Kartik
+  - family: Paliyam
+    given: Anjali
+  - family: Smith
+    given: Iman Akhtar
+  - family: Wakhanala
+    given: Christopher Atsianzale
+  - family: Tárano
+    given: Ana María
+  - family: Shreya
+    given: Jha
+  - family: Loh
+    given: Priscilla Mawuena
+spatial:
+  geography:
+  - kenya
+temporal:
+  start_date: '2021'
+  end_date: '2022'

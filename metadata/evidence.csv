@@ -535,3 +535,82 @@ trends-earth-qgis,Tagged GPL licence text,https://github.com/ConservationInterna
 trends-earth-qgis,Tagged Apache licence text,https://github.com/ConservationInternational/trends.earth/blob/v2.3.8/LICENSE,,,2026-11-16
 trends-earth-qgis,Project software and product terms,https://docs.trends.earth/en/latest/general/index.html#license,,,2026-11-16
 trends-earth-qgis,Changes in drought and population calculations,https://docs.trends.earth/en/latest/for_developers/changelog.html,,,2026-11-16
+digital-earth-africa-aws-open-data,Provider source incorporated from local audit dated 2026-11-17,https://registry.opendata.aws/collab/deafrica/,,Digital Earth Africa AWS registry,2026-11-17
+unfccc-ghg-data-interface,Provider source incorporated from local audit dated 2026-11-17,https://data.unfccc.int/,,UNFCCC GHG Data Interface,2026-11-17
+unfccc-ghg-data-interface,Provider source incorporated from local audit dated 2026-11-17,https://ghgdi.unfccc.int/notes-ghg-data/,,UNFCCC GHG Data Interface,2026-11-17
+unfccc-ghg-data-interface,Provider source incorporated from local audit dated 2026-11-17,https://ghgdi.unfccc.int/js/powerbi-embed.js,,UNFCCC GHG Data Interface,2026-11-17
+wfp-vam-humanitariandatacube-stac,Provider source incorporated from local audit dated 2026-11-17,https://api.earthobservation.vam.wfp.org/stac/collections,,WFP HumanitarianDataCube STAC,2026-11-17
+wfp-vam-humanitariandatacube-stac,Provider source incorporated from local audit dated 2026-11-17,https://api.earthobservation.vam.wfp.org/stac/,,WFP HumanitarianDataCube STAC,2026-11-17
+wri-drivers-of-forest-loss-1km,Provider source incorporated from local audit dated 2026-11-17,https://zenodo.org/api/records/19485190,,WRI forest-loss drivers v1.3,2026-11-17
+wri-drivers-of-forest-loss-1km,Provider source incorporated from local audit dated 2026-11-17,https://zenodo.org/records/19485190,,WRI forest-loss drivers v1.3,2026-11-17
+wri-drivers-of-forest-loss-1km,Provider source incorporated from local audit dated 2026-11-17,https://doi.org/10.5281/zenodo.19485190,,WRI forest-loss drivers v1.3,2026-11-17
+wri-drivers-of-forest-loss-1km,Provider source incorporated from local audit dated 2026-11-17,https://zenodo.org/api/records/19485190/files/drivers_forest_loss_1km_2001_2025_v1_3.tif/content,,WRI forest-loss drivers v1.3,2026-11-17
+annual-global-gridded-livestock-mapping-1961-2021,Provider source incorporated from local audit dated 2026-11-17,https://zenodo.org/api/records/17128483,,Annual global livestock maps,2026-11-17
+annual-global-gridded-livestock-mapping-1961-2021,Provider source incorporated from local audit dated 2026-11-17,https://doi.org/10.5281/zenodo.17128483,,Annual global livestock maps,2026-11-17
+annual-global-gridded-livestock-mapping-1961-2021,Provider source incorporated from local audit dated 2026-11-17,https://zenodo.org/records/17128483/files/LivestockMap.zip?download=1,,Annual global livestock maps,2026-11-17
+cropgrids-global-crop-dataset,Provider source incorporated from local audit dated 2026-11-17,https://api.figshare.com/v2/articles/22491997/versions/9,,CROPGRIDS v1.08,2026-11-17
+cropgrids-global-crop-dataset,Provider source incorporated from local audit dated 2026-11-17,https://doi.org/10.6084/m9.figshare.22491997.v9,,CROPGRIDS v1.08,2026-11-17
+cropgrids-global-crop-dataset,Provider source incorporated from local audit dated 2026-11-17,https://ndownloader.figshare.com/files/44950942,,CROPGRIDS v1.08,2026-11-17
+cropgrids-global-crop-dataset,"Decoded CROPGRIDS v1.08 popcorn NetCDF and verified variables, units and grid; source ZIP with named member CROPGRIDSv1.08_NC_maps/CROPGRIDSv1.08_popcorn.nc",https://ndownloader.figshare.com/files/44950942,206,CROPGRIDS v1.08 crop maps archive,2026-11-17
+harveststat-africa,Provider source incorporated from local audit dated 2026-11-17,https://datadryad.org/api/v2/versions/452999/files,,HarvestStat Africa v1.2,2026-11-17
+harveststat-africa,Provider source incorporated from local audit dated 2026-11-17,https://github.com/HarvestStat/HarvestStat-Africa/releases/tag/v1.2,,HarvestStat Africa v1.2,2026-11-17
+harveststat-africa,Provider source incorporated from local audit dated 2026-11-17,https://github.com/HarvestStat/HarvestStat-Africa/blob/v1.2/README.md#license,,HarvestStat Africa v1.2,2026-11-17
+scientific-data-s41597-025-05257-5,Provider source incorporated from local audit dated 2026-11-17,https://zenodo.org/api/records/14961637,,GROW-Africa v1.0,2026-11-17
+scientific-data-s41597-025-05257-5,Provider source incorporated from local audit dated 2026-11-17,https://zenodo.org/records/14961637,,GROW-Africa v1.0,2026-11-17
+scientific-data-s41597-025-05257-5,Provider source incorporated from local audit dated 2026-11-17,https://doi.org/10.5281/zenodo.14961637,,GROW-Africa v1.0,2026-11-17
+scientific-data-s41597-025-05257-5,Provider source incorporated from local audit dated 2026-11-17,https://zenodo.org/api/records/14961637/files/GROW-Africa-Database.zip/content,,GROW-Africa v1.0,2026-11-17
+burger-global-sub-daily-idf-data,"Inventory enrichment: release, format, rights or size evidence",https://zenodo.org/records/15473689,,,2026-11-17
+cra5-dataset-github,"Inventory enrichment: release, format, rights or size evidence",https://huggingface.co/api/datasets/taohan10200/CRA5-Dataset/treesize/ff67f4d97e36bc6f54fc245abf81133e8900bee1,,,2026-11-17
+cra5-dataset-github,"Inventory enrichment: release, format, rights or size evidence",https://huggingface.co/datasets/taohan10200/CRA5-Dataset/tree/ff67f4d97e36bc6f54fc245abf81133e8900bee1,,,2026-11-17
+cra5-dataset-github,"Inventory enrichment: release, format, rights or size evidence",https://huggingface.co/datasets/taohan10200/CRA5-Dataset/raw/ff67f4d97e36bc6f54fc245abf81133e8900bee1/README.md,,,2026-11-17
+cra5-dataset-github,"Inventory enrichment: release, format, rights or size evidence",https://doi.org/10.57967/hf/8429,,,2026-11-17
+global-gridded-multi-temporal-datasets-human-population-distribution-modelling,"Inventory enrichment: release, format, rights or size evidence",https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12444015/fullTextXML,,,2026-11-17
+global-gridded-multi-temporal-datasets-human-population-distribution-modelling,"Inventory enrichment: release, format, rights or size evidence",https://doi.org/10.5258/SOTON/WP00772,,,2026-11-17
+global-gridded-multi-temporal-datasets-human-population-distribution-modelling,"Inventory enrichment: release, format, rights or size evidence",https://hub.worldpop.org/geodata/summary?id=62160,,,2026-11-17
+zenodo-record-14443334,"Inventory enrichment: release, format, rights or size evidence",https://zenodo.org/api/records/14443334,200,,2026-11-17
+zenodo-record-14443334,"Inventory enrichment: release, format, rights or size evidence",https://doi.org/10.5281/zenodo.14443334,,,2026-11-17
+zenodo-record-14443334,"Inventory enrichment: release, format, rights or size evidence",https://zenodo.org/records/14443334,,,2026-11-17
+global-dataset-of-7-billion-individuals-with-socio-economic-characteristics,"Inventory enrichment: release, format, rights or size evidence",https://dataverse.harvard.edu/api/datasets/:persistentId/versions/4.5?persistentId=doi%3A10.7910%2FDVN%2FKJC3RH,,,2026-11-17
+global-dataset-of-7-billion-individuals-with-socio-economic-characteristics,"Inventory enrichment: release, format, rights or size evidence",https://doi.org/10.7910/DVN/KJC3RH,,,2026-11-17
+global-dataset-of-7-billion-individuals-with-socio-economic-characteristics,"Inventory enrichment: release, format, rights or size evidence",https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/KJC3RH&version=4.5,,,2026-11-17
+spatially-explicit-harmonized-global-dataset-of-critical-infrastructure,"Inventory enrichment: release, format, rights or size evidence",https://zenodo.org/api/records/4957647,200,,2026-11-17
+spatially-explicit-harmonized-global-dataset-of-critical-infrastructure,"Inventory enrichment: release, format, rights or size evidence",https://doi.org/10.5281/zenodo.4957647,,,2026-11-17
+spatially-explicit-harmonized-global-dataset-of-critical-infrastructure,"Infrastructure source date, grid resolution and variable interpretation",https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8975875/fullTextXML,200,A spatially-explicit harmonized global dataset of critical infrastructure,2026-11-17
+downscaled-gridded-global-dataset-gdp-per-capita-ppp-1990-2022,"Inventory enrichment: release, format, rights or size evidence",https://zenodo.org/api/records/16741980,200,,2026-11-17
+downscaled-gridded-global-dataset-gdp-per-capita-ppp-1990-2022,"Inventory enrichment: release, format, rights or size evidence",https://doi.org/10.5281/zenodo.16741980,,,2026-11-17
+gdpcir-downscaled-projections-preserving-extremes,"Inventory enrichment: release, format, rights or size evidence",https://planetarycomputer.microsoft.com/dataset/group/cil-gdpcir,,,2026-11-17
+gdpcir-downscaled-projections-preserving-extremes,"Inventory enrichment: release, format, rights or size evidence",https://rhgeuwest.blob.core.windows.net/cil-gdpcir,,,2026-11-17
+merge-dataset-climate-disaster-impacts-human-vulnerability,Local audit provider source incorporated into YAML,https://doi.org/10.1038/s41597-026-07522-7,,,2026-11-17
+merge-dataset-climate-disaster-impacts-human-vulnerability,Local audit provider source incorporated into YAML,https://doc.emdat.be/docs/legal/terms-of-use/,,,2026-11-17
+merge-dataset-climate-disaster-impacts-human-vulnerability,Local audit provider source incorporated into YAML,https://zenodo.org/records/16837695,,,2026-11-17
+merge-dataset-climate-disaster-impacts-human-vulnerability,Local audit provider source incorporated into YAML,https://zenodo.org/records/24127714/files/README.md?download=1,,,2026-11-17
+projections-of-future-agricultural-management-and-crop-choice-under-ssps,Local audit provider source incorporated into YAML,https://doi.org/10.6084/m9.figshare.28838930.v1,,,2026-11-17
+projections-of-future-agricultural-management-and-crop-choice-under-ssps,Local audit provider source incorporated into YAML,https://ndownloader.figshare.com/files/57943921,,,2026-11-17
+projections-of-future-agricultural-management-and-crop-choice-under-ssps,Local audit provider source incorporated into YAML,https://api.figshare.com/v2/articles/28838930/versions/1,,,2026-11-17
+jecam-harmonized-in-situ-crop-type-dataset-cirad-dataverse,Local audit provider source incorporated into YAML,https://dataverse.cirad.fr/dataset.xhtml?persistentId=doi:10.18167/DVN1/P7OLAP&version=2.1,,,2026-11-17
+helmets-labeling-crops-kenya-crop-type-dataset,Local audit provider source incorporated into YAML,https://zenodo.org/records/15133324,,,2026-11-17
+helmets-labeling-crops-kenya-crop-type-dataset,Local audit provider source incorporated into YAML,https://zenodo.org/api/records/15133324/files/Helmets_Kenya_v1.csv/content,,,2026-11-17
+helmets-labeling-crops-kenya-crop-type-dataset,Local audit provider source incorporated into YAML,https://zenodo.org/api/records/15133324,,,2026-11-17
+high-resolution-and-bias-corrected-cmip5-projections,Local audit provider source incorporated into YAML,https://doi.org/10.26050/WDCC/CCAFS-CMIP5_downscaling,,,2026-11-17
+high-resolution-and-bias-corrected-cmip5-projections,Local audit provider source incorporated into YAML,https://cgiardata.s3.amazonaws.com/ccafs/ccafs-climate/data/ipcc_5ar_ciat_downscaled/rcp2_6/2030s/bcc_csm1_1_m/10min/bcc_csm1_1_m_rcp2_6_2030s_prec_10min_r1i1p1_no_tile_asc.zip,,,2026-11-17
+high-resolution-and-bias-corrected-cmip5-projections,Local audit provider source incorporated into YAML,https://cgiardata.s3.amazonaws.com/?list-type=2&prefix=ccafs%2Fccafs-climate%2Fdata%2Fipcc_5ar_ciat_downscaled%2F,,,2026-11-17
+gmia-next-global-map-of-irrigated-areas,Local audit provider source incorporated into YAML,https://zenodo.org/records/17627111,,,2026-11-17
+gmia-next-global-map-of-irrigated-areas,Local audit provider source incorporated into YAML,https://doi.org/10.5281/zenodo.17627111,,,2026-11-17
+gmia-next-global-map-of-irrigated-areas,Local audit provider source incorporated into YAML,https://zenodo.org/api/records/17627111/files/GMIA-NEXT_prob_AF_2024_v0.tif/content,,,2026-11-17
+gmia-next-global-map-of-irrigated-areas,Local audit provider source incorporated into YAML,https://zenodo.org/api/records/17627111,,,2026-11-17
+gmia-next-global-map-of-irrigated-areas,Provider metadata or dictionary incorporated into YAML,https://zenodo.org/api/records/17627111/files/GMIA-NEXT_README_Main.md/content,200,,2026-11-17
+global-1km-gridded-household-consumption-ppp,Local audit provider source incorporated into YAML,https://zenodo.org/records/21122277,,,2026-11-17
+global-1km-gridded-household-consumption-ppp,Local audit provider source incorporated into YAML,https://doi.org/10.5281/zenodo.21122277,,,2026-11-17
+global-1km-gridded-household-consumption-ppp,Local audit provider source incorporated into YAML,https://zenodo.org/api/records/21122277/files/consumption_ppp_cell_2013.tif/content,,,2026-11-17
+global-1km-gridded-household-consumption-ppp,Local audit provider source incorporated into YAML,https://zenodo.org/api/records/21122277,,,2026-11-17
+quasi-global-downscaled-cmip6-climate-impact,Local audit provider source incorporated into YAML,https://imperialcollegelondon.box.com/v/downscaled-cmip6-models,,,2026-11-17
+quasi-global-downscaled-cmip6-climate-impact,Local audit provider source incorporated into YAML,https://doi.org/10.5281/zenodo.21915837,,,2026-11-17
+quasi-global-downscaled-cmip6-climate-impact,Local audit provider source incorporated into YAML,https://imperialcollegelondon.app.box.com/v/downscaled-cmip6-models/file/2408627154043,,,2026-11-17
+quasi-global-downscaled-cmip6-climate-impact,Provider metadata or dictionary incorporated into YAML,https://zenodo.org/api/records/21915837,200,,2026-11-17
+forty-global-forest-typology-10m,Local audit provider source incorporated into YAML,https://developers.google.com/earth-engine/datasets/catalog/projects_nature-trace_assets_forest_typology_forest_typology_2020_v1_0_collection,,,2026-11-17
+forty-global-forest-typology-10m,Local audit provider source incorporated into YAML,https://storage.googleapis.com/nature-trace/export_rasters/forest_typology_2020_v1_0/raster_21M_20_10_18.tif,,,2026-11-17
+forty-global-forest-typology-10m,Local audit provider source incorporated into YAML,https://storage.googleapis.com/storage/v1/b/nature-trace/o?prefix=export_rasters%2Fforest_typology_2020_v1_0%2F,,,2026-11-17
+forty-global-forest-typology-10m,Provider metadata or dictionary incorporated into YAML,https://api.figshare.com/v2/articles/32288616/versions/1,200,,2026-11-17
+forty-global-forest-typology-10m,Provider metadata or dictionary incorporated into YAML,https://api.figshare.com/v2/articles/32301177/versions/1,200,,2026-11-17
+high-resolution-and-bias-corrected-cmip5-projections,Fresh entry-only reader identified distribution-specific reuse terms conflict,https://ccafs-climate.org/data_spatial_downscaling/,200,Spatial downscaling — CCAFS Climate,2026-11-17
+digital-earth-africa-aws-open-data,Fresh entry-only sample exposed conflicting historical extent periods,https://docs.digitalearthafrica.org/en/latest/data_specs/Waterbodies_specs.html,200,Waterbodies Monitoring historical extent and surface area time series,2026-11-17

@@ -5,10 +5,9 @@ extensions:
 - https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
 id: digital-earth-africa-aws-open-data
 title: Digital Earth Africa (Registry of Open Data on AWS)
-description: A collaboration collection on the Registry of Open Data on AWS providing free and open access
-  to DE Africa's decision-ready Earth observation products for the continent, including Landsat Collection
-  2, CHIRPS rainfall, fractional cover, waterbodies and water observations from space. Data are available under
-  a Creative Commons Attribution 4.0 licence.
+description: Discovery catalogue for Digital Earth Africa's Earth observation products on AWS, including Landsat,
+  rainfall, fractional cover, waterbodies and water observations. Each product listing supplies its own access
+  route, version, terms and documentation.
 resource_type: service
 keywords:
 - africa
@@ -20,13 +19,42 @@ cdh:
   domain:
   - land
 created: '2026-11-13'
-updated: '2026-11-13'
+updated: '2026-11-17'
 data:
 - name: primary
   locations:
   - url: https://registry.opendata.aws/collab/deafrica/
 contact:
-- organization: CGIAR Climate Data Hub
+- organization: Climate Assets inventory
   roles:
   - maintainer
   url: https://github.com/peetmate/climate-assets
+  name: Pete Steward
+additional_links:
+- rel: describedby
+  title: Waterbodies historical-extent specification and caveats
+  url: https://docs.digitalearthafrica.org/en/latest/data_specs/Waterbodies_specs.html
+- rel: collection
+  title: Provider inventory checked 17 November 2026
+  url: https://registry.opendata.aws/collab/deafrica/
+- rel: describedby
+  title: Digital Earth Africa product specifications
+  url: https://docs.digitalearthafrica.org/en/latest/data_specs/index.html
+- rel: describedby
+  title: CHIRPS producer release transition notice
+  url: https://www.chc.ucsb.edu/data/chirps3
+access: public
+access_note: The registry and linked product documentation can be browsed without login. Access and terms for
+  underlying data are product-specific.
+note: Inventory review checked 2026-11-17. Formats vary by product. The historical CHIRPS v2 daily COG sample
+  is superseded by v3 and excluded from the shortlist. Rights depend on the selected AWS product. Check the current
+  release’s terms. Access depends on the selected AWS product. The historical v2 sample verified access only for
+  that release. Complete stored byte total and physical file count are unknown. The provider lists 17 registry
+  listings. Service release identifier, catalogue-specific reuse terms, licensing rights holder and preferred
+  service citation are unknown. Select a product from the registry, follow its documented bucket or STAC route,
+  and use that product’s band definitions and units. CHIRPS v2 daily is superseded and excluded from the current
+  shortlist. For CHIRPS use v3.
+  For the sampled Waterbodies historical extent v0.0.3, the provider specification gives both 1984–2022 and
+  1984–2002 coverage; the exact end year remains unresolved. The description distinguishes 5% wet pixels for
+  outlines from a 10% wet core used to retain polygons. Other sections abbreviate this as a 10% threshold.
+  Live WFS also advertises later layers; choose the version explicitly and treat this sample as historical.

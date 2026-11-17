@@ -21,7 +21,7 @@ cdh:
   - land
   - mitigation
 created: '2026-11-13'
-updated: '2026-11-13'
+updated: '2026-11-17'
 doi: 10.5281/zenodo.19485190
 version: '1.3'
 license: CC-BY-4.0
@@ -30,22 +30,27 @@ data:
   locations:
   - url: https://zenodo.org/api/records/19485190/files/validation_2001_2022.csv/content
   checksum: md5:bc804d30187986108e17cbbf75b9082f
+  file_size: 438143
 - name: validation_2001_2022.geojson
   locations:
   - url: https://zenodo.org/api/records/19485190/files/validation_2001_2022.geojson/content
   checksum: md5:d430f5f333038952e18b4a69ce5196f8
+  file_size: 1703208
 - name: training_2001_2025_v1_3.geojson
   locations:
   - url: https://zenodo.org/api/records/19485190/files/training_2001_2025_v1_3.geojson/content
   checksum: md5:e25b77b67367efc9bf4f592de7ded2bf
+  file_size: 4180729
 - name: drivers_forest_loss_1km_2001_2025_v1_3.tif
   locations:
   - url: https://zenodo.org/api/records/19485190/files/drivers_forest_loss_1km_2001_2025_v1_3.tif/content
   checksum: md5:37dc18d5cdf384e8b751036617de9ded
+  file_size: 301865971
 - name: training_2001_2025_v1_3.csv
   locations:
   - url: https://zenodo.org/api/records/19485190/files/training_2001_2025_v1_3.csv/content
   checksum: md5:b3a5dc69434898c4256933da785af9ab
+  file_size: 1116562
 access: public
 spatial:
   geography:
@@ -64,9 +69,74 @@ contact:
 - organization: Google DeepMind
   roles:
   - producer
-- organization: CGIAR Climate Data Hub
+- organization: Climate Assets inventory
   roles:
   - maintainer
   url: https://github.com/peetmate/climate-assets
-note: The raster reports one dominant driver per cell over the whole period. It includes planted and natural
-  trees.
+  name: Pete Steward
+note: The raster reports one dominant driver per cell over the whole period. It includes planted and natural trees.
+  Inventory review checked 2026-11-17. GDAL identifies the v1.3 primary driver raster as a COG with seven overviews.
+  Validation and training files are separate tables. CC BY 4.0 allows sharing and adaptation. Credit the creators,
+  link the licence and identify changes. Anonymous selective read of the v1.3 driver COG returned band 1 = 5 at
+  60°W, 4°S. The deposit also includes four training/validation tables. Stored download volume is 309,304,613
+  bytes across 5 files. Published deposit, including any documentation and archives. Archive members are not counted
+  separately. Federation eligibility applies to the primary driver COG. The producer’s release description defines
+  seven driver classes and includes probabilities in other bands. For a classification sample, read band 1 and
+  use the release documentation for the numeric category mapping. A separately named licensing rights holder remains
+  unknown.
+additional_links:
+- rel: collection
+  title: Provider inventory checked 17 November 2026
+  url: https://zenodo.org/api/records/19485190
+- rel: describedby
+  title: Format evidence
+  url: https://zenodo.org/records/19485190
+- rel: describedby
+  title: Access evidence
+  url: https://zenodo.org/api/records/19485190/files/drivers_forest_loss_1km_2001_2025_v1_3.tif/content
+- rel: describedby
+  title: Reuse terms evidence
+  url: https://doi.org/10.5281/zenodo.19485190
+- rel: describedby
+  title: Provider methods paper
+  url: https://doi.org/10.1088/1748-9326/add606
+citation:
+  authors:
+  - family: Sims
+    given: Michelle
+  - family: Stanimirova
+    given: Radost
+  - family: Raichuk
+    given: Anton
+  - family: Neumann
+    given: Maxim
+  - family: Richter
+    given: Jessica
+  - family: Follett
+    given: Forrest
+  - family: MacCarthy
+    given: James
+  - family: Lister
+    given: Kristine
+  - family: Randle
+    given: Christopher
+  - family: Sloat
+    given: Lindsey
+  - family: Esipova
+    given: Elena
+  - family: Jupiter
+    given: Jaelah
+  - family: Stanton
+    given: Charlotte
+  - family: Morris
+    given: Dan
+  - family: Slay
+    given: Christy Melhart
+  - family: Purves
+    given: Drew
+  - family: Harris
+    given: Nancy
+  date: '2026-04-29'
+  title: Global drivers of forest loss at 1 km resolution
+  publisher: Zenodo
+  url: https://doi.org/10.5281/zenodo.19485190

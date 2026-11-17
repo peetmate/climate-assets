@@ -6,8 +6,8 @@ extensions:
 id: global-dataset-of-7-billion-individuals-with-socio-economic-characteristics
 title: A global dataset of 7 billion individuals with socio-economic characteristics
 description: GLOPOP-S represents 7,335,881,094 synthetic individuals in 1,999,227,130 households in 2015. Files
-  are grouped by country and Global Data Lab subnational region. Synthesised attributes describe the modelled population
-  and do not identify surveyed people.
+  are grouped by country and Global Data Lab subnational region. Synthesised attributes describe the modelled
+  population and do not identify surveyed people.
 resource_type: dataset
 keywords:
 - global
@@ -17,7 +17,7 @@ cdh:
   domain:
   - socioeconomic
 created: '2026-11-13'
-updated: '2026-11-16'
+updated: '2026-11-17'
 doi: 10.7910/DVN/KJC3RH
 version: '4.5'
 access: public
@@ -32,15 +32,23 @@ citation:
   date: '2023'
   publisher: Harvard Dataverse
   url: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/KJC3RH&version=4.5
-note: Version 4.5 is the November 2024 release of the 2015 population. Cite the dataset and the accompanying Scientific
-  Data article. The DOI landing page also lists later releases with different reference years. Use the versioned
-  file inventory below for additional regions.
+note: Version 4.5 is the November 2024 release of the 2015 population. Cite the dataset and the accompanying
+  Scientific Data article. The DOI landing page also lists later releases with different reference years. Use
+  the versioned file inventory below for additional regions. Inventory audit checked 2026-11-17. GLOPOP-S v4.5
+  uses gzip-compressed regional binary files. Decode the 15 fields with the provider reader before writing
+  Parquet. CC BY 4.0 allows sharing and adaptation. Credit the creators, link the licence and identify changes.
+  The assessed release contains 1,746 files. Stored download size is 5,140,304,381 bytes. Published deposit,
+  including any documentation and archives. Archive members are not counted separately. These are provider
+  download volumes; converted storage requirements remain unknown. Licensing rights-holder identity is unknown.
+  Anonymous download of the 1,633-byte Albania regional sample was verified. The archive-wide inventory includes
+  1,746 deposited files; the individual sample size recorded under data applies only to that regional file.
 data:
 - name: albania-region-albr208
-  description: Unrestricted gzip-compressed regional file synthpop_ALBr208.dat.gz for Albania, Global Data Lab region
-    ALBr208, 2015. Decompress, read little-endian int32 values and reshape to (15, number_of_people), then transpose
-    so each row represents one synthetic person. The linked Python reader gives column names and codes. For example
-    the fifth column RURAL uses 1 for rural and 0 for urban. HID is unique only within the region.
+  description: Unrestricted gzip-compressed regional file synthpop_ALBr208.dat.gz for Albania, Global Data
+    Lab region ALBr208, 2015. Decompress, read little-endian int32 values and reshape to (15, number_of_people),
+    then transpose so each row represents one synthetic person. The linked Python reader gives column names
+    and codes. For example the fifth column RURAL uses 1 for rural and 0 for urban. HID is unique only within
+    the region.
   media_type: application/gzip
   file_size: 1633
   locations:
@@ -59,6 +67,15 @@ additional_links:
 - rel: cite-as
   title: Accompanying article, Ton and colleagues (2024)
   url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11458621/fullTextXML
+- rel: describedby
+  title: Delivered format and release documentation
+  url: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/KJC3RH&version=4.5
+- rel: license
+  title: Provider redistribution terms
+  url: https://doi.org/10.7910/DVN/KJC3RH
+- rel: via
+  title: Reviewed data access route
+  url: https://dataverse.harvard.edu/api/access/datafile/10483308
 contact:
 - organization: Vrije Universiteit Amsterdam
   name: Marijn Ton
@@ -66,7 +83,7 @@ contact:
   - producer
   - point-of-contact
   url: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/KJC3RH&version=4.5
-- organization: CGIAR Climate Data Hub
+- organization: Climate Assets inventory
   roles:
   - maintainer
   url: https://github.com/peetmate/climate-assets

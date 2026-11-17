@@ -18,14 +18,14 @@ cdh:
   domain:
   - climate
 created: '2026-11-13'
-updated: '2026-11-16'
+updated: '2026-11-17'
 doi: 10.5281/zenodo.15473689
 version: '1.0'
 license: CC-BY-NC-SA-4.0
 access: restricted
 access_note: Request the files using the Zenodo form. Supply your name, affiliation and intended non-commercial
-  use. The deposit recommends an institutional email. The public record describes the data and accepts
-  requests. Individual file downloads require access granted by the provider.
+  use. The deposit recommends an institutional email. The public record describes the data and accepts requests.
+  Individual file downloads require access granted by the provider.
 data:
 - name: primary
   locations:
@@ -42,12 +42,23 @@ additional_links:
 - rel: via
   title: Data producer’s access and methods page
   url: https://www.fathom.global/academic-papers/burger-fathoms-extreme-rainfall-dataset/
-note: Select a grid cell, duration and return period to report a modelled rainfall intensity in mm/h.
-  For a six-hour event, multiplying the intensity by six gives rainfall depth in mm. The paper's
-  regional comparison statistics and map colours do not identify an exact intensity in the deposited
-  grid. The model spans 60° S to 80° N.
+note: Select a grid cell, duration and return period to report a modelled rainfall intensity in mm/h. For a
+  six-hour event, multiplying the intensity by six gives rainfall depth in mm. The paper's regional comparison
+  statistics and map colours do not identify an exact intensity in the deposited grid. The model spans 60°
+  S to 80° N. Inventory audit checked 2026-11-17. The release documents gridded rainfall intensities. File
+  access requires approval and the storage layout is unverified. CC BY-NC-SA 4.0 permits non-commercial sharing
+  with credit and share-alike for adaptations. Access to the original files requires approval. The assessed
+  release contains 5 storm durations. Total stored download size is unknown. Durations of 1, 3, 6, 12 and 24
+  hours. Zenodo restricts the files and exposes no verified byte or file total. These are provider download
+  volumes; converted storage requirements remain unknown. Licensing rights-holder identity is unknown. Physical
+  file count and storage format remain unknown until the provider shares a manifest or grants access. The five
+  durations do not imply five files. Approval is an acceptable documented access outcome for this inventory.
 spatial:
-  bbox: [-180, -60, 180, 80]
+  bbox:
+  - -180
+  - -60
+  - 180
+  - 80
   geography:
   - world
   crs: EPSG:4326
@@ -58,7 +69,7 @@ contact:
   name: Jannis Hoch
   email: j.hoch@fathom.global
   url: https://zenodo.org/records/15473689
-- organization: CGIAR Climate Data Hub
+- organization: Climate Assets inventory
   roles:
   - maintainer
   url: https://github.com/peetmate/climate-assets

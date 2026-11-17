@@ -72,11 +72,6 @@ destination-earth-vizlab,data,yes,Which stable URL serves the resource or accept
 destination-earth-vizlab,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",login,https://vizlab.destine.eu/
 destination-earth-vizlab,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://vizlab.destine.eu/
 destination-earth-vizlab,citation,yes,What DOI or preferred citation identifies this resource?,,https://vizlab.destine.eu/
-digital-earth-africa-aws-open-data,version,yes,Which release or version does this entry describe?,,https://registry.opendata.aws/collab/deafrica/
-digital-earth-africa-aws-open-data,license,yes,Which reuse licence and terms apply to this specific resource?,,https://registry.opendata.aws/collab/deafrica/
-digital-earth-africa-aws-open-data,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://registry.opendata.aws/collab/deafrica/
-digital-earth-africa-aws-open-data,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://registry.opendata.aws/collab/deafrica/
-digital-earth-africa-aws-open-data,citation,yes,What DOI or preferred citation identifies this resource?,,https://registry.opendata.aws/collab/deafrica/
 digital-gender-gaps-dashboard,version,yes,Which release or version does this entry describe?,,https://digitalgendergaps.org/dashboard/
 digital-gender-gaps-dashboard,license,yes,Which reuse licence and terms apply to this specific resource?,,https://digitalgendergaps.org/dashboard/
 digital-gender-gaps-dashboard,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://digitalgendergaps.org/dashboard/
@@ -124,14 +119,6 @@ un-spider-data-sources,data,yes,Which stable URL serves the resource or accepts 
 un-spider-data-sources,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://www.un-spider.org/links-and-resources/data-sources
 un-spider-data-sources,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.un-spider.org/links-and-resources/data-sources
 un-spider-data-sources,citation,yes,What DOI or preferred citation identifies this resource?,,https://www.un-spider.org/links-and-resources/data-sources
-unfccc-ghg-data-interface,version,yes,Which release or version does this entry describe?,,https://data.unfccc.int/
-unfccc-ghg-data-interface,license,yes,Which reuse licence and terms apply to this specific resource?,,https://data.unfccc.int/
-unfccc-ghg-data-interface,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://data.unfccc.int/
-unfccc-ghg-data-interface,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://data.unfccc.int/
-unfccc-ghg-data-interface,citation,yes,What DOI or preferred citation identifies this resource?,,https://data.unfccc.int/
-wfp-vam-humanitariandatacube-stac,license.special terms,no,Do special terms allow wider reuse of WFP's catalogue metadata than the published WFP default? The default terms identify WFP as the granting organization. No catalogue-specific grant was found at the STAC root or in its OpenAPI description.,,https://api.earthobservation.vam.wfp.org/stac/
-wfp-vam-humanitariandatacube-stac,citation,yes,What preferred citation or stable identifier should users give for the WFP Humanitarian Data Cube catalogue service?,,https://api.earthobservation.vam.wfp.org/stac/
-wfp-vam-humanitariandatacube-stac,version,yes,"Does the Humanitarian Data Cube catalogue use a service release identifier, or should it be cited by access date?",,https://api.earthobservation.vam.wfp.org/stac/
 what-climate-smart-agriculture-means-for-smallholder-farmers,license,yes,Which reuse licence and terms apply to this specific resource?,proprietary,https://www.mckinsey.com/industries/agriculture/our-insights/what-climate-smart-agriculture-means-for-smallholder-farmers
 what-climate-smart-agriculture-means-for-smallholder-farmers,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.mckinsey.com/industries/agriculture/our-insights/what-climate-smart-agriculture-means-for-smallholder-farmers
 what-climate-smart-agriculture-means-for-smallholder-farmers,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://www.mckinsey.com/industries/agriculture/our-insights/what-climate-smart-agriculture-means-for-smallholder-farmers
@@ -148,7 +135,6 @@ world-bank-data360-climate-atlas,license,yes,Which reuse licence and terms apply
 world-bank-data360-climate-atlas,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://data360.worldbank.org/en/atlas/climate
 world-bank-data360-climate-atlas,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://data360.worldbank.org/en/atlas/climate
 world-bank-data360-climate-atlas,citation,yes,What DOI or preferred citation identifies this resource?,2026-05,https://data360.worldbank.org/en/atlas/climate
-wri-drivers-of-forest-loss-1km,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://zenodo.org/records/19485190
 adaptation-finance-power-bi-dashboard,version,yes,Which release or version does this entry describe?,,https://app.powerbi.com/view?r=eyJrIjoiNzkyMGNjYjAtMzZhMi00OTRhLWFlNjEtYjRhMDQ5MWNlNGIzIiwidCI6IjJhNmMxMmFkLTQwNmEtNGYzMy1iNjg2LWY3OGZmNTgyMjIwOCIsImMiOjh9
 adaptation-finance-power-bi-dashboard,license,yes,Which reuse licence and terms apply to this specific resource?,,https://app.powerbi.com/view?r=eyJrIjoiNzkyMGNjYjAtMzZhMi00OTRhLWFlNjEtYjRhMDQ5MWNlNGIzIiwidCI6IjJhNmMxMmFkLTQwNmEtNGYzMy1iNjg2LWY3OGZmNTgyMjIwOCIsImMiOjh9
 adaptation-finance-power-bi-dashboard,data,yes,Which stable URL serves the resource or accepts access requests?,,https://app.powerbi.com/view?r=eyJrIjoiNzkyMGNjYjAtMzZhMi00OTRhLWFlNjEtYjRhMDQ5MWNlNGIzIiwidCI6IjJhNmMxMmFkLTQwNmEtNGYzMy1iNjg2LWY3OGZmNTgyMjIwOCIsImMiOjh9
@@ -174,12 +160,8 @@ unfccc-adaptation-country-portal,data,yes,Which stable URL serves the resource o
 unfccc-adaptation-country-portal,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://unfccc.int/adaptation_country_portal
 unfccc-adaptation-country-portal,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://unfccc.int/adaptation_country_portal
 unfccc-adaptation-country-portal,citation,yes,What DOI or preferred citation identifies this resource?,,https://unfccc.int/adaptation_country_portal
-annual-global-gridded-livestock-mapping-1961-2021,contact.licensor,yes,Which of the named depositors or their institutions grants the CC BY 4.0 licence for the v3 data? The deposit identifies creators and licence but does not separately name a rights holder.,,https://doi.org/10.5281/zenodo.17128483
 eth-cocoa-suitability-map,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://arxiv.org/abs/2206.06119
 eth-cocoa-suitability-map,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://arxiv.org/abs/2206.06119
-cropgrids-global-crop-dataset,spatial / temporal,no,"Verify coverage and resolution against dataset documentation. Card clues: Global, reference year 2020, 0.05 degrees (~5.6 km at equator)",,https://doi.org/10.6084/m9.figshare.22491997.v9
-cropgrids-global-crop-dataset,variables,no,"Confirm variable names, definitions and units in the data dictionary.",,https://doi.org/10.6084/m9.figshare.22491997.v9
-cropgrids-global-crop-dataset,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://doi.org/10.6084/m9.figshare.22491997.v9
 global-livestock-dynamics,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://landcarbonlab.org/insights/global-livestock-dynamics/
 global-livestock-dynamics,data,yes,Which stable URL serves the resource or accepts access requests?,,https://landcarbonlab.org/insights/global-livestock-dynamics/
 global-livestock-dynamics,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://landcarbonlab.org/insights/global-livestock-dynamics/
@@ -192,8 +174,6 @@ global-pasture-watch,access,yes,"How can a user obtain this resource? If access 
 global-pasture-watch,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://landcarbonlab.org/about-global-pasture-watch/
 global-pasture-watch,citation,yes,What DOI or preferred citation identifies this resource?,2024,https://landcarbonlab.org/about-global-pasture-watch/
 global-spatially-explicit-crop-water-consumption,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.nature.com/articles/s43016-025-01231-x
-harveststat-africa,contact.licensor,yes,"Who made the CC0 dedication for the Dryad release, and how does the tagged repository README’s MIT statement apply to the mirrored CSV? The checksum confirms file identity.",,https://doi.org/10.5061/dryad.vq83bk42w
-scientific-data-s41597-025-05257-5,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://zenodo.org/records/14961637
 spatial-frameworks-for-robust-estimation-of-yield-gaps,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.nature.com/articles/s43016-021-00365-y
 terra-i-plus,version,yes,Which release or version does this entry describe?,,https://www.terra-iplus.org/
 terra-i-plus,license,yes,Which reuse licence and terms apply to this specific resource?,proprietary,https://www.terra-iplus.org/
@@ -246,9 +226,6 @@ buildforward-precipitation-methodology,data,yes,Which stable URL serves the reso
 buildforward-precipitation-methodology,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://data.buildforward.io/docs/methodology_buildforward_precip.pdf
 buildforward-precipitation-methodology,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://data.buildforward.io/docs/methodology_buildforward_precip.pdf
 buildforward-precipitation-methodology,citation,yes,What DOI or preferred citation identifies this resource?,,https://data.buildforward.io/docs/methodology_buildforward_precip.pdf
-burger-global-sub-daily-idf-data,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://zenodo.org/records/15473689
-cra5-dataset-github,license,yes,"Which licence applies to DOI revision ff67f4d, whose dataset card specifies CDLA-Sharing-1.0 whereas the authors’ article and later card specify CC BY 4.0?",,https://doi.org/10.57967/hf/8429
-cra5-dataset-github,contact.licensor,yes,Which named party administers the licence for DOI revision ff67f4d and can resolve its conflicting reuse terms?,,https://doi.org/10.57967/hf/8429
 fews-net-software-tool,version,yes,Which release or version does this entry describe?,,https://earlywarning.usgs.gov/fews/software-tools/26/
 fews-net-software-tool,license,yes,Which reuse licence and terms apply to this specific resource?,public domain,https://earlywarning.usgs.gov/fews/software-tools/26/
 fews-net-software-tool,data,yes,Which stable URL serves the resource or accepts access requests?,,https://earlywarning.usgs.gov/fews/software-tools/26/
@@ -319,18 +296,11 @@ a-new-class-of-climate-hazard-metrics-ten-fold-increase-extreme-heat-europe,data
 a-new-class-of-climate-hazard-metrics-ten-fold-increase-extreme-heat-europe,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://www.sciencedirect.com/science/article/pii/S221209472600006X
 a-new-class-of-climate-hazard-metrics-ten-fold-increase-extreme-heat-europe,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.sciencedirect.com/science/article/pii/S221209472600006X
 a-new-class-of-climate-hazard-metrics-ten-fold-increase-extreme-heat-europe,citation,yes,What DOI or preferred citation identifies this resource?,2026,https://www.sciencedirect.com/science/article/pii/S221209472600006X
-global-gridded-multi-temporal-datasets-human-population-distribution-modelling,contact.licensor,yes,Which rights contact should be named for the multi-licence collection and third-party derivatives?,,https://doi.org/10.5258/SOTON/WP00772
 worldpop-hub-population-dataset-category,version,yes,Which release or version does this entry describe?,,https://hub.worldpop.org/project/categories?id=21
 worldpop-hub-population-dataset-category,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://hub.worldpop.org/project/categories?id=21
 worldpop-hub-population-dataset-category,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://hub.worldpop.org/project/categories?id=21
 worldpop-hub-population-dataset-category,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://hub.worldpop.org/project/categories?id=21
 worldpop-hub-population-dataset-category,citation,yes,What DOI or preferred citation identifies this resource?,,https://hub.worldpop.org/project/categories?id=21
-zenodo-record-14443334,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://zenodo.org/records/14443334
-global-dataset-of-7-billion-individuals-with-socio-economic-characteristics,contact.licensor,yes,"Version 4.5 identifies Marijn Ton as author, depositor and dataset contact. Who holds or administers the licensing rights?",,https://doi.org/10.7910/DVN/KJC3RH
-spatially-explicit-harmonized-global-dataset-of-critical-infrastructure,spatial / temporal,no,"Verify coverage and resolution against dataset documentation. Card clues: Global, spatially-explicit vector (VGI/OSM-based)",,https://doi.org/10.5281/zenodo.4957647
-spatially-explicit-harmonized-global-dataset-of-critical-infrastructure,variables,no,"Confirm variable names, definitions and units in the data dictionary.",,https://doi.org/10.5281/zenodo.4957647
-spatially-explicit-harmonized-global-dataset-of-critical-infrastructure,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://doi.org/10.5281/zenodo.4957647
-downscaled-gridded-global-dataset-gdp-per-capita-ppp-1990-2022,contact.licensor,yes,The Zenodo deposit identifies the three creators and CC BY 4.0. Who is authorised to act as licensor for this release?,,https://doi.org/10.5281/zenodo.16741980
 africa-agriculture-watch-aagwa,version,yes,Which release or version does this entry describe?,,https://www.aagwa.org/
 africa-agriculture-watch-aagwa,license,yes,Which reuse licence and terms apply to this specific resource?,proprietary,https://www.aagwa.org/
 africa-agriculture-watch-aagwa,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.aagwa.org/
@@ -389,8 +359,6 @@ global-assessment-population-exposure-multiple-climate-related-hazards,data,yes,
 global-assessment-population-exposure-multiple-climate-related-hazards,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(25)00173-1/fulltext
 global-assessment-population-exposure-multiple-climate-related-hazards,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(25)00173-1/fulltext
 global-assessment-population-exposure-multiple-climate-related-hazards,citation,yes,What DOI or preferred citation identifies this resource?,2025-08-01,https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(25)00173-1/fulltext
-gdpcir-downscaled-projections-preserving-extremes,version,yes,Is there a version label for the full collection across all three licences? The linked NESM3 store is v1.1.,,https://planetarycomputer.microsoft.com/dataset/group/cil-gdpcir
-gdpcir-downscaled-projections-preserving-extremes,contact.licensor,yes,Which institutions administer reuse rights for each source model? The STAC item supplies a model-specific licence link.,,https://planetarycomputer.microsoft.com/dataset/group/cil-gdpcir
 google-flood-hub,version,yes,Which release or version does this entry describe?,,https://sites.research.google/floods/l/0/0/3
 google-flood-hub,license,yes,Which reuse licence and terms apply to this specific resource?,proprietary,https://sites.research.google/floods/l/0/0/3
 google-flood-hub,data,yes,Which stable URL serves the resource or accepts access requests?,,https://sites.research.google/floods/l/0/0/3
@@ -410,15 +378,11 @@ fao-soilfer-cropsuit,data,yes,Which stable URL serves the resource or accepts ac
 fao-soilfer-cropsuit,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://data.apps.fao.org/soilfer/cropsuit
 fao-soilfer-cropsuit,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://data.apps.fao.org/soilfer/cropsuit
 fao-soilfer-cropsuit,citation,yes,What DOI or preferred citation identifies this resource?,,https://data.apps.fao.org/soilfer/cropsuit
-merge-dataset-climate-disaster-impacts-human-vulnerability,contact.licensor,yes,Who administers the MERGE v1 release-level licence? UCLouvain publishes separate EM-DAT registration and commercial permission routes.,,https://zenodo.org/records/16837695
 wfp-document-0000172936,license,yes,Which reuse licence and terms apply to this specific resource?,,https://docs.wfp.org/api/documents/WFP-0000172936/download/
 wfp-document-0000172936,data,yes,Which stable URL serves the resource or accepts access requests?,,https://docs.wfp.org/api/documents/WFP-0000172936/download/
 wfp-document-0000172936,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://docs.wfp.org/api/documents/WFP-0000172936/download/
 wfp-document-0000172936,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://docs.wfp.org/api/documents/WFP-0000172936/download/
 wfp-document-0000172936,citation,yes,What DOI or preferred citation identifies this resource?,,https://docs.wfp.org/api/documents/WFP-0000172936/download/
-projections-of-future-agricultural-management-and-crop-choice-under-ssps,spatial / temporal,no,"Verify coverage and resolution against dataset documentation. Card clues: Global (197 countries), future projections under SSP scenarios, country-level, 10 crop groups",,https://doi.org/10.6084/m9.figshare.28838930.v1
-projections-of-future-agricultural-management-and-crop-choice-under-ssps,variables,no,"Confirm variable names, definitions and units in the data dictionary.",,https://doi.org/10.6084/m9.figshare.28838930.v1
-projections-of-future-agricultural-management-and-crop-choice-under-ssps,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://doi.org/10.6084/m9.figshare.28838930.v1
 ai4ch4-ai-for-methane,version,yes,Which release or version does this entry describe?,,https://ai4ch4.com/
 ai4ch4-ai-for-methane,license,yes,Which reuse licence and terms apply to this specific resource?,,https://ai4ch4.com/
 ai4ch4-ai-for-methane,data,yes,Which stable URL serves the resource or accepts access requests?,,https://ai4ch4.com/
@@ -522,10 +486,6 @@ harmonized-in-situ-datasets-agricultural-land-use-tropical-countries,license,yes
 harmonized-in-situ-datasets-agricultural-land-use-tropical-countries,data,yes,Which stable URL serves the resource or accepts access requests?,,https://essd.copernicus.org/articles/13/5951/2021/
 harmonized-in-situ-datasets-agricultural-land-use-tropical-countries,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://essd.copernicus.org/articles/13/5951/2021/
 harmonized-in-situ-datasets-agricultural-land-use-tropical-countries,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://essd.copernicus.org/articles/13/5951/2021/
-jecam-harmonized-in-situ-crop-type-dataset-cirad-dataverse,data,yes,"Can CIRAD supply a stable download of the full V2 archive BD_JECAM_CIRAD_2021.tar.gz (27,074 polygons)? The documented WorldCereal V2 subset covers 18,329 rows across five countries in 2016–2019.",,https://dataverse.cirad.fr/dataset.xhtml?persistentId=doi:10.18167/DVN1/P7OLAP
-jecam-harmonized-in-situ-crop-type-dataset-cirad-dataverse,contact.licensor,yes,Which person or organization granted CC BY 4.0 for the full V2 archive? Audrey Jolivot is the named correspondent.,,https://dataverse.cirad.fr/dataset.xhtml?persistentId=doi:10.18167/DVN1/P7OLAP
-helmets-labeling-crops-kenya-crop-type-dataset,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://zenodo.org/records/15133324
-high-resolution-and-bias-corrected-cmip5-projections,contact.licensor,yes,WDCC identifies authors and publishes CC-BY-4.0. Which party administers the data licence?,,https://doi.org/10.26050/WDCC/CCAFS-CMIP5_downscaling
 investment-trends-and-evaluation-gaps-in-rainwater-harvesting-in-sub-saharan-african-drylands,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://www.sciencedirect.com/science/article/pii/S0378377426001460
 investment-trends-and-evaluation-gaps-in-rainwater-harvesting-in-sub-saharan-african-drylands,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.sciencedirect.com/science/article/pii/S0378377426001460
 investment-trends-and-evaluation-gaps-in-rainwater-harvesting-in-sub-saharan-african-drylands,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",paywall,https://www.sciencedirect.com/science/article/pii/S0378377426001460
@@ -538,7 +498,6 @@ olmoearth,contact.licensor,yes,Who holds or administers licensing rights for thi
 olmoearth,citation,yes,What DOI or preferred citation identifies this resource?,2025-11-05,https://www.datocms-assets.com/64837/1762355216-olmoearth_v2.pdf
 cordex-ml-benchmark-repository,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://github.com/WCRP-CORDEX/ml-benchmark
 cordex-ml-benchmark-repository,citation,yes,What DOI or preferred citation identifies this resource?,,https://github.com/WCRP-CORDEX/ml-benchmark
-gmia-next-global-map-of-irrigated-areas,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://zenodo.org/records/17627111
 youth-lead-dietary-emissions-seniors-drive-growth,license,yes,Which reuse licence and terms apply to this specific resource?,,https://www.nature.com/articles/s43016-026-01383-4
 youth-lead-dietary-emissions-seniors-drive-growth,data,yes,Which stable URL serves the resource or accepts access requests?,,https://www.nature.com/articles/s43016-026-01383-4
 youth-lead-dietary-emissions-seniors-drive-growth,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",paywall,https://www.nature.com/articles/s43016-026-01383-4
@@ -546,7 +505,6 @@ youth-lead-dietary-emissions-seniors-drive-growth,contact.licensor,yes,Who holds
 climateserv-2,license,yes,Which reuse licence and terms apply to this specific resource?,MIT,https://github.com/SERVIR/ClimateSERV2
 climateserv-2,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://github.com/SERVIR/ClimateSERV2
 climateserv-2,citation,yes,What DOI or preferred citation identifies this resource?,2024-06,https://github.com/SERVIR/ClimateSERV2
-global-1km-gridded-household-consumption-ppp,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://zenodo.org/records/21122277
 lira-ai,license,yes,Which reuse licence and terms apply to this specific resource?,MIT,https://github.com/jemsethio/LIRA-AI
 lira-ai,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://github.com/jemsethio/LIRA-AI
 lira-ai,citation,yes,What DOI or preferred citation identifies this resource?,2026,https://github.com/jemsethio/LIRA-AI
@@ -557,7 +515,6 @@ climate-risk-commons-ocrf,data,yes,Which stable URL serves the resource or accep
 climate-risk-commons-ocrf,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",request,https://riskthinking.org/
 climate-risk-commons-ocrf,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://riskthinking.org/
 climate-risk-commons-ocrf,citation,yes,What DOI or preferred citation identifies this resource?,2026,https://riskthinking.org/
-quasi-global-downscaled-cmip6-climate-impact,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://zenodo.org/records/21915837
 fews-net-data-explorer,version,yes,Which release or version does this entry describe?,,https://fdw.fews.net/data-explorer/visualizations
 fews-net-data-explorer,license,yes,Which reuse licence and terms apply to this specific resource?,,https://fdw.fews.net/data-explorer/visualizations
 fews-net-data-explorer,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://fdw.fews.net/data-explorer/visualizations
@@ -594,7 +551,6 @@ geoaquacrop,citation,yes,What DOI or preferred citation identifies this resource
 agwise-data-sourcing,citation,yes,What DOI or preferred citation identifies this resource?,2026,https://github.com/byliz-ai/data_sourcing
 global-mobile-network-coverage-1km-1999-2030,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://arxiv.org/abs/2609.11320
 global-mobile-network-coverage-1km-1999-2030,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://arxiv.org/abs/2609.11320
-forty-global-forest-typology-10m,attribution,yes,Which exact credit line should users reproduce for ForTy 2020 v1? The Earth Engine terms still contain a placeholder. The Figshare deposit already supplies a separate formal citation.,,https://developers.google.com/earth-engine/datasets/catalog/projects_nature-trace_assets_forest_typology_forest_typology_2020_v1_0_collection
 beyond-tree-cover-mapping-the-worlds-forest-types,license,yes,Which reuse licence and terms apply to this specific resource?,,https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/
 beyond-tree-cover-mapping-the-worlds-forest-types,data,yes,Which stable URL serves the resource or accepts access requests?,,https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/
 beyond-tree-cover-mapping-the-worlds-forest-types,access,yes,"How can a user obtain this resource? If access is controlled, which route and conditions apply?",open,https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/
@@ -602,9 +558,62 @@ beyond-tree-cover-mapping-the-worlds-forest-types,contact.licensor,yes,Who holds
 beyond-tree-cover-mapping-the-worlds-forest-types,citation,yes,What DOI or preferred citation identifies this resource?,2026-10-22,https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/
 ocelot-planetary-scale-species-distribution-modeling,license,yes,Which reuse licence and terms apply to this specific resource?,CC-BY-4.0,https://arxiv.org/abs/2611.00284
 ocelot-planetary-scale-species-distribution-modeling,contact.licensor,yes,Who holds or administers licensing rights for this release?,,https://arxiv.org/abs/2611.00284
-projections-of-future-agricultural-management-and-crop-choice-under-ssps,variables.interval_bounds,no,"Are Rh_Cereal_lb and Rh_Cereal_ub labelled or calculated as intended for Armenia, 2025, SSP2-4.5? The reported lower bound exceeds the upper bound.",,https://doi.org/10.6084/m9.figshare.28838930.v1
-merge-dataset-climate-disaster-impacts-human-vulnerability,access.v1 archive,no,"Is the complete original v1 archive available to new researchers through an authorised route, including the historical EM-DAT fields under their own terms? V2 provides the verified unchanged IDMC records.",,https://zenodo.org/records/16837695
 forest-data-partnership-commodity-models,access.sample,no,"Can the producer confirm MD5 a62fc3507d96706216346266407e17fe for the original 2026a cocoa/2024/lng_-6_lat_4.tif, or provide an anonymously accessible source sample? A downloaded public mirror tile matches that mirror’s checksum. Google’s own object-metadata request requires a billing project.",,https://developers.google.com/earth-engine/datasets/publisher/forestdatapartnership
 trends-earth-qgis,license,yes,Which software licence applies to redistribution of the QGIS 2.3.8 ZIP? The guide specifies GPL-2.0-or-later while LDMP/LICENSE in the distributed ZIP is Apache-2.0.,,https://plugins.qgis.org/plugins/LDMP/version/2.3.8/
 trends-earth-qgis,contact.licensor,yes,Which party administers the applicable software licence for this distribution? Conservation International is identified as producer.,,https://github.com/ConservationInternational/trends.earth/tree/v2.3.8
 ukceh-global-multi-index-drought,distribution size,no,"The EIDC landing page quotes approximately 111.8Gb. CEDA lists 1,286,676,254,727 bytes across 13,501 files on 17 November 2026. What scope does the landing-page estimate describe?",,https://data.ceda.ac.uk/eidc/deposits01/f5ce92b0-03e8-4719-82ff-c62e6ebe927b?json
+digital-earth-africa-aws-open-data,version,no,Which release or version does this entry describe?,,https://registry.opendata.aws/collab/deafrica/
+digital-earth-africa-aws-open-data,license,no,Which reuse licence and terms apply to this specific resource?,,https://registry.opendata.aws/collab/deafrica/
+digital-earth-africa-aws-open-data,contact.licensor,no,Who holds or administers licensing rights for this release?,,https://registry.opendata.aws/collab/deafrica/
+digital-earth-africa-aws-open-data,citation,no,What DOI or preferred citation identifies this resource?,,https://registry.opendata.aws/collab/deafrica/
+digital-earth-africa-aws-open-data,footprint,no,Is a dated deduplicated inventory of files and stored bytes available across all 17 product listings?,,https://registry.opendata.aws/collab/deafrica/
+unfccc-ghg-data-interface,version,no,Which release or version does this entry describe?,,https://data.unfccc.int/
+unfccc-ghg-data-interface,license,no,Which reuse licence and terms apply to this specific resource?,,https://data.unfccc.int/
+unfccc-ghg-data-interface,contact.licensor,no,Who holds or administers licensing rights for this release?,,https://data.unfccc.int/
+unfccc-ghg-data-interface,citation,no,What DOI or preferred citation identifies this resource?,,https://data.unfccc.int/
+unfccc-ghg-data-interface,footprint,no,Is a dated bulk release with stored byte sizes and file count available?,,https://ghgdi.unfccc.int/convention/time-series/
+wfp-vam-humanitariandatacube-stac,license.special terms,no,Do special terms allow wider reuse of WFP's catalogue metadata than the published WFP default? The default terms identify WFP as the granting organization. No catalogue-specific grant was found at the STAC root or in its OpenAPI description.,,https://api.earthobservation.vam.wfp.org/stac/
+wfp-vam-humanitariandatacube-stac,citation,no,What preferred citation or stable identifier should users give for the WFP Humanitarian Data Cube catalogue service?,,https://api.earthobservation.vam.wfp.org/stac/
+wfp-vam-humanitariandatacube-stac,version,no,"Does the Humanitarian Data Cube catalogue use a service release identifier, or should it be cited by access date?",,https://api.earthobservation.vam.wfp.org/stac/
+wfp-vam-humanitariandatacube-stac,footprint,no,Is there a dated deduplicated file manifest and aggregate stored byte total across all 168 collections?,,https://api.earthobservation.vam.wfp.org/stac/
+wri-drivers-of-forest-loss-1km,contact.licensor,no,Who holds or administers licensing rights for this release?,,https://zenodo.org/records/19485190
+annual-global-gridded-livestock-mapping-1961-2021,contact.licensor,no,Which of the named depositors or their institutions grants the CC BY 4.0 licence for the v3 data? The deposit identifies creators and licence but does not separately name a rights holder.,,https://doi.org/10.5281/zenodo.17128483
+cropgrids-global-crop-dataset,contact.licensor,no,Who holds or administers licensing rights for this release?,,https://doi.org/10.6084/m9.figshare.22491997.v9
+harveststat-africa,contact.licensor,no,Who made the CC0 dedication for Dryad release 12? The matching SHA-256 establishes the anonymous CSV’s deposit provenance.,,https://doi.org/10.5061/dryad.vq83bk42w
+harveststat-africa,license.mirror,no,Which terms cover GitHub-only files beyond the checksum-matched CC0 statistics CSV?,,https://github.com/HarvestStat/HarvestStat-Africa/blob/v1.2/README.md#license
+harveststat-africa,data.complete_release,no,Is a documented anonymous route available for all six Dryad release-12 files?,,https://datadryad.org/api/v2/versions/452999/files
+scientific-data-s41597-025-05257-5,contact.licensor,no,Who holds or administers licensing rights for this release?,,https://zenodo.org/records/14961637
+scientific-data-s41597-025-05257-5,license.components,no,"Does the deposit’s CC BY 4.0 grant cover redistribution of its GADM-derived companion boundaries, and what original-source obligations apply?",,https://zenodo.org/api/records/14961637/files/readme.txt/content
+burger-global-sub-daily-idf-data,contact.licensor,no,Who holds or administers licensing rights for this release?,,https://zenodo.org/records/15473689
+burger-global-sub-daily-idf-data,data.format,no,Which file formats and storage layouts are supplied in v1.0?,,https://zenodo.org/records/15473689
+burger-global-sub-daily-idf-data,footprint,no,Could the provider supply a v1.0 manifest with file count and stored byte sizes?,,https://zenodo.org/records/15473689
+cra5-dataset-github,license,no,"Which licence applies to DOI revision ff67f4d, whose dataset card specifies CDLA-Sharing-1.0 whereas the authors’ article and later card specify CC BY 4.0?",,https://doi.org/10.57967/hf/8429
+cra5-dataset-github,contact.licensor,no,Which named party administers the licence for DOI revision ff67f4d and can resolve its conflicting reuse terms?,,https://doi.org/10.57967/hf/8429
+global-gridded-multi-temporal-datasets-human-population-distribution-modelling,contact.licensor,no,Which rights contact should be named for the multi-licence collection and third-party derivatives?,,https://doi.org/10.5258/SOTON/WP00772
+global-gridded-multi-temporal-datasets-human-population-distribution-modelling,footprint,no,Is there a versioned complete v1.0 file manifest with counts and stored byte sizes?,,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12444015/fullTextXML
+global-gridded-multi-temporal-datasets-human-population-distribution-modelling,data.format,no,Which released covariates have public cloud-optimised delivery routes?,,https://hub.worldpop.org/geodata/summary?id=62160
+zenodo-record-14443334,contact.licensor,no,Who holds or administers licensing rights for this release?,,https://zenodo.org/records/14443334
+global-dataset-of-7-billion-individuals-with-socio-economic-characteristics,contact.licensor,no,"Version 4.5 identifies Marijn Ton as author, depositor and dataset contact. Who holds or administers the licensing rights?",,https://doi.org/10.7910/DVN/KJC3RH
+spatially-explicit-harmonized-global-dataset-of-critical-infrastructure,contact.licensor,no,Who holds or administers licensing rights for this release?,,https://doi.org/10.5281/zenodo.4957647
+downscaled-gridded-global-dataset-gdp-per-capita-ppp-1990-2022,contact.licensor,no,The Zenodo deposit identifies the three creators and CC BY 4.0. Who is authorised to act as licensor for this release?,,https://doi.org/10.5281/zenodo.16741980
+gdpcir-downscaled-projections-preserving-extremes,version,no,Is there a version label for the full collection across all three licences? The linked NESM3 store is v1.1.,,https://planetarycomputer.microsoft.com/dataset/group/cil-gdpcir
+gdpcir-downscaled-projections-preserving-extremes,contact.licensor,no,Which institutions administer reuse rights for each source model? The STAC item supplies a model-specific licence link.,,https://planetarycomputer.microsoft.com/dataset/group/cil-gdpcir
+merge-dataset-climate-disaster-impacts-human-vulnerability,contact.licensor,no,Who administers the MERGE v1 release-level licence? UCLouvain publishes separate EM-DAT registration and commercial permission routes.,,https://zenodo.org/records/16837695
+merge-dataset-climate-disaster-impacts-human-vulnerability,access.v1 archive,no,"Is the complete original v1 archive available to new researchers through an authorised route, including the historical EM-DAT fields under their own terms? V2 provides the verified unchanged IDMC records.",,https://zenodo.org/records/16837695
+merge-dataset-climate-disaster-impacts-human-vulnerability,download inventory,no,Can the depositors supply the original v1 file manifest with sizes and a total stored byte count?,,https://zenodo.org/records/16837695
+projections-of-future-agricultural-management-and-crop-choice-under-ssps,contact.licensor,no,Who holds or administers licensing rights for this release?,,https://doi.org/10.6084/m9.figshare.28838930.v1
+projections-of-future-agricultural-management-and-crop-choice-under-ssps,variables.interval_bounds,no,"Are Rh_Cereal_lb and Rh_Cereal_ub labelled or calculated as intended for Armenia, 2025, SSP2-4.5? The reported lower bound exceeds the upper bound.",,https://doi.org/10.6084/m9.figshare.28838930.v1
+projections-of-future-agricultural-management-and-crop-choice-under-ssps,spatial / temporal,no,How do the README’s 197 countries/regions and 2020–2100 projection coverage relate to 243 areacode values and the 2019 baseline in predict_Rh_ssp245.csv?,,https://ndownloader.figshare.com/files/57943864
+projections-of-future-agricultural-management-and-crop-choice-under-ssps,variables.units,no,"What units and any scaling apply to farm size, fertilizer application, machinery and irrigation columns? Please clarify percentage wording against fractional crop-share values.",,https://ndownloader.figshare.com/files/57943864
+jecam-harmonized-in-situ-crop-type-dataset-cirad-dataverse,data,no,"Can CIRAD supply a stable download of the full V2 archive BD_JECAM_CIRAD_2021.tar.gz (27,074 polygons)? The documented WorldCereal V2 subset covers 18,329 rows across five countries in 2016–2019.",,https://dataverse.cirad.fr/dataset.xhtml?persistentId=doi:10.18167/DVN1/P7OLAP
+jecam-harmonized-in-situ-crop-type-dataset-cirad-dataverse,contact.licensor,no,Which person or organization granted CC BY 4.0 for the full V2 archive? Audrey Jolivot is the named correspondent.,,https://dataverse.cirad.fr/dataset.xhtml?persistentId=doi:10.18167/DVN1/P7OLAP
+jecam-harmonized-in-situ-crop-type-dataset-cirad-dataverse,download bytes,no,What are the stored byte sizes of Study_sites.kml and BD_JECAM_CIRAD_2021.tar.gz in the original V2.1 deposit?,,https://dataverse.cirad.fr/dataset.xhtml?persistentId=doi:10.18167/DVN1/P7OLAP&version=2.1
+helmets-labeling-crops-kenya-crop-type-dataset,contact.licensor,no,Who holds or administers licensing rights for this release?,,https://zenodo.org/records/15133324
+high-resolution-and-bias-corrected-cmip5-projections,contact.licensor,no,WDCC identifies authors and publishes CC-BY-4.0. Which party administers the data licence?,,https://doi.org/10.26050/WDCC/CCAFS-CMIP5_downscaling
+gmia-next-global-map-of-irrigated-areas,contact.licensor,no,Who holds or administers licensing rights for this release?,,https://zenodo.org/records/17627111
+global-1km-gridded-household-consumption-ppp,contact.licensor,no,Who holds or administers licensing rights for this release?,,https://zenodo.org/records/21122277
+global-1km-gridded-household-consumption-ppp,variables.qa,no,Where is the versioned QA-flag code dictionary for the observed-only and fillpop rasters?,,https://zenodo.org/api/records/21122277
+quasi-global-downscaled-cmip6-climate-impact,contact.licensor,no,Who holds or administers licensing rights for this release?,,https://zenodo.org/records/21915837
+forty-global-forest-typology-10m,attribution,no,Which exact credit line should users reproduce for ForTy 2020 v1? The Earth Engine terms still contain a placeholder. The Figshare deposit already supplies a separate formal citation.,,https://developers.google.com/earth-engine/datasets/catalog/projects_nature-trace_assets_forest_typology_forest_typology_2020_v1_0_collection
+high-resolution-and-bias-corrected-cmip5-projections,license,no,"Does the later WDCC CC BY 4.0 grant cover the CCAFS S3 distribution despite the download page’s written-permission restriction for commercial, non-free resale or redistribution?",WDCC CC BY 4.0; CCAFS download-page restrictions,https://ccafs-climate.org/data_spatial_downscaling/
+digital-earth-africa-aws-open-data,sample.waterbodies.coverage,no,"Which historical-extent end year applies to Waterbodies v0.0.3 (1984–2022 versus 1984–2002 in the specification), and how does it relate to the later WFS layers?",Provider describes 5% outline pixels with a 10% wet core; period wording conflicts.,https://docs.digitalearthafrica.org/en/latest/data_specs/Waterbodies_specs.html

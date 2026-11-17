@@ -7,8 +7,8 @@ id: cra5-dataset-github
 title: CRA5 Compressed ERA5 Dataset and Compression Models
 description: CRA5 stores a lossy reconstruction of hourly global ERA5 fields on a 0.25-degree grid. Each binary
   bitstream encodes a complete 268-channel atmospheric state with 721 latitudes and 1,440 longitudes. It includes
-  nine surface fields and seven variables on 37 pressure levels. The recorded Hugging Face revision is the snapshot
-  identified by the dataset DOI.
+  nine surface fields and seven variables on 37 pressure levels. The recorded Hugging Face revision is the
+  snapshot identified by the dataset DOI.
 resource_type: dataset
 keywords:
 - ai
@@ -20,7 +20,7 @@ cdh:
   domain:
   - climate
 created: '2026-11-13'
-updated: '2026-11-16'
+updated: '2026-11-17'
 doi: 10.57967/hf/8429
 version: ff67f4d
 access: public
@@ -41,11 +41,21 @@ citation:
   date: '2026'
   publisher: Hugging Face
   url: https://doi.org/10.57967/hf/8429
-note: The DOI snapshot declares CDLA-Sharing-1.0. The data paper and the subsequent repository card declare CC BY
-  4.0. The applicable reuse terms for the DOI snapshot require clarification. Decode an entire hour to obtain physical
-  measurements. Compressed bytes, quantized latent values and normalized reconstructions have different meanings.
-  The 268-channel checkpoint is 1,619,702,223 bytes and the reconstructed float32 field alone requires about 1.1
-  GB, in addition to model and working memory.
+note: 'The DOI snapshot declares CDLA-Sharing-1.0. The data paper and the subsequent repository card declare
+  CC BY 4.0. The applicable reuse terms for the DOI snapshot require clarification. Decode an entire hour to
+  obtain physical measurements. Compressed bytes, quantized latent values and normalized reconstructions have
+  different meanings. The 268-channel checkpoint is 1,619,702,223 bytes and the reconstructed float32 field
+  alone requires about 1.1 GB, in addition to model and working memory. Inventory audit checked 2026-11-17.
+  The DOI snapshot stores compressed model codes by hour. Decode with the matching checkpoint before publishing
+  physical variables in a chunked store. The pinned snapshot declares CDLA-Sharing-1.0. A later card declares
+  CC BY 4.0. Confirm the applicable terms before rehosting. The assessed release contains 403,257 files. Stored
+  download size is 951,184,000,424 bytes. Complete Git tree at DOI snapshot ff67f4d97e36bc6f54fc245abf81133e8900bee1:
+  403,248 compressed .bin files in 45 annual directories plus nine ancillary files. Stored repository bytes
+  from the pinned tree-size endpoint. File count is not a count of unique observation times. These are provider
+  download volumes; converted storage requirements remain unknown. Licensing rights-holder identity is unknown.
+  Anonymous access to compressed bitstreams was verified. Full decoding requires the linked matching model
+  checkpoint and the stated memory allowance. Re-hosting permission for the pinned snapshot remains unknown
+  because its licence declarations conflict.'
 data:
 - name: first-hour
   description: |
@@ -104,6 +114,15 @@ additional_links:
 - rel: license
   title: Licence declaration in the later repository snapshot
   url: https://huggingface.co/datasets/taohan10200/CRA5-Dataset/raw/0e83ac8c9973815078136dd54b1b59a80f0cdde1/README.md
+- rel: describedby
+  title: Provider inventory supporting size and element count, checked 2026-11-17
+  url: https://huggingface.co/api/datasets/taohan10200/CRA5-Dataset/treesize/ff67f4d97e36bc6f54fc245abf81133e8900bee1
+- rel: describedby
+  title: Delivered format and release documentation
+  url: https://doi.org/10.57967/hf/8429
+- rel: via
+  title: Reviewed data access route
+  url: https://huggingface.co/datasets/taohan10200/CRA5-Dataset/resolve/ff67f4d97e36bc6f54fc245abf81133e8900bee1/1979/1979-01-01T00%3A00%3A00.bin
 contact:
 - organization: The Hong Kong University of Science and Technology
   name: Tao Han
@@ -111,7 +130,7 @@ contact:
   - producer
   - point-of-contact
   url: https://github.com/taohan10200/CRA5/tree/2b9e06d8ca31f7b27c5039c9b5fc3334a43b4976
-- organization: CGIAR Climate Data Hub
+- organization: Climate Assets inventory
   roles:
   - maintainer
   url: https://github.com/peetmate/climate-assets
