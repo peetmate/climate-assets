@@ -20,7 +20,7 @@ cdh:
   domain:
   - climate
 created: '2026-11-13'
-updated: '2026-11-16'
+updated: '2026-11-17'
 contact:
 - organization: CHELSA V1.2 dataset authors
   roles:
@@ -39,7 +39,7 @@ contact:
   url: https://github.com/peetmate/climate-assets
 version: '1.2'
 doi: 10.5061/dryad.kd1d4
-license: CC0-1.0
+license: CC-BY-4.0
 access: public
 spatial:
   geography:
@@ -50,7 +50,8 @@ temporal:
 note: Read band 1 of the January GeoTIFF at a land coordinate with a raster reader and honour its NoData mask. The
   cell gives the mean of the January monthly precipitation totals for 1979–2013 in millimetres. In the bucket listing,
   prec, tmean, tmax, tmin and bio name the variable folders. The V1.2 file specification and the Data Records section
-  of the paper document units and temperature scaling.
+  of the paper document units and temperature scaling. The SWITCH v1.2 README specifies CC BY 4.0 for this distribution.
+  Credit the authors, link the licence and identify changes. The separately archived Dryad DOI deposit lists CC0.
 data:
 - name: january-precipitation
   description: January precipitation climatology over land. Each stored unit represents one millimetre of monthly
@@ -60,6 +61,9 @@ data:
   file_size: 94582151
   media_type: image/tiff; application=geotiff
 additional_links:
+- rel: describedby
+  title: Provider README specifying CC BY 4.0 for the SWITCH v1.2 distribution
+  url: https://zhc-c.s3.cloud.switch.ch/chelsav1/climatologies/bio/CHELSA_readme_V1_2_Dryad.docx
 - rel: collection
   title: Version 1.2 climatology file inventory (XML)
   url: https://zhc-c.s3.cloud.switch.ch/chelsav1?list-type=2&prefix=climatologies%2F

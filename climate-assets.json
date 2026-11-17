@@ -675,10 +675,10 @@
       "ongoing": false,
       "hosting": {
         "format": "varies",
-        "format_note": "AWS lists several Earth observation collections. Select a product to check its delivery format.",
+        "format_note": "Products vary. The sampled CHIRPS v2 daily GeoTIFF exposes a COG layout and selective pixel reads.",
         "format_source": "https://registry.opendata.aws/collab/deafrica/",
         "rights": "varies",
-        "rights_note": "Consult the individual AWS product listing for the data licence before redistributing a collection.",
+        "rights_note": "Rights depend on the AWS product. The CHIRPS product listing identifies a public-domain dedication.",
         "rights_source": "https://registry.opendata.aws/collab/deafrica/",
         "data_access": "varies",
         "access_note": "The reviewed CHIRPS raster allows anonymous reads. Access across the AWS registry depends on the selected product.",
@@ -1102,10 +1102,10 @@
         "format_source": "https://data.unfccc.int/",
         "rights": "varies",
         "rights_note": "Population and GDP series carry third-party terms. UNFCCC directs users to consult the United Nations or World Bank before further use. Check the specific table.",
-        "rights_source": "https://unfccc.int/process-and-meetings/transparency-and-reporting/reporting-and-review/transparency-data-and-tools/greenhouse-gas-data/notes-on-ghg-data",
-        "data_access": "anonymous",
-        "access_note": "The reviewed inventory table opens anonymously in the public reporting interface.",
-        "access_source": "https://ghgdi.unfccc.int/convention/time-series/"
+        "rights_source": "https://ghgdi.unfccc.int/notes-ghg-data/",
+        "data_access": "token",
+        "access_note": "Visitors can read the time-series table without a login. The embedded Power BI data service requires a short-lived token supplied automatically by the public interface.",
+        "access_source": "https://ghgdi.unfccc.int/js/powerbi-embed.js"
       },
       "footprint": {
         "scope": "release",
@@ -1158,10 +1158,10 @@
       "ongoing": true,
       "hosting": {
         "format": "varies",
-        "format_note": "STAC indexes multiple collections. Inspect the selected item and asset before planning a conversion.",
+        "format_note": "Formats depend on collection. The sampled CHIRPS Dekad v3 asset is a COG with verified selective reads.",
         "format_source": "https://api.earthobservation.vam.wfp.org/stac/",
         "rights": "varies",
-        "rights_note": "Individual collections identify their data licences. WFP’s default website terms restrict redistribution of WFP material. A collection licence applies only to that collection.",
+        "rights_note": "Collection licences differ, including CC BY 4.0 and proprietary products. CHIRPS Dekad v3 permits sharing with attribution.",
         "rights_source": "https://api.earthobservation.vam.wfp.org/stac/collections",
         "data_access": "varies",
         "access_note": "The CHIRPS raster is anonymous. Check the asset endpoint for other STAC collections.",
@@ -1355,8 +1355,8 @@
         "rights_note": "CC BY 4.0 allows sharing and adaptation. Credit the creators, link the licence and identify changes.",
         "rights_source": "https://doi.org/10.5281/zenodo.19485190",
         "data_access": "anonymous",
-        "access_note": "A reader retrieved data from the reviewed distribution without credentials, a form or paid access.",
-        "access_source": "https://zenodo.org/records/19485190"
+        "access_note": "Anonymous selective read of the v1.3 driver COG returned band 1 = 5 at 60°W, 4°S. The deposit also includes four training/validation tables.",
+        "access_source": "https://zenodo.org/api/records/19485190/files/drivers_forest_loss_1km_2001_2025_v1_3.tif/content"
       },
       "footprint": {
         "scope": "release",
@@ -1636,7 +1636,7 @@
       "ongoing": false,
       "hosting": {
         "format": "convert",
-        "format_note": "Density and uncertainty GeoTIFFs are inside ZIP files. Extract the maps and prepare a directly hosted raster distribution.",
+        "format_note": "The ZIPs contain tiled BigTIFFs. The sampled map and uncertainty raster lack internal overviews. Extract and prepare overviewed COGs for hosting.",
         "format_source": "https://doi.org/10.5281/zenodo.17128483",
         "rights": "allowed",
         "rights_note": "CC BY 4.0 allows sharing and adaptation. Credit the creators, link the licence and identify changes.",
@@ -1652,7 +1652,7 @@
         "bytes": 17567143251,
         "count": 2,
         "unit": "files",
-        "note": "Published deposit, including any documentation and archives. Archive members are not counted separately."
+        "note": "Two downloadable archives. Their central directories contain 1,400 density and 1,400 uncertainty GeoTIFFs (2,800 rasters total)."
       }
     },
     {
@@ -1764,7 +1764,7 @@
         "bytes": 948409515,
         "count": 6,
         "unit": "files",
-        "note": "Published deposit, including any documentation and archives. Archive members are not counted separately."
+        "note": "Six deposit files include the map archives, code archive, workbook and two PDFs. The NetCDF map archive contains 174 NetCDF members including the country grid."
       }
     },
     {
@@ -2043,10 +2043,10 @@
         "format_note": "Crop statistics v1.2 are CSV and the corresponding boundaries are GeoPackage or Shapefile. Convert them to Parquet or GeoParquet for selective reads.",
         "format_source": "https://github.com/HarvestStat/HarvestStat-Africa/releases/tag/v1.2",
         "rights": "varies",
-        "rights_note": "Dryad publishes the deposit under CC0. The GitHub README names MIT for repository data. Use the Dryad release for CC0 provenance; the mirror’s terms need clarification.",
+        "rights_note": "Dryad v1.2 is CC0. The anonymous v1.2 GitHub statistics CSV exactly matches Dryad’s SHA-256 and can be attributed to the CC0 deposit. The GitHub README calls repository data MIT. Check other mirror components individually.",
         "rights_source": "https://github.com/HarvestStat/HarvestStat-Africa/blob/v1.2/README.md#license",
         "data_access": "varies",
-        "access_note": "The verified v1.2 project CSV is anonymous. The Dryad API archive requires a token.",
+        "access_note": "The v1.2 statistics CSV on GitHub is anonymously readable and checksum-matches Dryad. The Dryad API archive requires a bearer token; six linked Dryad website downloads returned HTTP 403 to this reader.",
         "access_source": "https://github.com/HarvestStat/HarvestStat-Africa/releases/tag/v1.2"
       },
       "footprint": {
@@ -2106,17 +2106,17 @@
       "hosting": {
         "format": "convert",
         "format_note": "The v1.1 Ghana point download is a GeoPackage behind the provider guestbook. A GeoParquet distribution would require conversion.",
-        "format_source": "https://dataverse.harvard.edu/api/datasets/13156670/versions/1.1",
+        "format_source": "https://dataverse.harvard.edu/api/v1/datasets/13156670/versions/1.1",
         "rights": "limited",
         "rights_note": "V1.1 permits non-commercial sharing under CC BY-NC 4.0. Contact Alliance Data Management for commercial terms.",
-        "rights_source": "https://dataverse.harvard.edu/api/datasets/13156670/versions/1.1",
+        "rights_source": "https://dataverse.harvard.edu/api/v1/datasets/13156670/versions/1.1",
         "data_access": "guestbook",
         "access_note": "Dataverse requires a guestbook response before the v1.1 data download.",
-        "access_source": "https://dataverse.harvard.edu/api/datasets/13156670/versions/1.1"
+        "access_source": "https://dataverse.harvard.edu/api/access/datafile/13156674"
       },
       "footprint": {
         "scope": "release",
-        "source": "https://dataverse.harvard.edu/api/datasets/13156670/versions/1.1",
+        "source": "https://dataverse.harvard.edu/api/v1/datasets/13156670/versions/1.1",
         "checked": "2026-11-17",
         "bytes": 12659219,
         "count": 7,
@@ -2981,27 +2981,28 @@
       },
       "data_availability": "Open data",
       "reusable": true,
-      "licence": "CC0-1.0",
+      "licence": "CC0-1.0 (Dryad deposit) / CC-BY-4.0 (SWITCH v1.2 distribution)",
       "ongoing": false,
       "hosting": {
         "format": "convert",
         "format_note": "The linked v1.2 January precipitation GeoTIFF uses strips. Convert to a tiled COG for efficient remote map reads.",
-        "format_source": "https://doi.org/10.5061/dryad.kd1d4",
+        "format_source": "https://zhc-c.s3.cloud.switch.ch/chelsav1/climatologies/prec/CHELSA_prec_01_V1.2_land.tif",
         "rights": "allowed",
-        "rights_note": "The Dryad deposit declares CC0, which permits copying, adaptation and redistribution.",
-        "rights_source": "https://doi.org/10.5061/dryad.kd1d4",
+        "rights_note": "The SWITCH v1.2 README specifies CC BY 4.0: credit the authors, link the licence and identify changes. The original Dryad DOI deposit advertises CC0. Apply terms for the selected distribution.",
+        "rights_source": "https://zhc-c.s3.cloud.switch.ch/chelsav1/climatologies/bio/CHELSA_readme_V1_2_Dryad.docx",
         "data_access": "anonymous",
         "access_note": "A reader retrieved data from the reviewed distribution without credentials, a form or paid access.",
         "access_source": "https://zhc-c.s3.cloud.switch.ch/chelsav1/climatologies/prec/CHELSA_prec_01_V1.2_land.tif"
       },
       "footprint": {
-        "scope": "subset",
-        "source": "https://zhc-c.s3.cloud.switch.ch/chelsav1?list-type=2&prefix=climatologies%2F",
+        "scope": "release",
+        "source": "https://datadryad.org/api/v2/versions/1927/files?per_page=100",
         "checked": "2026-11-17",
-        "bytes": 10731304848,
-        "count": 96,
+        "bytes": 7266827510,
+        "count": 134,
         "unit": "files",
-        "note": "V1.2-labelled GeoTIFFs in the climatologies prefix only. Other objects are excluded."
+        "note": "Entire original v1.2 Dryad DOI deposit, version 1927: 67 .7z archives and 67 README files. The SWITCH climatologies prefix separately contains 96 explicitly v1.2-labelled TIFFs (10,731,304,848 bytes); this subset is neither added to the DOI inventory nor treated as the full SWITCH mirror.",
+        "secondary_source": "https://zhc-c.s3.cloud.switch.ch/chelsav1?list-type=2&prefix=climatologies%2F"
       }
     },
     {
@@ -3063,10 +3064,10 @@
         "source": "https://huggingface.co/api/datasets/taohan10200/CRA5-Dataset/treesize/ff67f4d97e36bc6f54fc245abf81133e8900bee1",
         "checked": "2026-11-17",
         "bytes": 951184000424,
-        "count": 45,
-        "unit": "annual directories",
-        "note": "Compressed repository size for the pinned snapshot. Annual directories cover 1979–2023. The flat file listing truncates at 100,000 entries, so the full file count is unconfirmed.",
-        "secondary_source": "https://huggingface.co/api/datasets/taohan10200/CRA5-Dataset/tree/ff67f4d97e36bc6f54fc245abf81133e8900bee1?limit=100"
+        "count": 403257,
+        "unit": "files",
+        "note": "Complete Git tree at DOI snapshot ff67f4d97e36bc6f54fc245abf81133e8900bee1: 403,248 compressed .bin files in 45 annual directories plus nine ancillary files. Stored repository bytes from the pinned tree-size endpoint. File count is not a count of unique observation times.",
+        "secondary_source": "https://huggingface.co/datasets/taohan10200/CRA5-Dataset/tree/ff67f4d97e36bc6f54fc245abf81133e8900bee1"
       }
     },
     {
@@ -3839,11 +3840,12 @@
       },
       "footprint": {
         "scope": "release",
-        "source": "https://doi.org/10.5258/SOTON/WP00772",
+        "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12444015/fullTextXML",
         "checked": "2026-11-17",
-        "count": 242,
-        "unit": "countries or territories",
-        "note": "Geographic coverage of WorldPop v1.0. File count and bytes across all covariates are unconfirmed."
+        "count": 73,
+        "unit": "covariates",
+        "note": "Provider paper reports 73 geospatial covariates across 242 countries/territories. A covariate spans multiple files. Physical file count and stored bytes for the complete v1.0 collection remain unconfirmed.",
+        "secondary_source": "https://doi.org/10.5258/SOTON/WP00772"
       }
     },
     {
@@ -4062,7 +4064,7 @@
       "ongoing": false,
       "hosting": {
         "format": "convert",
-        "format_note": "The global index and infrastructure layers are delivered in ZIP archives. Prepare directly accessible raster objects for cloud use.",
+        "format_note": "Both infrastructure products are ZIP archives. The Africa 0.10° CISI GeoTIFF has 722 strips and no tile index. Unpack and prepare tiled COGs for selective raster reads.",
         "format_source": "https://doi.org/10.5281/zenodo.4957647",
         "rights": "allowed",
         "rights_note": "CC BY 4.0 allows sharing and adaptation. Credit the creators, link the licence and identify changes.",
@@ -4733,7 +4735,7 @@
         "format_note": "Microsoft Planetary Computer provides chunked Zarr stores organised by model, scenario, member and variable.",
         "format_source": "https://planetarycomputer.microsoft.com/dataset/group/cil-gdpcir",
         "rights": "varies",
-        "rights_note": "The group has separate CC BY, CC BY-SA and CC0 collections. Follow the selected model’s terms and citation requirements.",
+        "rights_note": "The group has CC BY, CC BY-SA and CC0 collections. Follow each item’s model-specific data licence. Fifteen CanESM5 stores appear in both CC BY and CC BY-SA collections, but both item records point to the same downscaled-data terms: CC BY 4.0, with credit to the original model and GDPCIR.",
         "rights_source": "https://planetarycomputer.microsoft.com/dataset/group/cil-gdpcir",
         "data_access": "token",
         "access_note": "A time-limited SAS token is needed for the tested Zarr store. The provider issues this token anonymously.",
@@ -4743,9 +4745,11 @@
         "scope": "release",
         "source": "https://planetarycomputer.microsoft.com/dataset/group/cil-gdpcir",
         "checked": "2026-11-17",
-        "count": 3,
-        "unit": "licence collections",
-        "note": "CC BY, CC BY-SA and CC0 collections contain separate model and variable stores. Total Zarr object count and bytes are unconfirmed."
+        "count": 247997,
+        "unit": "Azure blobs",
+        "note": "Current three Planetary Computer STAC collections. All 332 distinct Zarr store prefixes were queried with Azure List Blobs and an anonymously issued SAS. Summed Content-Length once per object, including chunks and metadata. The 116 items include duplicate references across licences.",
+        "bytes": 23118984118093,
+        "secondary_source": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir"
       }
     },
     {
@@ -5057,12 +5061,12 @@
       "reusable": false,
       "ongoing": false,
       "hosting": {
-        "format": "unknown",
-        "format_note": "The complete v1 archive is closed. The v2 ZIP includes JSON tables and omits most EM-DAT fields.",
-        "format_source": "https://zenodo.org/records/16837695",
+        "format": "convert",
+        "format_note": "Authors identify the original MERGE release as a JSON data ZIP and accompanying CSV catalogue and dictionaries. The tabular data require conversion for selective reads. The closed Zenodo archive prevents direct inspection of its members.",
+        "format_source": "https://doi.org/10.1038/s41597-026-07522-7",
         "rights": "permission",
         "rights_note": "The v1 deposit lists CC BY 4.0, but the complete archive includes EM-DAT fields subject to separate UCLouvain terms. Obtain clearance before redistributing the complete archive.",
-        "rights_source": "https://zenodo.org/records/16837695",
+        "rights_source": "https://doc.emdat.be/docs/legal/terms-of-use/",
         "data_access": "closed",
         "access_note": "The original v1 files are restricted and access requests are disabled. The v2 substitute omits most EM-DAT fields.",
         "access_source": "https://zenodo.org/records/16837695"
@@ -5167,7 +5171,7 @@
       "ongoing": false,
       "hosting": {
         "format": "convert",
-        "format_note": "Figshare supplies the projection tables as Excel workbooks. Convert the tables to Parquet for selective reads.",
+        "format_note": "Figshare v1 distributes six scenario projection CSVs and fourteen regression-output Excel workbooks, plus a Stata script and README. Convert the tabular files to Parquet for selective reads.",
         "format_source": "https://doi.org/10.6084/m9.figshare.28838930.v1",
         "rights": "allowed",
         "rights_note": "CC BY 4.0 allows sharing and adaptation. Credit the creators, link the licence and identify changes.",
@@ -6520,9 +6524,9 @@
         "scope": "release",
         "source": "https://dataverse.cirad.fr/dataset.xhtml?persistentId=doi:10.18167/DVN1/P7OLAP&version=2.1",
         "checked": "2026-11-17",
-        "count": 27074,
-        "unit": "field polygons",
-        "note": "Original CIRAD V2 release. The 5.83 MB WorldCereal download contains only a subset and is excluded from the release size."
+        "count": 2,
+        "unit": "files",
+        "note": "CIRAD V2.1 description explicitly lists Study_sites.kml and BD_JECAM_CIRAD_2021.tar.gz (27,074 field polygons). Stored bytes for the retired original deposit remain unknown. WorldCereal subset and transferred V4 are separate."
       }
     },
     {
@@ -6655,12 +6659,13 @@
       },
       "footprint": {
         "scope": "release",
-        "source": "https://api.datacite.org/dois/10.26050/WDCC/CCAFS-CMIP5_downscaling",
+        "source": "https://cgiardata.s3.amazonaws.com/?list-type=2&prefix=ccafs%2Fccafs-climate%2Fdata%2Fipcc_5ar_ciat_downscaled%2F",
         "checked": "2026-11-17",
-        "bytes": 6826309928877,
-        "count": 35,
-        "unit": "climate models",
-        "note": "Provider-reported WDCC archive size, covering 35 climate models and four emissions pathways. File count is unconfirmed."
+        "bytes": 4235935512583,
+        "count": 20803,
+        "unit": "objects",
+        "note": "Complete public CCAFS CMIP5 S3 prefix. Includes 17,815 ZIPs plus ancillary objects and empty processing markers. Excludes directory keys. The separate WDCC archive reports 6,826,309,928,877 bytes for 35 models. Its physical file count is unconfirmed.",
+        "secondary_source": "https://api.datacite.org/dois/10.26050/WDCC/CCAFS-CMIP5_downscaling"
       }
     },
     {
@@ -7334,11 +7339,11 @@
         "format_note": "The inspected Vanuatu tables are already Parquet, wrapped in XZ inside a country ZIP. Remove both wrappers and host the Parquet objects directly. The gridded product is NetCDF.",
         "format_source": "https://imperialcollegelondon.box.com/v/downscaled-cmip6-models",
         "rights": "allowed",
-        "rights_note": "CC BY 4.0 allows sharing and adaptation. Credit the creators, link the licence and identify changes.",
+        "rights_note": "Zenodo identifies the linked Box dataset and CC BY 4.0. Credit the creators, link the licence and identify changes. The README also requests citation of the paper, dataset, Box repository and original inputs.",
         "rights_source": "https://doi.org/10.5281/zenodo.21915837",
         "data_access": "anonymous",
-        "access_note": "A reader retrieved data from the reviewed distribution without credentials, a form or paid access.",
-        "access_source": "https://imperialcollegelondon.box.com/v/downscaled-cmip6-models"
+        "access_note": "Anonymous Box download and byte-range read of a Vanuatu ZIP member succeeded. Its XZ-compressed Parquet was decoded locally.",
+        "access_source": "https://imperialcollegelondon.app.box.com/v/downscaled-cmip6-models/file/2408627154043"
       },
       "footprint": {
         "scope": "release",
@@ -8047,17 +8052,17 @@
         "rights_source": "https://developers.google.com/earth-engine/datasets/catalog/projects_nature-trace_assets_forest_typology_forest_typology_2020_v1_0_collection",
         "data_access": "anonymous",
         "access_note": "Google serves the native confidence tiles without credentials. Figshare also permits anonymous downloads.",
-        "access_source": "https://storage.googleapis.com/nature-trace/export_rasters/forest_typology_2020_v1_0/raster_4N_20_4_14.tif"
+        "access_source": "https://storage.googleapis.com/nature-trace/export_rasters/forest_typology_2020_v1_0/raster_21M_20_10_18.tif"
       },
       "footprint": {
         "scope": "release",
-        "source": "https://api.figshare.com/v2/articles/32288616/versions/1",
+        "source": "https://storage.googleapis.com/storage/v1/b/nature-trace/o?prefix=export_rasters%2Fforest_typology_2020_v1_0%2F",
         "checked": "2026-11-17",
-        "bytes": 357151714197,
-        "count": 1226,
-        "unit": "ZIP files",
-        "note": "Both v1 Figshare distributions: 613 confidence archives and 613 classification archives. Sizes are compressed; the Google Cloud copy is excluded.",
-        "secondary_source": "https://api.figshare.com/v2/articles/32301177/versions/1"
+        "bytes": 333335750879,
+        "count": 135542,
+        "unit": "COG tiles",
+        "note": "Original v1.0 confidence COG prefix (all TIFFs; directory marker excluded). Separately, Figshare lists 613 confidence ZIPs (331,503,524,295 bytes) and 613 classification ZIPs (25,648,189,902 bytes). Do not add the mirrors together.",
+        "secondary_source": "https://api.figshare.com/v2/articles/32288616/versions/1"
       }
     },
     {
