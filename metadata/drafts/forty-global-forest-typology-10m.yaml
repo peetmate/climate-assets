@@ -1,0 +1,209 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: forty-global-forest-typology-10m
+title: Forest Typology (ForTy) 2020 v1.0
+description: Global 10 m baseline for 2020 distinguishing six forest and land-use classes aligned with Food
+  and Agriculture Organization definitions. The model estimates relative class confidence from satellite embeddings.
+  A companion map gives the class with the highest score.
+resource_type: dataset
+keywords:
+- forests
+- deforestation
+- land-cover
+- agroforestry
+- tree-crops
+- eudr
+- remote-sensing
+- machine-learning
+- foundation-model
+- earth-engine
+- high-resolution
+- global
+cdh:
+  domain:
+  - land
+  - agricultural-production
+created: '2026-11-13'
+updated: '2026-11-16'
+license: CC-BY-4.0
+version: '1.0'
+temporal:
+  date: '2020'
+data:
+- name: confidence-tiles
+  locations:
+  - url: https://storage.googleapis.com/storage/v1/b/nature-trace/o?prefix=export_rasters%2Fforest_typology_2020_v1_0%2F
+  description: List the producer’s Cloud Optimized GeoTIFF objects. Each has five confidence bands on its native
+    10 m UTM grid.
+  structures:
+  - confidence
+- name: confidence-example
+  locations:
+  - url: https://storage.googleapis.com/nature-trace/export_rasters/forest_typology_2020_v1_0/raster_4N_20_4_14.tif
+  description: Native source tile raster_4N_20_4_14.tif. At 157.5544605°W, 1.8633694°N (zero-based row 3610,
+    column 2398) the five raw scores are 0, 126, 0, 0, 0. Other Land scores 124. Naturally regenerating forest
+    has the highest score.
+  media_type: image/tiff
+  file_size: 30940
+  checksum: md5:c4e2a7cdaf40380a74382516bc0fef7c
+  structures:
+  - confidence
+- name: class-example
+  locations:
+  - url: https://ndownloader.figshare.com/files/64604163
+  description: Figshare classification archive raster_4N.zip. Read raster_4N_20_4_14.tif at the same row and
+    column to obtain code 2.
+  media_type: application/zip
+  file_size: 9597
+  checksum: md5:202e3c51631b148aa35ab3d9f3d652be
+  structures:
+  - classification
+access: public
+access_note: Read individual source GeoTIFFs from the public Google Cloud Storage listing. Follow nextPageToken
+  for further pages. The versioned Figshare deposits also list 613 UTM zone archives each. Select an archive
+  by name and use its download_url. Only the alternative Earth Engine service requires a registered project.
+contact:
+- organization: Google
+  url: https://deepmind.google/
+  roles:
+  - licensor
+  - producer
+- name: Maxim Neumann
+  organization: Google DeepMind
+  email: maximneumann@google.com
+  orcid: https://orcid.org/0000-0002-1967-318X
+  roles:
+  - point-of-contact
+  url: https://doi.org/10.25452/figshare.plus.32288616.v1
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets
+spatial:
+  bbox:
+  - -180
+  - -65
+  - 180
+  - 84
+doi: 10.25452/figshare.plus.32288616.v1
+citation:
+  authors:
+  - family: Neumann
+    given: Maxim
+  - family: Raichuk
+    given: Anton
+  - family: Potapov
+    given: Peter
+  - family: Lesiv
+    given: Myroslava
+  - family: Overlan
+    given: Matthew
+  - family: Rey
+    given: Melanie
+  - family: Rajakumar
+    given: Ravindran
+  - family: Conserva
+    given: Michelangelo
+  - family: Stanimirova
+    given: Radost
+  - family: Sims
+    given: Michelle J.
+  - family: Carter
+    given: Sarah
+  - family: Goldman
+    given: Elizabeth
+  - family: Jiang
+    given: Yuchang
+  - family: Scheibenreif
+    given: Linus
+  - family: Georgieva
+    given: Ivelina
+  - family: Shchepashchenko
+    given: Maria
+  - family: Fritz
+    given: Steffen
+  - family: Clinton
+    given: Nicholas
+  - family: Stanton
+    given: Charlotte
+  - family: Morris
+    given: Dan
+  - family: Purves
+    given: Drew
+  title: Forest Typology 2020 (v1)
+  date: '2026-05-22'
+  publisher: Figshare+
+  url: https://doi.org/10.25452/figshare.plus.32288616.v1
+related_publications:
+- doi: 10.1038/s41597-026-08299-5
+structures:
+- name: confidence
+  variables:
+  - name: PrimaryForest
+    description: Band 1, relative confidence for primary forest. Native forest without visible indications
+      of human disturbance. Divide a valid stored score (0–250) by 250.
+    data_type: uint8
+    unit: '1'
+    nodata: 255
+  - name: NaturallyRegeneratingForest
+    description: Band 2, relative confidence for naturally regenerating forest. Forest established mainly by
+      natural regeneration, including secondary forest. Divide a valid stored score (0–250) by 250.
+    data_type: uint8
+    unit: '1'
+    nodata: 255
+  - name: PlantedForest
+    description: Band 3, relative confidence for planted forest. Forest established by planting or seeding,
+      with rotation longer than 40 years. Divide a valid stored score (0–250) by 250.
+    data_type: uint8
+    unit: '1'
+    nodata: 255
+  - name: PlantationForest
+    description: Band 4, relative confidence for plantation forest. Intensively managed stands of one or two
+      species with regular spacing, even age and rotation of 40 years or less. Divide a valid stored score
+      (0–250) by 250.
+    data_type: uint8
+    unit: '1'
+    nodata: 255
+  - name: TreeCropsAndAgroforestry
+    description: Band 5, relative confidence for tree crops and agroforestry. Agricultural tree crops and mixed
+      agroforestry. Divide a valid stored score (0–250) by 250.
+    data_type: uint8
+    unit: '1'
+    nodata: 255
+- name: classification
+  variables:
+  - name: band_1
+    description: Class code for the largest of the six scores.
+    data_type: uint8
+    nodata: 255
+    categories:
+    - value: 1
+      label: Primary forest
+    - value: 2
+      label: Naturally regenerating forest
+    - value: 3
+      label: Planted forest
+    - value: 4
+      label: Plantation forest
+    - value: 5
+      label: Tree crops and agroforestry
+    - value: 6
+      label: Other land
+additional_links:
+- rel: describedby
+  url: https://developers.google.com/earth-engine/datasets/catalog/projects_nature-trace_assets_forest_typology_forest_typology_2020_v1_0_collection
+- rel: describedby
+  url: https://storage.googleapis.com/earthengine-stac/catalog/nature-trace/projects_nature-trace_assets_forest_typology_forest_typology_2020_v1_0_collection.json
+- rel: describedby
+  url: https://api.figshare.com/v2/articles/32288616/versions/1
+- rel: describedby
+  url: https://api.figshare.com/v2/articles/32301177/versions/1
+- rel: related
+  url: https://doi.org/10.25452/figshare.plus.32301177.v1
+note: For valid pixels, derive the sixth raw score (Other Land) by subtracting the sum of the five bands from
+  250. Use a signed or wider integer for the arithmetic. Treat these scores as relative model confidence. Figshare
+  supplies the dataset citation. The Earth Engine terms still contain a placeholder for their required credit
+  line.

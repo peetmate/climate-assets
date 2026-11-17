@@ -126,3 +126,7 @@ wiring:
 
 ---
 _Generated for the CGIAR Climate Data Hub. Source: internal Alliance Slack docs (Assets and Methods)._
+
+## Federated CDH metadata
+
+Find the CDH YAML for each catalogue card in the [metadata register](metadata/register.csv). The [curation guide](metadata/README.md) covers access requests, missing fields and owner review.

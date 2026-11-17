@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: helmets-labeling-crops-kenya-crop-type-dataset
+title: Helmets Kenya Crop Type Dataset
+description: Presents a Kenya crop-type dataset built from helmet-mounted camera imagery collected in the field
+  and labeled with deep learning, aimed at improving agricultural monitoring in smallholder farming regions.
+  Published in Scientific Data volume 12, article 1496 (2025).
+resource_type: dataset
+keywords:
+- africa
+- crop-mapping
+- machine-learning
+- remote-sensing
+cdh:
+  domain:
+  - agricultural-production
+created: '2026-11-13'
+updated: '2026-11-13'
+doi: 10.5281/zenodo.15133324
+version: '1'
+license: CC-BY-SA-4.0
+data:
+- name: Helmets_Kenya_v1.csv
+  locations:
+  - url: https://zenodo.org/api/records/15133324/files/Helmets_Kenya_v1.csv/content
+  checksum: md5:af56f7d88d708f29f2acc50537d57cfb
+- name: KENYA_v2.zip
+  locations:
+  - url: https://zenodo.org/api/records/15133324/files/KENYA_v2.zip/content
+  checksum: md5:2f69ad5f0f6056a498a7c9f2e52f31a1
+access: public
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

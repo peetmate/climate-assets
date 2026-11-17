@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: farm-level-in-season-crop-identification-for-india
+title: Farm-Level, In-Season Crop Identification for India
+description: Presents a deep-learning framework for farm-level, in-season, multi-crop identification at national
+  scale in India, integrating Sentinel-1 and Sentinel-2 imagery with national farm boundary data. It samples
+  points within field boundaries at 10 m resolution to avoid mixed-pixel contamination.
+resource_type: document
+keywords:
+- crop-mapping
+- machine-learning
+- remote-sensing
+- satellite
+- south-asia
+cdh:
+  domain:
+  - agricultural-production
+created: '2026-11-13'
+updated: '2026-11-13'
+data:
+- name: primary
+  locations:
+  - url: https://arxiv.org/pdf/2507.02972
+access: public
+doi: 10.48550/arXiv.2507.02972
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets
+version: '1'

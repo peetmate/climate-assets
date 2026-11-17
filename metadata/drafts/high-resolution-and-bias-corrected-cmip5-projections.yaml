@@ -1,0 +1,82 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: high-resolution-and-bias-corrected-cmip5-projections
+title: CCAFS-CMIP5 Delta Method Downscaling for monthly averages and bioclimatic indices of four RCPs
+description: Delta-method, bias-corrected CMIP5 climatologies for 35 climate models and four RCPs. Monthly
+  maximum and minimum temperature, precipitation and derived bioclimatic indices are available at 30 arc-seconds
+  and at 2.5, 5 and 10 arc-minutes.
+resource_type: dataset
+keywords:
+- bias-correction
+- cmip
+- downscaling
+- global
+- high-resolution
+cdh:
+  domain:
+  - climate
+  - adaptation
+created: '2026-11-13'
+updated: '2026-11-16'
+contact:
+- organization: International Center for Tropical Agriculture
+  url: https://doi.org/10.26050/WDCC/CCAFS-CMIP5_downscaling
+  roles:
+  - point-of-contact
+  name: Carlos Eduardo Navarro Racines
+  email: c.e.navarro@cgiar.org
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets
+version: '1'
+doi: 10.26050/WDCC/CCAFS-CMIP5_downscaling
+license: CC-BY-4.0
+access: public
+spatial:
+  bbox:
+  - -180
+  - -60
+  - 180
+  - 90
+temporal:
+  start_date: '2020-01-01'
+  end_date: '2099-12-31'
+citation:
+  title: CCAFS-CMIP5 Delta Method Downscaling for monthly averages and bioclimatic indices of four RCPs
+  authors:
+  - family: Navarro Racines
+    given: Carlos Eduardo
+  - family: Tarapues Montenegro
+    given: Jaime Eduardo
+  - family: Thornton
+    given: Philip
+  - family: Jarvis
+    given: Andy
+  - family: Ramirez Villegas
+    given: Julian
+  date: '2019'
+  publisher: World Data Center for Climate (WDCC) at DKRZ
+  url: https://doi.org/10.26050/WDCC/CCAFS-CMIP5_downscaling
+data:
+- name: wdcc-archive
+  locations:
+  - url: https://doi.org/10.26050/WDCC/CCAFS-CMIP5_downscaling
+- name: ccafs-january-to-december-precipitation
+  locations:
+  - url: https://cgiardata.s3.amazonaws.com/ccafs/ccafs-climate/data/ipcc_5ar_ciat_downscaled/rcp2_6/2030s/bcc_csm1_1_m/10min/bcc_csm1_1_m_rcp2_6_2030s_prec_10min_r1i1p1_no_tile_asc.zip
+  description: Global 10 arc-minute ESRI ASCII grids for BCC-CSM1-1-M, RCP2.6, member r1i1p1, 2030s (2020–2049
+    mean). Each prec_N.asc gives the mean monthly precipitation total in mm for calendar month N (1–12).
+    Read NODATA_value and grid coordinates from the ASCII header.
+additional_links:
+- rel: describedby
+  url: https://www.nature.com/articles/s41597-019-0343-8
+- rel: related
+  url: https://ccafs-climate.org/data_spatial_downscaling/
+- rel: describedby
+  url: https://api.datacite.org/dois/10.26050/WDCC/CCAFS-CMIP5_downscaling
+note: The CCAFS distribution provides an anonymous ZIP for the named model and period. The WDCC record
+  is the archival citation. Monthly layers represent 30-year climatologies.

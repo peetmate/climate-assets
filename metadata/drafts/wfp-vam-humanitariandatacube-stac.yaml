@@ -1,0 +1,88 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: wfp-vam-humanitariandatacube-stac
+title: HumanitarianDataCube STAC
+description: The World Food Programme's SpatioTemporal Asset Catalog (STAC) API provides public search
+  and access to satellite and climate collections in its Humanitarian Data Cube. Each collection
+  identifies its own providers and reuse terms.
+resource_type: service
+keywords:
+- api
+- food-security
+- global
+- real-time
+- remote-sensing
+cdh:
+  domain:
+  - climate
+created: '2026-11-13'
+updated: '2026-11-16'
+data:
+- name: primary
+  description: Follow the data link for collections or the search link for items and their asset URLs.
+  locations:
+  - url: https://api.earthobservation.vam.wfp.org/stac/
+access: public
+license: LicenseRef-WFP-Website-Terms
+note: >-
+  Worked collection example for chirps_dekad, the final CHIRPS v3 dekadal rainfall series. Fetch item
+  chirps_dekad-202610d3 for 21–31 October 2026, then read band 1 of the linked WFP GeoTIFF at
+  longitude 36.82, latitude -1.28. With the file saved as rain.tif, run
+  gdallocationinfo -wgs84 -valonly rain.tif 36.82 -1.28. The Float32 value 19.287365 is accumulated
+  rainfall in millimetres over that entire interval. Mask -9999 as missing. The item's unit field
+  currently reads “1”. WFP documents dekadal totals, and the source's 2026 dekadal NetCDF declares
+  precip:units = "mm/dekad". All 7200 × 2400 full-resolution band values match the UCSB GeoTIFF
+  for this date. To reproduce that comparison, convert each TIFF with gdal_translate -of ENVI and
+  compare the two Float32 binary data files. For this collection WFP lists CC-BY-4.0 and cites
+  the CHIRPS v3 repository (10.15780/G2JQ0P). For material supplied by WFP, the default website terms
+  permit personal, non-commercial copying with acknowledgement and restrict redistribution and derivative
+  works. Special terms can override this default. Individual collections publish their own terms.
+  The catalogue root identifies WFP and the service title. STAC 1.0.0 identifies the metadata standard.
+  The OpenAPI description identifies FastAPI 0.1.0 and supplies no catalogue publication date or release.
+  WFP's preferred service citation and any special catalogue-metadata terms remain unconfirmed.
+additional_links:
+- rel: license
+  title: WFP website terms, including scope, special terms and restrictions on reuse
+  url: https://cdn.wfp.org/legal/terms/
+- rel: describedby
+  title: WFP operational manual describing the Humanitarian Data Cube
+  url: https://vamresources.manuals.wfp.org/docs/humanitarian-data-cube-hdc
+- rel: service-desc
+  title: Catalogue OpenAPI specification
+  url: https://api.earthobservation.vam.wfp.org/stac/openapi.json
+- rel: collection
+  title: WFP CHIRPS Dekad Version 3 collection
+  url: https://api.earthobservation.vam.wfp.org/stac/collections/chirps_dekad
+- rel: item
+  title: WFP STAC item for 21–31 October 2026, including interval, grid and band metadata
+  url: https://api.earthobservation.vam.wfp.org/stac/collections/chirps_dekad/items/chirps_dekad-202610d3
+- rel: enclosure
+  title: WFP GeoTIFF for the worked example (anonymous HTTPS download)
+  url: https://data.source.coop/wfp/chirps-dekad/v3.0/2026/10/21/chirps-v3.0.2026.10.3.tif
+- rel: describedby
+  title: WFP collection README, confirming dekadal totals, source DOI, reuse and contact
+  url: https://data.source.coop/wfp/chirps-dekad/README.md
+- rel: via
+  title: Climate Hazards Center original GeoTIFF for the same dekad
+  url: https://data.chc.ucsb.edu/products/CHIRPS/v3.0/dekads/global/tifs/chirps-v3.0.2026.10.3.tif
+- rel: describedby
+  title: Climate Hazards Center 2026 NetCDF with dekadal precipitation units
+  url: https://data.chc.ucsb.edu/products/CHIRPS/v3.0/dekads/global/netcdf/chirps-v3.0.2026.dekads.nc
+contact:
+- organization: World Food Programme
+  roles:
+  - producer
+  - licensor
+  url: https://cdn.wfp.org/legal/terms/
+- organization: World Food Programme, Geospatial Team
+  roles:
+  - point-of-contact
+  email: hq.geospatial@wfp.org
+  url: https://data.source.coop/wfp/chirps-dekad/README.md
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: satellite-foundation-model-wealth-monitoring
+title: A satellite foundation model for improved wealth monitoring
+description: Preprint introducing a satellite foundation model self-supervised on ~3 million bi-temporal Landsat
+  image pairs and adapted with parameter-efficient fine-tuning to sparse survey labels, to predict economic
+  livelihoods and wealth at scale where censuses and household surveys are costly, infrequent or outdated -
+  aimed at improving poverty and wealth monitoring in low- and middle-income countries.
+resource_type: document
+keywords:
+- foundation-model
+- satellite
+- remote-sensing
+- poverty
+- wealth
+- machine-learning
+- landsat
+- self-supervised
+- global
+- ai
+cdh:
+  domain:
+  - socioeconomic
+  - climate
+created: '2026-11-13'
+updated: '2026-11-13'
+data:
+- name: primary
+  locations:
+  - url: https://arxiv.org/pdf/2604.23166
+access: public
+doi: 10.48550/arXiv.2604.23166
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets
+version: '1'

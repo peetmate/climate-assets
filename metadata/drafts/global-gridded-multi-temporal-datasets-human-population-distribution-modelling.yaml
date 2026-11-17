@@ -1,0 +1,84 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: global-gridded-multi-temporal-datasets-human-population-distribution-modelling
+title: Global gridded multi-temporal datasets to support human population distribution modelling
+description: WorldPop harmonised geospatial covariates for population modelling, version 1.0. Country GeoTIFFs for
+  242 countries or territories use a common 3 arc-second grid (about 100 m at the equator). Coverage varies by covariate.
+  Climate and nighttime-light series cover 2015–2023, built-up layers extend to 2030 and some variables are static.
+resource_type: dataset
+keywords:
+- global
+- high-resolution
+- land-cover
+- satellite
+cdh:
+  domain:
+  - socioeconomic
+created: '2026-11-13'
+updated: '2026-11-16'
+doi: 10.5258/SOTON/WP00772
+version: '1.0'
+license: CC-BY-4.0 AND ODbL-1.0
+access: public
+spatial:
+  bbox:
+  - -180
+  - -59.9999994
+  - 180
+  - 84
+  crs: EPSG:4326
+citation:
+  title: WorldPop high resolution, harmonised annual global geospatial covariates. Version 1.0.
+  authors:
+  - given: Thea
+    family: Woods
+  - given: Tom
+    family: McKeen
+  - given: Alexander
+    family: Cunningham
+  - given: Rhorom
+    family: Priyatikanto
+  - given: Alessandro
+    family: Sorichetta
+  - given: Andrew
+    family: Tatem
+  - given: Maksym
+    family: Bondarenko
+  date: '2024'
+  publisher: University of Southampton
+  url: https://doi.org/10.5258/SOTON/WP00772
+note: The licences apply to different layers. WorldPop assigns ODbL to derivatives of OpenStreetMap, Microsoft Building
+  Footprints and Microsoft Roads Detection, and CC BY 4.0 to other covariates, including the linked Nauru temperature
+  raster. The paper documents the input dates, units and processing for each covariate.
+data:
+- name: nauru-land-surface-temperature-2023
+  description: Nauru annual mean land surface temperature, 2023. Read band 1 as float32 kelvin and mask -99999.
+    For a sample, select a valid land pixel, use its pixel-centre coordinates in WGS 84 and report the stored value.
+    This MODIS Terra-derived covariate measures land surface temperature.
+  media_type: image/tiff
+  file_size: 6094
+  locations:
+  - url: https://data.worldpop.org/GIS/Covariates/Global_2015_2030/NRU/Climate/Temperature/TerraLST/v1/nru_tavg_2023_tlst_100m_v1.tif
+additional_links:
+- rel: collection
+  title: Browse covariates by theme and country
+  url: https://hub.worldpop.org/project/categories?id=14
+- rel: describedby
+  title: Nauru annual temperature files, unit, source and licensing terms
+  url: https://hub.worldpop.org/geodata/summary?id=62160
+- rel: describedby
+  title: Data note, collection-wide variable dictionary and licence exceptions
+  url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12444015/fullTextXML
+contact:
+- organization: WorldPop, University of Southampton
+  roles:
+  - producer
+  - point-of-contact
+  url: https://hub.worldpop.org/geodata/summary?id=62160
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

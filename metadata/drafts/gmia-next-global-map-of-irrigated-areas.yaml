@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: gmia-next-global-map-of-irrigated-areas
+title: 'GMIA-NEXT: Next-Generation Global Map of Irrigated Areas'
+description: A 30 m global map of irrigated areas for the 2023/24 growing season, produced by fusing multi-source
+  Earth-observation and environmental data with machine learning trained on ~384,000 georeferenced ground-truth
+  points. Offers much finer resolution and timeliness than earlier global irrigation datasets (e.g. FAO GMIA).
+resource_type: dataset
+keywords:
+- irrigation
+- remote-sensing
+- machine-learning
+- land-cover
+- high-resolution
+- global
+- water
+cdh:
+  domain:
+  - agricultural-production
+created: '2026-11-13'
+updated: '2026-11-13'
+doi: 10.5281/zenodo.17627111
+version: v0
+license: CC-BY-4.0
+data:
+- name: GMIA-NEXT_Binary_v0.zip
+  locations:
+  - url: https://zenodo.org/api/records/17627111/files/GMIA-NEXT_Binary_v0.zip/content
+  checksum: md5:9240361602d55d7ba12a9d6bd11fe189
+- name: GMIA-NEXT_prob_AF_2024_v0.tif
+  locations:
+  - url: https://zenodo.org/api/records/17627111/files/GMIA-NEXT_prob_AF_2024_v0.tif/content
+  checksum: md5:309e8a769ab20d75028357af35bd98c0
+- name: GMIA-NEXT_prob_AS2_2024_v0.tif
+  locations:
+  - url: https://zenodo.org/api/records/17627111/files/GMIA-NEXT_prob_AS2_2024_v0.tif/content
+  checksum: md5:92289dd3c5658ff1182ce5a4b02be81a
+- name: GMIA-NEXT_prob_AS1_2024_v0.tif
+  locations:
+  - url: https://zenodo.org/api/records/17627111/files/GMIA-NEXT_prob_AS1_2024_v0.tif/content
+  checksum: md5:98e72e647a264138275a7f672980cf34
+- name: GMIA-NEXT_prob_EU_2024_v0.tif
+  locations:
+  - url: https://zenodo.org/api/records/17627111/files/GMIA-NEXT_prob_EU_2024_v0.tif/content
+  checksum: md5:510c1da35cbdd5b3be6c57b3f3413d51
+- name: GMIA-NEXT_prob_NAM1_2024_v0.tif
+  locations:
+  - url: https://zenodo.org/api/records/17627111/files/GMIA-NEXT_prob_NAM1_2024_v0.tif/content
+  checksum: md5:b62681971e95fa38f7a5f9529714281d
+- name: GMIA-NEXT_prob_NAM2_2024_v0.tif
+  locations:
+  - url: https://zenodo.org/api/records/17627111/files/GMIA-NEXT_prob_NAM2_2024_v0.tif/content
+  checksum: md5:4d55606e3cf842a2fbb83113905120f3
+- name: GMIA-NEXT_prob_OC_2024_v0.tif
+  locations:
+  - url: https://zenodo.org/api/records/17627111/files/GMIA-NEXT_prob_OC_2024_v0.tif/content
+  checksum: md5:223a7b87276f323b98116f8e3b066012
+- name: GMIA-NEXT_prob_SAM_2024_v0.tif
+  locations:
+  - url: https://zenodo.org/api/records/17627111/files/GMIA-NEXT_prob_SAM_2024_v0.tif/content
+  checksum: md5:7979a5850d8fd368d04b0aba8c05b3c5
+access: public
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

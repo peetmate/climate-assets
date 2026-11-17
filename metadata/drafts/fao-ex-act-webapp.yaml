@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: fao-ex-act-webapp
+title: EX-ACT — Environmental eXternalities ACcounting Tool (web app codebase)
+description: 'Source code for FAO''s EX-ACT online application, which appraises the greenhouse-gas balance
+  of agrifood-system interventions: CO2, CH4, N2O and refrigerants across land-use change, biomass and soil
+  carbon stocks, crop, grassland and rice management, fertiliser and residue handling, livestock (enteric fermentation,
+  manure, feed) and downstream value-chain steps such as processing, refrigeration, transport and packaging.
+  Emission factors come from the IPCC National GHG Inventory Guidelines (2006, 2014 wetlands supplement, 2019
+  refinement), applied as Tier 1 defaults or Tier 2 where local parameters exist, with baseline and intervention
+  scenarios aggregated into a net project carbon balance.'
+resource_type: software
+keywords:
+- ghg
+- emissions
+- methane
+- carbon
+- ipcc
+- afolu
+- livestock
+- decision-support
+- open-source
+- python
+cdh:
+  domain:
+  - mitigation
+  - climate
+created: '2026-11-13'
+updated: '2026-11-13'
+version: v1.18.2
+access: public
+data:
+- name: primary
+  locations:
+  - url: https://github.com/un-fao/exact-django-webapp/tree/v1.18.2
+contact:
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

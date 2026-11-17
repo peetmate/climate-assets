@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: global-dataset-of-7-billion-individuals-with-socio-economic-characteristics
+title: A global dataset of 7 billion individuals with socio-economic characteristics
+description: GLOPOP-S represents 7,335,881,094 synthetic individuals in 1,999,227,130 households in 2015. Files
+  are grouped by country and Global Data Lab subnational region. Synthesised attributes describe the modelled population
+  and do not identify surveyed people.
+resource_type: dataset
+keywords:
+- global
+- high-resolution
+- poverty
+cdh:
+  domain:
+  - socioeconomic
+created: '2026-11-13'
+updated: '2026-11-16'
+doi: 10.7910/DVN/KJC3RH
+version: '4.5'
+access: public
+license: CC-BY-4.0
+temporal:
+  date: '2015'
+citation:
+  title: GLOPOP-S
+  authors:
+  - given: Marijn
+    family: Ton
+  date: '2023'
+  publisher: Harvard Dataverse
+  url: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/KJC3RH&version=4.5
+note: Version 4.5 is the November 2024 release of the 2015 population. Cite the dataset and the accompanying Scientific
+  Data article. The DOI landing page also lists later releases with different reference years. Use the versioned
+  file inventory below for additional regions.
+data:
+- name: albania-region-albr208
+  description: Unrestricted gzip-compressed regional file synthpop_ALBr208.dat.gz for Albania, Global Data Lab region
+    ALBr208, 2015. Decompress, read little-endian int32 values and reshape to (15, number_of_people), then transpose
+    so each row represents one synthetic person. The linked Python reader gives column names and codes. For example
+    the fifth column RURAL uses 1 for rural and 0 for urban. HID is unique only within the region.
+  media_type: application/gzip
+  file_size: 1633
+  locations:
+  - url: https://dataverse.harvard.edu/api/access/datafile/10483308
+  checksum: md5:b3473aed3e2a9c3ba98710e202db60d9
+additional_links:
+- rel: describedby
+  title: Harvard Dataverse 4.5 file inventory, access and terms
+  url: https://dataverse.harvard.edu/api/datasets/:persistentId/versions/4.5?persistentId=doi%3A10.7910%2FDVN%2FKJC3RH
+- rel: describedby
+  title: Authors’ Python binary reader and category dictionary
+  url: https://raw.githubusercontent.com/VU-IVM/GLOPOP-S/f0f7107d295638187a5447768bccaa6c1c90e8e5/READ_SYNTHPOP_DATA/read_synthpop_data.py
+- rel: describedby
+  title: Regional codes, populations and data sources
+  url: https://raw.githubusercontent.com/VU-IVM/GLOPOP-S/f0f7107d295638187a5447768bccaa6c1c90e8e5/DATA/Nr_individuals_data_availability.csv
+- rel: cite-as
+  title: Accompanying article, Ton and colleagues (2024)
+  url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11458621/fullTextXML
+contact:
+- organization: Vrije Universiteit Amsterdam
+  name: Marijn Ton
+  roles:
+  - producer
+  - point-of-contact
+  url: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/KJC3RH&version=4.5
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets

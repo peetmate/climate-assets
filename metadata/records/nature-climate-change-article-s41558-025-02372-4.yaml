@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: nature-climate-change-article-s41558-025-02372-4
+title: Extreme weather event attribution predicts climate policy support across the world
+description: Nature Climate Change article (2025, vol. 15(7), pp. 725-735) reporting a global multi-country
+  study finding that people's subjective attribution of extreme weather to climate change - more than mere
+  exposure to such events - predicts support for a range of climate policies.
+resource_type: document
+keywords:
+- climate-policy
+- event-attribution
+- extreme-weather
+- public-opinion
+- survey
+cdh:
+  domain:
+  - climate
+  - socioeconomic
+created: '2026-11-13'
+updated: '2026-11-13'
+doi: 10.1038/s41558-025-02372-4
+access: public
+data:
+- name: primary
+  locations:
+  - url: https://www.nature.com/articles/s41558-025-02372-4
+license: CC-BY-4.0
+contact:
+- organization: Authors of Extreme weather event attribution predicts climate policy support across the world
+  roles:
+  - licensor
+  url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12237696/fullTextXML
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets
+version: '1'

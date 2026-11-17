@@ -1,0 +1,117 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft. See register and gaps before reuse.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: cra5-dataset-github
+title: CRA5 Compressed ERA5 Dataset and Compression Models
+description: CRA5 stores a lossy reconstruction of hourly global ERA5 fields on a 0.25-degree grid. Each binary
+  bitstream encodes a complete 268-channel atmospheric state with 721 latitudes and 1,440 longitudes. It includes
+  nine surface fields and seven variables on 37 pressure levels. The recorded Hugging Face revision is the snapshot
+  identified by the dataset DOI.
+resource_type: dataset
+keywords:
+- ai
+- era5
+- global
+- machine-learning
+- reanalysis
+cdh:
+  domain:
+  - climate
+created: '2026-11-13'
+updated: '2026-11-16'
+doi: 10.57967/hf/8429
+version: ff67f4d
+access: public
+spatial:
+  bbox:
+  - -180
+  - -90
+  - 180
+  - 90
+temporal:
+  start_date: '1979-01-01'
+  end_date: '2023-12-31'
+citation:
+  title: CRA5-Dataset (Revision ff67f4d)
+  authors:
+  - given: Tao
+    family: Han
+  date: '2026'
+  publisher: Hugging Face
+  url: https://doi.org/10.57967/hf/8429
+note: The DOI snapshot declares CDLA-Sharing-1.0. The data paper and the subsequent repository card declare CC BY
+  4.0. The applicable reuse terms for the DOI snapshot require clarification. Decode an entire hour to obtain physical
+  measurements. Compressed bytes, quantized latent values and normalized reconstructions have different meanings.
+  The 268-channel checkpoint is 1,619,702,223 bytes and the reconstructed float32 field alone requires about 1.1
+  GB, in addition to model and working memory.
+data:
+- name: first-hour
+  description: |
+    Complete global state for 1979-01-01 00:00 UTC. Save the linked file as frame.bin.
+    Install the pinned source in its Python 3.10 environment and run from the checkout
+    or put the checkout on PYTHONPATH. The constructor loads the 268-channel checkpoint.
+    For decode-only use, skip its unused Climate Data Store downloader:
+
+        from importlib import import_module
+        from unittest.mock import patch
+        from cra5.api import cra5_api
+
+        with patch.object(import_module("cra5.api.cra5_api"), "era5_downloader"):
+            api = cra5_api()
+        x = api.decode_from_bin(custom_path="frame.bin", return_format="de_normalized")["x_hat"]
+        print(x[api.vname_to_channels["t2m"], 360, 0].item())
+
+    This returns reconstructed 2 m air temperature in kelvin at 0° latitude, 0° longitude.
+    Row i is 90 − 0.25i degrees north. Column j is 0.25j degrees east.
+  media_type: application/octet-stream
+  file_size: 2386828
+  locations:
+  - url: https://huggingface.co/datasets/taohan10200/CRA5-Dataset/resolve/ff67f4d97e36bc6f54fc245abf81133e8900bee1/1979/1979-01-01T00%3A00%3A00.bin
+  checksum: sha256:cf6a9a4f44790d414a791ea7cb2bb50fa037cf1527ef35d4ed187073a29155e9
+additional_links:
+- rel: collection
+  title: Versioned Hugging Face data tree
+  url: https://huggingface.co/datasets/taohan10200/CRA5-Dataset/tree/ff67f4d97e36bc6f54fc245abf81133e8900bee1
+- rel: describedby
+  title: Version DOI and repository citation
+  url: https://api.datacite.org/dois/10.57967/hf/8429
+- rel: describedby
+  title: Source, installation and examples for the pinned CRA5 decoder
+  url: https://github.com/taohan10200/CRA5/tree/2b9e06d8ca31f7b27c5039c9b5fc3334a43b4976
+- rel: describedby
+  title: Decoder, channel mapping, inverse normalization and returned dictionary
+  url: https://raw.githubusercontent.com/taohan10200/CRA5/2b9e06d8ca31f7b27c5039c9b5fc3334a43b4976/cra5/api/cra5_api.py
+- rel: describedby
+  title: Variable and pressure-level ordering
+  url: https://raw.githubusercontent.com/taohan10200/CRA5/2b9e06d8ca31f7b27c5039c9b5fc3334a43b4976/cra5/api/cra5_268v_config.py
+- rel: related
+  title: Provider checkpoint cra5_268v_300k.pth used by vaeformer_pretrained(quality=268)
+  url: https://cra5.s3.ap-southeast-2.amazonaws.com/cra5_268v_300k.pth
+- rel: describedby
+  title: ECMWF regular latitude-longitude grid indexing
+  url: https://confluence.ecmwf.int/pages/viewpage.action?pageId=97369071
+- rel: describedby
+  title: ECMWF 2 metre temperature, units
+  url: https://codes.ecmwf.int/grib/param-db/167
+- rel: describedby
+  title: Data descriptor, limitations and licence statement
+  url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13443884/fullTextXML
+- rel: license
+  title: Licence declaration in the DOI snapshot
+  url: https://huggingface.co/datasets/taohan10200/CRA5-Dataset/raw/ff67f4d97e36bc6f54fc245abf81133e8900bee1/README.md
+- rel: license
+  title: Licence declaration in the later repository snapshot
+  url: https://huggingface.co/datasets/taohan10200/CRA5-Dataset/raw/0e83ac8c9973815078136dd54b1b59a80f0cdde1/README.md
+contact:
+- organization: The Hong Kong University of Science and Technology
+  name: Tao Han
+  roles:
+  - producer
+  - point-of-contact
+  url: https://github.com/taohan10200/CRA5/tree/2b9e06d8ca31f7b27c5039c9b5fc3334a43b4976
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets
