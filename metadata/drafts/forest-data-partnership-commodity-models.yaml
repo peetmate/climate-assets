@@ -4,10 +4,10 @@ cdh_schema_version: v0.5.0
 extensions:
 - https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
 id: forest-data-partnership-commodity-models
-title: Forest Data Partnership commodity probability models (Earth Engine)
-description: Forest Data Partnership commodity model outputs for cocoa, coffee, palm and rubber at 10
-  m in the pantropics, for 2018, 2020, 2022 and 2024. Forest Persistence v0 is a separate 30 m score for
-  undisturbed forest in 2020.
+title: Forest Data Partnership commodity probability models (2026a)
+description: Forest Data Partnership commodity model outputs for cocoa, coffee, palm and rubber at 10 m in
+  the pantropics, for 2018, 2020, 2022 and 2024. Forest Persistence v0 is a separate 30 m score for undisturbed
+  forest in 2020.
 resource_type: dataset
 keywords:
 - deforestation
@@ -34,6 +34,12 @@ contact:
   url: https://developers.google.com/earth-engine/datasets/publisher/forestdatapartnership
   roles:
   - producer
+  - licensor
+- organization: Forest Data Partnership
+  email: forestdatapartnership@wri.org
+  url: https://goo.gle/fdap-data
+  roles:
+  - point-of-contact
 - organization: CGIAR Climate Data Hub
   roles:
   - maintainer
@@ -41,38 +47,50 @@ contact:
 version: 2026a
 license: CC-BY-4.0
 access: restricted
-access_note: Earth Engine requires a registered project and authentication. The alternative Google Cloud
-  Storage commodity COG archive uses Requester Pays and requires an authenticated billing project. The
-  index and access guide identify tiles by commodity, year and southwest corner.
+access_note: For all four years and the full 24°S–24°N commodity coverage, use a registered Earth Engine project
+  or an authenticated billing project with the Google Cloud Storage Requester Pays archive. Use the release
+  CSV index to select a tile by commodity, year and southwest corner. An independent Source Cooperative mirror
+  provides anonymous, full-resolution tiles in West Africa for 2018 and 2024. The sampled tile matches the
+  mirror’s published MD5. Checking the producer’s own checksum requires a billing project.
 data:
 - name: cocoa
   locations:
-  - url: https://developers.google.com/earth-engine/datasets/catalog/projects_forestdatapartnership_assets_cocoa_model_2026a
-  description: Earth Engine collection projects/forestdatapartnership/assets/cocoa/model_2026a. Select
-    year and band probability (0–1).
+  - url: https://earthengine.googleapis.com/v1/projects/forestdatapartnership/assets/cocoa/model_2026a
+  description: Earth Engine collection projects/forestdatapartnership/assets/cocoa/model_2026a. Select year
+    and band probability (0–1).
 - name: coffee
   locations:
-  - url: https://developers.google.com/earth-engine/datasets/catalog/projects_forestdatapartnership_assets_coffee_model_2026a
-  description: Earth Engine collection projects/forestdatapartnership/assets/coffee/model_2026a. Select
-    year and band probability (0–1).
+  - url: https://earthengine.googleapis.com/v1/projects/forestdatapartnership/assets/coffee/model_2026a
+  description: Earth Engine collection projects/forestdatapartnership/assets/coffee/model_2026a. Select year
+    and band probability (0–1).
 - name: palm
   locations:
-  - url: https://developers.google.com/earth-engine/datasets/catalog/projects_forestdatapartnership_assets_palm_model_2026a
-  description: Earth Engine collection projects/forestdatapartnership/assets/palm/model_2026a. Select
-    year and band probability (0–1).
+  - url: https://earthengine.googleapis.com/v1/projects/forestdatapartnership/assets/palm/model_2026a
+  description: Earth Engine collection projects/forestdatapartnership/assets/palm/model_2026a. Select year
+    and band probability (0–1).
 - name: rubber
   locations:
-  - url: https://developers.google.com/earth-engine/datasets/catalog/projects_forestdatapartnership_assets_rubber_model_2026a
-  description: Earth Engine collection projects/forestdatapartnership/assets/rubber/model_2026a. Select
-    year and band probability (0–1).
+  - url: https://earthengine.googleapis.com/v1/projects/forestdatapartnership/assets/rubber/model_2026a
+  description: Earth Engine collection projects/forestdatapartnership/assets/rubber/model_2026a. Select year
+    and band probability (0–1).
 - name: forest-persistence
   locations:
-  - url: https://developers.google.com/earth-engine/datasets/catalog/projects_forestdatapartnership_assets_community_forests_ForestPersistence_2020
+  - url: https://earthengine.googleapis.com/v1/projects/forestdatapartnership/assets/community_forests/ForestPersistence_2020
   description: Earth Engine image projects/forestdatapartnership/assets/community_forests/ForestPersistence_2020.
     Band value (0–1) measures support for undisturbed forest in 2020.
 - name: commodity-tile-index
   locations:
   - url: https://storage.googleapis.com/earth-engine-public-requester-pays/forestdatapartnership/2026a/fdap_index.csv
+- name: cocoa-2024-mirror-example
+  locations:
+  - url: https://data.source.coop/portolan-mirrors/forest-data-partnership-catalog/cocoa-2024/lng_-6_lat_4/lng_-6_lat_4.tif
+  description: Independent Portolan mirror, 2024 cocoa. Read band 1 at zero-based row 0, column 0 (5.99998253°W,
+    4.99997796°N). The probability of cocoa presence is 0.98333961, unitless. The STAC item identifies the
+    Google source object. Its published MD5 matches the downloaded mirror file. Independent comparison with
+    the source digest remains pending.
+  media_type: image/tiff
+  checksum: md5:a62fc3507d96706216346266407e17fe
+  file_size: 81697833
 additional_links:
 - rel: related
   url: https://developers.google.com/earth-engine/datasets/publisher/forestdatapartnership
@@ -82,14 +100,42 @@ additional_links:
   url: https://console.cloud.google.com/earth-engine
 - rel: describedby
   url: https://github.com/google/forest-data-partnership/blob/main/models/model_2026a/README.md
-attribution: Produced by Google for the Forest Data Partnership. For Forest Persistence v0, also acknowledge
-  modified Copernicus Sentinel data as specified on the layer page.
+- rel: describedby
+  url: https://developers.google.com/earth-engine/datasets/catalog/projects_forestdatapartnership_assets_cocoa_model_2026a
+- rel: describedby
+  url: https://developers.google.com/earth-engine/datasets/catalog/projects_forestdatapartnership_assets_coffee_model_2026a
+- rel: describedby
+  url: https://developers.google.com/earth-engine/datasets/catalog/projects_forestdatapartnership_assets_palm_model_2026a
+- rel: describedby
+  url: https://developers.google.com/earth-engine/datasets/catalog/projects_forestdatapartnership_assets_rubber_model_2026a
+- rel: describedby
+  url: https://developers.google.com/earth-engine/datasets/catalog/projects_forestdatapartnership_assets_community_forests_ForestPersistence_2020
+- rel: describedby
+  url: https://storage.googleapis.com/earthengine-stac/catalog/forestdatapartnership/projects_forestdatapartnership_assets_cocoa_model_2026a.json
+- rel: describedby
+  url: https://storage.googleapis.com/earthengine-stac/catalog/forestdatapartnership/projects_forestdatapartnership_assets_coffee_model_2026a.json
+- rel: describedby
+  url: https://storage.googleapis.com/earthengine-stac/catalog/forestdatapartnership/projects_forestdatapartnership_assets_palm_model_2026a.json
+- rel: describedby
+  url: https://storage.googleapis.com/earthengine-stac/catalog/forestdatapartnership/projects_forestdatapartnership_assets_rubber_model_2026a.json
+- rel: describedby
+  url: https://storage.googleapis.com/earthengine-stac/catalog/forestdatapartnership/projects_forestdatapartnership_assets_community_forests_ForestPersistence_2020.json
+- rel: describedby
+  url: https://source.coop/portolan-mirrors/forest-data-partnership-catalog
+- rel: describedby
+  url: https://data.source.coop/portolan-mirrors/forest-data-partnership-catalog/cocoa-2024/lng_-6_lat_4/lng_-6_lat_4.json
+- rel: help
+  url: https://goo.gle/fdap-data
+attribution: 'For commodity models: "Produced by Google for the Forest Data Partnership". For Forest Persistence
+  v0: "This dataset is produced by Google for the Forest Data Partnership." Contains modified Copernicus Sentinel
+  data [2015-present].'
 citation:
   title: Community models 2026a
   authors:
   - organization: Forest Data Partnership
   date: '2026'
   url: https://developers.google.com/earth-engine/datasets/publisher/forestdatapartnership
-note: The 2026a citation applies to the commodity models. The v0 persistence layer separately requests
-  citation of Forest Data Partnership. Check the layer-specific mask and model limitations before interpreting
-  a score.
+note: The four commodity models have a float32 probability band in [0, 1]. Each original 10 m COG covers one
+  degree and uses EPSG:4326. The 2026a overview pixels represent means. Read native pixels to reproduce individual
+  predictions. The separate Forest Persistence v0 image has a 30 m support score for undisturbed forest in
+  2020 and its own required credit and citation.

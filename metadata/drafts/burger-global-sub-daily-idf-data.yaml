@@ -18,13 +18,14 @@ cdh:
   domain:
   - climate
 created: '2026-11-13'
-updated: '2026-11-13'
+updated: '2026-11-16'
 doi: 10.5281/zenodo.15473689
 version: '1.0'
 license: CC-BY-NC-SA-4.0
 access: restricted
 access_note: Request the files using the Zenodo form. Supply your name, affiliation and intended non-commercial
-  use. The deposit recommends an institutional email.
+  use. The deposit recommends an institutional email. The public record describes the data and accepts
+  requests. Individual file downloads require access granted by the provider.
 data:
 - name: primary
   locations:
@@ -32,7 +33,21 @@ data:
 additional_links:
 - url: https://zenodo.org/records/15473689
   rel: create-form
+- rel: describedby
+  title: Version 1.0 release, units, grid and selected durations and return periods
+  url: https://zenodo.org/api/records/15473689
+- rel: describedby
+  title: Methods paper and correspondence address
+  url: https://doi.org/10.1029/2024WR039773
+- rel: via
+  title: Data producer’s access and methods page
+  url: https://www.fathom.global/academic-papers/burger-fathoms-extreme-rainfall-dataset/
+note: Select a grid cell, duration and return period to report a modelled rainfall intensity in mm/h.
+  For a six-hour event, multiplying the intensity by six gives rainfall depth in mm. The paper's
+  regional comparison statistics and map colours do not identify an exact intensity in the deposited
+  grid. The model spans 60° S to 80° N.
 spatial:
+  bbox: [-180, -60, 180, 80]
   geography:
   - world
   crs: EPSG:4326
@@ -41,6 +56,7 @@ contact:
   roles:
   - point-of-contact
   name: Jannis Hoch
+  email: j.hoch@fathom.global
   url: https://zenodo.org/records/15473689
 - organization: CGIAR Climate Data Hub
   roles:
