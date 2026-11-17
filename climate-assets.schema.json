@@ -131,6 +131,20 @@
       "type": "string",
       "description": "For publications especially: whether underlying data/code is available, e.g. 'Open data', 'Open (with code)', 'Code only', 'On request', 'No associated data'."
     },
+    "hosting": {
+      "type": "object",
+      "description": "Assessment of the named data release and delivery route. Used only on dataset cards, including catalogues of multiple datasets.",
+      "additionalProperties": false,
+      "required": ["format", "format_note", "format_source", "rights", "rights_note", "rights_source"],
+      "properties": {
+        "format": { "type": "string", "enum": ["cloud", "unpack", "convert", "varies", "unknown"] },
+        "format_note": { "type": "string", "minLength": 1 },
+        "format_source": { "type": "string", "pattern": "^https?://", "minLength": 1 },
+        "rights": { "type": "string", "enum": ["allowed", "limited", "permission", "varies", "unknown"] },
+        "rights_note": { "type": "string", "minLength": 1 },
+        "rights_source": { "type": "string", "pattern": "^https?://", "minLength": 1 }
+      }
+    },
     "reusable": {
       "type": "boolean",
       "description": "True when the data is openly available under a permissive/attribution licence (CC0, CC-BY, CC-BY-SA, MIT, BSD, Apache, GPL/LGPL/AGPL, ODbL, Etalab-2.0, OGL, public domain) and could therefore be reused/ingested in the Hub. NC, ND, proprietary, unknown or mixed-source terms are false. Copyleft is true but carries share-alike obligations (AGPL extends them to network use) - record those in notes."

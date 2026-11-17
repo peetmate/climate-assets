@@ -20,11 +20,11 @@
         "tool-software": 28
       },
       "by_access": {
-        "login": 9,
-        "open": 129,
+        "login": 11,
+        "open": 125,
         "paywall": 17,
         "request": 2,
-        "unknown": 6
+        "unknown": 8
       },
       "by_theme_primary": {
         "Adaptation": 14,
@@ -672,7 +672,15 @@
       "data_availability": "Open data",
       "reusable": false,
       "licence": "",
-      "ongoing": false
+      "ongoing": false,
+      "hosting": {
+        "format": "varies",
+        "format_note": "AWS lists several Earth observation collections. Select a product to check its delivery format.",
+        "format_source": "https://registry.opendata.aws/collab/deafrica/",
+        "rights": "varies",
+        "rights_note": "Consult the individual AWS product listing for the data licence before redistributing a collection.",
+        "rights_source": "https://registry.opendata.aws/collab/deafrica/"
+      }
     },
     {
       "id": "digital-gender-gaps-dashboard",
@@ -1076,7 +1084,15 @@
       "data_availability": "Open data",
       "licence": "",
       "reusable": false,
-      "ongoing": false
+      "ongoing": false,
+      "hosting": {
+        "format": "varies",
+        "format_note": "This is a reporting interface. Downloadable tables include spreadsheets that can be converted to Parquet.",
+        "format_source": "https://data.unfccc.int/",
+        "rights": "varies",
+        "rights_note": "Population and GDP series carry third-party terms. UNFCCC directs users to consult the United Nations or World Bank before further use. Check the specific table.",
+        "rights_source": "https://unfccc.int/process-and-meetings/transparency-and-reporting/reporting-and-review/transparency-data-and-tools/greenhouse-gas-data/notes-on-ghg-data"
+      }
     },
     {
       "id": "wfp-vam-humanitariandatacube-stac",
@@ -1119,7 +1135,15 @@
       "data_availability": "Open data",
       "licence": "",
       "reusable": false,
-      "ongoing": true
+      "ongoing": true,
+      "hosting": {
+        "format": "varies",
+        "format_note": "STAC indexes multiple collections. Inspect the selected item and asset before planning a conversion.",
+        "format_source": "https://api.earthobservation.vam.wfp.org/stac/",
+        "rights": "varies",
+        "rights_note": "Individual collections identify their data licences. WFP’s default website terms restrict redistribution of WFP material. A collection licence applies only to that collection.",
+        "rights_source": "https://api.earthobservation.vam.wfp.org/stac/collections"
+      }
     },
     {
       "id": "what-climate-smart-agriculture-means-for-smallholder-farmers",
@@ -1291,7 +1315,15 @@
       "licence": "CC-BY-4.0",
       "data_availability": "Open data",
       "reusable": true,
-      "ongoing": false
+      "ongoing": false,
+      "hosting": {
+        "format": "cloud",
+        "format_note": "GDAL identifies the v1.3 primary driver raster as a COG with seven overviews. Validation and training files are separate tables.",
+        "format_source": "https://zenodo.org/records/19485190",
+        "rights": "allowed",
+        "rights_note": "CC BY 4.0 allows sharing and adaptation. Credit the creators, link the licence and identify changes.",
+        "rights_source": "https://doi.org/10.5281/zenodo.19485190"
+      }
     },
     {
       "id": "adaptation-finance-power-bi-dashboard",
@@ -1558,7 +1590,15 @@
       "licence": "CC-BY-4.0",
       "data_availability": "Open data",
       "reusable": true,
-      "ongoing": false
+      "ongoing": false,
+      "hosting": {
+        "format": "convert",
+        "format_note": "Density and uncertainty GeoTIFFs are inside ZIP files. Extract the maps and prepare a directly hosted raster distribution.",
+        "format_source": "https://doi.org/10.5281/zenodo.17128483",
+        "rights": "allowed",
+        "rights_note": "CC BY 4.0 allows sharing and adaptation. Credit the creators, link the licence and identify changes.",
+        "rights_source": "https://doi.org/10.5281/zenodo.17128483"
+      }
     },
     {
       "id": "eth-cocoa-suitability-map",
@@ -1650,7 +1690,15 @@
       "licence": "CC-BY-4.0",
       "data_availability": "Open (with code)",
       "reusable": true,
-      "ongoing": false
+      "ongoing": false,
+      "hosting": {
+        "format": "convert",
+        "format_note": "The v1.08 crop maps are NetCDF files inside ZIP archives. Prepare a chunked store for direct cloud access.",
+        "format_source": "https://doi.org/10.6084/m9.figshare.22491997.v9",
+        "rights": "allowed",
+        "rights_note": "CC BY 4.0 allows sharing and adaptation. Credit the creators, link the licence and identify changes.",
+        "rights_source": "https://doi.org/10.6084/m9.figshare.22491997.v9"
+      }
     },
     {
       "id": "dry-matter-productivity-v2-1km",
@@ -1666,7 +1714,7 @@
       "region": "Global",
       "spatial_resolution": "1 km",
       "temporal_coverage": "1999–June 2020 (10-daily)",
-      "access": "open",
+      "access": "login",
       "collection": "assets",
       "section": "Production",
       "shared_by": "",
@@ -1690,10 +1738,18 @@
         "affiliation": "",
         "email": ""
       },
-      "data_availability": "Open data",
+      "data_availability": "Free Copernicus account for raster downloads.",
       "reusable": false,
       "licence": "",
-      "ongoing": false
+      "ongoing": false,
+      "hosting": {
+        "format": "cloud",
+        "format_note": "Copernicus already serves the 1 km v2 product as COGs. Downloads use a free account.",
+        "format_source": "https://stac.dataspace.copernicus.eu/v1/collections/clms_dmp_global_1km_10daily_v2_cog",
+        "rights": "allowed",
+        "rights_note": "Copernicus permits redistribution. Credit the source, identify modifications and avoid implying EU endorsement.",
+        "rights_source": "https://land.copernicus.eu/en/data-policy"
+      }
     },
     {
       "id": "global-livestock-dynamics",
@@ -1902,7 +1958,15 @@
       "licence": "CC0-1.0",
       "data_availability": "Open (with code)",
       "reusable": true,
-      "ongoing": false
+      "ongoing": false,
+      "hosting": {
+        "format": "convert",
+        "format_note": "Crop statistics v1.2 are CSV and the corresponding boundaries are GeoPackage or Shapefile. Convert them to Parquet or GeoParquet for selective reads.",
+        "format_source": "https://github.com/HarvestStat/HarvestStat-Africa/releases/tag/v1.2",
+        "rights": "varies",
+        "rights_note": "Dryad publishes the deposit under CC0. The GitHub README names MIT for repository data. Use the Dryad release for CC0 provenance; the mirror’s terms need clarification.",
+        "rights_source": "https://github.com/HarvestStat/HarvestStat-Africa/blob/v1.2/README.md#license"
+      }
     },
     {
       "id": "sample-earth",
@@ -1944,10 +2008,18 @@
         "affiliation": "",
         "email": ""
       },
-      "licence": "CC-BY-4.0",
-      "data_availability": "Open data",
-      "reusable": true,
-      "ongoing": false
+      "licence": "CC-BY-NC-4.0",
+      "data_availability": "V1.1 files require a Dataverse guestbook response.",
+      "reusable": false,
+      "ongoing": false,
+      "hosting": {
+        "format": "convert",
+        "format_note": "The v1.1 Ghana point download is a GeoPackage behind the provider guestbook. A GeoParquet distribution would require conversion.",
+        "format_source": "https://dataverse.harvard.edu/api/datasets/13156670/versions/1.1",
+        "rights": "limited",
+        "rights_note": "V1.1 permits non-commercial sharing under CC BY-NC 4.0. Contact Alliance Data Management for commercial terms.",
+        "rights_source": "https://dataverse.harvard.edu/api/datasets/13156670/versions/1.1"
+      }
     },
     {
       "id": "scientific-data-s41597-025-05257-5",
@@ -1998,7 +2070,15 @@
       "licence": "CC-BY-4.0",
       "data_availability": "Open data",
       "reusable": true,
-      "ongoing": false
+      "ongoing": false,
+      "hosting": {
+        "format": "convert",
+        "format_note": "GROW-Africa distributes zipped workbooks and Shapefiles. Convert the tabular or spatial data for direct cloud access.",
+        "format_source": "https://zenodo.org/records/14961637",
+        "rights": "allowed",
+        "rights_note": "CC BY 4.0 allows sharing and adaptation. Credit the creators, link the licence and identify changes.",
+        "rights_source": "https://doi.org/10.5281/zenodo.14961637"
+      }
     },
     {
       "id": "spatial-frameworks-for-robust-estimation-of-yield-gaps",
@@ -2267,8 +2347,16 @@
       },
       "data_availability": "Open data",
       "reusable": false,
-      "licence": "",
-      "ongoing": false
+      "licence": "CC-BY-NC-SA-4.0",
+      "ongoing": false,
+      "hosting": {
+        "format": "cloud",
+        "format_note": "The FAO 1992 cropland nitrous oxide raster is served directly as a COG. GDAL reports eight overviews.",
+        "format_source": "https://storage.googleapis.com/fao-gismgr-faostat-data/DATA/FAOSTAT/MAPSET/DROSE-A/FAOSTAT.DROSE-A.1992.CROP.N2O.tif",
+        "rights": "limited",
+        "rights_note": "CC BY-NC-SA 4.0 permits non-commercial sharing with attribution. Adaptations must use the same licence.",
+        "rights_source": "https://data.fao.org/catalog/dataset/898cdbc4-b154-4b8a-a05a-59a47c7fd2d9"
+      }
     },
     {
       "id": "global-renewables-watch",
@@ -2704,7 +2792,15 @@
       "licence": "CC-BY-NC-SA-4.0",
       "data_availability": "On request",
       "reusable": false,
-      "ongoing": false
+      "ongoing": false,
+      "hosting": {
+        "format": "unknown",
+        "format_note": "The release documents gridded rainfall intensities. File access requires approval and the storage layout is unverified.",
+        "format_source": "https://zenodo.org/records/15473689",
+        "rights": "limited",
+        "rights_note": "CC BY-NC-SA 4.0 permits non-commercial sharing with credit and share-alike for adaptations. Access to the original files requires approval.",
+        "rights_source": "https://zenodo.org/records/15473689"
+      }
     },
     {
       "id": "chelsa-climatologies-high-resolution",
@@ -2746,9 +2842,17 @@
         "email": ""
       },
       "data_availability": "Open data",
-      "reusable": false,
-      "licence": "",
-      "ongoing": false
+      "reusable": true,
+      "licence": "CC0-1.0",
+      "ongoing": false,
+      "hosting": {
+        "format": "convert",
+        "format_note": "The linked v1.2 January precipitation GeoTIFF uses strips. Convert to a tiled COG for efficient remote map reads.",
+        "format_source": "https://doi.org/10.5061/dryad.kd1d4",
+        "rights": "allowed",
+        "rights_note": "The Dryad deposit declares CC0, which permits copying, adaptation and redistribution.",
+        "rights_source": "https://doi.org/10.5061/dryad.kd1d4"
+      }
     },
     {
       "id": "cra5-dataset-github",
@@ -2792,7 +2896,15 @@
       "data_availability": "Open (with code)",
       "licence": "",
       "reusable": false,
-      "ongoing": false
+      "ongoing": false,
+      "hosting": {
+        "format": "convert",
+        "format_note": "The DOI snapshot stores compressed model codes by hour. Decode with the matching checkpoint before publishing physical variables in a chunked store.",
+        "format_source": "https://doi.org/10.57967/hf/8429",
+        "rights": "unknown",
+        "rights_note": "The pinned snapshot declares CDLA-Sharing-1.0. A later card declares CC BY 4.0. Confirm the applicable terms before rehosting.",
+        "rights_source": "https://huggingface.co/datasets/taohan10200/CRA5-Dataset/raw/ff67f4d97e36bc6f54fc245abf81133e8900bee1/README.md"
+      }
     },
     {
       "id": "cra5-compressed-reanalysis-atmospheric-dataset",
@@ -3547,10 +3659,18 @@
         "affiliation": "",
         "email": ""
       },
-      "licence": "CC-BY-4.0",
+      "licence": "CC-BY-4.0 / ODbL-1.0 (varies by layer)",
       "data_availability": "Open (with code)",
-      "reusable": true,
-      "ongoing": false
+      "reusable": false,
+      "ongoing": false,
+      "hosting": {
+        "format": "varies",
+        "format_note": "Check each covariate. The Nauru temperature example is a tiled GeoTIFF with no overviews. The collection covers many different layers.",
+        "format_source": "https://hub.worldpop.org/geodata/summary?id=62160",
+        "rights": "varies",
+        "rights_note": "WorldPop identifies CC BY 4.0 for most covariates and ODbL for derivatives of OpenStreetMap, Microsoft Building Footprints and Microsoft Roads Detection. Check the layer.",
+        "rights_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12444015/fullTextXML"
+      }
     },
     {
       "id": "worldpop-hub-population-dataset-category",
@@ -3638,7 +3758,15 @@
       "licence": "CC-BY-4.0",
       "data_availability": "Open (with code)",
       "reusable": true,
-      "ongoing": false
+      "ongoing": false,
+      "hosting": {
+        "format": "convert",
+        "format_note": "The gridded baseline and scenario rasters are packaged in ZIP files. Extract and prepare the selected grids for direct cloud access.",
+        "format_source": "https://zenodo.org/records/14443334",
+        "rights": "allowed",
+        "rights_note": "CC BY 4.0 allows sharing and adaptation. Credit the creators, link the licence and identify changes.",
+        "rights_source": "https://doi.org/10.5281/zenodo.14443334"
+      }
     },
     {
       "id": "global-dataset-of-7-billion-individuals-with-socio-economic-characteristics",
@@ -3682,7 +3810,15 @@
       "licence": "CC-BY-4.0",
       "data_availability": "Open (with code)",
       "reusable": true,
-      "ongoing": false
+      "ongoing": false,
+      "hosting": {
+        "format": "convert",
+        "format_note": "GLOPOP-S v4.5 uses gzip-compressed regional binary files. Decode the 15 fields with the provider reader before writing Parquet.",
+        "format_source": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/KJC3RH&version=4.5",
+        "rights": "allowed",
+        "rights_note": "CC BY 4.0 allows sharing and adaptation. Credit the creators, link the licence and identify changes.",
+        "rights_source": "https://doi.org/10.7910/DVN/KJC3RH"
+      }
     },
     {
       "id": "spatially-explicit-harmonized-global-dataset-of-critical-infrastructure",
@@ -3725,7 +3861,15 @@
       "licence": "CC-BY-4.0",
       "data_availability": "Open (with code)",
       "reusable": true,
-      "ongoing": false
+      "ongoing": false,
+      "hosting": {
+        "format": "convert",
+        "format_note": "The global index and infrastructure layers are delivered in ZIP archives. Prepare directly accessible raster objects for cloud use.",
+        "format_source": "https://doi.org/10.5281/zenodo.4957647",
+        "rights": "allowed",
+        "rights_note": "CC BY 4.0 allows sharing and adaptation. Credit the creators, link the licence and identify changes.",
+        "rights_source": "https://doi.org/10.5281/zenodo.4957647"
+      }
     },
     {
       "id": "downscaled-gridded-global-dataset-gdp-per-capita-ppp-1990-2022",
@@ -3767,7 +3911,15 @@
       "licence": "CC-BY-4.0",
       "data_availability": "Open (with code)",
       "reusable": true,
-      "ongoing": false
+      "ongoing": false,
+      "hosting": {
+        "format": "convert",
+        "format_note": "The v3 admin-2 GDP raster uses strips. Prepare a COG or a chunked time-series store for selective reads.",
+        "format_source": "https://doi.org/10.5281/zenodo.16741980",
+        "rights": "allowed",
+        "rights_note": "CC BY 4.0 allows sharing and adaptation. Credit the creators, link the licence and identify changes.",
+        "rights_source": "https://doi.org/10.5281/zenodo.16741980"
+      }
     },
     {
       "id": "africa-agriculture-watch-aagwa",
@@ -4352,8 +4504,16 @@
       },
       "licence": "CC-BY-4.0 / CC-BY-SA-4.0 / CC0-1.0 (varies by source model)",
       "data_availability": "Open data",
-      "reusable": true,
-      "ongoing": false
+      "reusable": false,
+      "ongoing": false,
+      "hosting": {
+        "format": "cloud",
+        "format_note": "Microsoft Planetary Computer provides chunked Zarr stores organised by model, scenario, member and variable.",
+        "format_source": "https://planetarycomputer.microsoft.com/dataset/group/cil-gdpcir",
+        "rights": "varies",
+        "rights_note": "The group has separate CC BY, CC BY-SA and CC0 collections. Follow the selected model’s terms and citation requirements.",
+        "rights_source": "https://planetarycomputer.microsoft.com/dataset/group/cil-gdpcir"
+      }
     },
     {
       "id": "google-flood-hub",
@@ -4629,7 +4789,7 @@
       "region": "Global",
       "spatial_resolution": "",
       "temporal_coverage": "",
-      "access": "open",
+      "access": "unknown",
       "collection": "assets",
       "section": "Hazard & Impacts",
       "shared_by": "",
@@ -4659,10 +4819,18 @@
         "affiliation": "College of Public Health, University of Nebraska Medical Center",
         "email": "sscales@unmc.edu"
       },
-      "licence": "CC-BY-NC-ND-4.0",
-      "data_availability": "Open data",
+      "licence": "CC-BY-4.0 (MERGE deposit); separate EM-DAT terms",
+      "data_availability": "Original v1 files restricted; Zenodo requests disabled. See the provider’s v2 notice.",
       "reusable": false,
-      "ongoing": false
+      "ongoing": false,
+      "hosting": {
+        "format": "unknown",
+        "format_note": "The complete v1 archive is closed. The v2 ZIP includes JSON tables and omits most EM-DAT fields.",
+        "format_source": "https://zenodo.org/records/16837695",
+        "rights": "permission",
+        "rights_note": "The v1 deposit lists CC BY 4.0, but the complete archive includes EM-DAT fields subject to separate UCLouvain terms. Obtain clearance before redistributing the complete archive.",
+        "rights_source": "https://zenodo.org/records/16837695"
+      }
     },
     {
       "id": "wfp-document-0000172936",
@@ -4752,7 +4920,15 @@
       "licence": "CC-BY-4.0",
       "data_availability": "Open (with code)",
       "reusable": true,
-      "ongoing": false
+      "ongoing": false,
+      "hosting": {
+        "format": "convert",
+        "format_note": "Figshare supplies the projection tables as Excel workbooks. Convert the tables to Parquet for selective reads.",
+        "format_source": "https://doi.org/10.6084/m9.figshare.28838930.v1",
+        "rights": "allowed",
+        "rights_note": "CC BY 4.0 allows sharing and adaptation. Credit the creators, link the licence and identify changes.",
+        "rights_source": "https://doi.org/10.6084/m9.figshare.28838930.v1"
+      }
     },
     {
       "id": "ai4ch4-ai-for-methane",
@@ -6045,7 +6221,7 @@
       "region": "Tropical belt (nine sites across seven countries)",
       "spatial_resolution": "Field-scale polygons",
       "temporal_coverage": "2013-2020",
-      "access": "open",
+      "access": "unknown",
       "collection": "methods",
       "section": "Crop Type Mapping",
       "shared_by": "",
@@ -6069,10 +6245,18 @@
         "affiliation": "TETIS, CIRAD, Univ Montpellier",
         "email": "audrey.jolivot@cirad.fr"
       },
-      "data_availability": "Open data",
+      "data_availability": "Contact the corresponding author about the full V2 archive. WorldCereal publishes a subset.",
       "reusable": false,
-      "licence": "",
-      "ongoing": false
+      "licence": "CC-BY-4.0",
+      "ongoing": false,
+      "hosting": {
+        "format": "convert",
+        "format_note": "V2 field polygons were archived as Shapefiles. A subset survives in WorldCereal ZIP files. A full V2 conversion needs access to the complete archive.",
+        "format_source": "https://dataverse.cirad.fr/dataset.xhtml?persistentId=doi:10.18167/DVN1/P7OLAP&version=2.1",
+        "rights": "allowed",
+        "rights_note": "CIRAD lists CC BY 4.0 for V2. Credit the authors and indicate changes. Access to the complete historical archive remains unresolved.",
+        "rights_source": "https://dataverse.cirad.fr/dataset.xhtml?persistentId=doi:10.18167/DVN1/P7OLAP&version=2.1"
+      }
     },
     {
       "id": "helmets-labeling-crops-kenya-crop-type-dataset",
@@ -6117,10 +6301,18 @@
         "affiliation": "University of Maryland",
         "email": "cnakalem@umd.edu"
       },
-      "licence": "CC-BY-4.0",
+      "licence": "CC-BY-SA-4.0",
       "data_availability": "Open data",
       "reusable": true,
-      "ongoing": false
+      "ongoing": false,
+      "hosting": {
+        "format": "convert",
+        "format_note": "The v1 release lists a CSV table and a ZIP distribution. The tabular observations can be converted to Parquet.",
+        "format_source": "https://zenodo.org/records/15133324",
+        "rights": "allowed",
+        "rights_note": "The deposited data are CC BY-SA 4.0. Give credit, link the licence, indicate changes and share adaptations under the same licence.",
+        "rights_source": "https://zenodo.org/records/15133324"
+      }
     },
     {
       "id": "high-resolution-and-bias-corrected-cmip5-projections",
@@ -6170,7 +6362,15 @@
       "licence": "CC-BY-4.0",
       "data_availability": "Open data",
       "reusable": true,
-      "ongoing": false
+      "ongoing": false,
+      "hosting": {
+        "format": "convert",
+        "format_note": "The linked CCAFS distribution packages monthly climate layers in model and period ZIP files. Prepare a directly accessible grid store.",
+        "format_source": "https://doi.org/10.26050/WDCC/CCAFS-CMIP5_downscaling",
+        "rights": "allowed",
+        "rights_note": "CC BY 4.0 allows sharing and adaptation. Credit the creators, link the licence and identify changes.",
+        "rights_source": "https://doi.org/10.26050/WDCC/CCAFS-CMIP5_downscaling"
+      }
     },
     {
       "id": "investment-trends-and-evaluation-gaps-in-rainwater-harvesting-in-sub-saharan-african-drylands",
@@ -6403,9 +6603,17 @@
         "email": ""
       },
       "data_availability": "Open (with code)",
-      "reusable": false,
-      "licence": "",
-      "ongoing": false
+      "reusable": true,
+      "licence": "CC-BY-4.0",
+      "ongoing": false,
+      "hosting": {
+        "format": "convert",
+        "format_note": "The sampled Africa probability TIFF has 512 × 512 tiles and no overviews. Prepare a COG with overviews for multi-scale access.",
+        "format_source": "https://zenodo.org/records/17627111",
+        "rights": "allowed",
+        "rights_note": "CC BY 4.0 allows sharing and adaptation. Credit the creators, link the licence and identify changes.",
+        "rights_source": "https://doi.org/10.5281/zenodo.17627111"
+      }
     },
     {
       "id": "youth-lead-dietary-emissions-seniors-drive-growth",
@@ -6555,7 +6763,7 @@
       "collection": "assets",
       "section": "Socio-economic & Gender",
       "shared_by": "Pete Steward",
-      "notes": "Nature Scientific Data data descriptor (early-access), DOI 10.1038/s41597-026-07919-4. First author Run Shi (Guangdong Academy of Sciences); corresponding author Yuanzheng Cui. Open access but CC BY-NC-ND 4.0 (no derivatives) -> not Hub-reusable without permission.",
+      "notes": "Nature Scientific Data data descriptor (early-access), DOI 10.1038/s41597-026-07919-4. First author Run Shi (Guangdong Academy of Sciences); corresponding author Yuanzheng Cui. The Zenodo data release is CC BY 4.0.",
       "date": "2026-07-20",
       "image": "",
       "links": [
@@ -6578,10 +6786,18 @@
         "affiliation": "Nanjing Institute of Geography and Limnology, CAS",
         "email": "yzcui@niglas.ac.cn"
       },
-      "licence": "CC-BY-NC-ND-4.0",
+      "licence": "CC-BY-4.0",
       "data_availability": "Open access (descriptor; data via linked repository)",
-      "reusable": false,
-      "ongoing": false
+      "reusable": true,
+      "ongoing": false,
+      "hosting": {
+        "format": "convert",
+        "format_note": "The 2013 consumption TIFF has tiles and no overviews. Prepare a COG with overviews for multi-scale access.",
+        "format_source": "https://zenodo.org/records/21122277",
+        "rights": "allowed",
+        "rights_note": "CC BY 4.0 allows sharing and adaptation. Credit the creators, link the licence and identify changes.",
+        "rights_source": "https://doi.org/10.5281/zenodo.21122277"
+      }
     },
     {
       "id": "lira-ai",
@@ -6797,7 +7013,15 @@
       "licence": "CC-BY-4.0",
       "data_availability": "Open data (Zenodo record + Box; NetCDF & Parquet)",
       "reusable": true,
-      "ongoing": false
+      "ongoing": false,
+      "hosting": {
+        "format": "unpack",
+        "format_note": "The inspected Vanuatu tables are already Parquet, wrapped in XZ inside a country ZIP. Remove both wrappers and host the Parquet objects directly. The gridded product is NetCDF.",
+        "format_source": "https://imperialcollegelondon.box.com/v/downscaled-cmip6-models",
+        "rights": "allowed",
+        "rights_note": "CC BY 4.0 allows sharing and adaptation. Credit the creators, link the licence and identify changes.",
+        "rights_source": "https://doi.org/10.5281/zenodo.21915837"
+      }
     },
     {
       "id": "fews-net-data-explorer",
@@ -7486,6 +7710,14 @@
         "name": "Maxim Neumann",
         "affiliation": "",
         "email": ""
+      },
+      "hosting": {
+        "format": "cloud",
+        "format_note": "The original confidence rasters are COGs served individually from the producer bucket. Figshare also distributes ZIP files.",
+        "format_source": "https://developers.google.com/earth-engine/datasets/catalog/projects_nature-trace_assets_forest_typology_forest_typology_2020_v1_0_collection",
+        "rights": "allowed",
+        "rights_note": "Figshare v1 is CC BY 4.0. Cite the deposit. The Earth Engine listing also requests a credit line whose wording is unresolved.",
+        "rights_source": "https://doi.org/10.25452/figshare.plus.32288616.v1"
       }
     },
     {
@@ -7574,7 +7806,7 @@
       "region": "Global",
       "spatial_resolution": "10 m (commodity probability); 30 m (forest persistence)",
       "temporal_coverage": "Annual 2018-2024 (commodity models, 2026a); 2020 (Forest Persistence v0)",
-      "access": "open",
+      "access": "login",
       "collection": "assets",
       "section": "Datasets",
       "shared_by": "Pete Steward",
@@ -7605,13 +7837,21 @@
         "World Resources Institute (WRI)"
       ],
       "licence": "CC-BY-4.0",
-      "data_availability": "Open (with code)",
+      "data_availability": "Registered project for the full release; anonymous regional mirror.",
       "reusable": true,
       "ongoing": true,
       "lead_contact": {
         "name": "",
         "affiliation": "",
         "email": ""
+      },
+      "hosting": {
+        "format": "cloud",
+        "format_note": "Google documents the 2026a commodity tiles as COGs in a Requester Pays bucket. A separate regional mirror provides anonymous access.",
+        "format_source": "https://developers.google.com/earth-engine/guides/forest_data_partnership_gcs_readme",
+        "rights": "allowed",
+        "rights_note": "The 2026a commodity maps use CC BY 4.0. Credit “Produced by Google for the Forest Data Partnership”, link the licence and indicate changes. Forest Persistence has a separate credit line.",
+        "rights_source": "https://developers.google.com/earth-engine/datasets/catalog/projects_forestdatapartnership_assets_cocoa_model_2026a"
       }
     },
     {
@@ -7730,7 +7970,15 @@
       },
       "licence": "OGL-UK-3.0",
       "data_availability": "Open data",
-      "reusable": true
+      "reusable": true,
+      "hosting": {
+        "format": "cloud",
+        "format_note": "CEDA supports HTTP range reads on the tested 2024 monthly SPEI NetCDF4. Its 3 × 450 × 900 chunks allow direct access: the March value near Lilongwe (+0.07) required about 0.65 MB of a 44.2 MB file. Other workflows may benefit from different chunk sizes.",
+        "format_source": "https://data.ceda.ac.uk/eidc/deposits01/f5ce92b0-03e8-4719-82ff-c62e6ebe927b/reference/monthly/spei/scale_03",
+        "rights": "allowed",
+        "rights_note": "UK Open Government Licence v3 permits copying, adaptation and redistribution. Acknowledge the source: “Contains data supplied by UK Centre for Ecology & Hydrology.”",
+        "rights_source": "https://doi.org/10.5285/f5ce92b0-03e8-4719-82ff-c62e6ebe927b"
+      }
     },
     {
       "id": "trends-earth-qgis",

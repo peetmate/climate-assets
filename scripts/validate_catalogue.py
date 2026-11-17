@@ -48,6 +48,8 @@ def validate(obj, props, required, path="entry"):
             continue
         if "enum" in spec and val not in spec["enum"]:
             errs.append(f"{path}.{key}: '{val}' not in enum")
+        if isinstance(val, str) and len(val) < spec.get("minLength", 0):
+            errs.append(f"{path}.{key}: too short")
         if isinstance(val, str) and val and "pattern" in spec and not re.match(spec["pattern"], val):
             errs.append(f"{path}.{key}: '{val}' fails pattern {spec['pattern']}")
         if isinstance(val, list):

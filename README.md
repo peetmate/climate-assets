@@ -62,6 +62,19 @@ Classification uses three orthogonal axes so filtering doesn't fight itself:
 Plus `access` (`open` · `login` · `paywall` · `request` · `unknown`) and the dataset-only fields
 `spatial_resolution` / `temporal_coverage` (populated where stated, empty otherwise).
 
+Dataset cards also carry an optional `hosting` assessment. Two independent filters cover the
+format of the reviewed delivery route and the right to redistribute its data. For format,
+use `cloud` for directly accessible COG, Parquet, Zarr or another verified selective-read layout,
+`unpack` when a suitable format is wrapped in an archive, and `convert` when the reviewed
+delivery needs preparation for cloud hosting. Use `varies` for product-specific assessments
+and `unknown` when the layout is unverified. Give the release, scope and source for each decision.
+
+For rights, `allowed` includes attribution and share-alike obligations; name those conditions.
+Choose `limited` for narrower uses such as non-commercial redistribution, `permission` when
+the proposed redistribution needs clearance, `varies` for distinct component or distribution
+terms, and `unknown` for missing or conflicting terms. A download or login route establishes
+access only. New dataset cards without an assessment display both statuses as unconfirmed.
+
 Current spread: themes now sit at 1–2 per entry (down from an average of 3.8), balanced across the
 ten topics; the most common tags are `global`, `open-data`, `remote-sensing`, `high-resolution`,
 `machine-learning`, `food-security`, `africa`, and `ai`.
@@ -112,10 +125,9 @@ and permalinks, so avoid renaming ids once published.
 The newsfeed/dashboard page itself is built — see `whats-new-astro/`. What is left is data work and
 wiring:
 
-1. **Close the completeness gaps.** `scripts/validate_catalogue.py` reports them on every run:
-   currently 67 entries without a cover image, 81 without a licence, 17 undated and not ongoing.
-   Licences matter most — `reusable` is derived from them, and that flag is what says whether an
-   asset could be ingested into the Hub.
+1. **Close the completeness gaps.** `scripts/validate_catalogue.py` reports them on every run.
+   Check dataset licences against their releases. Record permission to redistribute in the hosting
+   assessment, including component-specific terms and attribution.
 2. **Verify a first tranche** (the ones you'd feature first). Descriptions and access flags from the
    original automated enrichment are draft; see the caveats above and `adversarial-review-2.md`.
 3. **Backfill `date_added` and `shared_by`** where you can, so the newsfeed ordering is meaningful.
