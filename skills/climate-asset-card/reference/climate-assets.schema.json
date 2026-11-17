@@ -135,14 +135,35 @@
       "type": "object",
       "description": "Assessment of the named data release and delivery route. Used only on dataset cards, including catalogues of multiple datasets.",
       "additionalProperties": false,
+      "dependencies": { "data_access": ["access_source", "access_note"] },
       "required": ["format", "format_note", "format_source", "rights", "rights_note", "rights_source"],
       "properties": {
         "format": { "type": "string", "enum": ["cloud", "unpack", "convert", "varies", "unknown"] },
         "format_note": { "type": "string", "minLength": 1 },
         "format_source": { "type": "string", "pattern": "^https?://", "minLength": 1 },
+        "data_access": { "type": "string", "enum": ["anonymous", "login", "key", "token", "guestbook", "approval", "billing", "closed", "varies", "unknown"] },
+        "access_note": { "type": "string", "minLength": 1 },
+        "access_source": { "type": "string", "pattern": "^https?://", "minLength": 1 },
         "rights": { "type": "string", "enum": ["allowed", "limited", "permission", "varies", "unknown"] },
         "rights_note": { "type": "string", "minLength": 1 },
         "rights_source": { "type": "string", "pattern": "^https?://", "minLength": 1 }
+      }
+    },
+    "footprint": {
+      "type": "object",
+      "description": "Published download volume and count for a named release or explicitly identified subset. Omitted byte or count fields are unknown.",
+      "additionalProperties": false,
+      "required": ["scope", "note", "source", "checked"],
+      "dependencies": { "count": ["unit"], "unit": ["count"] },
+      "properties": {
+        "scope": { "type": "string", "enum": ["release", "subset"] },
+        "bytes": { "type": "integer", "minimum": 0 },
+        "count": { "type": "integer", "minimum": 0 },
+        "unit": { "type": "string", "minLength": 1 },
+        "note": { "type": "string", "minLength": 1 },
+        "source": { "type": "string", "pattern": "^https?://", "minLength": 1 },
+        "secondary_source": { "type": "string", "pattern": "^https?://", "minLength": 1 },
+        "checked": { "type": "string", "format": "date" }
       }
     },
     "reusable": {

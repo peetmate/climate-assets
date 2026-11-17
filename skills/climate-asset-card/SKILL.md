@@ -76,7 +76,7 @@ real mistakes made before — do not repeat them.
   > publishing the source. Say so in `notes` rather than flipping `reusable` to false.
   > Where an asset aggregates many sources under mixed terms (e.g. national datasets, some NC),
   > leave `licence` empty, set `reusable` false, and list the per-source terms in `notes`.
-- For dataset cards, record `hosting` when evidence is available. Give the delivery format and data redistribution rights separate statuses, notes and source URLs. Apply the source to the named release or layer. See the catalogue README for status definitions.
+- For dataset cards, record `hosting` when evidence is available. Give the delivery format, redistribution rights and data access barrier separate statuses, notes and source URLs. Record published bytes and element count in `footprint` with scope, unit, source and check date. Omit unknown quantities. Apply the source to the named release or layer. See the catalogue README for status definitions.
 - `data_availability`: "Open data" / "Open (with code)" / "Code only" / "On request" /
   "No associated data".
 

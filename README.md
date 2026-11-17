@@ -62,8 +62,7 @@ Classification uses three orthogonal axes so filtering doesn't fight itself:
 Plus `access` (`open` · `login` · `paywall` · `request` · `unknown`) and the dataset-only fields
 `spatial_resolution` / `temporal_coverage` (populated where stated, empty otherwise).
 
-Dataset cards also carry an optional `hosting` assessment. Two independent filters cover the
-format of the reviewed delivery route and the right to redistribute its data. For format,
+Dataset cards also carry an optional `hosting` assessment. Three filters cover delivery format, redistribution rights and access to the actual data. For format,
 use `cloud` for directly accessible COG, Parquet, Zarr or another verified selective-read layout,
 `unpack` when a suitable format is wrapped in an archive, and `convert` when the reviewed
 delivery needs preparation for cloud hosting. Use `varies` for product-specific assessments
@@ -73,7 +72,15 @@ For rights, `allowed` includes attribution and share-alike obligations; name tho
 Choose `limited` for narrower uses such as non-commercial redistribution, `permission` when
 the proposed redistribution needs clearance, `varies` for distinct component or distribution
 terms, and `unknown` for missing or conflicting terms. A download or login route establishes
-access only. New dataset cards without an assessment display both statuses as unconfirmed.
+access only. Set `hosting.data_access` to `anonymous` for a verified data read without login, keys,
+tokens, forms or billing. Identify the actual barrier and cite the provider route otherwise. Only
+`cloud` + `allowed` + `anonymous` together qualify for the federation filter. An open landing page
+or partial mirror cannot establish access to the full release. Missing assessments display as unconfirmed.
+
+**Dataset sizes** compares download bytes and element counts separately from the cards. Use the
+versioned provider manifest or reported archive total. Identify what was counted (files, layers,
+collections, etc.), capture the source and date, and mark a subset explicitly. Omit unknown values.
+Sizes describe stored downloads; extracted or reformatted data may require different capacity.
 
 Current spread: themes now sit at 1–2 per entry (down from an average of 3.8), balanced across the
 ten topics; the most common tags are `global`, `open-data`, `remote-sensing`, `high-resolution`,

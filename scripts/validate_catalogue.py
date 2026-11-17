@@ -46,6 +46,8 @@ def validate(obj, props, required, path="entry"):
         if declared and not any(isinstance(val, PY_TYPES[t]) for t in types if t in PY_TYPES):
             errs.append(f"{path}.{key}: type {type(val).__name__} not in {types}")
             continue
+        if "minimum" in spec and (isinstance(val, bool) or val < spec["minimum"]):
+            errs.append(f"{path}.{key}: expected a number at least {spec['minimum']}")
         if "enum" in spec and val not in spec["enum"]:
             errs.append(f"{path}.{key}: '{val}' not in enum")
         if isinstance(val, str) and len(val) < spec.get("minLength", 0):
@@ -68,6 +70,11 @@ def validate(obj, props, required, path="entry"):
                     if "pattern" in items and not re.match(items["pattern"], item):
                         errs.append(f"{path}.{key}[{i}]: '{item}' fails pattern")
         if isinstance(val, dict) and spec.get("type") == "object" and "properties" in spec:
+            for field, companions in spec.get("dependencies", {}).items():
+                if field in val:
+                    for companion in companions:
+                        if companion not in val:
+                            errs.append(f"{path}.{key}.{field}: requires {companion}")
             errs += validate(val, spec["properties"], spec.get("required", []), f"{path}.{key}")
     return errs
 

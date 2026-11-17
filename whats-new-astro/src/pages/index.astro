@@ -107,11 +107,23 @@ a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
 .badge.reuse{background:#e2f7f0;color:var(--green-l);border:1px solid #a9ead7}
 .hosting{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 7px}
 .hosting .badge{white-space:normal;background:var(--soft);color:#42554e}
-.hosting .cloud,.hosting .allowed{background:#e2f7f0;color:#06543e}
+.hosting .anonymous,.hosting .cloud,.hosting .allowed{background:#e2f7f0;color:#06543e}
 .hosting .limited,.hosting .permission{background:#fff1d8;color:#754d0e}
 .hosting-details{margin-bottom:8px;color:var(--muted);font-size:12.5px}
 .hosting-details summary{cursor:pointer;width:fit-content}
 .hosting-details p{margin:5px 0}
+.layout main{min-width:0}
+.inventory-intro h2{margin:0;color:var(--green);font:700 22px var(--serif)}
+.inventory-intro p{margin:4px 0 12px;color:var(--muted)}
+.inventory{overflow-x:auto}
+.inventory table{width:100%;border-collapse:collapse;background:var(--card);font-size:14px}
+.inventory th,.inventory td{text-align:left;vertical-align:top;border-bottom:1px solid var(--line);padding:12px}
+.inventory th{background:var(--soft);color:var(--green)}
+.inventory th[scope=row]{background:var(--card);min-width:150px}
+.inventory .quantity{white-space:nowrap;font-variant-numeric:tabular-nums}
+.inventory .partial{display:block;font-size:12px;color:#835300}
+.inventory .evidence{min-width:190px}
+.inventory .evidence small{display:block;margin-top:4px;color:var(--muted)}
 .badge.lic{background:#eef3f1;color:#3a566f;border:1px solid #d5e2df}
 .date{color:var(--muted);font-size:11.5px;font-weight:700;margin-left:auto}
 .date.ongoing{color:var(--green-l)}
@@ -153,13 +165,16 @@ footer.foot-brand{border-top:1px solid var(--line);padding:18px 0;color:var(--mu
  <div class="toggle">
   <button id="v-feed" class="on" data-view="feed">&#9776;&nbsp; Feed</button>
   <button id="v-dash" data-view="dashboard">&#9638;&nbsp; Dashboard</button>
+  <button id="v-inventory" data-view="inventory">Dataset sizes</button>
  </div>
  <div class="search">
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4-4"></path></svg>
   <input id="q" type="search" placeholder="Search titles, descriptions, sources, tags&hellip;" />
  </div>
  <div class="sort"><select id="sort">
-  <option value="new">Sort: Newest</option>
+  <option value="largest" hidden>Sort: Largest size</option>
+  <option value="smallest" hidden>Sort: Smallest size</option>
+  <option value="new" selected>Sort: Newest</option>
   <option value="old">Sort: Oldest</option>
   <option value="az">Sort: A&ndash;Z</option>
   <option value="theme">Sort: Theme</option>
@@ -173,15 +188,17 @@ footer.foot-brand{border-top:1px solid var(--line);padding:18px 0;color:var(--mu
 
 <div class="wrap layout">
  <aside class="facets">
+  <div class="facet"><h4>Federation</h4><label class="opt"><input id="federatable" type="checkbox"> <span>Cloud-optimised, shareable, no access barrier</span><span class="c" id="federatable-count"></span></label></div>
   <div class="facet"><h4>Dataset format</h4><div id="f-format"></div></div>
   <div class="facet"><h4>Rights to rehost data</h4><div id="f-rights"></div></div>
+  <div class="facet"><h4>Access</h4><div id="f-access"></div></div>
   <div class="facet"><h4>Year</h4><div id="f-year"></div></div>
   <div class="facet"><h4>Theme</h4><div id="f-theme"></div></div>
   <div class="facet"><h4>Type</h4><div id="f-type"></div></div>
-  <div class="facet"><h4>Access</h4><div id="f-access"></div></div>
  </aside>
  <main>
-  <div class="note">Standalone prototype for the Climate Data Hub team. Sorted newest-first on each asset&rsquo;s publication/release date; living resources (portals, dashboards, recurring feeds) show as <b>Ongoing</b> and sort to the top. Preview images are the asset&rsquo;s own or a rendered first page, else a themed banner. Ratings save locally (a shared rating backend to be wired by the web team); comments will attach to giscus keyed on each asset id.</div>
+  <div id="catalogue-intro" class="note">Standalone prototype for the Climate Data Hub team. Sorted newest-first on each asset&rsquo;s publication/release date; living resources (portals, dashboards, recurring feeds) show as <b>Ongoing</b> and sort to the top. Preview images are the asset&rsquo;s own or a rendered first page, else a themed banner. Ratings save locally (a shared rating backend to be wired by the web team); comments will attach to giscus keyed on each asset id.</div>
+  <div id="inventory-intro" class="inventory-intro" hidden><h2>Dataset sizes</h2><p>Published download sizes in decimal units. Compressed archives can take more space after extraction or conversion. Counts identify what was measured.</p></div>
   <div id="results" class="feed"></div>
   <div id="empty" class="empty" style="display:none">No assets match those filters.</div>
  </main>
@@ -203,9 +220,10 @@ const THEMEDEF = {}; THEMEVOCAB.themes.forEach(t=>{THEMEDEF[t.label]={def:t.defi
 const TYPE_LABEL = {"dataset":"Dataset","atlas-hub":"Atlas / Hub","tool-software":"Tool / Software","model":"Model","publication":"Publication","media":"Media","contact":"Contact"};
 const FORMAT_LABEL = {cloud:"Cloud-optimised",unpack:"Unpack and host",convert:"Reformat and host",varies:"Format varies by product",unknown:"Format unconfirmed"};
 const RIGHTS_LABEL = {allowed:"Rehosting allowed",limited:"Limited rehosting",permission:"Permission required",varies:"Rights vary by product",unknown:"Rehosting unconfirmed"};
+const DATA_ACCESS_LABEL = {anonymous:"No login or key",login:"Login required",key:"API key required",token:"Temporary token required",guestbook:"Guestbook required",approval:"Approval required",billing:"Billing project required",closed:"Original files closed",varies:"Access varies by route",unknown:"Access unconfirmed"};
 const PRIMARY_LABEL = {"dataset":"Data","atlas-hub":"Open portal","tool-software":"Code / repo","model":"Model","publication":"Paper","media":"View","contact":"Contact"};
 const MONTHS=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-const state={view:"feed",themes:new Set(),subthemes:new Set(),types:new Set(),access:new Set(),format:new Set(),rights:new Set(),tags:new Set(),years:new Set()};
+const state={view:"feed",federatable:false,cardSort:"new",inventorySort:"largest",themes:new Set(),subthemes:new Set(),types:new Set(),access:new Set(),format:new Set(),rights:new Set(),tags:new Set(),years:new Set()};
 function subMatch(e,sid){const s=SUBTHEME[sid];return s && e.themes.includes(s.parent) && (e.tags||[]).some(t=>s.tags.includes(t));}
 function buildThemeFacet(){
  const el=document.getElementById("f-theme");el.innerHTML="";
@@ -248,6 +266,7 @@ function issueURL(kind,e){
 
 function bucket(e){ return e.ongoing?"ongoing":((e.date||"").match(/^\d{4}/)?e.date.slice(0,4):"undated"); }
 function facetValue(entry, field){
+ if(field==="access" && entry.type==="dataset") return entry.hosting?.data_access || "unknown";
  if(field==="format" || field==="rights"){
   return entry.type==="dataset" ? (entry.hosting?.[field] || "unknown") : null;
  }
@@ -307,15 +326,21 @@ function linksHTML(e){
  const lcx=e.lead_contact||{}; if(lcx.email && !lcx.name) out.push(`<a class="lk" href="mailto:${attr(lcx.email)}">&#9993; Contact</a>`);
  return out.join("");
 }
+function canFederate(entry){
+ return entry.type==="dataset" && entry.hosting?.format==="cloud" &&
+  entry.hosting.rights==="allowed" && entry.hosting.data_access==="anonymous";
+}
 function hostingHTML(entry){
  if(entry.type!=="dataset") return "";
  const format=facetValue(entry,"format"), rights=facetValue(entry,"rights");
- const badges=`<div class="hosting"><span class="badge ${format}">${FORMAT_LABEL[format]}</span><span class="badge ${rights}">${RIGHTS_LABEL[rights]}</span></div>`;
+ const access=facetValue(entry,"access");
+ const badges=`<div class="hosting"><span class="badge ${format}">${FORMAT_LABEL[format]}</span><span class="badge ${rights}">${RIGHTS_LABEL[rights]}</span><span class="badge ${access}">${DATA_ACCESS_LABEL[access]}</span></div>`;
  if(!entry.hosting) return badges;
  const h=entry.hosting;
- return badges+`<details class="hosting-details"><summary>Format and licence details</summary>
+ return badges+`<details class="hosting-details"><summary>Format, licence and access</summary>
   <p>${esc(h.format_note)} <a href="${attr(h.format_source)}" target="_blank" rel="noopener">Format source</a></p>
-  <p>${esc(h.rights_note)} <a href="${attr(h.rights_source)}" target="_blank" rel="noopener">Rights source</a></p></details>`;
+  <p>${esc(h.rights_note)} <a href="${attr(h.rights_source)}" target="_blank" rel="noopener">Rights source</a></p>
+  ${h.access_note ? `<p>${esc(h.access_note)} <a href="${attr(h.access_source)}" target="_blank" rel="noopener">Access source</a></p>` : ""}</details>`;
 }
 function card(e){
  const held=(e.notes||"").includes("NEEDS REVIEW");
@@ -337,7 +362,7 @@ function card(e){
  return `<article class="card">
   ${banner(e)}
   <div class="body">
-   <div class="top">${themeB}<span class="badge access acc-${e.access}">${e.access}</span>${reuse}${lic}
+   <div class="top">${themeB}${e.type==="dataset" ? "" : `<span class="badge access acc-${e.access}">${e.access}</span>`}${reuse}${lic}
      ${held?'<span class="review">NEEDS REVIEW</span>':''}${e.ongoing?'<span class="date ongoing">&#9679; Ongoing</span>':(dstr?`<span class="date">${dstr}</span>`:'')}</div>
    <h3>${esc(e.title)}</h3>
    ${hostingHTML(e)}
@@ -359,25 +384,50 @@ function matches(e){
  if(q){const lc=e.lead_contact||{};const hay=(e.title+" "+e.description+" "+(e.source||"")+" "+e.themes.join(" ")+" "+(e.tags||[]).join(" ")+" "+(e.organisations||[]).join(" ")+" "+(lc.name||"")+" "+(e.licence||"")).toLowerCase();if(!hay.includes(q))return false;}
  if(state.themes.size||state.subthemes.size){const okT=[...state.themes].some(t=>e.themes.includes(t));const okS=[...state.subthemes].some(sid=>subMatch(e,sid));if(!okT&&!okS)return false;}
  if(state.types.size&&!state.types.has(e.type))return false;
- if(state.access.size&&!state.access.has(e.access))return false;
+ if(state.view==="inventory" && e.type!=="dataset")return false;
+ if(state.federatable&&!canFederate(e))return false;
+ if(state.access.size&&!state.access.has(facetValue(e,"access")))return false;
  if(state.format.size&&!state.format.has(facetValue(e,"format")))return false;
  if(state.rights.size&&!state.rights.has(facetValue(e,"rights")))return false;
  if(state.tags.size&&!(e.tags||[]).some(t=>state.tags.has(t)))return false;
  if(state.years.size&&!state.years.has(bucket(e)))return false;
  return true;
 }
+function formatBytes(bytes){
+ if(bytes==null) return "Unconfirmed";
+ const units=["B","kB","MB","GB","TB","PB"];
+ const order=Math.min(units.length-1,Math.floor(Math.log10(Math.max(1,bytes))/3));
+ return (bytes/1000**order).toLocaleString("en",{maximumSignificantDigits:3})+" "+units[order];
+}
+function bySize(a,b,direction){
+ const rank=e=>e.footprint?.bytes==null ? 2 : e.footprint.scope==="subset" ? 1 : 0;
+ return rank(a)-rank(b) || direction*((a.footprint?.bytes||0)-(b.footprint?.bytes||0)) || a.title.localeCompare(b.title);
+}
+function inventoryHTML(entries){
+ if(!entries.length)return "";
+ const rows=entries.map(e=>{
+  const f=e.footprint||{};
+  const partial=f.scope==="subset"?'<span class="partial">Partial inventory</span>':"";
+  const sources=[f.source,f.secondary_source].filter(Boolean).map((url,i)=>`<a href="${attr(url)}" target="_blank" rel="noopener">${i?"Second source":"Source"}</a>`).join(" · ");
+  return `<tr><th scope="row">${e.url?`<a href="${attr(e.url)}" target="_blank" rel="noopener">${esc(e.title)}</a>`:esc(e.title)}</th>
+   <td class="quantity">${formatBytes(f.bytes)}${partial}</td>
+   <td>${f.count==null?"Unconfirmed":f.count.toLocaleString("en")+" "+esc(f.unit)}</td>
+   <td class="evidence">${esc(f.note||"No provider inventory recorded.")}<small>${sources}${f.checked?" · "+esc(f.checked):""}</small></td></tr>`;
+ });
+ return `<table aria-label="Dataset sizes and element counts"><thead><tr><th>Dataset</th><th>Download size</th><th>Elements</th><th>What is included</th></tr></thead><tbody>${rows.join("")}</tbody></table>`;
+}
 function render(){
  let list=DATA.assets.filter(matches);
  const s=document.getElementById("sort").value;
  const az=(a,b)=>a.title.localeCompare(b.title);
- const cmp={new:(a,b)=>sortval(b)-sortval(a)||az(a,b),
+ const cmp={largest:(a,b)=>bySize(a,b,-1),smallest:(a,b)=>bySize(a,b,1),new:(a,b)=>sortval(b)-sortval(a)||az(a,b),
             old:(a,b)=>{const x=sortval(a),y=sortval(b);if(x<0&&y<0)return az(a,b);if(x<0)return 1;if(y<0)return -1;return x-y||az(a,b);},
             az:az,theme:(a,b)=>a.themes[0].localeCompare(b.themes[0])||az(a,b),
-            type:(a,b)=>a.type.localeCompare(b.type)||az(a,b),access:(a,b)=>a.access.localeCompare(b.access)||az(a,b)};
+            type:(a,b)=>a.type.localeCompare(b.type)||az(a,b),access:(a,b)=>facetValue(a,"access").localeCompare(facetValue(b,"access"))||az(a,b)};
  list.sort(cmp[s]);
- const R=document.getElementById("results");R.className=state.view;R.innerHTML=list.map(card).join("");
+ const R=document.getElementById("results");R.className=state.view;R.innerHTML=state.view==="inventory" ? inventoryHTML(list) : list.map(card).join("");
  document.getElementById("empty").style.display=list.length?"none":"block";
- document.getElementById("count").textContent=list.length+" of "+DATA.assets.length+" assets";
+ document.getElementById("count").textContent=list.length+" of "+(state.view==="inventory" ? DATA.assets.filter(e=>e.type==="dataset").length+" datasets" : DATA.assets.length+" assets");
 }
 // events (delegated)
 document.getElementById("results").addEventListener("click",ev=>{
@@ -390,12 +440,26 @@ document.getElementById("q").addEventListener("input",render);
 document.getElementById("sort").addEventListener("change",render);
 document.getElementById("v-feed").addEventListener("click",()=>setView("feed"));
 document.getElementById("v-dash").addEventListener("click",()=>setView("dashboard"));
+document.getElementById("v-inventory").addEventListener("click",()=>setView("inventory"));
+document.getElementById("federatable-count").textContent=DATA.assets.filter(canFederate).length;
+document.getElementById("federatable").addEventListener("change",ev=>{state.federatable=ev.target.checked;render();});
 document.getElementById("clear").addEventListener("click",clearAll);
-function setView(v){state.view=v;document.getElementById("v-feed").classList.toggle("on",v==="feed");document.getElementById("v-dash").classList.toggle("on",v==="dashboard");render();}
-function clearAll(){state.themes.clear();state.subthemes.clear();state.types.clear();state.access.clear();state.format.clear();state.rights.clear();state.tags.clear();state.years.clear();document.getElementById("q").value="";
+function setView(v){
+ const sort=document.getElementById("sort");
+ if(state.view==="inventory")state.inventorySort=sort.value;else state.cardSort=sort.value;
+ state.view=v;
+ const inventory=v==="inventory";
+ document.querySelectorAll("[data-view]").forEach(b=>{b.classList.toggle("on",b.dataset.view===v);b.setAttribute("aria-pressed",String(b.dataset.view===v));});
+ for(const option of sort.options)if(["largest","smallest"].includes(option.value))option.hidden=!inventory;
+ sort.value=inventory ? state.inventorySort : state.cardSort;
+ document.getElementById("catalogue-intro").hidden=inventory;
+ document.getElementById("inventory-intro").hidden=!inventory;
+ render();
+}
+function clearAll(){state.federatable=false;state.themes.clear();state.subthemes.clear();state.types.clear();state.access.clear();state.format.clear();state.rights.clear();state.tags.clear();state.years.clear();document.getElementById("q").value="";
  document.querySelectorAll(".facet input").forEach(i=>{i.checked=false;i.closest(".opt").classList.remove("active");});render();}
 buildFacet("f-format","format",state.format,FORMAT_LABEL);buildFacet("f-rights","rights",state.rights,RIGHTS_LABEL);
-buildYearFacet();buildThemeFacet();buildFacet("f-type","type",state.types,TYPE_LABEL);buildFacet("f-access","access",state.access);
+buildYearFacet();buildThemeFacet();buildFacet("f-type","type",state.types,TYPE_LABEL);buildFacet("f-access","access",state.access,{...DATA_ACCESS_LABEL,open:"Open access",request:"On request",paywall:"Paywall"});
 render();
 </script>
 </body>
