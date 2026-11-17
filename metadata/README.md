@@ -15,6 +15,8 @@ Each card in the [source catalogue](../climate-assets.json) has a YAML file link
 5. Use the provider's version label. For genuinely unversioned resources, the standard allows an initial record version of 1. Check public release history first. CDH maintains these federated metadata records. Provider contacts describe their actual roles in producing, licensing and supplying the resource.
 6. Validate against [CDH v0.5.0](https://github.com/CGIAR-Climate-Data-Hub/cdh-metadata-standard/tree/v0.5.0), including cross-field checks. From a checkout of that tag, install dependencies with `npm ci`, then run `node scripts/validate-yaml.js --profile spec/schemas/profiles/cdh.schema.json /absolute/path/to/metadata/records`. Check the resource-specific source and close resolved gaps. Move the YAML to records and update the register when all release blockers close.
 
+When building or enriching a dataset record, return the [dataset mapping summary](../skills/climate-asset-card/SKILL.md#dataset-mapping-summary) with the catalogue handoff. Keep hosting fields in the catalogue schema.
+
 ## Can an AI use the data from the YAML alone?
 
 [Entry-only test results, 16 November 2026](usability/2026-11-16.csv) cover all 30 cards labelled dataset in the source catalogue. Their federated YAML describes 27 datasets and three discovery services. The tested revision is [8511d35](https://github.com/peetmate/climate-assets/tree/8511d359d90fba806524313f0506b3a049679026/metadata). Each row records one attempt, the provider evidence and any change needed. A successful service test applies to the sampled product or table.

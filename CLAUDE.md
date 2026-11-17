@@ -56,7 +56,7 @@ they differ, so a catalogue edit that skipped the script cannot reach the live p
 
 ## Adding an entry
 
-Follow `skills/climate-asset-card/SKILL.md`. The rules that get broken most often:
+Follow `skills/climate-asset-card/SKILL.md`. Give every dataset mapping agent the [dataset mapping summary](skills/climate-asset-card/SKILL.md#dataset-mapping-summary) and collect its completed rows. The rules that get broken most often:
 
 1. **Classify by what the URL serves**, not the topic. Also check the rendered primary-link label in
    `index.astro` (`PRIMARY_LABEL`): `tool-software` renders "Code / repo", so pointing that type at
@@ -74,7 +74,7 @@ Follow `skills/climate-asset-card/SKILL.md`. The rules that get broken most ofte
 6. **`image`**: prefer the asset's own `og:image`. Leave it empty and the UI screenshots the page
    via thum.io — except for the publisher domains in `index.astro`'s `NOSHOT` list, which return
    CAPTCHAs.
-7. Then run the QA checklist, and hold anything unresolved with `⚠ NEEDS REVIEW` in `notes`.
+7. Then run the QA checklist, and flag unsupported claims with `⚠ NEEDS REVIEW`. Record documented access restrictions and unknown quantities explicitly.
 
 Prefer authoritative metadata APIs over scraping the landing page: Crossref, Europe PMC, the arXiv
 API (over **https**; plain http returns an empty body), Zenodo, the GitHub API, Planetary Computer
