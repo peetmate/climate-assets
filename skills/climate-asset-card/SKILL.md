@@ -76,7 +76,7 @@ real mistakes made before — do not repeat them.
   > publishing the source. Say so in `notes` rather than flipping `reusable` to false.
   > Where an asset aggregates many sources under mixed terms (e.g. national datasets, some NC),
   > leave `licence` empty, set `reusable` false, and list the per-source terms in `notes`.
-- For dataset cards, record `hosting` when evidence is available. Give the delivery format, redistribution rights and data access barrier separate statuses, notes and source URLs. Record published bytes and element count in `footprint` with scope, unit, source and check date. Omit unknown quantities. Apply the source to the named release or layer. See the catalogue README for status definitions.
+For every dataset, complete the [dataset mapping summary](#dataset-mapping-summary).
 - `data_availability`: "Open data" / "Open (with code)" / "Code only" / "On request" /
   "No associated data".
 
@@ -110,8 +110,23 @@ alternative (institutional repo / preprint / author copy).
 Validate against the schema (0 errors, ≤2 themes, unique id, licence↔reusable consistent). Then run
 the **mean QA pass** in `reference/qa-checklist.md` — assume fields are wrong until verified, and
 especially re-check author (corresponding, not last), email (published, not fabricated), licence,
-date, and duplicates. Leave genuinely unknown fields empty; never fill with a guess. Mark anything
-unresolved `⚠ NEEDS REVIEW` in `notes` and hold it from publication.
+date, and duplicates. Leave genuinely unknown fields empty; never fill with a guess. Flag unsupported claims `⚠ NEEDS REVIEW` and hold those claims until resolved. A verified permission route or an unknown download size can be reported as such. Keep validation local.
+
+## Dataset mapping summary
+
+When assigning dataset discovery, mapping, enrichment or QA, include this section in the agent brief. Return one row per dataset release assessed, including releases behind access controls. Use the following columns in the handoff.
+
+| Dataset, release and provider route | Cloud format / preparation | Redistribution / conditions | Data access | Can federate? | Download size and scope | Element count and unit | Provider evidence, date and open questions |
+|---|---|---|---|---|---|---|---|
+
+- **Format.** Inspect the delivered files or provider manifest. Record the format and whether a client can selectively read it in place (`cloud`), must unpack it (`unpack`), or must convert and re-host it (`convert`). Use `varies` for mixed products and `unknown` when unverified. A filename alone cannot establish selective reads.
+- **Redistribution.** Cite data terms for the release and say whether re-hosting is allowed, limited, requires permission, varies or is unknown. Name obligations such as attribution and share-alike. Software and paper licences apply only to their own artifacts.
+- **Access.** Test the actual data route. Use `anonymous` only after reading data without credentials, tokens, a form or billing. Otherwise identify the login, API key, token, guestbook, approval or billing requirement, closed route, or mixed access. An unsuccessful probe with no documented explanation is `unknown`. For permission-based access, give the provider’s request route.
+- **Federation.** Report **Yes** only when `cloud`, `allowed` and `anonymous` all apply to the same release and delivery route. Report **No** with the known blocker, or **Unconfirmed** with the missing evidence if no blocker has been established. Scope a partial mirror explicitly. Derive the decision from the three badges.
+- **Hosting workload.** In the separate dataset-size summary, report provider download bytes and element count independently. Name the counted unit (e.g. files, layers or archives), release or subset, source manifest and check date. State whether documentation or archive members are included when it affects interpretation. Distinguish stored download size from estimated extracted or converted size. Report unknowns explicitly in the handoff and omit unsupported quantities from `footprint`. Never extrapolate a sample to a release total.
+- **Evidence and gaps.** Populate `hosting` and `footprint` using the [catalogue definitions](../../README.md) and schema. Cite the provider source for each badge and size claim. Log missing or conflicting evidence by release and field, and draft any question that still needs an owner for Pete’s review. For a batch, count datasets assessed and qualifying, then count full-release, subset-only and unconfirmed **download sizes**. A known file count alone leaves the byte total unconfirmed.
+
+Apply these badges to datasets. For a tool or method, identify its type and log any template-fit or software-licence gap separately.
 
 ## Reference files
 - `reference/qa-checklist.md` — the adversarial checklist + severity guide.

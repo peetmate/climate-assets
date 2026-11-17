@@ -39,7 +39,13 @@ correction you can't source — write "unverifiable" and flag `⚠ NEEDS REVIEW`
 - Near-duplicate titles (>0.86 similarity) reviewed by hand.
 - Undated & non-ongoing entries listed (completeness gap, not necessarily an error).
 
+## Dataset mapping checks
+
+- Cross-check each badge against its provider source. Verify the federation decision uses the same release and route for selective reads, redistribution rights and anonymous data access.
+- Verify download bytes and the count/unit independently against the dated provider inventory. Check release versus subset, including archive contents or ancillary files. Keep missing quantities explicit in the handoff.
+- Check that gated datasets have a request or access route where documented. Log unanswered questions and conflicting evidence. Keep validation local.
+
 ## Output
-A severity-ranked table: `id | field | problem | correct value (with source) | severity`. Fix HIGH
+Return the [dataset mapping summary](../SKILL.md#dataset-mapping-summary) for each dataset, including those with no QA findings. Report findings in a severity-ranked table: `id | field | problem | correct value (with source) | severity`. Fix HIGH
 and MED; note the systemic caveat that author/email is the least-reliable field and must be verified
 before any card is used to contact someone or is published.
