@@ -33,6 +33,8 @@ Sample Earth required a guestbook response. Forest Data Partnership required a r
 
 For this federated inventory stage, a verified login, guestbook or application route is sufficient for controlled access. The three corresponding sample requests are retired. The historical tests still record which observations readers could verify anonymously. The Forest Data Partnership mirror checksum remains a separate provenance question.
 
+[GMID and Trends.Earth follow-up](usability/2026-11-16-gmid-trends-earth.csv) tests the two new entries from [revision 66db370](https://github.com/peetmate/climate-assets/tree/66db370757e5b25a8b3d2b033ee60ff10361212d/metadata). Each agent started from a single YAML. The GMID question concerns a NetCDF grid-cell value. The Trends.Earth question concerns the distributed plugin’s drought calculation. Its software licence remains open in the gap register.
+
 To repeat the test, give a fresh reader or agent only the candidate YAML and this task:
 
 > Follow the resource URLs and DOIs in this entry and links in the provider documentation they lead to. Use anonymous, read-only access. Choose a concrete question. Retrieve a small sample, decode it, and give the value, its meaning, unit or category, place and period where applicable. Cite the file or API item and the provider evidence that supports your interpretation. For controlled access, check whether a user can reach the documented request or login route. Stop before sending a request. If you cannot answer, record exactly where you stopped and what the entry needs.
