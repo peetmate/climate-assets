@@ -35,7 +35,7 @@ unfccc-adaptation-country-portal,assets,atlas-hub,service,blocked,drafts/unfccc-
 annual-global-gridded-livestock-mapping-1961-2021,assets,dataset,dataset,blocked,drafts/annual-global-gridded-livestock-mapping-1961-2021.yaml,https://doi.org/10.5281/zenodo.17128483,not requested
 eth-cocoa-suitability-map,assets,publication,document,blocked,drafts/eth-cocoa-suitability-map.yaml,https://arxiv.org/abs/2206.06119,not requested
 cropgrids-global-crop-dataset,assets,dataset,dataset,blocked,drafts/cropgrids-global-crop-dataset.yaml,https://doi.org/10.6084/m9.figshare.22491997.v9,not requested
-dry-matter-productivity-v2-1km,assets,dataset,dataset,blocked,drafts/dry-matter-productivity-v2-1km.yaml,https://sdi.eea.europa.eu/catalogue/srv/api/records/c8cf5bec-83e9-4e27-8c13-80f74a89bd0c?language=all,not requested
+dry-matter-productivity-v2-1km,assets,dataset,dataset,ready,records/dry-matter-productivity-v2-1km.yaml,https://sdi.eea.europa.eu/catalogue/srv/api/records/c8cf5bec-83e9-4e27-8c13-80f74a89bd0c?language=all,not requested
 global-livestock-dynamics,assets,media,document,blocked,drafts/global-livestock-dynamics.yaml,https://landcarbonlab.org/insights/global-livestock-dynamics/,not requested
 global-pasture-watch,assets,atlas-hub,service,blocked,drafts/global-pasture-watch.yaml,https://landcarbonlab.org/about-global-pasture-watch/,not requested
 global-spatially-explicit-crop-water-consumption,assets,publication,document,blocked,drafts/global-spatially-explicit-crop-water-consumption.yaml,https://www.nature.com/articles/s43016-025-01231-x,not requested
@@ -158,5 +158,5 @@ agwise-data-sourcing,assets,tool-software,software,blocked,drafts/agwise-data-so
 global-mobile-network-coverage-1km-1999-2030,assets,publication,document,blocked,drafts/global-mobile-network-coverage-1km-1999-2030.yaml,https://arxiv.org/abs/2609.11320,not requested
 forty-global-forest-typology-10m,assets,dataset,dataset,blocked,drafts/forty-global-forest-typology-10m.yaml,https://developers.google.com/earth-engine/datasets/catalog/projects_nature-trace_assets_forest_typology_forest_typology_2020_v1_0_collection,not requested
 beyond-tree-cover-mapping-the-worlds-forest-types,assets,media,document,blocked,drafts/beyond-tree-cover-mapping-the-worlds-forest-types.yaml,https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/,not requested
-forest-data-partnership-commodity-models,assets,dataset,dataset,blocked,drafts/forest-data-partnership-commodity-models.yaml,https://developers.google.com/earth-engine/datasets/publisher/forestdatapartnership,not requested
+forest-data-partnership-commodity-models,assets,dataset,dataset,ready,records/forest-data-partnership-commodity-models.yaml,https://developers.google.com/earth-engine/datasets/publisher/forestdatapartnership,not requested
 ocelot-planetary-scale-species-distribution-modeling,assets,publication,document,blocked,drafts/ocelot-planetary-scale-species-distribution-modeling.yaml,https://arxiv.org/abs/2611.00284,not requested

@@ -25,6 +25,12 @@ Of 30 entries, 13 yielded a sample whose meaning the reader verified. One more y
 
 Sample Earth required a guestbook response. Forest Data Partnership required a registered Earth Engine or billing project. MERGE v1 had disabled access requests, and JECAM exposed only its transferred release. CRA5’s compressed file was decoded on CPU after the reader corrected the Python invocation. Its draft now includes the working example. HarvestStat’s record-count discrepancy and the release-specific questions are tracked in [gaps.csv](gaps.csv).
 
+[Retest of the remaining eight entries](usability/2026-11-16-remaining-eight.csv) used fresh, independent readers and the [eight YAMLs at revision e1a3d49](https://github.com/peetmate/climate-assets/tree/e1a3d4960fc1d5cc782ab13f64bbf3ce340f3159/metadata). Four more entries yielded an observation traceable to the intended release, bringing the original cohort to **26 of 30**:
+
+- WFP’s CHIRPS v3 raster and the Climate Hazards Center source both gave 51.39 mm accumulated near Palmira, Colombia, during 21–31 October 2026. ForTy’s original 10 m confidence bands and its deposited classification agreed on class 6 (Other Land) at the sampled cell.
+- The WorldCereal subset preserves source fields and geometry for a Senegalese field in JECAM V2. MERGE’s authors confirm that the IDMC events in their public v2 are unchanged from v1. Each test verified one observation through that documented relationship. Access to both complete original archives remains unresolved.
+- Four entries still lack a verified observation from the intended release. Copernicus dry matter productivity needs a free account, BURGER requires access approval, and Sample Earth requires a guestbook response. The Forest Data Partnership cocoa probability was readable from a regional mirror, but Google’s original tile checksum could not be confirmed anonymously.
+
 To repeat the test, give a fresh reader or agent only the candidate YAML and this task:
 
 > Follow the resource URLs and DOIs in this entry and links in the provider documentation they lead to. Use anonymous, read-only access. Choose a concrete question. Retrieve a small sample, decode it, and give the value, its meaning, unit or category, place and period where applicable. Cite the file or API item and the provider evidence that supports your interpretation. For controlled access, check whether a user can reach the documented request or login route. Stop before sending a request. If you cannot answer, record exactly where you stopped and what the entry needs.
