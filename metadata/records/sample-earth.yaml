@@ -53,7 +53,8 @@ temporal:
 note: Open a GeoPackage in QGIS or GDAL, select a point and read its geometry, sampling date and class identifier.
   In 01b. class_name.tab match the numeric class column to its text name. These nominal codes identify land-cover
   categories. The repository records coverage as 2018–2024 and collection as 2020–2024. Use the date on the point
-  when reporting an observation.
+  when reporting an observation. The Alliance describes its 2026 Colombia/Ghana product as a companion
+  with a different legend. Its examples do not establish a point from this 2025 deposit.
 data:
 - name: northern-ghana
   description: Smallest point GeoPackage in V1.1. File ID 13156674 in the pinned version manifest.
@@ -81,6 +82,12 @@ additional_links:
 - rel: describedby
   title: Class table field definitions (DDI XML)
   url: https://dataverse.harvard.edu/api/access/datafile/13156671/metadata
+- rel: via
+  title: CGIAR institutional record linking the 2025 Vietnam/Ghana release DOI
+  url: https://cgspace.cgiar.org/server/api/core/items/73040655-ce35-4f4e-8126-4527703cc5f3
+- rel: related
+  title: Producer README for the distinct 2026 companion, with contact for the Sample Earth team
+  url: https://data.source.coop/alliance-bioversity-international-ciat/sample-earth-2026-co-gh/README.md
 - rel: license
   title: Creative Commons Attribution-NonCommercial 4.0
   url: https://creativecommons.org/licenses/by-nc/4.0/

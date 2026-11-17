@@ -1,0 +1,123 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: dry-matter-productivity-v2-1km
+title: Dry Matter Productivity 1999-2020 (raster 1 km), global, 10-daily – version 2
+description: Copernicus estimates vegetation dry biomass growth in kilograms of dry matter per hectare
+  per day for each dekad using SPOT/VEGETATION and PROBA-V observations. The growth rate accounts
+  for plant respiration and is related to net primary productivity. This archive spans January 1999
+  through June 2020.
+resource_type: dataset
+keywords:
+- global
+- high-resolution
+- remote-sensing
+- vegetation
+cdh:
+  domain:
+  - agricultural-production
+  - land
+created: '2026-11-13'
+updated: '2026-11-16'
+doi: 10.2909/c8cf5bec-83e9-4e27-8c13-80f74a89bd0c
+version: '2'
+license: LicenseRef-Copernicus-Land
+attribution: Credit the European Union's Copernicus Land Monitoring Service, include the dataset DOI,
+  disclose changes and avoid implying EU endorsement.
+access: restricted
+access_note: Anyone may browse the public Copernicus Data Space Ecosystem (CDSE) catalogue.
+  For numerical raster downloads, register a free CDSE account, obtain an access token following
+  the linked instructions, and use the token as a Bearer credential for the item's HTTPS OData
+  download. Alternatively, use the S3 location with CDSE-issued S3 credentials.
+spatial:
+  bbox: [-180, -60, 180, 80]
+  crs: EPSG:4326
+  geography:
+  - world
+temporal:
+  start_date: '1999-01-01'
+  end_date: '2020-06-30'
+data:
+- name: dmp-cog-catalogue
+  description: STAC collection for the 1 km version 2 GeoTIFF archive. Use the items link and choose
+    a date and consolidation stage. Each item supplies separate dmp and qflag raster links.
+  locations:
+  - url: https://stac.dataspace.copernicus.eu/v1/collections/clms_dmp_global_1km_10daily_v2_cog
+structures:
+- name: dmp-cog
+  dimensions:
+  - name: grid
+    type: xy
+    description: Nominal 1 km grid spaced at 1/112 degree in longitude and latitude.
+    step: 0.008928571428571428
+    unit: degree
+  - name: dekad
+    type: temporal
+    description: Days 1–10, 11–20 and 21 through the last day of each month. Check item start and end dates.
+  variables:
+  - name: dmp
+    description: Dry biomass growth rate for the dekad. In the raw GeoTIFF, mask -1 and multiply
+      each remaining integer by 0.01, with zero offset. The result is a daily rate over the interval.
+    data_type: int16
+    unit: kg/ha/day
+    nodata: -1
+  - name: qflag
+    description: Bitwise quality flag for dry matter productivity. Interpret the bits using the
+      version 2, 1 km product manual.
+    data_type: uint8
+    nodata: 255
+note: >-
+  The linked item identifies PROBA-V V2.0.1 RT0 (initial near-real-time estimate) for 21–30 June
+  2020. Select assets.dmp.alternate.https.href for the DMP band and use the credentials described
+  above. On the downloaded raw TIFF, gdallocationinfo -wgs84 -valonly file.tiff 36.82 -1.28
+  returns the stored cell value for that longitude and latitude. Apply the mask and scale once.
+  The anonymous raster request returned HTTP 401 “Token not found”. The public CLMS tile service
+  shows a styled RT6 (consolidated) map. A numerical pixel from this release still needs verification.
+additional_links:
+- rel: describedby
+  title: Copernicus product page and archive download options
+  url: https://land.copernicus.eu/en/products/vegetation/dry-matter-productivity-v2-0-1km
+- rel: describedby
+  title: Copernicus Data Space 1 km v2 band units, scaling and consolidation stages
+  url: https://documentation.dataspace.copernicus.eu/APIs/SentinelHub/Data/clms/bio-geophysical-parameters/vegetation/dry-gross-dry-matter-productivity/dmp_global_1km_10daily_v2.html
+- rel: describedby
+  title: Dry Matter Productivity 1 km version 2 user manual
+  url: https://land.copernicus.eu/en/technical-library/product-user-manual-dry-and-gross-dry-matter-productivity-version-2/%40%40download/file
+- rel: item
+  title: PROBA-V RT0 DMP V2.0.1 for 21–30 June 2020, with HTTPS and S3 asset links
+  url: https://stac.dataspace.copernicus.eu/v1/collections/clms_dmp_global_1km_10daily_v2_cog/items/c_gls_DMP-RT0_202006300000_GLOBE_PROBAV_V2.0.1_cog
+- rel: collection
+  title: Indexes of the GeoTIFF and NetCDF files for this archive
+  url: https://csv.dataspace.copernicus.eu/CLMS/bio-geophysical/dry-gross_dry_matter_productivity/dmp_global_1km_10daily_v2/
+- rel: help
+  title: Free CDSE account registration
+  url: https://documentation.dataspace.copernicus.eu/Registration.html
+- rel: help
+  title: Authenticate an OData download using an access token
+  url: https://documentation.dataspace.copernicus.eu/APIs/Token.html
+- rel: license
+  title: Copernicus Land Monitoring Service data policy and acknowledgement
+  url: https://land.copernicus.eu/en/data-policy
+contact:
+- organization: European Commission
+  roles:
+  - licensor
+  url: https://sdi.eea.europa.eu/catalogue/srv/api/records/c8cf5bec-83e9-4e27-8c13-80f74a89bd0c/formatters/xml
+- organization: Copernicus Land Monitoring Service helpdesk
+  roles:
+  - point-of-contact
+  email: JRC-Copernicus-Land@ec.europa.eu
+  url: https://land.copernicus.eu/en/contact-service-helpdesk
+- organization: CGIAR Climate Data Hub
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets
+citation:
+  title: Dry Matter Productivity 1999-2020 (raster 1 km), global, 10-daily - version 2
+  authors:
+  - organization: Copernicus Land Monitoring Service
+  - organization: Copernicus Land Monitoring Service Helpdesk
+  date: '2018'
+  publisher: Copernicus Land Monitoring Service
+  url: https://doi.org/10.2909/c8cf5bec-83e9-4e27-8c13-80f74a89bd0c
