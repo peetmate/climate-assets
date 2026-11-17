@@ -675,13 +675,13 @@
       "ongoing": false,
       "hosting": {
         "format": "varies",
-        "format_note": "Products vary. The sampled CHIRPS v2 daily GeoTIFF exposes a COG layout and selective pixel reads.",
+        "format_note": "Formats vary by product. The historical CHIRPS v2 daily COG sample is superseded by v3 and excluded from the shortlist.",
         "format_source": "https://registry.opendata.aws/collab/deafrica/",
         "rights": "varies",
-        "rights_note": "Rights depend on the AWS product. The CHIRPS product listing identifies a public-domain dedication.",
+        "rights_note": "Rights depend on the selected AWS product. Check the current release’s terms.",
         "rights_source": "https://registry.opendata.aws/collab/deafrica/",
         "data_access": "varies",
-        "access_note": "The reviewed CHIRPS raster allows anonymous reads. Access across the AWS registry depends on the selected product.",
+        "access_note": "Access depends on the selected AWS product. The historical v2 sample verified access only for that release.",
         "access_source": "https://registry.opendata.aws/collab/deafrica/"
       },
       "footprint": {
@@ -1158,13 +1158,13 @@
       "ongoing": true,
       "hosting": {
         "format": "varies",
-        "format_note": "Formats depend on collection. The sampled CHIRPS Dekad v3 asset is a COG with verified selective reads.",
+        "format_note": "Formats vary by collection. Verified COG pixel reads for final CHIRPS v3 Daily SAT, Daily RNL and Dekad.",
         "format_source": "https://api.earthobservation.vam.wfp.org/stac/",
         "rights": "varies",
-        "rights_note": "Collection licences differ, including CC BY 4.0 and proprietary products. CHIRPS Dekad v3 permits sharing with attribution.",
+        "rights_note": "The three verified CHIRPS v3 collections specify CC BY 4.0. Credit the source, link the licence and identify changes. Other WFP collections have their own terms.",
         "rights_source": "https://api.earthobservation.vam.wfp.org/stac/collections",
         "data_access": "varies",
-        "access_note": "The CHIRPS raster is anonymous. Check the asset endpoint for other STAC collections.",
+        "access_note": "Final CHIRPS v3 Daily SAT, Daily RNL and Dekad allow anonymous selective reads. Check the selected route for other collections.",
         "access_source": "https://api.earthobservation.vam.wfp.org/stac/"
       },
       "footprint": {
