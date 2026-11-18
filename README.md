@@ -1,5 +1,11 @@
 # New & Notable Climate Assets — structured catalogue
 
+## [Open the live Climate Asset catalogue →](https://peetmate.github.io/climate-assets/)
+
+Browse, search and filter assets on the website, including dataset format, rehosting rights,
+access requirements and hosting size. Federated metadata, logged gaps and local test results
+are available in the [metadata register and review guide](metadata/README.md).
+
 This folder turns the running "Awesome Datasets & Resources" and "Methods" Slack docs into a
 structured, machine-readable catalogue that can drive a **climate assets "news" section** with
 toggleable **newsfeed** and **dashboard** views, search, comments, and star ratings.
