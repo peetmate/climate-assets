@@ -614,3 +614,13 @@ forty-global-forest-typology-10m,Provider metadata or dictionary incorporated in
 forty-global-forest-typology-10m,Provider metadata or dictionary incorporated into YAML,https://api.figshare.com/v2/articles/32301177/versions/1,200,,2026-11-17
 high-resolution-and-bias-corrected-cmip5-projections,Fresh entry-only reader identified distribution-specific reuse terms conflict,https://ccafs-climate.org/data_spatial_downscaling/,200,Spatial downscaling — CCAFS Climate,2026-11-17
 digital-earth-africa-aws-open-data,Fresh entry-only sample exposed conflicting historical extent periods,https://docs.digitalearthafrica.org/en/latest/data_specs/Waterbodies_specs.html,200,Waterbodies Monitoring historical extent and surface area time series,2026-11-17
+worldpop-hub-population-dataset-category,Correct category scope and public discovery access,https://hub.worldpop.org/project/categories?id=21,200,WorldPop Future Population Projections,2026-11-19
+worldpop-hub-population-dataset-category,Linked SSP release version and resolution,https://hub.worldpop.org/geodata/listing?id=145,200,SSP projections version 0.2,2026-11-19
+worldpop-api-v3-mcp,"MCP setup, anonymous access and tools",https://api.worldpop.org/v3/assistants,200,Use with AI assistants,2026-11-19
+worldpop-api-v3-mcp,"Data release, scope, licence and dataset citations",https://api.worldpop.org/v3/catalog,200,WorldPop API catalogue,2026-11-19
+worldpop-api-v3-mcp,"Methods, limits and interpretation",https://api.worldpop.org/v3/llms.txt,200,WorldPop API agent guide,2026-11-19
+worldpop-api-v3-mcp,API version and current anonymous limits,https://api.worldpop.org/v3/health,200,WorldPop API health,2026-11-19
+worldpop-api-v3-mcp,Actual anonymous point population and age/sex read,https://api.worldpop.org/v3/point?lon=36.8219&lat=-1.2864&year=2026&include=agesex,200,81.88 people per cell,2026-11-19
+worldpop-api-v3-mcp,"Anonymous initialize, tools/list and population_at_point call",https://api.worldpop.org/v3/mcp,200,WorldPop MCP: 23 tools; 81.88 people per cell,2026-11-19
+worldpop-api-v3-mcp,Original release-specific download links and STAC,https://api.worldpop.org/v3/countries/RWA/files?year=2025,200,Rwanda R2025A 2025 source files,2026-11-19
+worldpop-api-v3-mcp,OpenAPI version and stated licence,https://api.worldpop.org/v3/openapi.json,200,WorldPop API 3.0.0,2026-11-19

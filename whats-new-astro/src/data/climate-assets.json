@@ -5,14 +5,14 @@
     "version": "0.1-draft",
     "generated": "2026-07-23",
     "source": "Collated from internal Alliance Slack docs (Assets and Methods lists)",
-    "entry_count": 163,
+    "entry_count": 164,
     "counts": {
       "by_collection": {
-        "assets": 140,
+        "assets": 141,
         "methods": 23
       },
       "by_type": {
-        "atlas-hub": 44,
+        "atlas-hub": 45,
         "dataset": 31,
         "media": 10,
         "model": 4,
@@ -21,7 +21,7 @@
       },
       "by_access": {
         "login": 11,
-        "open": 125,
+        "open": 126,
         "paywall": 17,
         "request": 2,
         "unknown": 8
@@ -34,7 +34,7 @@
         "Emissions & mitigation": 16,
         "Hazards & impacts": 27,
         "Land, soil & ecosystems": 28,
-        "Population & exposure": 8,
+        "Population & exposure": 9,
         "Production & yields": 19,
         "Socio-economic & gender": 7,
         "Weather & forecasting": 7
@@ -3850,36 +3850,44 @@
     },
     {
       "id": "worldpop-hub-population-dataset-category",
-      "title": "WorldPop Hub population dataset category",
+      "title": "WorldPop Hub — Future Population Projections",
       "type": "atlas-hub",
       "url": "https://hub.worldpop.org/project/categories?id=21",
       "themes": [
         "Population & exposure"
       ],
       "source": "WorldPop, University of Southampton",
-      "description": "Category listing page on the WorldPop Hub, the open portal for high-resolution gridded global population distribution, demographic and covariate datasets with a focus on low- and middle-income countries. WorldPop products are typically provided at 100 m and 1 km resolution in GeoTIFF format.",
+      "description": "WorldPop category for global gridded population projections for 2025–2100, consistent with Shared Socioeconomic Pathways (SSP) national population scenarios. The linked product listing identifies version 0.2 at 30 arc-seconds (approximately 1 km).",
       "region": "Global",
-      "spatial_resolution": "100 m / 1 km",
-      "temporal_coverage": "",
+      "spatial_resolution": "30 arc-seconds (~1 km)",
+      "temporal_coverage": "2025–2100",
       "access": "open",
       "collection": "assets",
       "section": "Population",
       "shared_by": "WorldPop",
-      "notes": "description from URL/context; the specific category behind id=21 could not be confirmed as the hub page did not load",
+      "notes": "Updated 2026-11-19: verified category 21 as Future Population Projections; corrected the earlier generic portal description. Related WorldPop API v3 serves Global2 R2025A for 2015–2030, a different product; it does not update or replace these SSP projections.",
       "date_added": "TBC",
       "tags": [
         "dashboard",
         "global",
         "high-resolution",
-        "open-data"
+        "open-data",
+        "population-projections",
+        "ssp"
       ],
-      "links": [],
+      "links": [
+        {
+          "label": "SSP projections v0.2 listing",
+          "url": "https://hub.worldpop.org/geodata/listing?id=145"
+        },
+        {
+          "label": "Related: API v3 and AI assistants (2015–2030)",
+          "url": "https://api.worldpop.org/v3/assistants"
+        }
+      ],
       "image": "",
       "date": "",
-      "organisations": [
-        "WorldPop",
-        "University of Southampton"
-      ],
+      "organisations": [],
       "lead_contact": {
         "name": "",
         "affiliation": "",
@@ -8424,6 +8432,81 @@
       "licence": "",
       "data_availability": "Code only",
       "reusable": false
+    },
+    {
+      "id": "worldpop-api-v3-mcp",
+      "title": "WorldPop API v3 — population data for AI assistants",
+      "type": "atlas-hub",
+      "url": "https://api.worldpop.org/v3/assistants",
+      "themes": [
+        "Population & exposure"
+      ],
+      "source": "WorldPop, University of Southampton",
+      "description": "REST and Model Context Protocol (MCP) service for querying WorldPop Global2 R2025A population and age/sex estimates, annually for 2015–2030 from approximately 100 m grids. Supports places, points, areas, demographic profiles and exposure estimates, with links to original country GeoTIFFs.",
+      "region": "Global; API latitude limits 60°S–84°N",
+      "spatial_resolution": "3 arc-seconds (~100 m); 1 km download options",
+      "temporal_coverage": "2015–2030, annual",
+      "access": "open",
+      "collection": "assets",
+      "section": "Population",
+      "shared_by": "",
+      "notes": "Checked 2026-11-19: API reports version 3.0.0 and serves Global2 R2025A v1. Anonymous REST and MCP point reads agreed: 81.88 estimated people in the cell at 36.8219°E, 1.2864°S for 2026. No API key required within anonymous limits (currently 1,000 requests/day, 60/minute); approved keys raise limits. CC BY 4.0 applies to the documented data; software redistribution licence remains unconfirmed. Age/sex API calculations use administrative-unit shares. Exposure is a distance-weighted estimate, not observed harm. Original-file cloud optimisation, full-release bytes and physical file count are unverified. Distinct from WorldPop SSP projections (2025–2100) and modelling covariates.",
+      "date_added": "2026-11-19",
+      "tags": [
+        "global",
+        "population",
+        "age-sex",
+        "api",
+        "mcp",
+        "ai",
+        "open-data"
+      ],
+      "date": "",
+      "links": [
+        {
+          "label": "REST API and map",
+          "url": "https://api.worldpop.org/v3/"
+        },
+        {
+          "label": "MCP endpoint",
+          "url": "https://api.worldpop.org/v3/mcp"
+        },
+        {
+          "label": "Agent guide",
+          "url": "https://api.worldpop.org/v3/llms.txt"
+        },
+        {
+          "label": "Release, licence and citations",
+          "url": "https://api.worldpop.org/v3/catalog"
+        },
+        {
+          "label": "Method and limitations",
+          "url": "https://api.worldpop.org/v3/documentation/method"
+        },
+        {
+          "label": "Live limits",
+          "url": "https://api.worldpop.org/v3/health"
+        },
+        {
+          "label": "Original files: Rwanda 2025 example",
+          "url": "https://api.worldpop.org/v3/countries/RWA/files?year=2025"
+        },
+        {
+          "label": "Related: SSP projections (2025–2100)",
+          "url": "https://hub.worldpop.org/project/categories?id=21"
+        }
+      ],
+      "image": "https://api.worldpop.org/v3/worldpop-api-preview.png",
+      "organisations": [],
+      "lead_contact": {
+        "name": "",
+        "affiliation": "",
+        "email": "info@worldpop.soton.ac.uk"
+      },
+      "licence": "CC-BY-4.0",
+      "data_availability": "Open data",
+      "reusable": true,
+      "ongoing": true
     }
   ]
 }

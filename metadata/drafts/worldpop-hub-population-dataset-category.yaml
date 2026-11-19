@@ -1,13 +1,13 @@
 # yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
-# Working draft. See register and gaps before reuse.
+# Working draft with logged unknowns; validation is local only.
 cdh_schema_version: v0.5.0
 extensions:
 - https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
 id: worldpop-hub-population-dataset-category
-title: WorldPop Hub population dataset category
-description: Category listing page on the WorldPop Hub, the open portal for high-resolution gridded global
-  population distribution, demographic and covariate datasets with a focus on low- and middle-income countries.
-  WorldPop products are typically provided at 100 m and 1 km resolution in GeoTIFF format.
+title: WorldPop Hub — Future Population Projections
+description: WorldPop category for global gridded population projections for 2025–2100, consistent with Shared
+  Socioeconomic Pathways (SSP) national population scenarios. The linked product listing identifies version
+  0.2 at 30 arc-seconds (approximately 1 km).
 resource_type: service
 keywords:
 - dashboard
@@ -17,13 +17,26 @@ cdh:
   domain:
   - socioeconomic
 created: '2026-11-13'
-updated: '2026-11-13'
+updated: '2026-11-19'
 data:
 - name: primary
   locations:
   - url: https://hub.worldpop.org/project/categories?id=21
 contact:
-- organization: CGIAR Climate Data Hub
+- organization: Climate Assets inventory
   roles:
   - maintainer
   url: https://github.com/peetmate/climate-assets
+access: public
+note: 'Updated 2026-11-19: verified category 21 as Future Population Projections; corrected the earlier generic
+  portal description. Related WorldPop API v3 serves Global2 R2025A for 2015–2030, a different product; it
+  does not update or replace these SSP projections. Public discovery page verified; download and value tests
+  for the SSP projection files were not performed. Service-specific version, citation and licensing party remain
+  unknown. The linked dataset listing reports v0.2 and the provider footer states CC BY 4.0 for datasets.'
+additional_links:
+- rel: related
+  title: SSP projections v0.2 listing
+  url: https://hub.worldpop.org/geodata/listing?id=145
+- rel: related
+  title: 'Related: API v3 and AI assistants (2015–2030)'
+  url: https://api.worldpop.org/v3/assistants

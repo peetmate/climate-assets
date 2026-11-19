@@ -106,6 +106,15 @@ Primary link is labelled by type (Data / Paper / Code · repo / Open portal / Vi
 for associated data, code, preprints, mirrors, and — for paywalled items — an open-access
 alternative (institutional repo / preprint / author copy).
 
+### Updates to existing resources
+
+Match the product, release and purpose before treating a new URL as an update. For the same resource,
+retain its stable `id` and `date_added`, add the new route to `links`, and record the checked date,
+change and limitations in `notes`. Update its federated YAML, evidence and gap register together.
+Do not replace the resource's publication date with the date it was checked. A distinct product or
+service from the same provider can have its own entry with labelled related links; explain the
+scope difference. Correct misleading older descriptions without changing their stable IDs.
+
 ## 9. Validate, then adversarially fact-check
 Validate against the schema (0 errors, ≤2 themes, unique id, licence↔reusable consistent). Then run
 the **mean QA pass** in `reference/qa-checklist.md` — assume fields are wrong until verified, and

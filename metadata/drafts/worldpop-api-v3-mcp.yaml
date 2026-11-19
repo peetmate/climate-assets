@@ -1,0 +1,88 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Working draft with logged unknowns; validation is local only.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: worldpop-api-v3-mcp
+title: WorldPop API v3 — population data for AI assistants
+description: REST and Model Context Protocol (MCP) service for querying WorldPop Global2 R2025A population
+  and age/sex estimates, annually for 2015–2030 from approximately 100 m grids. Supports places, points, areas,
+  demographic profiles and exposure estimates, with links to original country GeoTIFFs.
+resource_type: service
+keywords:
+- global
+- population
+- age-sex
+- api
+- mcp
+- ai
+- open-data
+cdh:
+  domain:
+  - socioeconomic
+created: '2026-11-19'
+updated: '2026-11-19'
+version: 3.0.0
+access: public
+license: CC-BY-4.0
+data:
+- name: REST API
+  locations:
+  - url: https://api.worldpop.org/v3/
+- name: MCP Streamable HTTP endpoint
+  locations:
+  - url: https://api.worldpop.org/v3/mcp
+note: 'Checked 2026-11-19: API reports version 3.0.0 and serves Global2 R2025A v1. Anonymous REST and MCP point
+  reads agreed: 81.88 estimated people in the cell at 36.8219°E, 1.2864°S for 2026. No API key required within
+  anonymous limits (currently 1,000 requests/day, 60/minute); approved keys raise limits. CC BY 4.0 applies
+  to the documented data; software redistribution licence remains unconfirmed. Age/sex API calculations use
+  administrative-unit shares. Exposure is a distance-weighted estimate, not observed harm. Original-file cloud
+  optimisation, full-release bytes and physical file count are unverified. Distinct from WorldPop SSP projections
+  (2025–2100) and modelling covariates. Reproduce the point read with GET https://api.worldpop.org/v3/point?lon=36.8219&lat=-1.2864&year=2026&include=agesex.
+  Coordinates are longitude, latitude (EPSG:4326). The response population is estimated people per grid cell,
+  not people per square kilometre; cell_area_km2 was 0.008546. A null population means missing coverage; zero
+  means no population in a covered cell. MCP: initialize using protocolVersion 2025-03-26, then tools/list
+  and tools/call for population_at_point with lon, lat and year. Send Accept: application/json, text/event-stream;
+  no credentials used. MCP serverInfo reported version 1.30.0, distinct from API version 3.0.0 and data release
+  R2025A v1. The catalogue lists 246 countries and 4,491 administrative units; these are coverage counts, not
+  physical files. Population DOI 10.5258/SOTON/WP00839; age/sex DOI 10.5258/SOTON/WP00841. Cite the applicable
+  dataset text supplied by /catalog. The data licence permits sharing with attribution; it does not establish
+  software redistribution rights. Provider service citation and licensor identity remain unknown. GeoTIFF download
+  links were discovered but native files were not inspected for selective reads; no dataset federation badge
+  inferred from successful API queries.'
+additional_links:
+- rel: describedby
+  title: REST API and map
+  url: https://api.worldpop.org/v3/
+- rel: describedby
+  title: MCP endpoint
+  url: https://api.worldpop.org/v3/mcp
+- rel: describedby
+  title: Agent guide
+  url: https://api.worldpop.org/v3/llms.txt
+- rel: describedby
+  title: Release, licence and citations
+  url: https://api.worldpop.org/v3/catalog
+- rel: describedby
+  title: Method and limitations
+  url: https://api.worldpop.org/v3/documentation/method
+- rel: describedby
+  title: Live limits
+  url: https://api.worldpop.org/v3/health
+- rel: describedby
+  title: 'Original files: Rwanda 2025 example'
+  url: https://api.worldpop.org/v3/countries/RWA/files?year=2025
+- rel: describedby
+  title: 'Related: SSP projections (2025–2100)'
+  url: https://hub.worldpop.org/project/categories?id=21
+- rel: service-desc
+  title: OpenAPI specification
+  url: https://api.worldpop.org/v3/openapi.json
+- rel: license
+  title: 'Data licence: CC BY 4.0'
+  url: https://creativecommons.org/licenses/by/4.0/
+contact:
+- organization: Climate Assets inventory
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets
