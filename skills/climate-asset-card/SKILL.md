@@ -76,6 +76,10 @@ real mistakes made before — do not repeat them.
   > publishing the source. Say so in `notes` rather than flipping `reusable` to false.
   > Where an asset aggregates many sources under mixed terms (e.g. national datasets, some NC),
   > leave `licence` empty, set `reusable` false, and list the per-source terms in `notes`.
+  The exact identifier `LicenseRef-EC-Reuse-2011-833-EU` is also supported for distributions
+  explicitly covered by the European Commission reuse notice (Decision 2011/833/EU).
+  Cite the distribution's notice, acknowledge the source and retain its third-party exclusions.
+  Do not substitute a technical report's CC BY licence for a dataset's own terms.
 For every dataset, complete the [dataset mapping summary](#dataset-mapping-summary).
 - `data_availability`: "Open data" / "Open (with code)" / "Code only" / "On request" /
   "No associated data".

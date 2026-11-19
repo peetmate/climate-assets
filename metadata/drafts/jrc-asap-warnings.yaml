@@ -1,0 +1,116 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Federated inventory draft; unknowns logged, validation local only.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: jrc-asap-warnings
+title: EU JRC ASAP — ten-day crop and rangeland warnings
+description: Automated subnational crop and rangeland condition warnings, with historical CSV time series at
+  ASAP administrative levels 1 and 2 and separate WFS/WMS delivery. Warning categories combine vegetation and
+  water-stress evidence with seasonal context; monthly expert hotspot assessments are a distinct product.
+resource_type: dataset
+keywords:
+- asap
+- jrc
+- early-warning
+- agricultural-drought
+- crops
+- rangeland
+- global
+cdh:
+  domain:
+  - climate
+  - agricultural-production
+created: '2026-11-19'
+updated: '2026-11-19'
+access: public
+note: 'Checked 2026-11-19. Two historical ZIP/CSV archives total 104,794,226 bytes; expanded CSVs alone total
+  1,866,117,950 bytes. Read warning names/groups with codes: code 5 can mean Warning level 2; off-season and
+  insufficient-area states are not drought severity. Tested sorted WFS crop layers returned 1 September 2026
+  while archives include 1 November 2026: check dates before operational use. Provider version cues conflict
+  (HTTP asap-version 7.0, manual v8.0, website announces Warning Explorer v9); exact archive algorithm version
+  unknown. Download tables covered by EC attribution reuse notice; boundary geometry terms separate. Primary
+  complete-history delivery is ZIP-compressed CSV; convert to Parquet or GeoParquet for selective archive reads.
+  WFS supports small current-layer queries but is a separate, dated delivery with no verified full history.
+  European Commission reuse notice: acknowledge the source and retain notices. Applies to the JRC-distributed
+  tables; third-party materials and separately downloaded administrative boundaries require their own terms.
+  The technical report licence is not substituted for data terms. Dated snapshot of warnings_ts.zip (48,585,446
+  bytes) and warnings_l2_ts.zip (56,208,780 bytes), both last modified 2026-11-14. Each contains one CSV and
+  one field dictionary: four members total. Expanded CSV sizes: 900,764,104 and 965,353,846 bytes. Excludes
+  WFS geometry, administrative boundaries, expert hotspots and future updates. Download a ZIP normally, or
+  use anonymous HTTP Range to read its ZIP directory, embedded readme and a small CSV prefix. CSV uses semicolons.
+  Fields: asap0_id/asap1_id (and asap2_id for level 2), place names, date, w_crop and w_range plus _na name,
+  _de description and _gr group. For a concrete question choose a row, report place/date and interpret its
+  code using that same row name/group; numerical code is not severity rank. Current dictionaries retain zNDVIc
+  terminology even though the v8 manual describes FPAR: exact algorithm lineage requires provider clarification.
+  Dates identify warning reference dates; exact ten-day interval endpoints remain unconfirmed. Full archive
+  row counts are unknown. Full CSV date range was not enumerated; history start is provider-reported. Secondary WFS: GetCapabilities
+  lists feature types; GetFeature supports typeNames=public:warning_gaul1_crop, count=1, outputFormat=application/json,
+  version=2.0.0. sortBy=date D returned September 2026 in reviewed crop layers, so WFS is not assumed freshest.
+  For map joins obtain matching separately licensed ASAP boundary files and use the appropriate ASAP ID, not
+  generic FAO codes. Monthly expert hotspots and seasonal forecast warnings are not included in this historical
+  automatic-warning inventory.'
+data:
+- name: warnings_ts.zip
+  media_type: application/zip
+  file_size: 48585446
+  locations:
+  - url: https://agricultural-production-hotspots.ec.europa.eu/files/warnings_ts.zip
+- name: warnings_l2_ts.zip
+  media_type: application/zip
+  file_size: 56208780
+  locations:
+  - url: https://agricultural-production-hotspots.ec.europa.eu/files/warnings_l2_ts.zip
+additional_links:
+- rel: describedby
+  title: ASAP download and data terms
+  url: https://agricultural-production-hotspots.ec.europa.eu/download.php
+- rel: describedby
+  title: Warning Explorer
+  url: https://agricultural-production-hotspots.ec.europa.eu/wexplorer/
+- rel: describedby
+  title: Methods and documentation
+  url: https://agricultural-production-hotspots.ec.europa.eu/documentation.php
+- rel: describedby
+  title: Level 1 warning history ZIP
+  url: https://agricultural-production-hotspots.ec.europa.eu/files/warnings_ts.zip
+- rel: describedby
+  title: Level 2 warning history ZIP
+  url: https://agricultural-production-hotspots.ec.europa.eu/files/warnings_l2_ts.zip
+- rel: describedby
+  title: Monthly expert hotspots (separate product)
+  url: https://agricultural-production-hotspots.ec.europa.eu/
+- rel: license
+  title: Distribution-specific European Commission reuse notice
+  url: https://data.jrc.ec.europa.eu/dataset/jrc-10112-10001
+- rel: describedby
+  title: Provider dataset record and citation
+  url: https://data.jrc.ec.europa.eu/dataset/jrc-10112-10001
+- rel: service-desc
+  title: WFS capabilities (check returned feature dates)
+  url: https://agricultural-production-hotspots.ec.europa.eu/public/ows?service=WFS&version=2.0.0&request=GetCapabilities
+- rel: describedby
+  title: WFS crop field definitions
+  url: https://agricultural-production-hotspots.ec.europa.eu/files/wfs_warnings_crop_notes.txt
+- rel: describedby
+  title: Warning classification manual v8.0; current archive lineage unresolved
+  url: https://agricultural-production-hotspots.ec.europa.eu/files/asap_warning_classification_v_8_0.pdf
+contact:
+- organization: European Commission, Joint Research Centre
+  email: jrc-asap@ec.europa.eu
+  roles:
+  - producer
+  - point-of-contact
+  url: https://agricultural-production-hotspots.ec.europa.eu/download.php
+- organization: European Commission
+  roles:
+  - licensor
+  url: https://data.jrc.ec.europa.eu/dataset/jrc-10112-10001
+- organization: Climate Assets inventory
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets
+license: LicenseRef-EC-Reuse-2011-833-EU
+attribution: Acknowledge European Commission, Joint Research Centre, ASAP, the named dataset contributor and
+  any indicated original sources; retain source and reuse notices.
+doi: 10.2905/JRC.KC71YCG

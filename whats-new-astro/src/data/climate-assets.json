@@ -5,15 +5,15 @@
     "version": "0.1-draft",
     "generated": "2026-07-23",
     "source": "Collated from internal Alliance Slack docs (Assets and Methods lists)",
-    "entry_count": 164,
+    "entry_count": 167,
     "counts": {
       "by_collection": {
-        "assets": 141,
+        "assets": 144,
         "methods": 23
       },
       "by_type": {
         "atlas-hub": 45,
-        "dataset": 31,
+        "dataset": 34,
         "media": 10,
         "model": 4,
         "publication": 46,
@@ -21,7 +21,7 @@
       },
       "by_access": {
         "login": 11,
-        "open": 126,
+        "open": 129,
         "paywall": 17,
         "request": 2,
         "unknown": 8
@@ -29,10 +29,10 @@
       "by_theme_primary": {
         "Adaptation": 14,
         "Climate projections & reanalysis": 20,
-        "Crop & land management": 12,
+        "Crop & land management": 13,
         "Cross-cutting / AI & methods": 5,
         "Emissions & mitigation": 16,
-        "Hazards & impacts": 27,
+        "Hazards & impacts": 29,
         "Land, soil & ecosystems": 28,
         "Population & exposure": 9,
         "Production & yields": 19,
@@ -8517,6 +8517,261 @@
       "data_availability": "Open data",
       "reusable": true,
       "ongoing": true
+    },
+    {
+      "id": "jrc-asap-indicators",
+      "title": "EU JRC ASAP — agrometeorological and vegetation indicators",
+      "url": "https://agricultural-production-hotspots.ec.europa.eu/download.php",
+      "description": "Ten-day vegetation and agrometeorological raster indicators and administrative-area statistics used by the Anomaly hot Spots of Agricultural Production (ASAP) system. Includes rainfall, precipitation anomalies, FPAR vegetation measures, water satisfaction and soil moisture; available variables and processing maturity vary by date and delivery route.",
+      "themes": [
+        "Hazards & impacts",
+        "Production & yields"
+      ],
+      "date": "",
+      "ongoing": true,
+      "region": "Global; coverage varies by indicator and administrative level",
+      "spatial_resolution": "Product-dependent: about 500 m, 0.05° or 0.25° rasters; ASAP levels 1 and selected level 2 statistics",
+      "temporal_coverage": "Dekadal; start/end and finality vary by indicator",
+      "licence": "",
+      "reusable": false,
+      "tags": [
+        "asap",
+        "jrc",
+        "agrometeorology",
+        "vegetation",
+        "rainfall",
+        "fpar",
+        "spi",
+        "early-warning",
+        "global"
+      ],
+      "notes": "Checked 2026-11-19. Select indicator/date and inspect source and processing level through getIndicatorsInfo. Level 0 denotes final processing; recent data may be revised. Rainfall for 21–31 October 2026 was a CHIRPS v3 Preliminary / AgERA5 Final blend. Legacy manual filenames and some SPI/WSI description years are stale; use returned locations and file metadata. Full archive bytes and file count unknown. Provider notice permits reuse of JRC data with acknowledgement, but component-specific upstream redistribution terms are not fully reconciled.",
+      "hosting": {
+        "format": "varies",
+        "format_note": "CSV statistics, GeoTIFF rasters and legacy ENVI image/header pairs. Sample rainfall TIFF allows tiled range reads but has no overviews; no blanket COG/Zarr claim. Select products before conversion/rehosting.",
+        "format_source": "https://agricultural-production-hotspots.ec.europa.eu/getIndicatorsInfo.php?dekad=20261021",
+        "rights": "varies",
+        "rights_note": "JRC reuse notice covers JRC data with source acknowledgement. Inputs include CHIRPS, AgERA5, BOKU FPAR, WSI and Copernicus soil moisture; release-specific upstream redistribution conditions remain partly unknown.",
+        "rights_source": "https://agricultural-production-hotspots.ec.europa.eu/download.php",
+        "data_access": "anonymous",
+        "access_note": "Anonymous HTTP 206 raster range requests and actual rainfall pixel decode succeeded. Public statistics form and filtered discovery endpoint need no key. Availability varies by indicator.",
+        "access_source": "https://agricultural-production-hotspots.ec.europa.eu/data/indicators_rain/rain/rain_20261021.tif"
+      },
+      "footprint": {
+        "scope": "release",
+        "source": "https://agricultural-production-hotspots.ec.europa.eu/download.php",
+        "checked": "2026-11-19",
+        "note": "Complete changing raster archive plus generated statistics: stored bytes and physical file count unknown. The 2026-10-21 discovery response listed 12 indicator products, not 12 files for the full archive. Sample rainfall file is 2,669,439 bytes; excluded from any release-total claim."
+      },
+      "type": "dataset",
+      "source": "European Commission, Joint Research Centre",
+      "access": "open",
+      "collection": "assets",
+      "section": "Agricultural monitoring",
+      "shared_by": "",
+      "date_added": "2026-11-19",
+      "image": "",
+      "organisations": [],
+      "lead_contact": {
+        "name": "",
+        "affiliation": "",
+        "email": "jrc-asap@ec.europa.eu"
+      },
+      "data_availability": "Open data",
+      "links": [
+        {
+          "label": "ASAP download and data terms",
+          "url": "https://agricultural-production-hotspots.ec.europa.eu/download.php"
+        },
+        {
+          "label": "Warning Explorer",
+          "url": "https://agricultural-production-hotspots.ec.europa.eu/wexplorer/"
+        },
+        {
+          "label": "Methods and documentation",
+          "url": "https://agricultural-production-hotspots.ec.europa.eu/documentation.php"
+        },
+        {
+          "label": "Indicator discovery example",
+          "url": "https://agricultural-production-hotspots.ec.europa.eu/getIndicatorsInfo.php?dekad=20261021"
+        },
+        {
+          "label": "Indicator service manual",
+          "url": "https://agricultural-production-hotspots.ec.europa.eu/files/Indicator_info_service_2025_01_16.pdf"
+        }
+      ]
+    },
+    {
+      "id": "jrc-asap-warnings",
+      "title": "EU JRC ASAP — ten-day crop and rangeland warnings",
+      "url": "https://data.jrc.ec.europa.eu/dataset/jrc-10112-10001",
+      "description": "Automated subnational crop and rangeland condition warnings, with historical CSV time series at ASAP administrative levels 1 and 2 and separate WFS/WMS delivery. Warning categories combine vegetation and water-stress evidence with seasonal context; monthly expert hotspot assessments are a distinct product.",
+      "themes": [
+        "Hazards & impacts",
+        "Production & yields"
+      ],
+      "date": "2018-06-30",
+      "ongoing": true,
+      "region": "Global monitored agricultural/rangeland units; coverage differs by level",
+      "spatial_resolution": "ASAP administrative levels 1 and 2",
+      "temporal_coverage": "Dekadal; provider states history from 21 May 2001; tested archive rows include 1 November 2026",
+      "licence": "LicenseRef-EC-Reuse-2011-833-EU",
+      "reusable": true,
+      "tags": [
+        "asap",
+        "jrc",
+        "early-warning",
+        "agricultural-drought",
+        "crops",
+        "rangeland",
+        "global"
+      ],
+      "notes": "Checked 2026-11-19. Two historical ZIP/CSV archives total 104,794,226 bytes; expanded CSVs alone total 1,866,117,950 bytes. Read warning names/groups with codes: code 5 can mean Warning level 2; off-season and insufficient-area states are not drought severity. Tested sorted WFS crop layers returned 1 September 2026 while archives include 1 November 2026: check dates before operational use. Provider version cues conflict (HTTP asap-version 7.0, manual v8.0, website announces Warning Explorer v9); exact archive algorithm version unknown. Download tables covered by EC attribution reuse notice; boundary geometry terms separate.",
+      "hosting": {
+        "format": "convert",
+        "format_note": "Primary complete-history delivery is ZIP-compressed CSV; convert to Parquet or GeoParquet for selective archive reads. WFS supports small current-layer queries but is a separate, dated delivery with no verified full history.",
+        "format_source": "https://agricultural-production-hotspots.ec.europa.eu/download.php",
+        "rights": "allowed",
+        "rights_note": "European Commission reuse notice: acknowledge the source and retain notices. Applies to the JRC-distributed tables; third-party materials and separately downloaded administrative boundaries require their own terms. The technical report licence is not substituted for data terms.",
+        "rights_source": "https://data.jrc.ec.europa.eu/dataset/jrc-10112-10001",
+        "data_access": "anonymous",
+        "access_note": "Both ZIP central directories, embedded dictionaries and CSV observations read anonymously by byte ranges. WFS also returned features without login; sampled layers were older than archive rows.",
+        "access_source": "https://agricultural-production-hotspots.ec.europa.eu/files/warnings_ts.zip"
+      },
+      "footprint": {
+        "scope": "release",
+        "bytes": 104794226,
+        "count": 2,
+        "unit": "ZIP archives",
+        "source": "https://agricultural-production-hotspots.ec.europa.eu/download.php",
+        "checked": "2026-11-19",
+        "note": "Dated snapshot of warnings_ts.zip (48,585,446 bytes) and warnings_l2_ts.zip (56,208,780 bytes), both last modified 2026-11-14. Each contains one CSV and one field dictionary: four members total. Expanded CSV sizes: 900,764,104 and 965,353,846 bytes. Excludes WFS geometry, administrative boundaries, expert hotspots and future updates."
+      },
+      "type": "dataset",
+      "source": "European Commission, Joint Research Centre",
+      "access": "open",
+      "collection": "assets",
+      "section": "Agricultural monitoring",
+      "shared_by": "",
+      "date_added": "2026-11-19",
+      "image": "",
+      "organisations": [],
+      "lead_contact": {
+        "name": "",
+        "affiliation": "",
+        "email": "jrc-asap@ec.europa.eu"
+      },
+      "data_availability": "Open data",
+      "links": [
+        {
+          "label": "ASAP download and data terms",
+          "url": "https://agricultural-production-hotspots.ec.europa.eu/download.php"
+        },
+        {
+          "label": "Warning Explorer",
+          "url": "https://agricultural-production-hotspots.ec.europa.eu/wexplorer/"
+        },
+        {
+          "label": "Methods and documentation",
+          "url": "https://agricultural-production-hotspots.ec.europa.eu/documentation.php"
+        },
+        {
+          "label": "Level 1 warning history ZIP",
+          "url": "https://agricultural-production-hotspots.ec.europa.eu/files/warnings_ts.zip"
+        },
+        {
+          "label": "Level 2 warning history ZIP",
+          "url": "https://agricultural-production-hotspots.ec.europa.eu/files/warnings_l2_ts.zip"
+        },
+        {
+          "label": "Monthly expert hotspots (separate product)",
+          "url": "https://agricultural-production-hotspots.ec.europa.eu/"
+        }
+      ]
+    },
+    {
+      "id": "jrc-asap-crop-calendars",
+      "title": "EU JRC ASAP — national and subnational crop calendars",
+      "url": "https://data.jrc.ec.europa.eu/dataset/jrc-10112-10003",
+      "description": "Crop-specific planting, growth and harvest windows in national and subnational tables, derived by matching FAO crop calendars to satellite land-surface phenology. Covers selected matching crop–location combinations; supports seasonal interpretation of indicators and warnings.",
+      "themes": [
+        "Crop & land management",
+        "Production & yields"
+      ],
+      "date": "2018-09-26",
+      "ongoing": false,
+      "region": "Selected countries globally; 75 national and 74 subnational country IDs in inspected tables",
+      "spatial_resolution": "National and ASAP administrative level 1",
+      "temporal_coverage": "Typical annual calendar in dekads 1–36; observation/reference years unknown",
+      "licence": "LicenseRef-EC-Reuse-2011-833-EU",
+      "reusable": true,
+      "tags": [
+        "asap",
+        "jrc",
+        "crop-calendar",
+        "planting",
+        "harvest",
+        "phenology",
+        "global"
+      ],
+      "notes": "Checked 2026-11-19. Two ZIPs total 29,664 bytes and contain two semicolon-delimited CSVs plus two dictionaries. National table has 287 rows; subnational table 3,068. Dekads run 1–36 each year; windows may cross December–January. Use asap0_id for national boundaries and asap1_id for subnational boundaries; download-page prose mislabels the second ZIP and join field. File dictionaries and JRC catalogue resolve the mismatch. These are typical, selectively matched calendars, not observed planting dates for a specific year. Dataset version, reference period and preferred update cadence remain unknown.",
+      "hosting": {
+        "format": "convert",
+        "format_note": "Two ZIP-compressed CSV tables with field dictionaries. Unpack and convert to Parquet for selective access; GeoParquet additionally requires separately licensed matching boundary geometry.",
+        "format_source": "https://agricultural-production-hotspots.ec.europa.eu/files/crop_calendar_gaul1.zip",
+        "rights": "allowed",
+        "rights_note": "European Commission reuse notice: acknowledge the source and retain notices. Applies to the JRC-distributed tables; third-party materials and separately downloaded administrative boundaries require their own terms. The technical report licence is not substituted for data terms.",
+        "rights_source": "https://data.jrc.ec.europa.eu/dataset/jrc-10112-10003",
+        "data_access": "anonymous",
+        "access_note": "Both complete ZIPs downloaded and CSV rows/dictionaries decoded without credentials.",
+        "access_source": "https://agricultural-production-hotspots.ec.europa.eu/files/crop_calendar_gaul1.zip"
+      },
+      "footprint": {
+        "scope": "release",
+        "bytes": 29664,
+        "count": 2,
+        "unit": "ZIP archives",
+        "source": "https://agricultural-production-hotspots.ec.europa.eu/download.php",
+        "checked": "2026-11-19",
+        "note": "crop_calendar_gaul0.zip 3,342 bytes and crop_calendar_gaul1.zip 26,322 bytes. Four uncompressed members: two CSVs (10,342 and 156,337 bytes) and two field dictionaries (388 and 532 bytes). Total expanded 167,599 bytes. Excludes optional boundary shapefiles and satellite phenology rasters."
+      },
+      "type": "dataset",
+      "source": "European Commission, Joint Research Centre",
+      "access": "open",
+      "collection": "assets",
+      "section": "Agricultural monitoring",
+      "shared_by": "",
+      "date_added": "2026-11-19",
+      "image": "",
+      "organisations": [],
+      "lead_contact": {
+        "name": "",
+        "affiliation": "",
+        "email": "jrc-asap@ec.europa.eu"
+      },
+      "data_availability": "Open data",
+      "links": [
+        {
+          "label": "ASAP download and data terms",
+          "url": "https://agricultural-production-hotspots.ec.europa.eu/download.php"
+        },
+        {
+          "label": "Warning Explorer",
+          "url": "https://agricultural-production-hotspots.ec.europa.eu/wexplorer/"
+        },
+        {
+          "label": "Methods and documentation",
+          "url": "https://agricultural-production-hotspots.ec.europa.eu/documentation.php"
+        },
+        {
+          "label": "National calendars ZIP",
+          "url": "https://agricultural-production-hotspots.ec.europa.eu/files/crop_calendar_gaul0.zip"
+        },
+        {
+          "label": "Subnational calendars ZIP",
+          "url": "https://agricultural-production-hotspots.ec.europa.eu/files/crop_calendar_gaul1.zip"
+        }
+      ]
     }
   ]
 }

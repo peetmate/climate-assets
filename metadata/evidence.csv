@@ -626,3 +626,15 @@ worldpop-api-v3-mcp,Original release-specific download links and STAC,https://ap
 worldpop-api-v3-mcp,OpenAPI version and stated licence,https://api.worldpop.org/v3/openapi.json,200,WorldPop API 3.0.0,2026-11-19
 ocelot-planetary-scale-species-distribution-modeling,Current v2 revision and paper licence; closes paper-licence gap,https://arxiv.org/abs/2611.00284,200,"OCELOT v2, revised 9 November 2026",2026-11-19
 ocelot-planetary-scale-species-distribution-modeling,"AlphaEarth input, published author contact, relative-occurrence limitation and planned weight release",https://arxiv.org/html/2611.00284v2,200,OCELOT full text v2,2026-11-19
+jrc-asap-indicators,"Provider scope, access routes and reuse notice",https://agricultural-production-hotspots.ec.europa.eu/download.php,200,EU JRC ASAP — agrometeorological and vegetation indicators,2026-11-19
+jrc-asap-indicators,Distribution descriptions and attribution policy,https://agricultural-production-hotspots.ec.europa.eu/download.php,200,ASAP downloads,2026-11-19
+jrc-asap-indicators,Observed distribution metadata and anonymous decoded sample; see local review,https://agricultural-production-hotspots.ec.europa.eu/getIndicatorsInfo.php?dekad=20261021,200,indicator-discovery-example,2026-11-19
+jrc-asap-indicators,Observed distribution metadata and anonymous decoded sample; see local review,https://agricultural-production-hotspots.ec.europa.eu/data/indicators_rain/rain/rain_20261021.tif,206,rain-20261021,2026-11-19
+jrc-asap-warnings,"Provider scope, access routes and reuse notice",https://data.jrc.ec.europa.eu/dataset/jrc-10112-10001,200,EU JRC ASAP — ten-day crop and rangeland warnings,2026-11-19
+jrc-asap-warnings,Distribution descriptions and attribution policy,https://agricultural-production-hotspots.ec.europa.eu/download.php,200,ASAP downloads,2026-11-19
+jrc-asap-warnings,Observed distribution metadata and anonymous decoded sample; see local review,https://agricultural-production-hotspots.ec.europa.eu/files/warnings_ts.zip,206,warnings_ts.zip,2026-11-19
+jrc-asap-warnings,Observed distribution metadata and anonymous decoded sample; see local review,https://agricultural-production-hotspots.ec.europa.eu/files/warnings_l2_ts.zip,206,warnings_l2_ts.zip,2026-11-19
+jrc-asap-crop-calendars,"Provider scope, access routes and reuse notice",https://data.jrc.ec.europa.eu/dataset/jrc-10112-10003,200,EU JRC ASAP — national and subnational crop calendars,2026-11-19
+jrc-asap-crop-calendars,Distribution descriptions and attribution policy,https://agricultural-production-hotspots.ec.europa.eu/download.php,200,ASAP downloads,2026-11-19
+jrc-asap-crop-calendars,Observed distribution metadata and anonymous decoded sample; see local review,https://agricultural-production-hotspots.ec.europa.eu/files/crop_calendar_gaul0.zip,200,crop_calendar_gaul0.zip,2026-11-19
+jrc-asap-crop-calendars,Observed distribution metadata and anonymous decoded sample; see local review,https://agricultural-production-hotspots.ec.europa.eu/files/crop_calendar_gaul1.zip,200,crop_calendar_gaul1.zip,2026-11-19

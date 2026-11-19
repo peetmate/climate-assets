@@ -1,0 +1,104 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Federated inventory draft; unknowns logged, validation local only.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: jrc-asap-crop-calendars
+title: EU JRC ASAP — national and subnational crop calendars
+description: Crop-specific planting, growth and harvest windows in national and subnational tables, derived
+  by matching FAO crop calendars to satellite land-surface phenology. Covers selected matching crop–location
+  combinations; supports seasonal interpretation of indicators and warnings.
+resource_type: dataset
+keywords:
+- asap
+- jrc
+- crop-calendar
+- planting
+- harvest
+- phenology
+- global
+cdh:
+  domain:
+  - climate
+  - agricultural-production
+created: '2026-11-19'
+updated: '2026-11-19'
+access: public
+note: 'Checked 2026-11-19. Two ZIPs total 29,664 bytes and contain two semicolon-delimited CSVs plus two dictionaries.
+  National table has 287 rows; subnational table 3,068. Dekads run 1–36 each year; windows may cross December–January.
+  Use asap0_id for national boundaries and asap1_id for subnational boundaries; download-page prose mislabels
+  the second ZIP and join field. File dictionaries and JRC catalogue resolve the mismatch. These are typical,
+  selectively matched calendars, not observed planting dates for a specific year. Dataset version, reference
+  period and preferred update cadence remain unknown. Two ZIP-compressed CSV tables with field dictionaries.
+  Unpack and convert to Parquet for selective access; GeoParquet additionally requires separately licensed
+  matching boundary geometry. European Commission reuse notice: acknowledge the source and retain notices.
+  Applies to the JRC-distributed tables; third-party materials and separately downloaded administrative boundaries
+  require their own terms. The technical report licence is not substituted for data terms. crop_calendar_gaul0.zip
+  3,342 bytes and crop_calendar_gaul1.zip 26,322 bytes. Four uncompressed members: two CSVs (10,342 and 156,337
+  bytes) and two field dictionaries (388 and 532 bytes). Total expanded 167,599 bytes. Excludes optional boundary
+  shapefiles and satellite phenology rasters. Decode semicolon-separated CSV and bundled *_notes.txt. Fields
+  sos_s/sos_e delimit planting; sos_e/eos_s delimit growth; eos_s/eos_e delimit harvest. A dekad is days 1–10,
+  11–20 or 21–month end; 36 dekads per calendar year. If end precedes start, the window wraps into the next
+  calendar year. No year column is supplied; do not assign a specific observation year. National identifiers
+  are asap0_id; subnational rows include asap0_id and asap1_id. The two CSVs contain 95 and 96 distinct crop_name
+  strings including season labels, not counts of botanical crops. The satellite phenology rasters listed elsewhere
+  on ASAP are a separate product. The provider catalogue issued date is 2018-09-26, while its current generated
+  citation says 2026; neither establishes a new calendar release. Missing crop/location rows are not evidence
+  of absence of cultivation.'
+data:
+- name: crop_calendar_gaul0.zip
+  media_type: application/zip
+  file_size: 3342
+  checksum: sha256:d443da2eae6d268b73c928a4db0f4a8cd579a7557cd6855346667e40f3fd1dc1
+  locations:
+  - url: https://agricultural-production-hotspots.ec.europa.eu/files/crop_calendar_gaul0.zip
+- name: crop_calendar_gaul1.zip
+  media_type: application/zip
+  file_size: 26322
+  checksum: sha256:f49b56942e00ec2927bb6b26212e07085a9d94f6779480e16251a6648b19dc73
+  locations:
+  - url: https://agricultural-production-hotspots.ec.europa.eu/files/crop_calendar_gaul1.zip
+additional_links:
+- rel: describedby
+  title: ASAP download and data terms
+  url: https://agricultural-production-hotspots.ec.europa.eu/download.php
+- rel: describedby
+  title: Warning Explorer
+  url: https://agricultural-production-hotspots.ec.europa.eu/wexplorer/
+- rel: describedby
+  title: Methods and documentation
+  url: https://agricultural-production-hotspots.ec.europa.eu/documentation.php
+- rel: describedby
+  title: National calendars ZIP
+  url: https://agricultural-production-hotspots.ec.europa.eu/files/crop_calendar_gaul0.zip
+- rel: describedby
+  title: Subnational calendars ZIP
+  url: https://agricultural-production-hotspots.ec.europa.eu/files/crop_calendar_gaul1.zip
+- rel: license
+  title: Distribution-specific European Commission reuse notice
+  url: https://data.jrc.ec.europa.eu/dataset/jrc-10112-10003
+- rel: describedby
+  title: Provider dataset record, correct join fields and reuse notice
+  url: https://data.jrc.ec.europa.eu/dataset/jrc-10112-10003
+- rel: describedby
+  title: Crop-calendar method report; publication DOI not dataset DOI
+  url: https://doi.org/10.2760/25859
+contact:
+- organization: European Commission, Joint Research Centre
+  email: jrc-asap@ec.europa.eu
+  roles:
+  - producer
+  - point-of-contact
+  url: https://agricultural-production-hotspots.ec.europa.eu/download.php
+- organization: European Commission
+  roles:
+  - licensor
+  url: https://data.jrc.ec.europa.eu/dataset/jrc-10112-10003
+- organization: Climate Assets inventory
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets
+license: LicenseRef-EC-Reuse-2011-833-EU
+attribution: Acknowledge European Commission, Joint Research Centre, ASAP, the named dataset contributor and
+  any indicated original sources; retain source and reuse notices.
+doi: 10.2905/JRC.PXQH3Q0

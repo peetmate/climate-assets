@@ -168,7 +168,7 @@
     },
     "reusable": {
       "type": "boolean",
-      "description": "True when the data is openly available under a permissive/attribution licence (CC0, CC-BY, CC-BY-SA, MIT, BSD, Apache, GPL/LGPL/AGPL, ODbL, Etalab-2.0, OGL, public domain) and could therefore be reused/ingested in the Hub. NC, ND, proprietary, unknown or mixed-source terms are false. Copyleft is true but carries share-alike obligations (AGPL extends them to network use) - record those in notes."
+      "description": "True when the data is openly available under a permissive/attribution licence (CC0, CC-BY, CC-BY-SA, MIT, BSD, Apache, GPL/LGPL/AGPL, ODbL, Etalab-2.0, OGL, public domain) and could therefore be reused/ingested in the Hub. Also true for the exact LicenseRef-EC-Reuse-2011-833-EU identifier when the provider explicitly applies the European Commission attribution reuse notice to the distribution. NC, ND, proprietary, unknown or mixed-source terms are false. Copyleft is true but carries share-alike obligations (AGPL extends them to network use) - record those in notes."
     },
     "ongoing": {
       "type": "boolean",

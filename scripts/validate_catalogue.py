@@ -25,6 +25,8 @@ SKILL_SCHEMA_COPY = ROOT / "skills" / "climate-asset-card" / "reference" / "clim
 # Keep in step with SKILL.md "Licence & reuse" and the schema's `reusable` description.
 PERMISSIVE = ("cc0", "cc-by", "mit", "bsd", "apache", "gpl", "odbl",
               "etalab", "ogl", "public domain")
+# Provider-specific attribution notice, verified for the scoped JRC distributions.
+PERMISSIVE_EXACT = {"licenseref-ec-reuse-2011-833-eu"}
 NON_PERMISSIVE = ("-nc", "-nd", "noncommercial", "non-commercial", "proprietary")
 
 PY_TYPES = {"string": str, "array": list, "object": dict, "boolean": bool,
@@ -86,7 +88,7 @@ def licence_contradiction(entry):
         return None
     if any(n in lic for n in NON_PERMISSIVE):
         return f"reusable=true under restrictive licence '{entry.get('licence')}'"
-    if not any(p in lic for p in PERMISSIVE):
+    if lic not in PERMISSIVE_EXACT and not any(p in lic for p in PERMISSIVE):
         return f"reusable=true with unrecognised/empty licence '{entry.get('licence')}'"
     return None
 

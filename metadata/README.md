@@ -55,6 +55,10 @@ The [25-record enrichment and test report](usability/2026-11-17-updated-25.md) r
 
 Seven prior questions were resolved and 16 additional unknowns logged, leaving 55 open fields for these entries. The [reconciliation log](usability/2026-11-17-gap-reconciliation.csv) preserves the decisions. ForTy moved to records after local profile validation; 24 updated templates remain usable drafts with explicit gaps. All 31 dataset cards have now had their audit findings reviewed, with seven locally profile-valid and 24 partial records. Owner questions remain drafts for review.
 
+## ASAP datasets, 19 November 2026
+
+[ASAP provider review and entry-only tests](usability/2026-11-19-asap.md) cover three additions: indicators, automatic warnings and crop calendars. Each has federated metadata, access/format/rights badges and scoped footprint information. Calendar and warning archive totals are verified; full indicator archive bytes and file count remain unknown. Release and licensing gaps remain explicit. These additions bring the dataset-card count to 34; earlier cohort results above retain their original scopes. Validation stayed local.
+
 ## Methods and tools
 
 The profile supports datasets, software, services and documents. ChooseGCM provides a worked software example with its package licence and the citation requested by its authors. WFP HumanitarianDataCube describes a STAC service with independently licensed collections. A methods paper can use document. Record which implementation, publication or endpoint was selected whenever a card describes several.

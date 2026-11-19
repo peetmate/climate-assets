@@ -163,3 +163,6 @@ ocelot-planetary-scale-species-distribution-modeling,assets,publication,document
 ukceh-global-multi-index-drought,assets,dataset,dataset,ready,records/ukceh-global-multi-index-drought.yaml,https://catalogue.ceh.ac.uk/documents/f5ce92b0-03e8-4719-82ff-c62e6ebe927b,not requested
 trends-earth-qgis,methods,tool-software,software,draft_with_gaps,drafts/trends-earth-qgis.yaml,https://plugins.qgis.org/plugins/LDMP/version/2.3.8/,not requested
 worldpop-api-v3-mcp,assets,atlas-hub,service,draft_with_gaps,drafts/worldpop-api-v3-mcp.yaml,https://api.worldpop.org/v3/assistants,not requested
+jrc-asap-indicators,assets,dataset,dataset,draft_with_gaps,drafts/jrc-asap-indicators.yaml,https://agricultural-production-hotspots.ec.europa.eu/download.php,not requested
+jrc-asap-warnings,assets,dataset,dataset,draft_with_gaps,drafts/jrc-asap-warnings.yaml,https://data.jrc.ec.europa.eu/dataset/jrc-10112-10001,not requested
+jrc-asap-crop-calendars,assets,dataset,dataset,draft_with_gaps,drafts/jrc-asap-crop-calendars.yaml,https://data.jrc.ec.europa.eu/dataset/jrc-10112-10003,not requested

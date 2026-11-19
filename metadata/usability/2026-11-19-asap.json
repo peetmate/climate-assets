@@ -1,0 +1,476 @@
+{
+  "checked_on": "2026-11-19",
+  "validation_scope": "Local only; no submission to CDH",
+  "entry_only_results": [
+    {
+      "entry_sha256": "5e26c3183e425b82840aac4c086cd8f8a8d848d1691f3c964bfbb4420fceb2cf",
+      "outcome": "success_actual_data_sample_decoded",
+      "question": "What cumulative rainfall does the ASAP RAIN raster report for the grid cell containing longitude 36.82 E, latitude 1.28 S in the dekad labelled 20261021?",
+      "observation": {
+        "variable": "RAIN",
+        "value_raw": 21,
+        "value_decoded": 21,
+        "unit": "mm",
+        "scale": 1.0,
+        "offset": 0.0,
+        "nodata": -9999.0,
+        "requested_longitude": 36.82,
+        "requested_latitude": -1.28,
+        "row_zero_based": 1525,
+        "column_zero_based": 4336,
+        "cell_center_lon_lat": [
+          36.82500000000002,
+          -1.2750000000000057
+        ],
+        "cell_bounds_lon_lat": [
+          36.8,
+          -1.3,
+          36.85,
+          -1.25
+        ],
+        "crs": "EPSG:4326",
+        "dekad_label": "20261021",
+        "interpreted_period": "2026-10-21 through 2026-10-31",
+        "source_tags": {
+          "date": "20261021",
+          "description": "chirps_prelim_AgERA5_final_20261021\nchirps: chirps-v3.0.2026.10.3.tif\necmwf: rain_20261021.tif\n",
+          "flags": "-9999.0=no data",
+          "program": "None",
+          "sensor_type": "None",
+          "values.unit": "mm",
+          "values.var_name": "rainfall",
+          "AREA_OR_POINT": "Area"
+        },
+        "downloaded_file_bytes": 2669439,
+        "file_sha256": "48b8d79c0366ca35cc56ae39c4d090ec5536bfc69a2ad46426948a1a5cf8b89f",
+        "dimensions": [
+          2700,
+          7200
+        ],
+        "bands": 1,
+        "grid_cell_count_in_this_file": 19440000,
+        "cell_count_includes_nodata": true,
+        "overviews": []
+      },
+      "interpretation": "The cell reports 21 mm cumulative rainfall for the third October 2026 dekad. This is a gridded cell estimate, not a station observation or administrative-area mean. The period 21-31 October follows the entry date guidance and third-dekad calendar interpretation; provider download documentation calls RAIN cumulative rainfall for the selected ten-day period, while the TIFF date and CHIRPS source filename identify 20261021 / October dekad 3. The actual period has 11 calendar days. File tags supply rainfall and mm; the raster scale=1 and offset=0 yield 21 mm from stored integer 21. The cell is valid, not nodata (-9999). Discovery identifies CDS AgERA5 FINAL level 0 plus CHIRPS RAIN v3 Preliminary level 1, with overall level 1; the manual says level 0 is final, so this sample is not final.",
+      "evidence_urls": [
+        "https://agricultural-production-hotspots.ec.europa.eu/getIndicatorsInfo.php?dekad=20261021",
+        "https://agricultural-production-hotspots.ec.europa.eu/data/indicators_rain/rain/rain_20261021.tif",
+        "https://agricultural-production-hotspots.ec.europa.eu/download.php",
+        "https://agricultural-production-hotspots.ec.europa.eu/files/Indicator_info_service_2025_01_16.pdf",
+        "https://agricultural-production-hotspots.ec.europa.eu/documentation.php"
+      ],
+      "gaps": [
+        "No immutable collection release/version or complete archive manifest established.",
+        "Full collection physical file count and stored bytes unknown.",
+        "Cloud/object-storage delivery was not established by the tested HTTPS/WebDAV route.",
+        "JRC reuse notice requires acknowledgement; upstream component redistribution conditions were not independently reconciled.",
+        "Other indicators were not value-tested; SPI strings retain 2021 descriptions and WSI historical-probability descriptions differ from download-page z-score labels."
+      ],
+      "access": {
+        "anonymous": true,
+        "registration_required_for_tested_route": false,
+        "authentication_used": false,
+        "data_get_status": 200,
+        "range_test_status": 206,
+        "range_content_range": "bytes 0-1023/2669439",
+        "range_bytes_received": 1024,
+        "read_only": true,
+        "messages_or_requests_sent": false,
+        "stopping_point": "Completed actual file download, metadata inspection and one-cell decode; no blocker for chosen question. Web browsing tool could not open JSON endpoint, but ordinary anonymous HTTPS requests succeeded."
+      },
+      "limitations": [
+        "Only one RAIN raster and one pixel were interpreted; no archive size extrapolation.",
+        "The coordinate was chosen by the test; no administrative-boundary join or place-name geocoding was attempted.",
+        "Preliminary products can be revised at the same location.",
+        "No blanket Cloud Optimized GeoTIFF compliance claimed: inspected TIFF is tiled with no overviews.",
+        "No upstream licence assignment was inferred."
+      ],
+      "mapping_summary": {
+        "release_provider": "European Commission Joint Research Centre ASAP changing indicator collection. Tested RAIN dekad 20261021: CHIRPS RAIN v3 Preliminary + CDS AgERA5 FINAL; overall processing level 1. Immutable release identifier unknown.",
+        "format_preparation": "Sample: single-band int16 GeoTIFF, EPSG:4326, 7200 columns x 2700 rows, 0.05 degree cells, tiled 256 x 256, DEFLATE, no overviews, scale 1 offset 0, nodata -9999. JSON discovery supplies relative URLs. Provider also documents CSV statistics and legacy ENVI img/hdr pairs. Use current returned paths; resolve each product encoding before conversion or rehosting.",
+        "redistribution_conditions": "Provider download-page notice authorizes reuse with source acknowledgement and refers to the European Commission reuse decision. Does not by itself establish all upstream-component redistribution rights; no blanket collection licence inferred.",
+        "access": "Tested exact provider TIFF and discovery endpoint are anonymous public HTTPS; manual describes production-server WebDAV. Byte-range request succeeded on sample.",
+        "can_federate": false,
+        "federation_reason": "Not established: although anonymous range reads succeed and JRC reuse is described, cloud delivery and complete applicable redistribution permission on this same delivery are not both established.",
+        "total_download_size": {
+          "value": null,
+          "unit": "bytes",
+          "scope": "entire changing indicator raster archive plus generated statistics",
+          "sample_file_bytes": 2669439,
+          "sample_scope": "one RAIN raster for 20261021; not an archive total"
+        },
+        "element_counts": [
+          {
+            "value": 12,
+            "unit": "indicator products",
+            "scope": "discovery response for one dekad 20261021; not collection files"
+          },
+          {
+            "value": 19440000,
+            "unit": "grid cells including nodata",
+            "scope": "single tested RAIN raster, one band"
+          },
+          {
+            "value": 1,
+            "unit": "decoded valid pixel",
+            "scope": "test observation"
+          }
+        ],
+        "unknowns": [
+          "Entire archive bytes and physical file count",
+          "Immutable release/version",
+          "Cloud hosting status",
+          "All upstream redistribution rights",
+          "Value encodings and baselines of untested indicators"
+        ]
+      },
+      "card_id": "jrc-asap-indicators"
+    },
+    {
+      "entry_sha256": "b4719f3439021f98fd383c292e1e039a5ee0eefae59e076eb29d3804811ef16c",
+      "outcome": "success_with_limitations",
+      "question": "What automatic crop and rangeland warning category does ASAP report for Kajiado, Kenya at reference date 2026-11-01?",
+      "observation": {
+        "asap0_id": "102",
+        "asap1_id": "407",
+        "asap0_name": "Kenya",
+        "asap1_name": "Kajiado",
+        "date": "2026-11-01",
+        "w_crop": "5",
+        "w_crop_na": "Warning level 2",
+        "w_crop_de": "At least 25% of the active area is affected by an anomaly for the indicator zNDVIc",
+        "w_crop_gr": "Warning group 2",
+        "w_range": "5",
+        "w_range_na": "Warning level 2",
+        "w_range_de": "At least 25% of the active area is affected by an anomaly for the indicator zNDVIc",
+        "w_range_gr": "Warning group 2"
+      },
+      "interpretation": {
+        "answer": "Both crop and rangeland have warning code 5, explicitly named Warning level 2 and grouped as Warning group 2. The supplied description attributes this to an anomaly in zNDVIc affecting at least a quarter of the active area. Code 5 is a category identifier, not severity level 5.",
+        "place": "ASAP first subnational unit Kajiado (asap1_id 407), Kenya (asap0_id 102), identified by the row and archive field dictionary. This does not establish equivalence with any particular generic GAUL boundary version.",
+        "period": "The archive dictionary defines date as the warning reference date. The provider describes these as ten-day automatic warnings; sampled reference date is 2026-11-01. Exact start/end-date convention was not independently established.",
+        "provenance": "Actual semicolon-delimited CSV prefix decoded from anonymous HTTP Range reads of warnings_ts.zip; dictionary decoded from the same ZIP."
+      },
+      "evidence_urls": [
+        "https://agricultural-production-hotspots.ec.europa.eu/files/warnings_ts.zip",
+        "https://agricultural-production-hotspots.ec.europa.eu/files/warnings_l2_ts.zip",
+        "https://agricultural-production-hotspots.ec.europa.eu/download.php",
+        "https://data.jrc.ec.europa.eu/dataset/jrc-10112-10001",
+        "https://agricultural-production-hotspots.ec.europa.eu/files/wfs_warnings_crop_notes.txt",
+        "https://agricultural-production-hotspots.ec.europa.eu/documentation.php"
+      ],
+      "gaps": [
+        "Exact archive algorithm release is unresolved: HTTP headers report asap-version 7.0 while the documentation page offers classification version 8.0; the sampled archive descriptions use zNDVIc.",
+        "Archive-wide record count, unique-unit count and observed minimum/maximum reference dates were not enumerated.",
+        "Cloud storage or a cloud-optimized full-history delivery was not established.",
+        "Exact temporal interval endpoints are not explicitly given by the sampled field dictionary."
+      ],
+      "access": {
+        "anonymous": true,
+        "authentication_required": false,
+        "requests": "Read-only HTTPS GET; HTTP Range returned 206. No login, credential, access request or message used.",
+        "provider_statement": "JRC dataset access conditions state anonymous direct access without registration.",
+        "primary_sample_bytes": 66813,
+        "directory_reads_bytes": 262144,
+        "initial_probe_bytes": 131072,
+        "total_binary_response_bytes": 460029
+      },
+      "limitations": [
+        "Only the first subnational CSV prefix was decoded, yielding 4364 complete rows; no sample statistics are extrapolated to the full archive.",
+        "Second subnational archive verified by its ZIP central directory only; its table was not decoded.",
+        "WFS was documented by provider links but not sampled or treated as evidence of full historical availability.",
+        "Full compressed-member CRC was not checked because the large CSV was not downloaded in full.",
+        "This entry-only test did not inspect the repository, other entries, prior research or gap logs."
+      ],
+      "mapping_summary": {
+        "release_provider": {
+          "provider": "European Commission, Joint Research Centre, ASAP",
+          "dataset_doi": "10.2905/JRC.KC71YCG",
+          "release": "Mutable historical ZIP snapshot, last modified 2026-11-14; exact algorithm release unknown",
+          "files": [
+            {
+              "url": "https://agricultural-production-hotspots.ec.europa.eu/files/warnings_ts.zip",
+              "total_bytes": 48585446,
+              "last_modified": "Sat, 14 Nov 2026 09:59:11 GMT",
+              "asap-version": "7.0",
+              "members": [
+                {
+                  "name": "readme_warnings_ts.txt",
+                  "method": 8,
+                  "compressed": 253,
+                  "expanded": 802,
+                  "offset": 0
+                },
+                {
+                  "name": "warnings_ts.csv",
+                  "method": 8,
+                  "compressed": 48584945,
+                  "expanded": 900764104,
+                  "offset": 305
+                }
+              ]
+            },
+            {
+              "url": "https://agricultural-production-hotspots.ec.europa.eu/files/warnings_l2_ts.zip",
+              "total_bytes": 56208780,
+              "last_modified": "Sat, 14 Nov 2026 09:59:37 GMT",
+              "asap-version": "7.0",
+              "members": [
+                {
+                  "name": "readme_warnings_l2_ts.txt",
+                  "method": 8,
+                  "compressed": 268,
+                  "expanded": 963,
+                  "offset": 0
+                },
+                {
+                  "name": "warnings_l2_ts.csv",
+                  "method": 8,
+                  "compressed": 56208252,
+                  "expanded": 965353846,
+                  "offset": 323
+                }
+              ]
+            }
+          ]
+        },
+        "format_preparation": "Two ZIP archives containing semicolon-delimited CSV and text field dictionaries. Deflated historical tables require decompression; convert to partitioned Parquet for selective tabular history access, or join matching separately governed ASAP boundaries for spatial work. Bounded ZIP prefix reads suffice for this small sample, not arbitrary historical row queries.",
+        "redistribution_conditions": "Provider dataset record authorizes reuse under the European Commission reuse notice with source acknowledgment, subject to individual notices and exclusions for third-party intellectual property. Download page requests attribution to the indicated sources. No CC licence is inferred; boundary terms were not validated or bundled.",
+        "access": "Anonymous direct HTTPS download verified for the same historical ZIP delivery; HTTP Range works.",
+        "can_federate": {
+          "value": false,
+          "scope": "As-delivered complete-history ZIP/CSV, under the requested conjunction of cloud + allowed + anonymous.",
+          "reason": "Anonymous access and conditional reuse are evidenced, but cloud storage and cloud-optimized selective access are not established. HTTP Range support alone does not establish those conditions. Separate WFS availability does not change the historical ZIP classification."
+        },
+        "total_download_size": {
+          "bytes": 104794226,
+          "scope": "Both specified historical warning ZIPs in the observed snapshot; excludes WFS, geometry, boundaries, expert hotspots, other products and future updates.",
+          "expanded_csv_bytes": 1866117950
+        },
+        "element_count_unit": {
+          "archive_count": 2,
+          "archive_member_count": 4,
+          "csv_table_count": 2,
+          "dictionary_count": 2,
+          "full_table_row_count": null,
+          "sample_complete_rows": 4364,
+          "record_unit": "One ASAP administrative unit and warning reference date, carrying crop and rangeland categorical warnings; codes are dimensionless categories, not measurements or severity ranks."
+        },
+        "unknowns": [
+          "Full-history row count and unit coverage",
+          "Exact algorithm release and zNDVIc terminology lineage",
+          "Cloud deployment and cloud-ready historical format",
+          "Boundary-specific redistribution terms",
+          "Exact ten-day interval endpoints"
+        ]
+      },
+      "stopping_point": "Completed actual sample retrieval and interpretation; stopped deliberately after bounded partial reads. No access blocker encountered.",
+      "limited_note_only_retest": {
+        "previous_entry_sha256": "3fbc20450c3b193338098471c73c30daf8420a810785a25241a914aea23d177c",
+        "final_entry_sha256": "b4719f3439021f98fd383c292e1e039a5ee0eefae59e076eb29d3804811ef16c",
+        "method": "Re-read updated isolated entry.yaml only; reused preserved actual sample and provider evidence. No repeat network requests.",
+        "finding": "Interpretation remains supported. Candidate now explicitly states warning reference dates, unknown exact ten-day interval endpoints and unknown full-archive row counts. These resolve the omission without resolving the underlying unknowns.",
+        "evidence_and_limitations_preserved": true
+      },
+      "card_id": "jrc-asap-warnings"
+    },
+    {
+      "entry_sha256": "90e6caf8c1c59ddd0410e2d41b17c377172a15a67caf2398d8a3436a1a3ff1bc",
+      "outcome": "pass_with_metadata_gaps",
+      "question": "When does the supplied calendar place planting and harvest of spring wheat in Talas, Kyrgyzstan, and are these dates observations for a specific year?",
+      "observation": {
+        "archive": "crop_calendar_gaul1.zip",
+        "member": "crop_calendar_gaul1.csv",
+        "data_row": 1,
+        "row": {
+          "asap0_id": "13",
+          "name0_shr": "Kyrgyzstan",
+          "asap1_id": "353",
+          "name1_shr": "Talas",
+          "crop_name": "Wheat (Spring)",
+          "sos_s": "8",
+          "sos_e": "12",
+          "eos_s": "28",
+          "eos_e": "31"
+        },
+        "bundled_dictionary": "crop_calendar_gaul1_notes.txt",
+        "verified_entry_checksums": true,
+        "retrieval": "Anonymous HTTPS GET; complete ZIPs downloaded and semicolon-separated CSVs parsed."
+      },
+      "interpretation": {
+        "place": "Talas, Kyrgyzstan; asap0_id=13, asap1_id=353. Bundled dictionary defines these as country and subnational ASAP identifiers. Catalogue confirms asap1_id joins gaul1_asap; no geometry needed for this named-place table question.",
+        "units": "Integer dekads 1–36 in the recurring calendar year. Provider download page defines planting sos_s→sos_e, growth sos_e→eos_s, harvest eos_s→eos_e. Report §2.3, printed p7 (PDF p9), describes dekads as ten-day periods spanning the calendar year.",
+        "decoded_values": "sos_s=8 and sos_e=12 mean planting from the second dekad of March to the third dekad of April. eos_s=28 and eos_e=31 mean harvest from the first dekad of October to the first dekad of November. Growth boundary range is 12–28. Month/within-month conversion uses three dekads per month; these are interval boundaries, not exact observed daily events.",
+        "period": "Typical recurring calendar, with no observation-year column. Report §2.4, printed p8 (PDF p10), states that the method extracted phenology from historical average smoothed NDVI over 2013–2016. This is a documented method baseline; the current ZIPs have no version/reference-period field proving they retain precisely that baseline.",
+        "selection": "Provider includes crop-location combinations whose original crop calendars match satellite phenology; omitted crops do not establish absence of cultivation."
+      },
+      "evidence_urls": [
+        "https://agricultural-production-hotspots.ec.europa.eu/files/crop_calendar_gaul0.zip",
+        "https://agricultural-production-hotspots.ec.europa.eu/files/crop_calendar_gaul1.zip",
+        "https://agricultural-production-hotspots.ec.europa.eu/download.php",
+        "https://data.jrc.ec.europa.eu/dataset/jrc-10112-10003",
+        "https://agricultural-production-hotspots.ec.europa.eu/documentation.php",
+        "https://agricultural-production-hotspots.ec.europa.eu/files/JRC112670.pdf",
+        "https://publications.jrc.ec.europa.eu/repository/handle/JRC112670"
+      ],
+      "gaps": [
+        {
+          "type": "release_provenance",
+          "detail": "No explicit version or ZIP-specific reference period established. Catalogue issued 2018-09-26, modified 2018-12-20; generated citation says 2026. Neither is proof of a new table release."
+        },
+        {
+          "type": "entry_enrichment",
+          "detail": "Entry leaves preferred update cadence unknown; provider catalogue does supply update frequency irregular. This is not a predictable refresh schedule."
+        },
+        {
+          "type": "entry_enrichment",
+          "detail": "Entry leaves reference period unknown; linked method report supplies historical NDVI baseline 2013–2016, but cannot safely be treated as current ZIP coverage without release linkage."
+        },
+        {
+          "type": "provider_inconsistency",
+          "detail": "Download-page crop-calendar prose mislabels gaul1 as national and tells readers to use asap1_id with gaul0. Entry warning, bundled dictionary and catalogue resolve correct joins."
+        }
+      ],
+      "access": {
+        "anonymous": true,
+        "authentication": false,
+        "payment": false,
+        "requests_sent": false,
+        "external_mutations": false,
+        "stopping_point": "Completed actual data retrieval and decoding. No access block. Web PDF fetch timed out; anonymous urllib download succeeded."
+      },
+      "limitations": [
+        "One concrete record interpreted; all rows counted from complete downloaded tables. No agronomic validation of the calendar against field observations.",
+        "No boundary geometries downloaded or terms assessed; their licences must be checked separately.",
+        "No whole-system ASAP volume inferred from the two calendar archives.",
+        "No cloud-optimized distribution or supported remote selective table querying demonstrated."
+      ],
+      "mapping_summary": {
+        "release_provider": {
+          "provider": "European Commission Joint Research Centre, ASAP",
+          "contributor": "Maria Dimou",
+          "dataset_doi": "10.2905/JRC.PXQH3Q0",
+          "issued": "2018-09-26",
+          "release_version": null,
+          "update_frequency": "irregular",
+          "method_publication": "2018; 10.2760/25859"
+        },
+        "format_preparation": {
+          "delivery": "Two ZIP archives, each containing one semicolon-delimited CSV and one plain-text field dictionary.",
+          "preparation": "Unzip; parse with semicolon separator; keep ASAP identifiers and crop/season strings; interpret four integer dekad boundaries. Convert to Parquet for selective analytical access if creating a derived hosted copy; geometry would require separately obtained boundaries."
+        },
+        "redistribution_conditions": {
+          "status": "Provider explicitly authorizes reuse with source acknowledgment through European Commission reuse notice.",
+          "conditions": "Check individual copyright notices and third-party rights. Do not transfer the report licence to the data or assume boundary terms. Preserve provenance and notices in derived copies.",
+          "evidence_url": "https://data.jrc.ec.europa.eu/dataset/jrc-10112-10003",
+          "not_inferred": "No CC licence or unconditional public-domain status inferred."
+        },
+        "access": "Both same-delivery ZIP URLs anonymously accessible; catalogue says no limitations.",
+        "can_federate": false,
+        "federation_reason": "For the required cloud+allowed+anonymous same-delivery conjunction: allowed reuse and anonymous retrieval are evidenced for these files; cloud-optimized/selective-access delivery is not. Ordinary ZIP/CSV HTTPS downloads alone do not satisfy that cloud criterion.",
+        "total_download_size_scope": {
+          "bytes": 29664,
+          "scope": "Complete pair of calendar ZIPs only; excludes boundaries, method PDF and satellite rasters.",
+          "files": [
+            {
+              "name": "crop_calendar_gaul0.zip",
+              "bytes": 3342
+            },
+            {
+              "name": "crop_calendar_gaul1.zip",
+              "bytes": 26322
+            }
+          ],
+          "expanded_bytes": 167599,
+          "expanded_members": 4
+        },
+        "element_count_unit": {
+          "national": 287,
+          "subnational": 3068,
+          "total": 3355,
+          "unit": "CSV data records excluding headers; each crop/season-name and administrative-unit calendar record has four dekad boundary values.",
+          "distinct_crop_name_strings": {
+            "national": 95,
+            "subnational": 96
+          },
+          "not_botanical_species_count": true
+        },
+        "unknowns": [
+          "Current ZIP release version and reference-period linkage",
+          "Actual revision dates and dependable future update cadence",
+          "Separate boundary terms and volume",
+          "Any cloud-optimized distribution not exposed by followed entry links"
+        ]
+      },
+      "card_id": "jrc-asap-crop-calendars"
+    }
+  ],
+  "local_profile_results": [
+    {
+      "card_id": "jrc-asap-indicators",
+      "profile": "CDH v0.5.0",
+      "exit_code": 1,
+      "diagnostics": "FAIL metadata/drafts/jrc-asap-indicators.yaml\n  /: must have required property 'citation'\n  /: must have required property 'doi'\n  /: must match a schema in anyOf\n  /: must have required property 'license'\n  /contact/0/roles/0: must be equal to constant\n  /contact/0/roles/1: must be equal to constant\n  /contact/0/roles: must contain at least 1 valid item(s)\n  /contact/1/roles/0: must be equal to constant\n  /contact/1/roles: must contain at least 1 valid item(s)\n  /contact: must contain at least 1 valid item(s)\n  /: must have required property 'version' (profile)\n"
+    },
+    {
+      "card_id": "jrc-asap-warnings",
+      "profile": "CDH v0.5.0",
+      "exit_code": 1,
+      "diagnostics": "FAIL metadata/drafts/jrc-asap-warnings.yaml\n  /: must have required property 'version' (profile)\n"
+    },
+    {
+      "card_id": "jrc-asap-crop-calendars",
+      "profile": "CDH v0.5.0",
+      "exit_code": 1,
+      "diagnostics": "FAIL metadata/drafts/jrc-asap-crop-calendars.yaml\n  /: must have required property 'version' (profile)\n"
+    }
+  ],
+  "author_wfs_checks": [
+    {
+      "type_name": "public:warning_crop",
+      "request": "https://agricultural-production-hotspots.ec.europa.eu/public/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=public:warning_crop&count=1&outputFormat=application/json&sortBy=date%20D",
+      "feature_properties": {
+        "asap0_id": 157,
+        "asap1_id": 10125,
+        "asap0_name": "D.R. Congo",
+        "asap1_name": "Kasai",
+        "w_crop": 5,
+        "w_crop_na": "Warning level 2",
+        "w_crop_de": "At least 25% of the active area is affected by an anomaly for the indicator zNDVIc",
+        "w_crop_gr": 2,
+        "date": "2026-09-01"
+      }
+    },
+    {
+      "type_name": "public:warning_gaul1_crop",
+      "request": "https://agricultural-production-hotspots.ec.europa.eu/public/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=public:warning_gaul1_crop&count=1&outputFormat=application/json&sortBy=date%20D",
+      "feature_properties": {
+        "asap0_id": 157,
+        "asap1_id": 10125,
+        "asap0_name": "D.R. Congo",
+        "asap1_name": "Kasai",
+        "w_crop": 5,
+        "w_crop_na": "Warning level 2",
+        "w_crop_de": "At least 25% of the active area is affected by an anomaly for the indicator zNDVIc",
+        "w_crop_gr": 2,
+        "date": "2026-09-01"
+      }
+    },
+    {
+      "type_name": "public:warning_gaul2_crop",
+      "request": "https://agricultural-production-hotspots.ec.europa.eu/public/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=public:warning_gaul2_crop&count=1&outputFormat=application/json&sortBy=date%20D",
+      "feature_properties": {
+        "asap0_id": 208,
+        "asap2_id": 4064,
+        "asap0_name": "Australia",
+        "asap2_name": "Esperance (S)",
+        "w_crop": 10,
+        "w_crop_na": "No warning with exceptional conditions",
+        "w_crop_de": "Season is active but no relevant negative anomalies are detected and at least 25% of the active area is affected by a positive anomaly for the indicator zNDVIc",
+        "w_crop_gr": 0,
+        "date": "2026-09-01"
+      }
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+# yaml-language-server: $schema=https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/schemas/profiles/cdh.schema.bundled.json
+# Federated inventory draft; unknowns logged, validation local only.
+cdh_schema_version: v0.5.0
+extensions:
+- https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
+id: jrc-asap-indicators
+title: EU JRC ASAP — agrometeorological and vegetation indicators
+description: Ten-day vegetation and agrometeorological raster indicators and administrative-area statistics
+  used by the Anomaly hot Spots of Agricultural Production (ASAP) system. Includes rainfall, precipitation
+  anomalies, FPAR vegetation measures, water satisfaction and soil moisture; available variables and processing
+  maturity vary by date and delivery route.
+resource_type: dataset
+keywords:
+- asap
+- jrc
+- agrometeorology
+- vegetation
+- rainfall
+- fpar
+- spi
+- early-warning
+- global
+cdh:
+  domain:
+  - climate
+  - agricultural-production
+created: '2026-11-19'
+updated: '2026-11-19'
+access: public
+note: 'Checked 2026-11-19. Select indicator/date and inspect source and processing level through getIndicatorsInfo.
+  Level 0 denotes final processing; recent data may be revised. Rainfall for 21–31 October 2026 was a CHIRPS
+  v3 Preliminary / AgERA5 Final blend. Legacy manual filenames and some SPI/WSI description years are stale;
+  use returned locations and file metadata. Full archive bytes and file count unknown. Provider notice permits
+  reuse of JRC data with acknowledgement, but component-specific upstream redistribution terms are not fully
+  reconciled. CSV statistics, GeoTIFF rasters and legacy ENVI image/header pairs. Sample rainfall TIFF allows
+  tiled range reads but has no overviews; no blanket COG/Zarr claim. Select products before conversion/rehosting.
+  JRC reuse notice covers JRC data with source acknowledgement. Inputs include CHIRPS, AgERA5, BOKU FPAR, WSI
+  and Copernicus soil moisture; release-specific upstream redistribution conditions remain partly unknown.
+  Complete changing raster archive plus generated statistics: stored bytes and physical file count unknown.
+  The 2026-10-21 discovery response listed 12 indicator products, not 12 files for the full archive. Sample
+  rainfall file is 2,669,439 bytes; excluded from any release-total claim. Retrieve getIndicatorsInfo.php with
+  at least one filter (dekad=YYYYMMDD, indicator_name or indicator_group); an unfiltered call returns HTTP
+  400. Resolve returned relative location against the ASAP origin. Fields include sources_level, level, crs,
+  resolution and description. The resolution field can be raster row/column dimensions, not angular cell size.
+  Example RAIN for 20261021: EPSG:4326, 7200 columns by 2700 rows, 0.05-degree cells, bounds -180,-60,180,75.
+  Read band 1 at longitude 36.82, latitude -1.28; values are accumulated millimetres for 21–31 October 2026,
+  scale 1, offset 0, mask -9999. Tiled GeoTIFF, 256-by-256 blocks, no internal overviews. Check current source
+  metadata on every read: preliminary products may change. SPI description strings still mention 2021, and
+  WSI naming/units differ across manual and endpoint; calibration/baseline and encoding of those products need
+  confirmation before interpretation. CHIRPS v2 daily is not shortlisted here. Indicator statistics: use the
+  public download form; getDataDownload.php supplies current country and variable/class/sensor IDs, then the
+  form uses export/rum/export.php. Endpoints are provider implementation details and may change. Complete redistribution
+  rights per upstream component, immutable release version, full file manifest and dedicated dataset citation
+  remain unknown.'
+data:
+- name: indicator-discovery-example
+  locations:
+  - url: https://agricultural-production-hotspots.ec.europa.eu/getIndicatorsInfo.php?dekad=20261021
+- name: rain-20261021
+  description: Worked raster for a value-level read; an individual dekad, not full archive.
+  media_type: image/tiff
+  file_size: 2669439
+  locations:
+  - url: https://agricultural-production-hotspots.ec.europa.eu/data/indicators_rain/rain/rain_20261021.tif
+additional_links:
+- rel: describedby
+  title: ASAP download and data terms
+  url: https://agricultural-production-hotspots.ec.europa.eu/download.php
+- rel: describedby
+  title: Warning Explorer
+  url: https://agricultural-production-hotspots.ec.europa.eu/wexplorer/
+- rel: describedby
+  title: Methods and documentation
+  url: https://agricultural-production-hotspots.ec.europa.eu/documentation.php
+- rel: describedby
+  title: Indicator discovery example
+  url: https://agricultural-production-hotspots.ec.europa.eu/getIndicatorsInfo.php?dekad=20261021
+- rel: describedby
+  title: Indicator service manual
+  url: https://agricultural-production-hotspots.ec.europa.eu/files/Indicator_info_service_2025_01_16.pdf
+- rel: describedby
+  title: Current statistics selector values
+  url: https://agricultural-production-hotspots.ec.europa.eu/getDataDownload.php
+contact:
+- organization: European Commission, Joint Research Centre
+  email: jrc-asap@ec.europa.eu
+  roles:
+  - producer
+  - point-of-contact
+  url: https://agricultural-production-hotspots.ec.europa.eu/download.php
+- organization: Climate Assets inventory
+  roles:
+  - maintainer
+  url: https://github.com/peetmate/climate-assets
