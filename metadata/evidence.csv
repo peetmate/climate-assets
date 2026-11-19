@@ -624,3 +624,5 @@ worldpop-api-v3-mcp,Actual anonymous point population and age/sex read,https://a
 worldpop-api-v3-mcp,"Anonymous initialize, tools/list and population_at_point call",https://api.worldpop.org/v3/mcp,200,WorldPop MCP: 23 tools; 81.88 people per cell,2026-11-19
 worldpop-api-v3-mcp,Original release-specific download links and STAC,https://api.worldpop.org/v3/countries/RWA/files?year=2025,200,Rwanda R2025A 2025 source files,2026-11-19
 worldpop-api-v3-mcp,OpenAPI version and stated licence,https://api.worldpop.org/v3/openapi.json,200,WorldPop API 3.0.0,2026-11-19
+ocelot-planetary-scale-species-distribution-modeling,Current v2 revision and paper licence; closes paper-licence gap,https://arxiv.org/abs/2611.00284,200,"OCELOT v2, revised 9 November 2026",2026-11-19
+ocelot-planetary-scale-species-distribution-modeling,"AlphaEarth input, published author contact, relative-occurrence limitation and planned weight release",https://arxiv.org/html/2611.00284v2,200,OCELOT full text v2,2026-11-19

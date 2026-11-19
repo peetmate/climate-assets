@@ -5,11 +5,10 @@ extensions:
 - https://cgiar-climate-data-hub.github.io/cdh-metadata-standard/v0.5.0/extensions/cdh/schema.json
 id: ocelot-planetary-scale-species-distribution-modeling
 title: 'OCELOT: Planetary-Scale Species Distribution Modeling with Satellite Foundation Embeddings'
-description: Preprint on scaling relative-occurrence species distribution models to 2 billion GBIF records
-  across 100,000 taxa, using a multimodal implicit neural representation network that fuses spatial coordinates
-  with satellite foundation embeddings. Spatiotemporal thinning and sub-linear cell sampling correct for observer
-  bias and spatial redundancy, while an additive taxonomic readout shares representations across species, genus
-  and family to improve predictions for rare taxa.
+description: Preprint describing OCELOT, a relative-occurrence species model combining geographic coordinates
+  and AlphaEarth Foundations satellite embeddings, trained using about 2 billion GBIF observations across 100,000
+  taxa. Spatial holdout tests assess transfer to poorly sampled regions for camera-trap and acoustic species
+  identification.
 resource_type: document
 keywords:
 - biodiversity
@@ -24,16 +23,36 @@ cdh:
   - land
   - climate
 created: '2026-11-13'
-updated: '2026-11-13'
+updated: '2026-11-19'
 data:
 - name: primary
   locations:
-  - url: https://arxiv.org/pdf/2611.00284
+  - url: https://arxiv.org/pdf/2611.00284v2
 access: public
 doi: 10.48550/arXiv.2611.00284
 contact:
-- organization: CGIAR Climate Data Hub
+- organization: Climate Assets inventory
   roles:
   - maintainer
   url: https://github.com/peetmate/climate-assets
-version: '1'
+version: '2'
+license: CC-BY-4.0
+note: 'Updated 2026-11-19 against arXiv v2 (9 November 2026): AlphaEarth input confirmed. Authors report 51%
+  improvement in spatial-holdout NDCG ranking over coordinate-only models. Predictions describe relative occurrence,
+  not absolute occupancy; spatial extrapolation is not future-climate forecasting. The paper describes a static
+  model and plans to release weights; no verified OCELOT code, weight or prediction-download route found in
+  this review. CC BY 4.0 covers the paper; software, weights and derived-data terms remain unconfirmed. Potential
+  inventory relevance: biodiversity-monitoring methods; operational availability unconfirmed. First submitted
+  2026-10-30; current paper revision 2026-11-09. Published author contact: Bart van Merriënboer,
+  Google DeepMind, bartvm@google.com. Licensing-party identity remains unconfirmed; author affiliation alone
+  does not establish it.'
+additional_links:
+- rel: describedby
+  title: Full text, author contact, methods and release statement (v2)
+  url: https://arxiv.org/html/2611.00284v2
+- rel: license
+  title: Paper licence (not software or weights)
+  url: https://creativecommons.org/licenses/by/4.0/
+- rel: related
+  title: AlphaEarth Foundations input method
+  url: https://arxiv.org/abs/2507.22291
